@@ -5,16 +5,21 @@ module modulo_ff_d(d,clock,clr,prst,q)
 	
 	reg reg_q;
 	
-	always @(negedge clock or negedge clr) begin 
+	always @(negedge clock or negedge clr) 
 	
-		if(clr) begin 
+	begin 
+	
+		if(clr) 
+		
+		begin 
 	
 			q <= 1'b0;
 	
-	
 		end 
 		
-		else begin
+		else 
+		
+		begin
 		
 			q <= q_reg;
 		
