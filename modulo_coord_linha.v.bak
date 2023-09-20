@@ -1,0 +1,6 @@
+module modulo_coord_linha_bcd_ex_7Seg(d,clock,clr,prst,q)
+
+	input d,clock,clr,prst;
+	output q;
+
+endmodule 
