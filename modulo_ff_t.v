@@ -1,6 +1,6 @@
-module modulo_ff_d(d,clk,clr,q)
+module modulo_ff_t(t,clk,clr,q)
 
-	input d,clk,clr;
+	input t,clk,clr;
 	output reg q;
 	
 	always @(negedge clk) 
@@ -15,14 +15,22 @@ module modulo_ff_d(d,clk,clr,q)
 	
 		end 
 		
-		else 
+		else if( t )
 		
 		begin
 		
-			q <= d;
+			q <= !q;
 		
 		end
-	
+		
+		else
+		
+		begin
+		
+			q <= q;
+		
+		end
+		
 	
 	end
 

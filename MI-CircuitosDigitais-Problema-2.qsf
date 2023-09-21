@@ -64,3 +64,4 @@ set_global_assignment -name VERILOG_FILE modulo_matriz_reg.v
 set_global_assignment -name VERILOG_FILE modulo_contador_2bits.v
 set_global_assignment -name VERILOG_FILE pbl.v
 set_global_assignment -name VERILOG_FILE modulo_seletor_reg.v
+set_global_assignment -name VERILOG_FILE modulo_ff_t.v
