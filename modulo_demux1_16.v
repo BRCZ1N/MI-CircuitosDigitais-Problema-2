@@ -4,8 +4,6 @@ module modulo_demux1_16(S,E,Y)
 	output [15:0]Y;
 	wire  [3:0]NS;
 	
-	
-	
 	not(NS[0],S[0]);
 	not(NS[1],S[1]);
 	not(NS[2],S[2]);

@@ -6,12 +6,8 @@ module modulo_demux1_4(S,E,Y)
 	wire  [1:0]NS;
 	
 	
-	
 	not(NS[0],S[0]);
 	not(NS[1],S[1]);
-		
-	
-	
 	
 	//p0
 	
@@ -26,6 +22,7 @@ module modulo_demux1_4(S,E,Y)
 	and(Y[2],S[0],NS[1],E);
 	
 	//p3
+	
 	and(Y[3],S[0],S[1],E);
 	
 endmodule 
