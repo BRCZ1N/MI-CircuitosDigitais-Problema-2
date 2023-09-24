@@ -1,4 +1,4 @@
-module modulo_contador_2bits(clr, clk, q);
+module modulo_contador_sync_2_bits(clr, clk, q);
 
 	input clk,clr;
 	output [1:0] q;

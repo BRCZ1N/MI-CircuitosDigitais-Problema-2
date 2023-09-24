@@ -1,4 +1,4 @@
-module modulo_contador_3bits(clr, clk, q);
+module modulo_contador_sync_3_bits(clr, clk, q);
 
 	input clk,clr;
 	output [2:0] q;
@@ -12,6 +12,5 @@ module modulo_contador_3bits(clr, clk, q);
 	
 	modulo_ff_t ff_3(.t(ff1_and_ff2),.clk(clk),.clr(clr),.q(q[2]),);
 
-	and(clr, q[2],q[1],q[0]);
 	
 endmodule 
