@@ -1,4 +1,4 @@
-module modulo_coord_coluna(mdc,cdc)
+module modulo_coord_coluna(mdc,cdc);
 
 	input [2:0] mdc;
 	output [3:0] cdc;
@@ -6,7 +6,7 @@ module modulo_coord_coluna(mdc,cdc)
 	
 	not(nmdc[2],mdc[2]);
 	not(nmdc[1],mdc[1]);
-	not(nmdc[0],mdlc[0]);
+	not(nmdc[0],mdc[0]);
 	
 	//STDIG0_0;
 	

@@ -1,4 +1,4 @@
-module modulo_status_dig_2(std1,stdig1)
+module modulo_status_dig_2(std1,stdig1);
 
 	input [1:0] std1;
 	output [3:0] stdig1;

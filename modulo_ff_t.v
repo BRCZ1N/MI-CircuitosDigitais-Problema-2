@@ -1,4 +1,4 @@
-module modulo_ff_t(t,clk,clr,q)
+module modulo_ff_t(t,clk,clr,q);
 
 	input t,clk,clr;
 	output reg q;

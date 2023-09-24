@@ -1,4 +1,4 @@
-module modulo_ff_d(d,clk,clr,q)
+module modulo_ff_d(d,clk,clr,q);
 
 	input d,clk,clr;
 	output reg q;

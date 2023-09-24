@@ -1,0 +1,186 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "09/23/2023 17:43:40"
+
+// 
+// Device: Altera EPM240T100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module modulo_mux4_1 (
+	input_e,
+	input_sel,
+	out,
+	Ninput_sel_out);
+input 	[3:0] input_e;
+input 	[1:0] input_sel;
+output 	out;
+output 	[1:0] Ninput_sel_out;
+
+// Design Ports Information
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \gate_5|WideOr0~0_combout ;
+wire [1:0] \input_sel~combout ;
+wire [3:0] \input_e~combout ;
+
+
+// Location: PIN_27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \input_sel[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_sel~combout [0]),
+	.padio(input_sel[0]));
+// synopsys translate_off
+defparam \input_sel[0]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_48,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \input_sel[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_sel~combout [1]),
+	.padio(input_sel[1]));
+// synopsys translate_off
+defparam \input_sel[1]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_43,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \input_e[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_e~combout [0]),
+	.padio(input_e[0]));
+// synopsys translate_off
+defparam \input_e[0]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_51,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \input_e[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_e~combout [1]),
+	.padio(input_e[1]));
+// synopsys translate_off
+defparam \input_e[1]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X6_Y1_N2
+maxii_lcell \gate_5|WideOr0~0 (
+// Equation(s):
+// \gate_5|WideOr0~0_combout  = (\input_sel~combout [1] & ((\input_sel~combout [0] & (\input_e~combout [0])) # (!\input_sel~combout [0] & ((\input_e~combout [1])))))
+
+	.clk(gnd),
+	.dataa(\input_sel~combout [0]),
+	.datab(\input_sel~combout [1]),
+	.datac(\input_e~combout [0]),
+	.datad(\input_e~combout [1]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\gate_5|WideOr0~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \gate_5|WideOr0~0 .lut_mask = "c480";
+defparam \gate_5|WideOr0~0 .operation_mode = "normal";
+defparam \gate_5|WideOr0~0 .output_mode = "comb_only";
+defparam \gate_5|WideOr0~0 .register_cascade_mode = "off";
+defparam \gate_5|WideOr0~0 .sum_lutc_input = "datac";
+defparam \gate_5|WideOr0~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_64,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \input_e[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(input_e[2]));
+// synopsys translate_off
+defparam \input_e[2]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \input_e[3]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(input_e[3]));
+// synopsys translate_off
+defparam \input_e[3]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \out~I (
+	.datain(\gate_5|WideOr0~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(out));
+// synopsys translate_off
+defparam \out~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_38,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \Ninput_sel_out[0]~I (
+	.datain(!\input_sel~combout [0]),
+	.oe(vcc),
+	.combout(),
+	.padio(Ninput_sel_out[0]));
+// synopsys translate_off
+defparam \Ninput_sel_out[0]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_49,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \Ninput_sel_out[1]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(Ninput_sel_out[1]));
+// synopsys translate_off
+defparam \Ninput_sel_out[1]~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule

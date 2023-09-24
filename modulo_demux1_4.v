@@ -1,4 +1,4 @@
-module modulo_demux1_4(S,E,Y)
+module modulo_demux1_4(S,E,Y);
 
 	
 	input [1:0]S, E;

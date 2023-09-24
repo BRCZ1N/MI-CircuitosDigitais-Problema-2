@@ -1,8 +1,8 @@
-module modulo_demux1_16(S,E,Y)
+module modulo_demux1_16(S,E,Y);
 
-	input [3:0]S, E;
-	output [15:0]Y;
-	wire  [3:0]NS;
+	input [3:0] S, E;
+	output [15:0] Y;
+	wire  [3:0] NS;
 	
 	not(NS[0],S[0]);
 	not(NS[1],S[1]);
@@ -36,7 +36,7 @@ module modulo_demux1_16(S,E,Y)
 	
 	wire NS1_and_S2_and_NS3;
 	and(NS1_and_S2_and_NS3,NS[0],S[1],NS[2]);
-	and((Y[4],NS1_and_S2_and_NS3,NS4_and_E);
+	and(Y[4],NS1_and_S2_and_NS3,NS4_and_E);
 	
 	//p5
 	

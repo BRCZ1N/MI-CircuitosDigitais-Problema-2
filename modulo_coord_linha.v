@@ -1,4 +1,4 @@
-module modulo_coord_linha(mdl,cdl)
+module modulo_coord_linha(mdl,cdl);
 
 	input [2:0] mdl;
 	output [3:0] cdl;
