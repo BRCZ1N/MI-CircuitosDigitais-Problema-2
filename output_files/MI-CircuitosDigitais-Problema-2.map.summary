@@ -1,9 +1,5 @@
-Analysis & Synthesis Status : Successful - Sat Sep 23 17:49:58 2023
+Analysis & Synthesis Status : Failed - Sat Sep 23 22:20:29 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
 Top-level Entity Name : modulo_ff_d
 Family : MAX II
-Total logic elements : 1
-Total pins : 4
-Total virtual pins : 0
-UFM blocks : 0 / 1 ( 0 % )
