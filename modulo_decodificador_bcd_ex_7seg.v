@@ -3,109 +3,112 @@ module modulo_decodificador_bcd_ex_7Seg(D7SEG, OUT_SEGS);
 	input [3:0] D7SEG;
 	output [7:0] OUT_SEGS;
 	wire [3:0] ND7SEG;
+	wire[26:0] and_gate
 	
 	not(ND7SEG[3],D7SEG[3]);
 	not(ND7SEG[2],D7SEG[2]);
 	not(ND7SEG[1],D7SEG[1]);
 	not(ND7SEG[0],D7SEG[0]);
 	
+	
+	
 	wire and_gate_1, and_gate_2, and_gate_3, and_gate_4, and_gate_5, and_gate_6, and_gate_7, and_gate_8, and_gate_9, and_gate_10, and_gate_11;
 	wire and_gate_12, and_gate_13, and_gate_14, and_gate_15, and_gate_16, and_gate_17, and_gate_18, and_gate_19, and_gate_20, and_gate_21;
-	wire and_gate_22, and_gate_23, and_gate_24, and_gate_25, and_gate_26, and_gate_27;
+	wire and_gate_22, and_gate_23, and_gate_24, and_gate_25, and_gate_26, and_gate_27, and_gate_28, and_gate_29, and_gate_30, and_gate_31;
+	wire 
 	
 	
 	//A
 	
-	and_gate_4_inputs gate_1(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(ND7SEG[1]),.D(ND7SEG[0]),.S(and_gate_1),);
+	and_gate_4_inputs gate_1(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(ND7SEG[1]),.D(ND7SEG[0]),.S(and_gate[26]),);
 	
-	and_gate_3_inputs gate_2(.A(D7SEG[2]),.B(ND7SEG[1]),.C(ND7SEG[0]),.S(and_gate_2),);
+	and_gate_3_inputs gate_2(.A(D7SEG[2]),.B(ND7SEG[1]),.C(ND7SEG[0]),.S(and_gate[25]),);
 	
-	and_gate_3_inputs gate_3(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate_3),);
+	and_gate_3_inputs gate_3(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate[24]),);
 	
-	or_gate_3_inputs gate_4(.A(and_gate_1),.B(and_gate_2),.C(and_gate_3),.S(OUT_SEGS[7]),);	
+	or_gate_3_inputs gate_4(.A(and_gate[26]),.B(and_gate[25]),.C(and_gate[24]),.S(OUT_SEGS[7]),);	
 	
 	
 	//B
 	
-	and_gate_4_inputs gate_5(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.D(D7SEG[0]),.S(and_gate_4),);
+	and_gate_4_inputs gate_5(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.D(D7SEG[0]),.S(and_gate[23]),);
 	
-	and_gate_3_inputs gate_6(.A(D7SEG[2]),.B(D7SEG[1]),.C(ND7SEG[0]),.S(and_gate_5),);
+	and_gate_3_inputs gate_6(.A(D7SEG[2]),.B(D7SEG[1]),.C(ND7SEG[0]),.S(and_gate[22]),);
 	
-	and_gate_3_inputs gate_7(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate_6),);
+	and_gate_3_inputs gate_7(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate[21]),);
 	
-	or_gate_4_inputs gate_8(.A(and_gate_4),.B(and_gate_5),.C(and_gate_6),.S(OUT_SEGS[6]),);
+	or_gate_4_inputs gate_8(.A(and_gate[23]),.B(and_gate[22]),.C(and_gate[21]),.S(OUT_SEGS[6]),);
 	
 	//C
 	
-	and_gate_4_inputs gate_7(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(D7SEG[1]),.D(ND7SEG[0]),.S(and_gate_7),);
+	and_gate_4_inputs gate_7(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(D7SEG[1]),.D(ND7SEG[0]),.S(and_gate[20]),);
 	
-	and_gate_3_inputs gate_8(.A(D7SEG[3]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate_8),);
+	and_gate_3_inputs gate_8(.A(D7SEG[3]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[19]),);
 	
-	and_gate_3_inputs gate_9(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate_9),);
+	and_gate_3_inputs gate_9(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate[18]),);
 	
-	and_gate_3_inputs gate_10(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate_10),);
+	and_gate_3_inputs gate_10(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate[17]),);
 	
-	or_gate_4_inputs gate_11(.A(and_gate_7),.B(and_gate_8),.C(and_gate_9),.D(and_gate_10),.S(OUT_SEGS[5]),);
+	or_gate_4_inputs gate_11(.A(and_gate[20]),.B(and_gate[19]),.C(and_gate[18]),.D(and_gate[17]),.S(OUT_SEGS[5]),);
 	
 	
 	//D
 	
-	and_gate_4_inputs gate_11(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(ND7SEG[1]),.D(D7SEG[0]),.S(and_gate_11),);
+	and_gate_4_inputs gate_12(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(ND7SEG[1]),.D(D7SEG[0]),.S(and_gate[16]),);
 	
-	and_gate_4_inputs gate_12(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.D(ND7SEG[0]),.S(and_gate_12),);
+	and_gate_4_inputs gate_13(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.D(ND7SEG[0]),.S(and_gate[15]),);
 	
-	and_gate_3_inputs gate_13(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate_13),);
+	and_gate_3_inputs gate_14(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[14]),);
 	
-	and_gate_2_inputs gate_14(.A(D7SEG[3]),.B(D7SEG[1]),.S(and_gate_14),);
+	and_gate_2_inputs gate_15(.A(D7SEG[3]),.B(D7SEG[1]),.S(and_gate[13]),);
 	
-	and_gate_3_inputs gate_15(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate_15),);
+	and_gate_3_inputs gate_16(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate[12]),);
 	
-	or_gate_5_inputs gate_16(.A(and_gate_11),.B(and_gate_12),.C(and_gate_13),.D(and_gate_14),.E(and_gate_15),.S(OUT_SEGS[4]),);
+	or_gate_5_inputs gate_17(.A(and_gate[16]),.B(and_gate[15]),.C(and_gate[14]),.D(and_gate[13]),.E(and_gate[12]),.S(OUT_SEGS[4]),);
 	
 	
 	//E
 	
-	and_gate_2_inputs gate_16(.A(ND7SEG[3]),.B(D7SEG[0]),.S(and_gate_16),);
+	and_gate_2_inputs gate_18(.A(ND7SEG[3]),.B(D7SEG[0]),.S(and_gate[11]),);
 	
-	and_gate_3_inputs gate_17(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.S(and_gate_17),);
+	and_gate_3_inputs gate_19(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.S(and_gate[10]),);
 	
-	and_gate_3_inputs gate_18(.A(ND7SEG[2]),.B(ND7SEG[1]),.C(D7SEG[0]),.S(and_gate_18),);
+	and_gate_3_inputs gate_20(.A(ND7SEG[2]),.B(ND7SEG[1]),.C(D7SEG[0]),.S(and_gate[9]),);
 	
-	and_gate_3_inputs gate_19(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate_19),);
+	and_gate_3_inputs gate_21(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate[8]),);
 	
-	or_gate_4_inputs gate_20(.A(and_gate_16),.B(and_gate_17),.C(and_gate_18),.D(and_gate_19),.S(OUT_SEGS[3]),);
+	or_gate_4_inputs gate_22(.A(and_gate[11]),.B(and_gate[10]),.C(and_gate[9]),.D(and_gate[8]),.S(OUT_SEGS[3]),);
 	
 	
 	//F
 	
-	and_gate_3_inputs gate_21(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[0]),.S(and_gate_20),);
+	and_gate_3_inputs gate_23(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[0]),.S(and_gate[7]),);
 	
-	and_gate_3_inputs gate_22(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(D7SEG[1]),.S(and_gate_21),);
+	and_gate_3_inputs gate_24(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(D7SEG[1]),.S(and_gate[6]),);
 	
-	and_gate_3_inputs gate_23(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate_22),);
+	and_gate_3_inputs gate_25(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate[5]),);
 	
-	and_gate_3_inputs gate_24(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate_23),);
+	and_gate_3_inputs gate_26(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[4]),);
 	
-	or_gate_4_inputs gate_25(.A(and_gate_20),.B(and_gate_21),.C(and_gate_22),.D(and_gate_23),.S(OUT_SEGS[2]),);
+	or_gate_4_inputs gate_27(.A(and_gate[7]),.B(and_gate[6]),.C(and_gate[5]),.D(and_gate[4]),.S(OUT_SEGS[2]),);
 	
 	
 	//G
 	
-	and_gate_3_inputs gate_24(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.S(and_gate_24),);
+	and_gate_3_inputs gate_28(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.S(and_gate[3]),);
 	
-	and_gate_3_inputs gate_25(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate_25),);
+	and_gate_3_inputs gate_29(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[2]),);
 	
-	and_gate_3_inputs gate_26(.A(D7SEG[3]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate_26),);
+	and_gate_3_inputs gate_30(.A(D7SEG[3]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[1]),);
 	
-	and_gate_3_inputs gate_27(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate_27),);
+	and_gate_3_inputs gate_31(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate[0]),);
 	
-	or_gate_4_inputs gate_28(.A(and_gate_24),.B(and_gate_25),.C(and_gate_26),.D(and_gate_27),.S(OUT_SEGS[1]),);
+	or_gate_4_inputs gate_32(.A(and_gate[3]),.B(and_gate[2]),.C(and_gate[1]),.D(and_gate[0]),.S(OUT_SEGS[1]),);
 	
 	
 	//DP
 	
-	
-	and_gate_2_inputs gate_29(.A(1'b1),.B(1'b1),.S(OUT_SEGS[0]),);
+	and_gate_2_inputs gate_33(.A(1'b1),.B(1'b1),.S(OUT_SEGS[0]),);
 	
 	
 
