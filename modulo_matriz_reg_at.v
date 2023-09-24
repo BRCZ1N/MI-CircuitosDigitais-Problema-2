@@ -1,4 +1,4 @@
-module modulo_matriz_reg(m_in,clk,clr,m_out);
+module modulo_matriz_reg_at (m_in,clk,clr,m_out);
 
 	input [34:0] m_in,clk;
 	input clr;
