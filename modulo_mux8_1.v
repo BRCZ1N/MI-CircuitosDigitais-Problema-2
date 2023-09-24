@@ -10,6 +10,7 @@ module modulo_mux8_1(input_e,input_sel,out);
 	not(Ninput_sel[1],input_sel[1]);
 	not(Ninput_sel[0],input_sel[0]);
 	
+	
 	and_gate_3_inputs gate_1(.A(input_e[7]),.B(input_sel[2]),.C(input_sel[1]),.D(input_sel[0]),.S(gate_wire_and[7]),);
 	
 	and_gate_3_inputs gate_2(.A(input_e[6]),.B(input_sel[2]),.C(input_sel[1]),.D(Ninput_sel[0]),.S(gate_wire_and[6]),);
@@ -25,7 +26,6 @@ module modulo_mux8_1(input_e,input_sel,out);
 	and_gate_3_inputs gate_7(.A(input_e[1]),.B(Ninput_sel[2]),.C(Ninput_sel[1]),.D(input_sel[0]),.S(gate_wire_and[1]),);
 	
 	and_gate_3_inputs gate_8(.A(input_e[0]),.B(Ninput_sel[2]),.C(Ninput_sel[1]),.D(Ninput_sel[0]),.S(gate_wire_and[0]),);
-
 
 	
 	or_gate_4_inputs gate_10(.A(gate_wire_and[7]),.B(gate_wire_and[6]),.C(gate_wire_and[5]),.D(gate_wire_and[4]),.S(gate_wire_or[1]),);

@@ -13,12 +13,12 @@ module modulo_coord_linha(mdl,cdl);
 	and_gate_2_inputs gate_1(.A(1'b0),.B(1'b0),.S(cdl[3]),);
 	
 	//STDIG0_1;
-	and_gate_2_inputs gate_1(.A(mdl[2]),.B(1'b1),.S(cdl[2]),);
+	and_gate_2_inputs gate_2(.A(mdl[2]),.B(1'b1),.S(cdl[2]),);
 	
 	//STDIG0_2;
-	and_gate_2_inputs gate_1(.A(mdl[1]),.B(1'b1),.S(cdl[1]),);
+	and_gate_2_inputs gate_3(.A(mdl[1]),.B(1'b1),.S(cdl[1]),);
 	
 	//STDIG0_3
-	and_gate_2_inputs gate_1(.A(mdl[0]),.B(1'b1),.S(cdl[0]),);
+	and_gate_2_inputs gate_4(.A(mdl[0]),.B(1'b1),.S(cdl[0]),);
 
 endmodule 

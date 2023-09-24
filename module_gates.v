@@ -26,6 +26,26 @@ module or_gate_4_inputs(A,B,C,D,S);
 
 endmodule
 
+module or_gate_3_inputs(A,B,C,S);
+
+	input A,B,C;
+	output S;
+	
+	or(S,A,B,C);
+
+
+endmodule
+
+module or_gate_5_inputs(A,B,C,D,E,S);
+
+	input A,B,C,D,E;
+	output S;
+	
+	or(S,A,B,C,E,D);
+
+
+endmodule
+
 module and_gate_2_inputs(A,B,S);
 
 	input A,B;
@@ -35,6 +55,7 @@ module and_gate_2_inputs(A,B,S);
 	
 	
 endmodule 
+
 
 module and_gate_5_inputs(A,B,C,D,E,S);
 
