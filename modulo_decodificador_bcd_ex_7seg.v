@@ -12,7 +12,7 @@ module modulo_decodificador_bcd_ex_7seg(D7SEG, OUT_SEGS);
 	
 	//A
 	
-	and_gate_4_inputs gate_1(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(ND7SEG[1]),.D(ND7SEG[0]),.S(and_gate[26]),);
+	and_gate_4_inputs gate_1(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(ND7SEG[1]),.D(D7SEG[0]),.S(and_gate[26]),);
 	
 	and_gate_3_inputs gate_2(.A(D7SEG[2]),.B(ND7SEG[1]),.C(ND7SEG[0]),.S(and_gate[25]),);
 	
@@ -74,11 +74,11 @@ module modulo_decodificador_bcd_ex_7seg(D7SEG, OUT_SEGS);
 	
 	//F
 	
-	and_gate_3_inputs gate_25(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[0]),.S(and_gate[7]),);
+	and_gate_3_inputs gate_25(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(D7SEG[0]),.S(and_gate[7]),);
 	
 	and_gate_3_inputs gate_26(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(D7SEG[1]),.S(and_gate[6]),);
 	
-	and_gate_3_inputs gate_27(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate[5]),);
+	and_gate_3_inputs gate_27(.A(D7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[0]),.S(and_gate[5]),);
 	
 	and_gate_3_inputs gate_28(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[4]),);
 	
@@ -87,11 +87,11 @@ module modulo_decodificador_bcd_ex_7seg(D7SEG, OUT_SEGS);
 	
 	//G
 	
-	and_gate_3_inputs gate_30(.A(ND7SEG[3]),.B(D7SEG[2]),.C(ND7SEG[1]),.S(and_gate[3]),);
+	and_gate_3_inputs gate_30(.A(ND7SEG[3]),.B(ND7SEG[2]),.C(ND7SEG[1]),.S(and_gate[3]),);
 	
 	and_gate_3_inputs gate_31(.A(D7SEG[2]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[2]),);
 	
-	and_gate_3_inputs gate_32(.A(D7SEG[3]),.B(D7SEG[1]),.C(D7SEG[0]),.S(and_gate[1]),);
+	and_gate_3_inputs gate_32(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[0]),.S(and_gate[1]),);
 	
 	and_gate_3_inputs gate_33(.A(D7SEG[3]),.B(D7SEG[2]),.C(D7SEG[1]),.S(and_gate[0]),);
 	

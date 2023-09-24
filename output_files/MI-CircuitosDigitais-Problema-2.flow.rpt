@@ -1,5 +1,5 @@
 Flow report for MI-CircuitosDigitais-Problema-2
-Sun Sep 24 02:24:47 2023
+Sun Sep 24 04:22:52 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Sun Sep 24 02:24:45 2023       ;
+; Flow Status           ; Successful - Sun Sep 24 04:22:50 2023       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; MI-CircuitosDigitais-Problema-2             ;
-; Top-level Entity Name ; modulo_decodificador_bcd_ex_7seg            ;
+; Top-level Entity Name ; modulo_status                               ;
 ; Family                ; MAX II                                      ;
 ; Device                ; EPM240T100C5                                ;
 ; Timing Models         ; Final                                       ;
-; Total logic elements  ; 7 / 240 ( 3 % )                             ;
-; Total pins            ; 12 / 80 ( 15 % )                            ;
+; Total logic elements  ; 1 / 240 ( < 1 % )                           ;
+; Total pins            ; 6 / 80 ( 8 % )                              ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
 +-----------------------+---------------------------------------------+
@@ -59,25 +59,25 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------------------+
 ; Option            ; Setting                         ;
 +-------------------+---------------------------------+
-; Start date & time ; 09/24/2023 02:24:33             ;
+; Start date & time ; 09/24/2023 04:22:42             ;
 ; Main task         ; Compilation                     ;
 ; Revision Name     ; MI-CircuitosDigitais-Problema-2 ;
 +-------------------+---------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                      ;
-+---------------------------------------+----------------------------------+---------------------------------+-------------+------------+
-; Assignment Name                       ; Value                            ; Default Value                   ; Entity Name ; Section Id ;
-+---------------------------------------+----------------------------------+---------------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 66504338632076.169553307311784   ; --                              ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP                ; 85                               ; --                              ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP                ; 0                                ; --                              ; --          ; --         ;
-; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                             ; --                              ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION         ; No Heat Sink With Still Air      ; --                              ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY              ; output_files                     ; --                              ; --          ; --         ;
-; TOP_LEVEL_ENTITY                      ; modulo_decodificador_bcd_ex_7seg ; MI-CircuitosDigitais-Problema-2 ; --          ; --         ;
-+---------------------------------------+----------------------------------+---------------------------------+-------------+------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                    ;
++---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
+; Assignment Name                       ; Value                          ; Default Value                   ; Entity Name ; Section Id ;
++---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
+; COMPILER_SIGNATURE_ID                 ; 66504338632076.169554016219216 ; --                              ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                             ; --                              ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                              ; --                              ; --          ; --         ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                           ; --                              ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION         ; No Heat Sink With Still Air    ; --                              ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY              ; output_files                   ; --                              ; --          ; --         ;
+; TOP_LEVEL_ENTITY                      ; modulo_status                  ; MI-CircuitosDigitais-Problema-2 ; --          ; --         ;
++---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -85,11 +85,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4704 MB             ; 00:00:16                           ;
-; Fitter               ; 00:00:02     ; 1.0                     ; 6134 MB             ; 00:00:01                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 4650 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4669 MB             ; 00:00:01                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4701 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:00     ; 1.0                     ; 6142 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4649 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4668 MB             ; 00:00:00                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
