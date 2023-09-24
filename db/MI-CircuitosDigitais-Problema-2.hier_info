@@ -1,57 +1,21 @@
-|modulo_status
-std0[0] => std0[0].IN2
-std0[1] => std0[1].IN3
-stdig0[0] << and_gate_2_inputs:gate_8.S
-stdig0[1] << or_gate_2_inputs:gate_7.S
-stdig0[2] << or_gate_2_inputs:gate_4.S
-stdig0[3] << and_gate_2_inputs:gate_1.S
+|modulo_contador_sync_2_bits
+clr => clr.IN2
+clk => clk.IN2
+q[0] << q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] << modulo_ff_t:ff_2.q
 
 
-|modulo_status|and_gate_2_inputs:gate_1
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|modulo_contador_sync_2_bits|modulo_ff_t:ff_1
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_status|and_gate_2_inputs:gate_2
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_status|and_gate_2_inputs:gate_3
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_status|or_gate_2_inputs:gate_4
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_status|and_gate_2_inputs:gate_5
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_status|and_gate_2_inputs:gate_6
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_status|or_gate_2_inputs:gate_7
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_status|and_gate_2_inputs:gate_8
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|modulo_contador_sync_2_bits|modulo_ff_t:ff_2
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

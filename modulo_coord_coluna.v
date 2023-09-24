@@ -11,7 +11,6 @@ module modulo_coord_coluna(mdc,cdc);
 	//STDIG0_0;
 	
 	and_gate_2_inputs gate_1(.A(1'b0),.B(1'b0),.S(cdc[3]),);
-	and(cdc[3], 1'b0,1'b0);
 	
 	//STDIG0_1;
 	and_gate_2_inputs gate_2(.A(mdc[2]),.B(1'b1),.S(cdc[2]),);

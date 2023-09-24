@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Sun Sep 24 04:22:48 2023
+Analysis & Synthesis Status : Successful - Sun Sep 24 05:14:17 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_status
+Top-level Entity Name : modulo_contador_sync_2_bits
 Family : MAX II
-Total logic elements : 1
-Total pins : 6
+Total logic elements : 2
+Total pins : 4
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
