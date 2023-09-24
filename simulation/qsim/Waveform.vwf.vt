@@ -18,76 +18,74 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/24/2023 03:34:13"
+// Generated on "09/24/2023 05:33:19"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_decodificador_bcd_ex_7seg
+// Verilog Test Bench (with test vectors) for design :                          modulo_mux4_1
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_decodificador_bcd_ex_7seg_vlg_vec_tst();
+module modulo_mux4_1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [3:0] D7SEG;
+reg [3:0] input_e;
+reg [1:0] input_sel;
 // wires                                               
-wire [7:0] OUT_SEGS;
+wire out;
 
 // assign statements (if any)                          
-modulo_decodificador_bcd_ex_7seg i1 (
+modulo_mux4_1 i1 (
 // port map - connection between master ports and signals/registers   
-	.D7SEG(D7SEG),
-	.OUT_SEGS(OUT_SEGS)
+	.input_e(input_e),
+	.input_sel(input_sel),
+	.out(out)
 );
 initial 
 begin 
 #160000 $finish;
 end 
-// D7SEG[ 3 ]
+// input_e[ 3 ]
 initial
 begin
-	D7SEG[3] = 1'b0;
-	D7SEG[3] = #80000 1'b1;
+	input_e[3] = 1'b1;
+	input_e[3] = #10000 1'b0;
 end 
-// D7SEG[ 2 ]
+// input_e[ 2 ]
 initial
 begin
-	D7SEG[2] = 1'b0;
-	D7SEG[2] = #40000 1'b1;
-	D7SEG[2] = #40000 1'b0;
-	D7SEG[2] = #40000 1'b1;
+	input_e[2] = 1'b0;
+	input_e[2] = #10000 1'b1;
+	input_e[2] = #10000 1'b0;
 end 
-// D7SEG[ 1 ]
+// input_e[ 1 ]
 initial
 begin
-	D7SEG[1] = 1'b0;
-	D7SEG[1] = #20000 1'b1;
-	D7SEG[1] = #20000 1'b0;
-	D7SEG[1] = #20000 1'b1;
-	D7SEG[1] = #20000 1'b0;
-	D7SEG[1] = #20000 1'b1;
-	D7SEG[1] = #20000 1'b0;
-	D7SEG[1] = #20000 1'b1;
+	input_e[1] = 1'b0;
+	input_e[1] = #20000 1'b1;
+	input_e[1] = #10000 1'b0;
 end 
-// D7SEG[ 0 ]
+// input_e[ 0 ]
 initial
 begin
-	D7SEG[0] = 1'b0;
-	D7SEG[0] = #10000 1'b1;
-	D7SEG[0] = #10000 1'b0;
-	D7SEG[0] = #10000 1'b1;
-	D7SEG[0] = #10000 1'b0;
-	D7SEG[0] = #10000 1'b1;
-	D7SEG[0] = #10000 1'b0;
-	D7SEG[0] = #10000 1'b1;
-	D7SEG[0] = #10000 1'b0;
-	D7SEG[0] = #10000 1'b1;
-	D7SEG[0] = #10000 1'b0;
-	D7SEG[0] = #10000 1'b1;
-	D7SEG[0] = #10000 1'b0;
-	D7SEG[0] = #10000 1'b1;
-	D7SEG[0] = #10000 1'b0;
-	D7SEG[0] = #10000 1'b1;
+	input_e[0] = 1'b0;
+	input_e[0] = #30000 1'b1;
+	input_e[0] = #10000 1'b0;
+end 
+// input_sel[ 1 ]
+initial
+begin
+	input_sel[1] = 1'b0;
+	input_sel[1] = #10000 1'b1;
+	input_sel[1] = #20000 1'b0;
+end 
+// input_sel[ 0 ]
+initial
+begin
+	input_sel[0] = 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
 end 
 endmodule
 
