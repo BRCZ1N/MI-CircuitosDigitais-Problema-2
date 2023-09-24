@@ -69,3 +69,4 @@ set_global_assignment -name VERILOG_FILE module_gates.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VERILOG_FILE modulo_contador_mod_6.v
 set_global_assignment -name VERILOG_FILE "module modulo_contador_mod_4.v"
+set_global_assignment -name VERILOG_FILE modulo_mux8_1.v
