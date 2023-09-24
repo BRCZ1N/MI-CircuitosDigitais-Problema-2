@@ -9,20 +9,25 @@ module modulo_status(std0,stdig0);
 	
 	//STDIG0_0;
 	
-	and(stdig0[3], 1'b1,1'b1);
+	and_gate_2_inputs gate_1(.A(1'b1),.B(1'b1),.S(stdig0[3]),);
 	
 	//STDIG0_1;
-	and(nstd0_and_nstd1,nstd0[0],nstd0[1]);
-	and(std0_and_std1,std0[0],std0[1]);
-	or(stdig0[2],nstd0_and_nstd1,std0_and_std1);
-	//STDIG0_2;
-	and(nstd0_and_std1,nstd0[0],std0[1]);
-	and(std0_and_nstd1,std0[0],nstd0[1]);
-	or(stdig0[1],nstd0_and_std1,std0_and_nstd1);
 	
+	and_gate_2_inputs gate_2(.A(nstd0[0]),.B(nstd0[1]),.S(nstd0_and_nstd1),);
+	and_gate_2_inputs gate_3(.A(std0[0]),.B(std0[1]),.S(std0_and_std1),);
+	
+	or_gate_2_inputs gate_4(.A(nstd0_and_nstd1),.B(std0_and_std1),.S(stdig0[2]),);
+	
+	//STDIG0_2;
+	
+	and_gate_2_inputs gate_5(.A(nstd0[0]),.B(std0[1]),.S(nstd0_and_std1),);
+	and_gate_2_inputs gate_6(.A(std0[0]),.B(nstd0[1]),.S(std0_and_nstd1),);
+	
+	or_gate_2_inputs gate_7(.A(nstd0_and_std1),.B(std0_and_nstd1),.S(stdig0[1]),);
 	
 	//STDIG0_3
-	and(stdig0[0],std0[1]);
+	
+	and_gate_2_inputs gate_8(.A(std0[1]),.B(1'b1),.S(stdig0[0]),);
 	
 	
 endmodule 

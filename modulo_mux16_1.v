@@ -11,7 +11,6 @@ module modulo_mux16_1(input_e,input_sel, out);
 	not(Ninput_sel[1],input_sel[1]);
 	not(Ninput_sel[0],input_sel[0]);
 	
-	
 	and_gate_5_inputs gate_1(.A(input_e[15]),.B(Ninput_sel[3]),.C(Ninput_sel[2]),.D(Ninput_sel[1]),.E(Ninput_sel[0]),.S(gate_wire_and[15]),);
 	
 	and_gate_5_inputs gate_2(.A(input_e[14]),.B(Ninput_sel[3]),.C(Ninput_sel[2]),.D(Ninput_sel[1]),.E(input_sel[0]),.S(gate_wire_and[14]),);

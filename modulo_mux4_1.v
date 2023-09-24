@@ -9,8 +9,6 @@ module modulo_mux4_1(input_e,input_sel,out);
 	not(Ninput_sel[1],input_sel[1]);
 	not(Ninput_sel[0],input_sel[0]);
 	
-	assign Ninput_sel_out = Ninput_sel;
-	
 	and_gate_3_inputs gate_1(.A(input_e[3]),.B(Ninput_sel[1]),.C(Ninput_sel[0]),.S(gate_wire_and[3]),);
 	
 	and_gate_3_inputs gate_2(.A(input_e[2]),.B(Ninput_sel[1]),.C(input_sel[0]),.S(gate_wire_and[2]),);

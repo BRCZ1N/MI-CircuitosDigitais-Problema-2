@@ -1,10 +1,8 @@
 module modulo_demux1_4(S,E,Y);
 
-	
 	input [1:0]S, E;
 	output [3:0]Y;
 	wire  [1:0]NS;
-	
 	
 	not(NS[0],S[0]);
 	not(NS[1],S[1]);

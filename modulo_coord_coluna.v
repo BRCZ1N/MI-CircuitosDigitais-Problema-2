@@ -10,15 +10,16 @@ module modulo_coord_coluna(mdc,cdc);
 	
 	//STDIG0_0;
 	
+	and_gate_2_inputs gate_1(.A(1'b0),.B(1'b0),.S(cdc[3]),);
 	and(cdc[3], 1'b0,1'b0);
 	
 	//STDIG0_1;
-	and(cdc[2],mdc[2],1'b1);
+	and_gate_2_inputs gate_1(.A(mdc[2]),.B(1'b1),.S(cdc[2]),);
 	
 	//STDIG0_2;
-	and(cdc[1],mdc[1],1'b1);
+	and_gate_2_inputs gate_1(.A(mdc[1]),.B(1'b1),.S(cdc[1]),);
 	
 	//STDIG0_3
-	and(cdc[0],mdc[0],1'b1);
+	and_gate_2_inputs gate_1(.A(mdc[0]),.B(1'b1),.S(cdc[0]),);
 
 endmodule 
