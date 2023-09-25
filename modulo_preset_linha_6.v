@@ -6,7 +6,7 @@ module modulo_preset_linha_6 (HH,cl6);
 
 	not(NHH[1],HH[1]);
 	not(NHH[0],HH[0]);
-	wire NHH1_and_HH2,HH1_and_NHH2
+	wire NHH1_and_HH2,HH1_and_NHH2;
 //cl61
 	and_gate_2_inputs gate_1(.A(NHH[0]),.B(HH[1]),.S(NHH1_and_HH2),);	
 	and_gate_2_inputs gate_2(.A(HH[0]),.B(NHH[1]),.S(HH1_and_NHH2),);	
