@@ -1,6 +1,7 @@
 module modulo_demux1_16(S,E,Y);
 
-	input [3:0] S, E;
+	input E;
+	input [3:0] S;
 	output [15:0] Y;
 	wire  [3:0] NS;
 	

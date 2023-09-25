@@ -1,8 +1,7 @@
-module modulo_preset_linha_1 (HH,Cl1);
-
+module modulo_preset_linha_1 (HH,cl1);
 
 	input [1:0] HH;
-	output [4:0]cl1;
+	output [4:0] cl1;
 	wire[1:0] NHH;
 
 	not(NHH[1],HH[1]);

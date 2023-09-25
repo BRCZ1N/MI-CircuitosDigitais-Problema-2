@@ -1,5 +1,5 @@
 Flow report for MI-CircuitosDigitais-Problema-2
-Mon Sep 25 02:31:00 2023
+Mon Sep 25 03:40:39 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,13 +40,17 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Flow Failed - Mon Sep 25 02:31:00 2023      ;
+; Flow Status           ; Successful - Mon Sep 25 03:40:38 2023       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name ; pbl                                         ;
 ; Family                ; MAX II                                      ;
 ; Device                ; EPM240T100C5                                ;
 ; Timing Models         ; Final                                       ;
+; Total logic elements  ; 1 / 240 ( < 1 % )                           ;
+; Total pins            ; 22 / 80 ( 28 % )                            ;
+; Total virtual pins    ; 0                                           ;
+; UFM blocks            ; 0 / 1 ( 0 % )                               ;
 +-----------------------+---------------------------------------------+
 
 
@@ -55,7 +59,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------------------+
 ; Option            ; Setting                         ;
 +-------------------+---------------------------------+
-; Start date & time ; 09/25/2023 02:28:35             ;
+; Start date & time ; 09/25/2023 03:40:29             ;
 ; Main task         ; Compilation                     ;
 ; Revision Name     ; MI-CircuitosDigitais-Problema-2 ;
 +-------------------+---------------------------------+
@@ -66,7 +70,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
 ; Assignment Name                       ; Value                          ; Default Value                   ; Entity Name ; Section Id ;
 +---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 66504338632076.169561971525124 ; --                              ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                 ; 66504338632076.169562402923912 ; --                              ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP                ; 85                             ; --                              ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP                ; 0                              ; --                              ; --          ; --         ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                           ; --                              ; --          ; --         ;
@@ -81,9 +85,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4689 MB             ; 00:00:16                           ;
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4689 MB             ; 00:00:16                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4704 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:01     ; 1.0                     ; 6136 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4649 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:00     ; 1.0                     ; 4669 MB             ; 00:00:01                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -93,7 +99,9 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -101,7 +109,9 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
-quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
+quartus_fit --read_settings_files=off --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
+quartus_asm --read_settings_files=off --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
+quartus_sta MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 
 
 
