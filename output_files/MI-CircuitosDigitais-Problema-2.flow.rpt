@@ -1,5 +1,5 @@
 Flow report for MI-CircuitosDigitais-Problema-2
-Mon Sep 25 03:40:39 2023
+Tue Sep 26 17:15:58 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Mon Sep 25 03:40:38 2023       ;
+; Flow Status           ; Successful - Tue Sep 26 17:15:58 2023       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; MI-CircuitosDigitais-Problema-2             ;
-; Top-level Entity Name ; pbl                                         ;
+; Top-level Entity Name ; modulo_contador_sync_2_bits                 ;
 ; Family                ; MAX II                                      ;
 ; Device                ; EPM240T100C5                                ;
 ; Timing Models         ; Final                                       ;
-; Total logic elements  ; 1 / 240 ( < 1 % )                           ;
-; Total pins            ; 22 / 80 ( 28 % )                            ;
+; Total logic elements  ; 2 / 240 ( < 1 % )                           ;
+; Total pins            ; 4 / 80 ( 5 % )                              ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
 +-----------------------+---------------------------------------------+
@@ -59,25 +59,25 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------------------+
 ; Option            ; Setting                         ;
 +-------------------+---------------------------------+
-; Start date & time ; 09/25/2023 03:40:29             ;
+; Start date & time ; 09/26/2023 17:14:48             ;
 ; Main task         ; Compilation                     ;
 ; Revision Name     ; MI-CircuitosDigitais-Problema-2 ;
 +-------------------+---------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                    ;
-+---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
-; Assignment Name                       ; Value                          ; Default Value                   ; Entity Name ; Section Id ;
-+---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 66504338632076.169562402923912 ; --                              ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP                ; 85                             ; --                              ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP                ; 0                              ; --                              ; --          ; --         ;
-; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                           ; --                              ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION         ; No Heat Sink With Still Air    ; --                              ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY              ; output_files                   ; --                              ; --          ; --         ;
-; TOP_LEVEL_ENTITY                      ; pbl                            ; MI-CircuitosDigitais-Problema-2 ; --          ; --         ;
-+---------------------------------------+--------------------------------+---------------------------------+-------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                   ;
++---------------------------------------+-------------------------------+---------------------------------+-------------+------------+
+; Assignment Name                       ; Value                         ; Default Value                   ; Entity Name ; Section Id ;
++---------------------------------------+-------------------------------+---------------------------------+-------------+------------+
+; COMPILER_SIGNATURE_ID                 ; 2499175950293.169575928824060 ; --                              ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                            ; --                              ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                             ; --                              ; --          ; --         ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                          ; --                              ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION         ; No Heat Sink With Still Air   ; --                              ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY              ; output_files                  ; --                              ; --          ; --         ;
+; TOP_LEVEL_ENTITY                      ; modulo_contador_sync_2_bits   ; MI-CircuitosDigitais-Problema-2 ; --          ; --         ;
++---------------------------------------+-------------------------------+---------------------------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -85,11 +85,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4704 MB             ; 00:00:17                           ;
-; Fitter               ; 00:00:01     ; 1.0                     ; 6136 MB             ; 00:00:01                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 4649 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:00     ; 1.0                     ; 4669 MB             ; 00:00:01                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4703 MB             ; 00:00:24                           ;
+; Fitter               ; 00:00:04     ; 1.0                     ; 5868 MB             ; 00:00:02                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4648 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4601 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4605 MB             ; 00:00:01                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -98,10 +100,12 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-HSRD27R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-JB3OEPC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-JB3OEPC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-JB3OEPC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-JB3OEPC  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-JB3OEPC  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-JB3OEPC  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -112,6 +116,8 @@ quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigi
 quartus_fit --read_settings_files=off --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 quartus_asm --read_settings_files=off --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 quartus_sta MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2 --vector_source=C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/Waveform.vwf --testbench_file=C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim/ MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 
 
 
