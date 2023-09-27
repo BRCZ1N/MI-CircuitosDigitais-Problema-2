@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Tue Sep 26 20:53:10 2023
+Tue Sep 26 21:19:16 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -11,93 +11,97 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Source Files Read
-  6. Port Connectivity Checks: "modulo_mux8_1:mux_18"
-  7. Port Connectivity Checks: "modulo_mux8_1:mux_17"
-  8. Port Connectivity Checks: "modulo_mux8_1:mux_16"
-  9. Port Connectivity Checks: "modulo_mux8_1:mux_15"
- 10. Port Connectivity Checks: "modulo_mux8_1:mux_14"
- 11. Port Connectivity Checks: "modulo_mux8_1:mux_13"
- 12. Port Connectivity Checks: "modulo_mux8_1:mux_12"
- 13. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1"
- 14. Port Connectivity Checks: "modulo_demux1_4:demux_10"
- 15. Port Connectivity Checks: "modulo_demux1_4:demux_9"
- 16. Port Connectivity Checks: "modulo_demux1_4:demux_8"
- 17. Port Connectivity Checks: "modulo_demux1_4:demux_7"
- 18. Port Connectivity Checks: "modulo_demux1_4:demux_6"
- 19. Port Connectivity Checks: "modulo_demux1_4:demux_5"
- 20. Port Connectivity Checks: "modulo_demux1_4:demux_4"
- 21. Port Connectivity Checks: "modulo_demux1_4:demux_3"
- 22. Port Connectivity Checks: "modulo_demux1_4:demux_2"
- 23. Port Connectivity Checks: "modulo_demux1_16:demux_1"
- 24. Port Connectivity Checks: "modulo_demux1_4:demux_20"
- 25. Port Connectivity Checks: "modulo_demux1_4:demux_19"
- 26. Port Connectivity Checks: "modulo_demux1_4:demux_18"
- 27. Port Connectivity Checks: "modulo_demux1_4:demux_17"
- 28. Port Connectivity Checks: "modulo_demux1_4:demux_16"
- 29. Port Connectivity Checks: "modulo_demux1_4:demux_15"
- 30. Port Connectivity Checks: "modulo_demux1_4:demux_14"
- 31. Port Connectivity Checks: "modulo_demux1_4:demux_13"
- 32. Port Connectivity Checks: "modulo_demux1_4:demux_12"
- 33. Port Connectivity Checks: "modulo_demux1_16:demux_11"
- 34. Port Connectivity Checks: "modulo_demux1_8:demux_col_1"
- 35. Port Connectivity Checks: "modulo_mux8_1:mux_11"
- 36. Port Connectivity Checks: "modulo_mux8_1:mux_10"
- 37. Port Connectivity Checks: "modulo_mux8_1:mux_9"
- 38. Port Connectivity Checks: "modulo_mux8_1:mux_8"
- 39. Port Connectivity Checks: "modulo_mux8_1:mux_7"
- 40. Port Connectivity Checks: "modulo_mux8_1:mux_6"
- 41. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
- 42. Port Connectivity Checks: "modulo_mux8_1:mux_5"
- 43. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
- 44. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
- 45. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
- 46. Port Connectivity Checks: "modulo_preset_linha_7:preset_7"
- 47. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
- 48. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
- 49. Port Connectivity Checks: "modulo_preset_linha_6:preset_6"
- 50. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
- 51. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
- 52. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
- 53. Port Connectivity Checks: "modulo_preset_linha_5:preset_5"
- 54. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
- 55. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
- 56. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
- 57. Port Connectivity Checks: "modulo_preset_linha_4:preset_4"
- 58. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
- 59. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
- 60. Port Connectivity Checks: "modulo_preset_linha_3:preset_3"
- 61. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
- 62. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
- 63. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
- 64. Port Connectivity Checks: "modulo_preset_linha_2:preset_2"
- 65. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
- 66. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
- 67. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
- 68. Port Connectivity Checks: "modulo_preset_linha_1:preset_1"
- 69. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
- 70. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_3"
- 71. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_2"
- 72. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1"
- 73. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
- 74. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
- 75. Port Connectivity Checks: "modulo_mux4_1:mux_4"
- 76. Port Connectivity Checks: "modulo_mux4_1:mux_3"
- 77. Port Connectivity Checks: "modulo_mux4_1:mux_2"
- 78. Port Connectivity Checks: "modulo_mux4_1:mux_1"
- 79. Port Connectivity Checks: "and_gate_2_inputs:gate_1"
- 80. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
- 81. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
- 82. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_3"
- 83. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_2"
- 84. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_1"
- 85. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
- 86. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
- 87. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
- 88. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_1"
- 89. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
- 90. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
- 91. Port Connectivity Checks: "modulo_status:mod_sta"
- 92. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "modulo_mux8_1:mux_18"
+ 11. Port Connectivity Checks: "modulo_mux8_1:mux_17"
+ 12. Port Connectivity Checks: "modulo_mux8_1:mux_16"
+ 13. Port Connectivity Checks: "modulo_mux8_1:mux_15"
+ 14. Port Connectivity Checks: "modulo_mux8_1:mux_14"
+ 15. Port Connectivity Checks: "modulo_mux8_1:mux_13"
+ 16. Port Connectivity Checks: "modulo_mux8_1:mux_12"
+ 17. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1"
+ 18. Port Connectivity Checks: "modulo_demux1_4:demux_10"
+ 19. Port Connectivity Checks: "modulo_demux1_4:demux_9"
+ 20. Port Connectivity Checks: "modulo_demux1_4:demux_8"
+ 21. Port Connectivity Checks: "modulo_demux1_4:demux_7"
+ 22. Port Connectivity Checks: "modulo_demux1_4:demux_6"
+ 23. Port Connectivity Checks: "modulo_demux1_4:demux_5"
+ 24. Port Connectivity Checks: "modulo_demux1_4:demux_4"
+ 25. Port Connectivity Checks: "modulo_demux1_4:demux_3"
+ 26. Port Connectivity Checks: "modulo_demux1_4:demux_2"
+ 27. Port Connectivity Checks: "modulo_demux1_16:demux_1"
+ 28. Port Connectivity Checks: "modulo_demux1_4:demux_20"
+ 29. Port Connectivity Checks: "modulo_demux1_4:demux_19"
+ 30. Port Connectivity Checks: "modulo_demux1_4:demux_18"
+ 31. Port Connectivity Checks: "modulo_demux1_4:demux_17"
+ 32. Port Connectivity Checks: "modulo_demux1_4:demux_16"
+ 33. Port Connectivity Checks: "modulo_demux1_4:demux_15"
+ 34. Port Connectivity Checks: "modulo_demux1_4:demux_14"
+ 35. Port Connectivity Checks: "modulo_demux1_4:demux_13"
+ 36. Port Connectivity Checks: "modulo_demux1_4:demux_12"
+ 37. Port Connectivity Checks: "modulo_demux1_16:demux_11"
+ 38. Port Connectivity Checks: "modulo_demux1_8:demux_col"
+ 39. Port Connectivity Checks: "modulo_mux8_1:mux_11"
+ 40. Port Connectivity Checks: "modulo_mux8_1:mux_10"
+ 41. Port Connectivity Checks: "modulo_mux8_1:mux_9"
+ 42. Port Connectivity Checks: "modulo_mux8_1:mux_8"
+ 43. Port Connectivity Checks: "modulo_mux8_1:mux_7"
+ 44. Port Connectivity Checks: "modulo_mux8_1:mux_6"
+ 45. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
+ 46. Port Connectivity Checks: "modulo_mux8_1:mux_5"
+ 47. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
+ 48. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
+ 49. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
+ 50. Port Connectivity Checks: "modulo_preset_linha_7:preset_7"
+ 51. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
+ 52. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
+ 53. Port Connectivity Checks: "modulo_preset_linha_6:preset_6"
+ 54. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
+ 55. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
+ 56. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
+ 57. Port Connectivity Checks: "modulo_preset_linha_5:preset_5"
+ 58. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
+ 59. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
+ 60. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
+ 61. Port Connectivity Checks: "modulo_preset_linha_4:preset_4"
+ 62. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
+ 63. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
+ 64. Port Connectivity Checks: "modulo_preset_linha_3:preset_3"
+ 65. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
+ 66. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
+ 67. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
+ 68. Port Connectivity Checks: "modulo_preset_linha_2:preset_2"
+ 69. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
+ 70. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
+ 71. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
+ 72. Port Connectivity Checks: "modulo_preset_linha_1:preset_1"
+ 73. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
+ 74. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_3"
+ 75. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_2"
+ 76. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1"
+ 77. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
+ 78. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
+ 79. Port Connectivity Checks: "modulo_mux4_1:mux_4"
+ 80. Port Connectivity Checks: "modulo_mux4_1:mux_3"
+ 81. Port Connectivity Checks: "modulo_mux4_1:mux_2"
+ 82. Port Connectivity Checks: "modulo_mux4_1:mux_1"
+ 83. Port Connectivity Checks: "and_gate_2_inputs:gate_1"
+ 84. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
+ 85. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
+ 86. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_3"
+ 87. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_2"
+ 88. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_1"
+ 89. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
+ 90. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
+ 91. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
+ 92. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_1"
+ 93. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
+ 94. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
+ 95. Port Connectivity Checks: "modulo_status:mod_sta"
+ 96. Analysis & Synthesis Messages
 
 
 
@@ -123,11 +127,15 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Sep 26 20:53:10 2023           ;
+; Analysis & Synthesis Status ; Successful - Tue Sep 26 21:19:16 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
 ; Family                      ; MAX II                                      ;
+; Total logic elements        ; 9                                           ;
+; Total pins                  ; 47                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
 
 
@@ -249,6 +257,84 @@ refer to the applicable agreement for further details.
 ; modulo_preset_linha_5.v               ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_preset_linha_5.v               ;         ;
 ; modulo_demux1_8.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v                     ;         ;
 +---------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                     ;
++---------------------------------------------+---------------------------------------------------+
+; Resource                                    ; Usage                                             ;
++---------------------------------------------+---------------------------------------------------+
+; Total logic elements                        ; 9                                                 ;
+;     -- Combinational with no register       ; 6                                                 ;
+;     -- Register only                        ; 1                                                 ;
+;     -- Combinational with a register        ; 2                                                 ;
+;                                             ;                                                   ;
+; Logic element usage by number of LUT inputs ;                                                   ;
+;     -- 4 input functions                    ; 0                                                 ;
+;     -- 3 input functions                    ; 6                                                 ;
+;     -- 2 input functions                    ; 2                                                 ;
+;     -- 1 input functions                    ; 0                                                 ;
+;     -- 0 input functions                    ; 0                                                 ;
+;                                             ;                                                   ;
+; Logic elements by mode                      ;                                                   ;
+;     -- normal mode                          ; 9                                                 ;
+;     -- arithmetic mode                      ; 0                                                 ;
+;     -- qfbk mode                            ; 0                                                 ;
+;     -- register cascade mode                ; 0                                                 ;
+;     -- synchronous clear/load mode          ; 0                                                 ;
+;     -- asynchronous clear/load mode         ; 0                                                 ;
+;                                             ;                                                   ;
+; Total registers                             ; 3                                                 ;
+; I/O pins                                    ; 47                                                ;
+; Maximum fan-out node                        ; modulo_status:mod_sta|or_gate_2_inputs:gate_7|S~0 ;
+; Maximum fan-out                             ; 16                                                ;
+; Total fan-out                               ; 47                                                ;
+; Average fan-out                             ; 0.84                                              ;
++---------------------------------------------+---------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                  ;
++-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node                      ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                              ; Entity Name                 ; Library Name ;
++-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-----------------------------+--------------+
+; |pbl                                            ; 9 (0)       ; 3            ; 0          ; 47   ; 0            ; 6 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl                                                             ; pbl                         ; work         ;
+;    |modulo_contador_sync_3_bits:count_3_bits_1| ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1                  ; modulo_contador_sync_3_bits ; work         ;
+;       |modulo_ff_t:ff_1|                        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1 ; modulo_ff_t                 ; work         ;
+;       |modulo_ff_t:ff_2|                        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2 ; modulo_ff_t                 ; work         ;
+;       |modulo_ff_t:ff_3|                        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3 ; modulo_ff_t                 ; work         ;
+;    |modulo_demux1_8:demux_col|                  ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_8:demux_col                                   ; modulo_demux1_8             ; work         ;
+;       |and_gate_4_inputs:gate_5|                ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_8:demux_col|and_gate_4_inputs:gate_5          ; and_gate_4_inputs           ; work         ;
+;    |modulo_status:mod_sta|                      ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_status:mod_sta                                       ; modulo_status               ; work         ;
+;       |or_gate_2_inputs:gate_7|                 ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_status:mod_sta|or_gate_2_inputs:gate_7               ; or_gate_2_inputs            ; work         ;
++-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-----------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                   ;
++---------------------------------------------------------------+--------------------------------------+
+; Register name                                                 ; Reason for Removal                   ;
++---------------------------------------------------------------+--------------------------------------+
+; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; Stuck at GND due to stuck port clock ;
+; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 2                         ;                                      ;
++---------------------------------------------------------------+--------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -548,35 +634,14 @@ refer to the applicable agreement for further details.
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_demux1_8:demux_col_1"                                                                                                                               ;
-+-----------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type    ; Severity         ; Details                                                                                                                                      ;
-+-----------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; E         ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
-; input_sel ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
-; out       ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
-; sel       ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; i0        ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; i1        ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; i2        ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; s0        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; s1        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; s2        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; s3        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; s4        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; s5        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; s6        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; s7        ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns0       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns1       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns2       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns3       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns4       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns5       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns6       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Ns7       ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+-----------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "modulo_demux1_8:demux_col"                                                                                                ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; input_e ; Input  ; Info     ; Stuck at VCC                                                                                                           ;
+; out     ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (5 bits) it drives; bit(s) "out[7..5]" have no fanouts ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -1133,7 +1198,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Sep 26 20:52:58 2023
+    Info: Processing started: Tue Sep 26 21:19:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1472,16 +1537,20 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_preset_linha
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_preset_linha_5.v(18): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_preset_linha_5.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_preset_linha_5.v
     Info (12023): Found entity 1: modulo_preset_linha_5 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_preset_linha_5.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(12): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 12
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(13): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 13
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(14): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 14
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(15): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 15
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(16): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 16
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(17): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 17
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(18): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 18
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8.v(19): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_demux1_8.v
     Info (12023): Found entity 1: modulo_demux1_8 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at pbl.v(29): created implicit net for "div_clk" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 29
 Warning (10236): Verilog HDL Implicit Net warning at pbl.v(42): created implicit net for "HH_preset" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
 Warning (10236): Verilog HDL Implicit Net warning at pbl.v(50): created implicit net for "clear_button" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
 Warning (10236): Verilog HDL Implicit Net warning at pbl.v(93): created implicit net for "m_at" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 93
-Warning (10236): Verilog HDL Implicit Net warning at modulo_demux1_8.v(15): created implicit net for "Ni0" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 15
-Warning (10236): Verilog HDL Implicit Net warning at modulo_demux1_8.v(16): created implicit net for "Ni1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 16
-Warning (10236): Verilog HDL Implicit Net warning at modulo_demux1_8.v(17): created implicit net for "Ni2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at modulo_demux1_8.v(41): created implicit net for "out2_11" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v Line: 41
 Info (12127): Elaborating entity "pbl" for the top level hierarchy
 Warning (10136): Verilog HDL Module Declaration warning at pbl.v(1): port "out_7seg" already exists in the list of ports File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Warning (10136): Verilog HDL Module Declaration warning at pbl.v(1): port "out_7seg_ac" already exists in the list of ports File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
@@ -1512,7 +1581,7 @@ Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_ma
 Info (12128): Elaborating entity "modulo_ff_d" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_matriz_reg_po.v Line: 7
 Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 52
 Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 55
-Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
+Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
 Info (12128): Elaborating entity "modulo_demux1_16" for hierarchy "modulo_demux1_16:demux_11" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 69
 Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_12" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 70
 Warning (10739): Verilog HDL warning at modulo_demux1_4.v(12): actual bit length 2 differs from formal bit length 1 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_4.v Line: 12
@@ -1520,14 +1589,90 @@ Warning (10739): Verilog HDL warning at modulo_demux1_4.v(16): actual bit length
 Warning (10739): Verilog HDL warning at modulo_demux1_4.v(20): actual bit length 2 differs from formal bit length 1 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_4.v Line: 20
 Warning (10739): Verilog HDL warning at modulo_demux1_4.v(24): actual bit length 2 differs from formal bit length 1 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_4.v Line: 24
 Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 93
-Error (12002): Port "E" does not exist in macrofunction "demux_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
-Error (12002): Port "input_sel" does not exist in macrofunction "demux_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
-Error (12002): Port "out" does not exist in macrofunction "demux_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "HH_preset" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+    Warning (12110): Net "clear_button" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
 Warning (12241): 30 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 291 warnings
-    Error: Peak virtual memory: 4698 megabytes
-    Error: Processing ended: Tue Sep 26 20:53:10 2023
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:26
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out_7seg[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
+    Warning (13410): Pin "out_7seg[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
+    Warning (13410): Pin "out_7seg[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
+    Warning (13410): Pin "out_7seg[6]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
+    Warning (13410): Pin "out_7seg[0]__duplicate" is stuck at VCC
+    Warning (13410): Pin "out_7seg[1]__duplicate" is stuck at GND
+    Warning (13410): Pin "out_7seg[3]__duplicate" is stuck at GND
+    Warning (13410): Pin "out_7seg[6]__duplicate" is stuck at GND
+    Warning (13410): Pin "m_line[0]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+    Warning (13410): Pin "m_line[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+    Warning (13410): Pin "m_line[2]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+    Warning (13410): Pin "m_line[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+    Warning (13410): Pin "m_line[4]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+    Warning (13410): Pin "m_line[5]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+    Warning (13410): Pin "m_line[6]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "coord_at[0]" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 5
+    Warning (15610): No output dependent on input pin "coord_at[1]" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 5
+    Warning (15610): No output dependent on input pin "coord_at[2]" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 5
+    Warning (15610): No output dependent on input pin "coord_at[3]" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 5
+    Warning (15610): No output dependent on input pin "coord_at[4]" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 5
+    Warning (15610): No output dependent on input pin "coord_at[5]" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 5
+    Warning (15610): No output dependent on input pin "button_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 3
+    Warning (15610): No output dependent on input pin "button_clear" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 3
+Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 370 warnings
+    Info: Peak virtual memory: 4707 megabytes
+    Info: Processing ended: Tue Sep 26 21:19:16 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:27
 
 

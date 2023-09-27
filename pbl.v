@@ -62,7 +62,7 @@ module pbl(status,coord_at,out_7seg,out_7seg_ac,button_confirmation, button_clea
 	
 	//Aqui o clock tem que ser único e selecionado pelo usuario
 	
-	modulo_demux1_8 demux_col(.E(1'b1),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_col),);
+	modulo_demux1_8 demux_col(.input_e(1'b1),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_col),);
 	
 	//Aqui o clock tem que ser único e selecionado pelo usuario
 	

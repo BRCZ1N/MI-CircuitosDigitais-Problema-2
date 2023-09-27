@@ -1,5 +1,9 @@
-Analysis & Synthesis Status : Failed - Tue Sep 26 20:53:10 2023
+Analysis & Synthesis Status : Successful - Tue Sep 26 21:19:16 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
 Top-level Entity Name : pbl
 Family : MAX II
+Total logic elements : 9
+Total pins : 47
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
