@@ -161,6 +161,171 @@ B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|pbl|modulo_divisor_frequencia:div_1
+clr => clr.IN20
+q[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= modulo_ff_t:ff_20.q
+clk => clk.IN1
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |pbl|modulo_contador_sync_2_bits:count_2_bits_1
 clr => clr.IN2
 clk => clk.IN2
