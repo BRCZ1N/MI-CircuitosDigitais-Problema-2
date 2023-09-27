@@ -1,6 +1,7 @@
 module modulo_demux1_4(input_sel,input_e,out);
 
-	input [1:0]input_sel, input_e;
+	input input_e;
+	input [1:0]input_sel;
 	output [3:0]out;
 	wire  [1:0] Ninput_sel;
 	

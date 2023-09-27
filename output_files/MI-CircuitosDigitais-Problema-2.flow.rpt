@@ -1,5 +1,5 @@
 Flow report for MI-CircuitosDigitais-Problema-2
-Wed Sep 27 03:29:53 2023
+Wed Sep 27 12:05:31 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Wed Sep 27 03:29:50 2023       ;
+; Flow Status           ; Successful - Wed Sep 27 12:05:28 2023       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name ; pbl                                         ;
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------------------+
 ; Option            ; Setting                         ;
 +-------------------+---------------------------------+
-; Start date & time ; 09/27/2023 03:29:34             ;
+; Start date & time ; 09/27/2023 12:05:11             ;
 ; Main task         ; Compilation                     ;
 ; Revision Name     ; MI-CircuitosDigitais-Problema-2 ;
 +-------------------+---------------------------------+
@@ -70,7 +70,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------+-------------------------------+---------------------------------+-------------+------------+
 ; Assignment Name                       ; Value                         ; Default Value                   ; Entity Name ; Section Id ;
 +---------------------------------------+-------------------------------+---------------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 2499175950293.169579617319544 ; --                              ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                 ; 2499175950293.169582711006564 ; --                              ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP                ; 85                            ; --                              ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP                ; 0                             ; --                              ; --          ; --         ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                          ; --                              ; --          ; --         ;
@@ -85,11 +85,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4707 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:01     ; 1.2                     ; 5875 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4708 MB             ; 00:00:26                           ;
+; Fitter               ; 00:00:02     ; 1.0                     ; 5882 MB             ; 00:00:02                           ;
 ; Assembler            ; 00:00:00     ; 1.0                     ; 4649 MB             ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:29                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
