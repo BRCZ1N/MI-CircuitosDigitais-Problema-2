@@ -1,24 +1,22 @@
-module modulo_demux1_4(S,E,Y);
+module modulo_demux1_4(input_sel,input_e,out);
 
-	input [1:0]S, E;
-	output [3:0]Y;
-	wire  [1:0]NS;
+	input [1:0]input_sel, input_e;
+	output [3:0]out;
+	wire  [1:0] Ninput_sel;
 	
-	not(NS[0],S[0]);
-	not(NS[1],S[1]);
-	
-	//p0
+	not(Ninput_sel[0],input_sel[0]);
+	not(Ninput_sel[1],input_sel[1]);
 
-	and_gate_3_inputs gate_1(.A(NS[0]),.B(NS[1]),.C(E),.S(Y[0]),);
-	
-	//p1
-	and_gate_3_inputs gate_2(.A(NS[0]),.B(S[1]),.C(E),.S(Y[1]),);
-	//p2
+
+	and_gate_3_inputs gate_1(.A(Ninput_sel[0]),.B(Ninput_sel[1]),.C(input_e),.S(out[3]),);
 	
 	
-	and_gate_3_inputs gate_3(.A(S[0]),.B(NS[1]),.C(E),.S(Y[2]),);
-	//p3
+	and_gate_3_inputs gate_2(.A(Ninput_sel[0]),.B(input_sel[1]),.C(input_e),.S(out[2]),);
 	
 	
-	and_gate_3_inputs gate_4(.A(S[0]),.B(S[1]),.C(E),.S(Y[3]),);
+	and_gate_3_inputs gate_3(.A(input_sel[0]),.B(Ninput_sel[1]),.C(input_e),.S(out[1]),);
+	
+	
+	and_gate_3_inputs gate_4(.A(input_sel[0]),.B(input_sel[1]),.C(input_e),.S(out[0]),);
+	
 endmodule 

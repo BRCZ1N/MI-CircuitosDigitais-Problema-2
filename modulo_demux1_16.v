@@ -1,65 +1,65 @@
-module modulo_demux1_16(S,E,Y);
+module modulo_demux1_16(input_sel,input_e,out);
 
-	input E;
-	input [3:0] S;
-	output [15:0] Y;
-	wire  [3:0] NS;
+	input input_e;
+	input [3:0] input_sel;
+	output [15:0] out;
+	wire  [3:0] Ninput_sel;
 	
-	not(NS[0],S[0]);
-	not(NS[1],S[1]);
-	not(NS[2],S[2]);
-	not(NS[3],S[3]);
-	and_gate_5_inputs gate_1(.A(NS[0]),.B(NS[1]),.C(NS[2]),.D(NS[3]),.E(E),.S(Y[15]),);
+	not(Ninput_sel[0],input_sel[0]);
+	not(Ninput_sel[1],input_sel[1]);
+	not(Ninput_sel[2],input_sel[2]);
+	not(Ninput_sel[3],input_sel[3]);
+	
+	and_gate_5_inputs gate_1(.A(Ninput_sel[0]),.B(Ninput_sel[1]),.C(Ninput_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[15]),);
 
    //p1
-
 	
-	and_gate_5_inputs gate_2(.A(NS[0]),.B(NS[1]),.C(NS[2]),.D(S[3]),.E(E),.S(Y[14]),);
+	and_gate_5_inputs gate_2(.A(Ninput_sel[0]),.B(Ninput_sel[1]),.C(Ninput_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[14]),);
 	//p2
 	
-	and_gate_5_inputs gate_3(.A(NS[0]),.B(NS[1]),.C(NS[2]),.D(NS[3]),.E(E),.S(Y[13]),);
+	and_gate_5_inputs gate_3(.A(Ninput_sel[0]),.B(Ninput_sel[1]),.C(Ninput_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[13]),);
 	//p3
 	
-	and_gate_5_inputs gate_4(.A(NS[0]),.B(NS[1]),.C(S[2]),.D(S[3]),.E(E),.S(Y[12]),);
+	and_gate_5_inputs gate_4(.A(Ninput_sel[0]),.B(Ninput_sel[1]),.C(input_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[12]),);
 	
 	//p4
 	
 	
-	and_gate_5_inputs gate_5(.A(NS[0]),.B(S[1]),.C(NS[2]),.D(NS[3]),.E(E),.S(Y[11]),);
+	and_gate_5_inputs gate_5(.A(Ninput_sel[0]),.B(input_sel[1]),.C(Ninput_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[11]),);
 	//p5
 	
-	and_gate_5_inputs gate_6(.A(NS[0]),.B(S[1]),.C(NS[2]),.D(S[3]),.E(E),.S(Y[10]),);
+	and_gate_5_inputs gate_6(.A(Ninput_sel[0]),.B(input_sel[1]),.C(Ninput_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[10]),);
 	//p6
 	
 	
-	and_gate_5_inputs gate_7(.A(NS[0]),.B(S[1]),.C(S[2]),.D(NS[3]),.E(E),.S(Y[9]),);
+	and_gate_5_inputs gate_7(.A(Ninput_sel[0]),.B(input_sel[1]),.C(input_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[9]),);
 	//p7
-	and_gate_5_inputs gate_8(.A(NS[0]),.B(S[1]),.C(S[2]),.D(S[3]),.E(E),.S(Y[8]),);
+	and_gate_5_inputs gate_8(.A(Ninput_sel[0]),.B(input_sel[1]),.C(input_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[8]),);
 	//p8
 	
-	and_gate_5_inputs gate_9(.A(S[0]),.B(NS[1]),.C(NS[2]),.D(NS[3]),.E(E),.S(Y[7]),);
+	and_gate_5_inputs gate_9(.A(input_sel[0]),.B(Ninput_sel[1]),.C(Ninput_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[7]),);
 	//p9	
-	and_gate_5_inputs gate_10(.A(S[0]),.B(NS[1]),.C(NS[2]),.D(S[3]),.E(E),.S(Y[6]),);
+	and_gate_5_inputs gate_10(.A(input_sel[0]),.B(Ninput_sel[1]),.C(Ninput_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[6]),);
 	//p10
 	
-	and_gate_5_inputs gate_11(.A(S[0]),.B(NS[1]),.C(S[2]),.D(NS[3]),.E(E),.S(Y[5]),);
+	and_gate_5_inputs gate_11(.A(input_sel[0]),.B(Ninput_sel[1]),.C(input_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[5]),);
 	//p11
 	
-	and_gate_5_inputs gate_12(.A(S[0]),.B(NS[1]),.C(S[2]),.D(S[3]),.E(E),.S(Y[4]),);
+	and_gate_5_inputs gate_12(.A(input_sel[0]),.B(Ninput_sel[1]),.C(input_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[4]),);
 	
 	//p12
 	
-	and_gate_5_inputs gate_13(.A(S[0]),.B(S[1]),.C(NS[2]),.D(NS[3]),.E(E),.S(Y[3]),);
+	and_gate_5_inputs gate_13(.A(input_sel[0]),.B(input_sel[1]),.C(Ninput_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[3]),);
 	
 	//p13
 	
-	and_gate_5_inputs gate_14(.A(S[0]),.B(S[1]),.C(NS[2]),.D(S[3]),.E(E),.S(Y[2]),);
+	and_gate_5_inputs gate_14(.A(input_sel[0]),.B(input_sel[1]),.C(Ninput_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[2]),);
 	//p14
 	
-	and_gate_5_inputs gate_15(.A(S[0]),.B(S[1]),.C(S[2]),.D(NS[3]),.E(E),.S(Y[1]),);
+	and_gate_5_inputs gate_15(.A(input_sel[0]),.B(input_sel[1]),.C(input_sel[2]),.D(Ninput_sel[3]),.E(input_e),.S(out[1]),);
 	//p15
 	
 	
-	and_gate_5_inputs gate_16(.A(S[0]),.B(S[1]),.C(S[2]),.D(S[3]),.E(E),.S(Y[0]),);
+	and_gate_5_inputs gate_16(.A(input_sel[0]),.B(input_sel[1]),.C(input_sel[2]),.D(input_sel[3]),.E(input_e),.S(out[0]),);
 	
 endmodule 
