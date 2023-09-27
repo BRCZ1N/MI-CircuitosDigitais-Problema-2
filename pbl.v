@@ -1,6 +1,6 @@
-module pbl(status,coord_at,out_7seg,out_7seg_ac,button_confirmation, button_clear, clk, out_7seg, out_7seg_ac,m_col,m_line);
+module pbl(status,coord_at,out_7seg,out_7seg_ac,button_clr, button_clk, clk, out_7seg, out_7seg_ac,m_col,m_line);
 
-	input button_confirmation, button_clear, button_clk, clk;
+	input button_clr,button_clk, clk;
 	input [1:0] status;
 	input [5:0] coord_at;
 	output [7:0] out_7seg;
@@ -52,7 +52,7 @@ module pbl(status,coord_at,out_7seg,out_7seg_ac,button_confirmation, button_clea
 	modulo_preset_linha_6 preset_6(.HH(HH_preset),.cl6(m_po_in[9:5]));
 	modulo_preset_linha_7 preset_7(.HH(HH_preset),.cl7(m_po_in[4:0]));
 	
-	modulo_matriz_reg_po reg_matriz_po_1(.m_in(m_po_in),.clk(clk_button),.clr(clear_button),.m_out(m_po_out),);
+	modulo_matriz_reg_po reg_matriz_po_1(.m_in(m_po_in),.clk(button_clk),.clr(button_clr),.m_out(m_po_out),);
 	
 	modulo_mux8_1 mux_5(.A(m_po_out[34]),.B(m_po_out[33]),.C(m_po_out[32]),.D(m_po_out[31]),.E(m_po_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[6]),);
 	modulo_mux8_1 mux_6(.A(m_po_out[29]),.B(m_po_out[28]),.C(m_po_out[27]),.D(m_po_out[26]),.E(m_po_out[25]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[5]),);
@@ -63,29 +63,29 @@ module pbl(status,coord_at,out_7seg,out_7seg_ac,button_confirmation, button_clea
 	modulo_mux8_1 mux_11(.A(m_po_out[4]),.B(m_po_out[3]),.C(m_po_out[2]),.D(m_po_out[1]),.E(m_po_out[0]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[0]),);
 	
 	
-	modulo_demux1_16 demux_11(.E(clk_button),.S(),.Y(demux1_16_out_1_c));
-	modulo_demux1_4 demux_12(.E(demux1_16_out_1_c[15]),.S(),.Y(m_at_clks[34:31]),);
-	modulo_demux1_4 demux_13(.E(demux1_16_out_1_c[14]),.S(),.Y(m_at_clks[30:27]),);
-	modulo_demux1_4 demux_14(.E(demux1_16_out_1_c[13]),.S(),.Y(m_at_clks[26:23]),);
-	modulo_demux1_4 demux_15(.E(demux1_16_out_1_c[12]),.S(),.Y(m_at_clks[22:19]),);
-	modulo_demux1_4 demux_16(.E(demux1_16_out_1_c[11]),.S(),.Y(m_at_clks[18:15]),);
-	modulo_demux1_4 demux_17(.E(demux1_16_out_1_c[10]),.S(),.Y(m_at_clks[14:11]),);
-	modulo_demux1_4 demux_18(.E(demux1_16_out_1_c[9]),.S(),.Y(m_at_clks[10:7]),);
-	modulo_demux1_4 demux_19(.E(demux1_16_out_1_c[8]),.S(),.Y(m_at_clks[6:3]),);
-	modulo_demux1_4 demux_20(.E(demux1_16_out_1_c[7]),.S(),.Y(m_at_clks[2:0]),);
+	modulo_demux1_16 demux_11(.input_e(clk_button),.input_sel(),.out(demux1_16_out_1_c));
+	modulo_demux1_4 demux_12(.input_e(demux1_16_out_1_c[15]),.input_sel(),.out(m_at_clks[34:31]),);
+	modulo_demux1_4 demux_13(.input_e(demux1_16_out_1_c[14]),.input_sel(),.out(m_at_clks[30:27]),);
+	modulo_demux1_4 demux_14(.input_e(demux1_16_out_1_c[13]),.input_sel(),.out(m_at_clks[26:23]),);
+	modulo_demux1_4 demux_15(.input_e(demux1_16_out_1_c[12]),.input_sel(),.out(m_at_clks[22:19]),);
+	modulo_demux1_4 demux_16(.input_e(demux1_16_out_1_c[11]),.input_sel(),.out(m_at_clks[18:15]),);
+	modulo_demux1_4 demux_17(.input_e(demux1_16_out_1_c[10]),.input_sel(),.out(m_at_clks[14:11]),);
+	modulo_demux1_4 demux_18(.input_e(demux1_16_out_1_c[9]),.input_sel(),.out(m_at_clks[10:7]),);
+	modulo_demux1_4 demux_19(.input_e(demux1_16_out_1_c[8]),.input_sel(),.out(m_at_clks[6:3]),);
+	modulo_demux1_4 demux_20(.input_e(demux1_16_out_1_c[7]),.input_sel(),.out(m_at_clks[2:0]),);
 	
-	modulo_demux1_16 demux_1(.E(1'b0),.S(),.Y(demux1_16_out_1_e));
-	modulo_demux1_4 demux_2(.E(demux1_16_out_1_e[15]),.S(),.Y(mt_at_in[34:31]),);
-	modulo_demux1_4 demux_3(.E(demux1_16_out_1_e[14]),.S(),.Y(mt_at_in[30:27]),);
-	modulo_demux1_4 demux_4(.E(demux1_16_out_1_e[13]),.S(),.Y(mt_at_in[26:23]),);
-	modulo_demux1_4 demux_5(.E(demux1_16_out_1_e[12]),.S(),.Y(mt_at_in[22:19]),);
-	modulo_demux1_4 demux_6(.E(demux1_16_out_1_e[11]),.S(),.Y(mt_at_in[18:15]),);
-	modulo_demux1_4 demux_7(.E(demux1_16_out_1_e[10]),.S(),.Y(mt_at_in[14:11]),);
-	modulo_demux1_4 demux_8(.E(demux1_16_out_1_e[9]),.S(),.Y(mt_at_in[10:7]),);
-	modulo_demux1_4 demux_9(.E(demux1_16_out_1_e[8]),.S(),.Y(mt_at_in[6:3]),);
-	modulo_demux1_4 demux_10(.E(demux1_16_out_1_e[7]),.S(),.Y(mt_at_in[2:0]),);
+	modulo_demux1_16 demux_1(.input_e(1'b0),.input_sel(),.out(demux1_16_out_1_e));
+	modulo_demux1_4 demux_2(.input_e(demux1_16_out_1_e[15]),.input_sel(),.out(m_at_in[34:31]),);
+	modulo_demux1_4 demux_3(.input_e(demux1_16_out_1_e[14]),.input_sel(),.out(m_at_in[30:27]),);
+	modulo_demux1_4 demux_4(.input_e(demux1_16_out_1_e[13]),.input_sel(),.out(m_at_in[26:23]),);
+	modulo_demux1_4 demux_5(.input_e(demux1_16_out_1_e[12]),.input_sel(),.out(m_at_in[22:19]),);
+	modulo_demux1_4 demux_6(.input_e(demux1_16_out_1_e[11]),.input_sel(),.out(m_at_in[18:15]),);
+	modulo_demux1_4 demux_7(.input_e(demux1_16_out_1_e[10]),.input_sel(),.out(m_at_in[14:11]),);
+	modulo_demux1_4 demux_8(.input_e(demux1_16_out_1_e[9]),.input_sel(),.out(m_at_in[10:7]),);
+	modulo_demux1_4 demux_9(.input_e(demux1_16_out_1_e[8]),.input_sel(),.out(m_at_in[6:3]),);
+	modulo_demux1_4 demux_10(.input_e(demux1_16_out_1_e[7]),.input_sel(),.out(m_at_in[2:0]),);
 	
-	modulo_matriz_reg_at reg_matriz_at_1(.m_in(mt_at_in),.clk(m_at_clks),.clr(clear_button),.m_out(m_at),);
+	modulo_matriz_reg_at reg_matriz_at_1(.m_in(mt_at_in),.clk(m_at_clks),.clr(button_clr),.m_out(m_at),);
 	
 	modulo_mux8_1 mux_12(.A(m_at_out[34]),.B(m_at_out[33]),.C(m_at_out[32]),.D(m_at_out[31]),.E(m_at_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[6]),);
 	modulo_mux8_1 mux_13(.A(m_at_out[29]),.B(m_at_out[28]),.C(m_at_out[27]),.D(m_at_out[26]),.E(m_at_out[25]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[5]),);

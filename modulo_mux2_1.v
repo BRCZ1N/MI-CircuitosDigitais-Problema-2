@@ -3,7 +3,7 @@ module modulo_mux2_1(A,B,input_sel,out);
 	input A,B;
 	input input_sel;
 	output out;
-	wire [1:0] gate_wire_and
+	wire [1:0] gate_wire_and;
 	
 	not(Ninput_sel, input_sel);
 	

@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY modulo_preset_linha_1
+set_global_assignment -name TOP_LEVEL_ENTITY pbl
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:02:39  SEPTEMBER 20, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -62,7 +62,6 @@ set_global_assignment -name VERILOG_FILE modulo_coord_linha.v
 set_global_assignment -name VERILOG_FILE modulo_coord_coluna.v
 set_global_assignment -name VERILOG_FILE modulo_divisor_frequencia.v
 set_global_assignment -name VERILOG_FILE pbl.v
-set_global_assignment -name VERILOG_FILE modulo_seletor_reg.v
 set_global_assignment -name VERILOG_FILE modulo_ff_t.v
 set_global_assignment -name VERILOG_FILE module_gates.v
 set_global_assignment -name VERILOG_FILE modulo_mux8_1.v
