@@ -4,6 +4,7 @@ module modulo_mux2_1(A,B,input_sel,out);
 	input input_sel;
 	output out;
 	wire [1:0] gate_wire_and;
+	wire Ninput_sel;
 	
 	not(Ninput_sel, input_sel);
 	
