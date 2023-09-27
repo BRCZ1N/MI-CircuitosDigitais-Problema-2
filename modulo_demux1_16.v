@@ -9,84 +9,57 @@ module modulo_demux1_16(S,E,Y);
 	not(NS[1],S[1]);
 	not(NS[2],S[2]);
 	not(NS[3],S[3]);
-	//p0
-	wire NS1_and_NS2_and_NS3, NS4_and_E;
-	and(NS1_and_NS2_and_NS3,NS[0],NS[1],NS[2]);
-	and(NS4_and_E, NS[3], E);
-	and(Y[0],NS1_and_NS2_and_NS3,NS4_and_E);
-
+	and_gate_5_inputs gate_1(.A(NS[0]),.B(NS[1]),.C(NS[2]),.D(NS[3]),.E(E)),.S(Y[0]),);
 
    //p1
 
-	wire S4_and_E;
-	and(S4_and_E, S[3], E);
-	and(Y[1],NS1_and_NS2_and_NS3,S4_and_E);
 	
+	and_gate_5_inputs gate_2(.A(NS[0]),.B(NS[1]),.C(NS[2]),.D(S[3]),.E(E)),.S(Y[1]),);
 	//p2
 	
-
-	wire NS1_and_NS2_and_S3;
-	and(NS1_and_NS2_and_S3,NS[0],NS[1],S[2]);
-	and(Y[2],NS1_and_NS2_and_NS3,NS4_and_E);
-	
+	and_gate_5_inputs gate_3(.A(NS[0]),.B(NS[1]),.C(NS[2]),.D(NS[3]),.E(E)),.S(Y[2]),);
 	//p3
-	and(Y[3],NS1_and_NS2_and_S3,S4_and_E);
 	
+	and_gate_5_inputs gate_4(.A(NS[0]),.B(NS[1]),.C(S[2]),.D(S[3]),.E(E)),.S(Y[3]),);
 	
 	//p4
 	
-	wire NS1_and_S2_and_NS3;
-	and(NS1_and_S2_and_NS3,NS[0],S[1],NS[2]);
-	and(Y[4],NS1_and_S2_and_NS3,NS4_and_E);
 	
+	and_gate_5_inputs gate_5(.A(NS[0]),.B(S[1]),.C(NS[2]),.D(NS[3]),.E(E)),.S(Y[4]),);
 	//p5
 	
-	and(Y[5],NS1_and_S2_and_NS3,S4_and_E);
-	
+	and_gate_5_inputs gate_6(.A(NS[0]),.B(S[1]),.C(NS[2]),.D(S[3]),.E(E)),.S(Y[5]),);
 	//p6
 	
-	wire NS1_and_S2_and_S3;
 	
-	
-	and(NS1_and_S2_and_S3,NS[0],S[1],S[2]);
-	and(Y[6],NS1_and_S2_and_S3,NS4_and_E);
-
+	and_gate_5_inputs gate_7(.A(NS[0]),.B(S[1]),.C(S[2]),.D(NS[3]),.E(E)),.S(Y[6]),);
 	//p7
-	and(Y[7],NS1_and_S2_and_S3,S4_and_E);
-	
+	and_gate_5_inputs gate_8(.A(NS[0]),.B(S[1]),.C(S[2]),.D(S[3]),.E(E)),.S(Y[7]),);
 	//p8
-	wire S1_and_NS2_and_NS3;
-	and(S1_and_NS2_and_NS3,S[0],NS[1],NS[2]);
-	and(Y[8],S1_and_NS2_and_NS3,NS4_and_E);
 	
-	//p9
-	
-	and(Y[9],S1_and_NS2_and_NS3, S4_and_E); 
+	and_gate_5_inputs gate_9(.A(S[0]),.B(NS[1]),.C(NS[2]),.D(NS[3]),.E(E)),.S(Y[8]),);
+	//p9	
+	and_gate_5_inputs gate_10(.A(S[0]),.B(NS[1]),.C(NS[2]),.D(S[3]),.E(E)),.S(Y[9]),);
 	//p10
-	wire S1_and_NS2_and_S3;
-	and(S1_and_NS2_and_S3,S[0],NS[1],S[2]); 
-	and(Y[10], S1_and_NS2_and_S3,NS4_and_E);
+	
+	and_gate_5_inputs gate_11(.A(S[0]),.B(NS[1]),.C(S[2]),.D(NS[3]),.E(E)),.S(Y[10]),);
 	//p11
 	
-	and(Y[11], S1_and_NS2_and_S3,S4_and_E);
-	
+	and_gate_5_inputs gate_12(.A(S[0]),.B(NS[1]),.C(S[2]),.D(S[3]),.E(E)),.S(Y[11]),);
 	
 	//p12
-	wire S1_and_S2_and_NS3;
-	and(S1_and_S2_and_NS3,S[0],S[1],NS[2]);
-	and(Y[12],S1_and_S2_and_NS3,NS4_and_E);
 	
+	and_gate_5_inputs gate_13(.A(S[0]),.B(S[1]),.C(NS[2]),.D(NS[3]),.E(E)),.S(Y[12]),);
 	
 	//p13
-	and(Y[13],S1_and_S2_and_NS3, S4_and_E);
 	
+	and_gate_5_inputs gate_14(.A(S[0]),.B(S[1]),.C(NS[2]),.D(S[3]),.E(E)),.S(Y[13]),);
 	//p14
-	wire S1_and_S2_and_S3;
-	and(S1_and_S2_and_S3,S[0],S[1],S[2]);
-	and(Y[14],S1_and_S2_and_S3, NS4_and_E);
 	
+	and_gate_5_inputs gate_15(.A(S[0]),.B(S[1]),.C(S[2]),.D(NS[3]),.E(E)),.S(Y[14]),);
 	//p15
 	
-	and(Y[15],S1_and_S2_and_S3, S4_and_E);
+	
+	and_gate_5_inputs gate_16(.A(S[0]),.B(S[1]),.C(S[2]),.D(S[3]),.E(E)),.S(Y[15]),);
 	
 endmodule 

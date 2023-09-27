@@ -8,19 +8,17 @@ module modulo_demux1_4(S,E,Y);
 	not(NS[1],S[1]);
 	
 	//p0
-	
-	and(Y[0],NS[0],NS[1],E);
+
+	and_gate_3_inputs gate_1(.A(NS[0]),.B(NS[1]),.C(E),.S(Y[0]),);
 	
 	//p1
-	
-	and(Y[1],NS[0],S[1],E);
-	
+	and_gate_3_inputs gate_2(.A(NS[0]),.B(S[1]),.C(E),.S(Y[1]),);
 	//p2
 	
-	and(Y[2],S[0],NS[1],E);
 	
+	and_gate_3_inputs gate_3(.A(S[0]),.B(NS[1]),.C(E),.S(Y[2]),);
 	//p3
 	
-	and(Y[3],S[0],S[1],E);
 	
+	and_gate_3_inputs gate_4(.A(S[0]),.B(S[1]),.C(E),.S(Y[3]),);
 endmodule 
