@@ -79,3 +79,7 @@ set_global_assignment -name VERILOG_FILE modulo_preset_linha_5.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_8.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VERILOG_FILE modulo_mux2_1.v
+set_global_assignment -name VERILOG_FILE modulo_demux1_2.v
+set_global_assignment -name VERILOG_FILE modulo_seletor_1_16_at.v
+set_global_assignment -name VERILOG_FILE modulo_seletor_1_4_at.v
