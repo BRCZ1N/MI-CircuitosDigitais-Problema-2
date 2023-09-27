@@ -7,14 +7,14 @@ wire [1:0] NHH;
 not (NHH[1],HH[1]);
 not (NHH[0],HH[0]);
 
-and_gate_2_inputs gate_1(.A(1'b1),.B(1'b1),.S(cl5[0]),);
+and_gate_2_inputs gate_1(.A(1'b1),.B(1'b1),.S(cl5[4]),);
 
-or_gate_2_inputs gate_2(.A(NHH[1]),.B(HH[0]),.S(cl5[1]),);
+or_gate_2_inputs gate_2(.A(NHH[0]),.B(HH[1]),.S(cl5[3]),);
 
-and_gate_2_inputs gate_3(.A(HH[1]),.B(HH[0]),.S(cl5[2]),);
+or_gate_2_inputs gate_3(.A(HH[0]),.B(HH[1]),.S(cl5[2]),);
 
-and_gate_2_inputs gate_4(.A(1'b1),.B(HH[1]),.S(cl5[3]),);
+and_gate_2_inputs gate_4(.A(1'b1),.B(HH[0]),.S(cl5[1]),);
 
-and_gate_2_inputs gate_5(.A(1'b1),.B(HH[1]),.S(cl5[4]),);
+and_gate_2_inputs gate_5(.A(1'b1),.B(HH[0]),.S(cl5[0]),);
 
 endmodule 
