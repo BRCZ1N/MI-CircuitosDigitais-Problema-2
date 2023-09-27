@@ -1,5 +1,5 @@
 Timing Analyzer report for MI-CircuitosDigitais-Problema-2
-Wed Sep 27 12:05:31 2023
+Wed Sep 27 12:15:17 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -95,7 +95,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 367.65 MHz ; 304.04 MHz      ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 355.62 MHz ; 304.04 MHz      ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -105,7 +105,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -1.720 ; -4.969        ;
+; clk   ; -1.812 ; -5.323        ;
 +-------+--------+---------------+
 
 
@@ -144,13 +144,13 @@ No paths to report.
 +--------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                                     ; To Node                                                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; -1.720 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.387      ;
-; -1.706 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.373      ;
-; -1.552 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.219      ;
-; -1.543 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.210      ;
-; -1.255 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 1.000        ; 0.000      ; 1.922      ;
-; -1.248 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 1.000        ; 0.000      ; 1.915      ;
-; -1.247 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 1.000        ; 0.000      ; 1.914      ;
+; -1.812 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.479      ;
+; -1.806 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.473      ;
+; -1.705 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.372      ;
+; -1.697 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 1.000        ; 0.000      ; 2.364      ;
+; -1.238 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 1.000        ; 0.000      ; 1.905      ;
+; -1.236 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 1.000        ; 0.000      ; 1.903      ;
+; -1.232 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 1.000        ; 0.000      ; 1.899      ;
 ; -0.632 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 1.000        ; 0.000      ; 1.299      ;
 +--------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
@@ -161,13 +161,13 @@ No paths to report.
 ; Slack ; From Node                                                     ; To Node                                                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; 1.078 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 0.000        ; 0.000      ; 1.299      ;
-; 1.693 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 0.000        ; 0.000      ; 1.914      ;
-; 1.694 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 0.000        ; 0.000      ; 1.915      ;
-; 1.701 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 0.000        ; 0.000      ; 1.922      ;
-; 1.989 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.210      ;
-; 1.998 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.219      ;
-; 2.152 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.373      ;
-; 2.166 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.387      ;
+; 1.678 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 0.000        ; 0.000      ; 1.899      ;
+; 1.682 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 0.000        ; 0.000      ; 1.903      ;
+; 1.684 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 0.000        ; 0.000      ; 1.905      ;
+; 2.143 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.364      ;
+; 2.151 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.372      ;
+; 2.252 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.473      ;
+; 2.258 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; clk          ; clk         ; 0.000        ; 0.000      ; 2.479      ;
 +-------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -211,9 +211,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 32    ; 32   ;
-; Unconstrained Output Ports      ; 21    ; 21   ;
-; Unconstrained Output Port Paths ; 47    ; 47   ;
+; Unconstrained Input Port Paths  ; 16    ; 16   ;
+; Unconstrained Output Ports      ; 13    ; 13   ;
+; Unconstrained Output Port Paths ; 31    ; 31   ;
 +---------------------------------+-------+------+
 
 
@@ -236,33 +236,25 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                                        ;
-+---------------------------+---------------------------------------------------------------------------------------+
-; Output Port               ; Comment                                                                               ;
-+---------------------------+---------------------------------------------------------------------------------------+
-; m_col[0]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[1]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[2]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[3]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[4]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[2]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[2]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[4]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[4]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[5]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[5]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[7]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[7]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[0]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[0]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[1]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[1]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[2]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[2]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[3]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[3]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------------------+---------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                             ;
++----------------+---------------------------------------------------------------------------------------+
+; Output Port    ; Comment                                                                               ;
++----------------+---------------------------------------------------------------------------------------+
+; m_col[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++----------------+---------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -275,33 +267,25 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                                        ;
-+---------------------------+---------------------------------------------------------------------------------------+
-; Output Port               ; Comment                                                                               ;
-+---------------------------+---------------------------------------------------------------------------------------+
-; m_col[0]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[1]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[2]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[3]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; m_col[4]                  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[2]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[2]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[4]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[4]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[5]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[5]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[7]               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg[7]__duplicate    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[0]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[0]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[1]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[1]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[2]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[2]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[3]            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; out_7seg_ac[3]__duplicate ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------------------+---------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                             ;
++----------------+---------------------------------------------------------------------------------------+
+; Output Port    ; Comment                                                                               ;
++----------------+---------------------------------------------------------------------------------------+
+; m_col[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++----------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -310,7 +294,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Sep 27 12:05:29 2023
+    Info: Processing started: Wed Sep 27 12:15:16 2023
 Info: Command: quartus_sta MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -326,10 +310,10 @@ Info (332105): Deriving Clocks
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.720
+Info (332146): Worst-case setup slack is -1.812
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.720              -4.969 clk 
+    Info (332119):    -1.812              -5.323 clk 
 Info (332146): Worst-case hold slack is 1.078
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -345,8 +329,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4667 megabytes
-    Info: Processing ended: Wed Sep 27 12:05:31 2023
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Wed Sep 27 12:15:17 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

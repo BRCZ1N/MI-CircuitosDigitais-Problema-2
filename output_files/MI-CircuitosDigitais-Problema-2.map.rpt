@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Wed Sep 27 12:05:23 2023
+Wed Sep 27 12:15:10 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -113,13 +113,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Sep 27 12:05:23 2023       ;
+; Analysis & Synthesis Status ; Successful - Wed Sep 27 12:15:10 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
 ; Family                      ; MAX II                                      ;
 ; Total logic elements        ; 9                                           ;
-; Total pins                  ; 47                                          ;
+; Total pins                  ; 35                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -273,11 +273,11 @@ refer to the applicable agreement for further details.
 ;     -- asynchronous clear/load mode         ; 0                                                 ;
 ;                                             ;                                                   ;
 ; Total registers                             ; 3                                                 ;
-; I/O pins                                    ; 47                                                ;
+; I/O pins                                    ; 35                                                ;
 ; Maximum fan-out node                        ; modulo_status:mod_sta|or_gate_2_inputs:gate_7|S~0 ;
-; Maximum fan-out                             ; 16                                                ;
-; Total fan-out                               ; 47                                                ;
-; Average fan-out                             ; 0.84                                              ;
+; Maximum fan-out                             ; 8                                                 ;
+; Total fan-out                               ; 39                                                ;
+; Average fan-out                             ; 0.89                                              ;
 +---------------------------------------------+---------------------------------------------------+
 
 
@@ -286,7 +286,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                              ; Entity Name                 ; Library Name ;
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-----------------------------+--------------+
-; |pbl                                            ; 9 (0)       ; 3            ; 0          ; 47   ; 0            ; 6 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl                                                             ; pbl                         ; work         ;
+; |pbl                                            ; 9 (0)       ; 3            ; 0          ; 35   ; 0            ; 6 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl                                                             ; pbl                         ; work         ;
 ;    |modulo_contador_sync_3_bits:count_3_bits_1| ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1                  ; modulo_contador_sync_3_bits ; work         ;
 ;       |modulo_ff_t:ff_1|                        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1 ; modulo_ff_t                 ; work         ;
 ;       |modulo_ff_t:ff_2|                        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2 ; modulo_ff_t                 ; work         ;
@@ -1040,7 +1040,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Sep 27 12:05:10 2023
+    Info: Processing started: Wed Sep 27 12:14:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1462,8 +1462,6 @@ Warning (10236): Verilog HDL Implicit Net warning at pbl.v(98): created implicit
 Warning (10236): Verilog HDL Implicit Net warning at pbl.v(98): created implicit net for "m_at" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 98
 Warning (10236): Verilog HDL Implicit Net warning at modulo_mux2_1.v(8): created implicit net for "Ninput_sel" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux2_1.v Line: 8
 Info (12127): Elaborating entity "pbl" for the top level hierarchy
-Warning (10136): Verilog HDL Module Declaration warning at pbl.v(1): port "out_7seg" already exists in the list of ports File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
-Warning (10136): Verilog HDL Module Declaration warning at pbl.v(1): port "out_7seg_ac" already exists in the list of ports File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Warning (10034): Output port "m_line" at pbl.v(9) has no driver File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
 Info (12128): Elaborating entity "modulo_status" for hierarchy "modulo_status:mod_sta" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 28
 Info (12128): Elaborating entity "and_gate_2_inputs" for hierarchy "modulo_status:mod_sta|and_gate_2_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_status.v Line: 13
@@ -1504,10 +1502,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "out_7seg[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
     Warning (13410): Pin "out_7seg[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
     Warning (13410): Pin "out_7seg[6]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
-    Warning (13410): Pin "out_7seg[0]__duplicate" is stuck at VCC
-    Warning (13410): Pin "out_7seg[1]__duplicate" is stuck at GND
-    Warning (13410): Pin "out_7seg[3]__duplicate" is stuck at GND
-    Warning (13410): Pin "out_7seg[6]__duplicate" is stuck at GND
     Warning (13410): Pin "m_line[0]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
     Warning (13410): Pin "m_line[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
     Warning (13410): Pin "m_line[2]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
@@ -1524,14 +1518,14 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "hh2[5]" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 5
     Warning (15610): No output dependent on input pin "button_clr" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 3
     Warning (15610): No output dependent on input pin "button_clk" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 3
-Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 44 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 36 output pins
+    Info (21059): Implemented 24 output pins
     Info (21061): Implemented 9 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 378 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 372 warnings
     Info: Peak virtual memory: 4708 megabytes
-    Info: Processing ended: Wed Sep 27 12:05:23 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Processing ended: Wed Sep 27 12:15:11 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:25
 
 

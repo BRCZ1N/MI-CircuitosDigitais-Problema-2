@@ -1,4 +1,4 @@
-module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk, out_7seg, out_7seg_ac,m_col,m_line);
+module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk,m_col,m_line);
 
 	input button_clr,button_clk, clk;
 	input [1:0] hh1;
