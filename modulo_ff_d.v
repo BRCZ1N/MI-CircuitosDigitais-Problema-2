@@ -7,7 +7,7 @@ module modulo_ff_d(d,clk,clr,q);
 	
 	begin 
 	
-		if(clr == 1'b1) 
+		if(clr == 1'b0) 
 		
 		begin 
 	

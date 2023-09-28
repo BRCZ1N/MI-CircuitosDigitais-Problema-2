@@ -1,4 +1,4 @@
-module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk,m_col,m_line);
+module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk, m_col, m_line);
 
 	input button_clr,button_clk, clk;
 	input [1:0] hh1;
@@ -18,7 +18,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk,m_col,m_line
 	wire clr_1, clr_2, rgb_in_cod;
 	wire [19:0] clk_div;
 	wire [8:0] m_at_line_rgb_select;
-	wire [2:0] status_coord_c_coord_l_1, status_coord_c_coord_l_2, status_coord_c_coord_l_3, status_coord_c_coord_l_4;
+	wire [3:0] status_coord_c_coord_l_1, status_coord_c_coord_l_2, status_coord_c_coord_l_3, status_coord_c_coord_l_4;
 	
 	
 	not(Nm_at_line[6],m_at_line[6]);
@@ -44,24 +44,28 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk,m_col,m_line
 	
 	// Circuito dos 7 Segmentos
 	
-	modulo_contador_sync_2_bits count_2_bits_1(.clr(clr_1),.clk(clk_div),.q(count_2_bits_mux_7seg_sel),);
+	modulo_contador_sync_2_bits count_2_bits_1(.clr(clr_1),.clk(clk_div[19]),.q(count_2_bits_mux_7seg_sel),);
 	and_gate_3_inputs gate_1(.A(count_2_bits_mux_7seg_sel[1]),.B(Nstatus_wire[1]),.C(status_wire[0]),.S(clr_1),);
 	
-	and_gate_2_inputs gate_3(.A(1'b1),.B(status_wire[3]),.S(status_coord_c_coord_l_1[2]));
-	and_gate_2_inputs gate_4(.A(1'b1),.B(coord_at_coluna[3]),.S(status_coord_c_coord_l_1[1]));
-	and_gate_2_inputs gate_5(.A(1'b1),.B(coord_at_linha[3]),.S(status_coord_c_coord_l_1[0]));
+	and_gate_2_inputs gate_3(.A(1'b1),.B(status_wire[3]),.S(status_coord_c_coord_l_1[3]));
+	and_gate_2_inputs gate_4(.A(1'b1),.B(coord_at_coluna[3]),.S(status_coord_c_coord_l_1[2]));
+	and_gate_2_inputs gate_5(.A(1'b1),.B(coord_at_linha[3]),.S(status_coord_c_coord_l_1[1]));
+	and_gate_2_inputs gate_6(.A(1'b1),.B(1'b1),.S(status_coord_c_coord_l_1[0]));
 	
-	and_gate_2_inputs gate_6(.A(1'b1),.B(status_wire[2]),.S(status_coord_c_coord_l_2[2]));
-	and_gate_2_inputs gate_7(.A(1'b1),.B(coord_at_coluna[2]),.S(status_coord_c_coord_l_2[1]));
-	and_gate_2_inputs gate_8(.A(1'b1),.B(coord_at_linha[2]),.S(status_coord_c_coord_l_2[0]));
+	and_gate_2_inputs gate_7(.A(1'b1),.B(status_wire[2]),.S(status_coord_c_coord_l_2[3]));
+	and_gate_2_inputs gate_8(.A(1'b1),.B(coord_at_coluna[2]),.S(status_coord_c_coord_l_2[2]));
+	and_gate_2_inputs gate_9(.A(1'b1),.B(coord_at_linha[2]),.S(status_coord_c_coord_l_2[1]));
+	and_gate_2_inputs gate_10(.A(1'b1),.B(1'b1),.S(status_coord_c_coord_l_2[0]));
 	
-	and_gate_2_inputs gate_9(.A(1'b1),.B(status_wire[1]),.S(status_coord_c_coord_l_3[2]));
-	and_gate_2_inputs gate_10(.A(1'b1),.B(coord_at_coluna[1]),.S(status_coord_c_coord_l_3[1]));
-	and_gate_2_inputs gate_11(.A(1'b1),.B(coord_at_linha[1]),.S(status_coord_c_coord_l_3[0]));
+	and_gate_2_inputs gate_11(.A(1'b1),.B(status_wire[1]),.S(status_coord_c_coord_l_3[3]));
+	and_gate_2_inputs gate_12(.A(1'b1),.B(coord_at_coluna[1]),.S(status_coord_c_coord_l_3[2]));
+	and_gate_2_inputs gate_13(.A(1'b1),.B(coord_at_linha[1]),.S(status_coord_c_coord_l_3[1]));
+	and_gate_2_inputs gate_14(.A(1'b1),.B(1'b1),.S(status_coord_c_coord_l_3[0]));
 	
-	and_gate_2_inputs gate_12(.A(1'b1),.B(status_wire[0]),.S(status_coord_c_coord_l_4[2]));
-	and_gate_2_inputs gate_13(.A(1'b1),.B(coord_at_coluna[0]),.S(status_coord_c_coord_l_4[1]));
-	and_gate_2_inputs gate_14(.A(1'b1),.B(coord_at_linha[0]),.S(status_coord_c_coord_l_4[0]));
+	and_gate_2_inputs gate_15(.A(1'b1),.B(status_wire[0]),.S(status_coord_c_coord_l_4[3]));
+	and_gate_2_inputs gate_16(.A(1'b1),.B(coord_at_coluna[0]),.S(status_coord_c_coord_l_4[2]));
+	and_gate_2_inputs gate_17(.A(1'b1),.B(coord_at_linha[0]),.S(status_coord_c_coord_l_4[1]));
+	and_gate_2_inputs gate_18(.A(1'b1),.B(1'b1),.S(status_coord_c_coord_l_4[0]));
 	
 	modulo_mux4_1 mux_1(.input_e(status_coord_c_coord_l_1),.input_sel(count_2_bits_mux_7seg_sel),.out(out_mux_7seg_decod[3]),);
 	modulo_mux4_1 mux_2(.input_e(status_coord_c_coord_l_2),.input_sel(count_2_bits_mux_7seg_sel),.out(out_mux_7seg_decod[2]),);
@@ -69,7 +73,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk,m_col,m_line
 	modulo_mux4_1 mux_4(.input_e(status_coord_c_coord_l_4),.input_sel(count_2_bits_mux_7seg_sel),.out(out_mux_7seg_decod[0]),);
 	
 	modulo_decodificador_bcd_ex_7seg decodificador_bcd_ex_1(.D7SEG(out_mux_7seg_decod), .OUT_SEGS(out_7seg),);
-	modulo_decodificador_bcd_ex_7seg_ac decodificador_bcd_ex_ac_1(.DAC(out_mux_7seg_decod), .AC(out_7seg_ac),);
+	modulo_decodificador_bcd_ex_7seg_ac decodificador_bcd_ex_ac_1(.STAC(hh1), .AC(out_7seg_ac),);
 	
 	// ==========================
 	

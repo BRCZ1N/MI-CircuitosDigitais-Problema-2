@@ -68,7 +68,7 @@ module modulo_divisor_frequencia(clr, q, clk);
 	modulo_ff_t ff_16(.t(1'b1),.clk(q[14]),.clr(clr),.q(q[15]),);
 																					  
 	// F/131072
-	
+
 	modulo_ff_t ff_17(.t(1'b1),.clk(q[15]),.clr(clr),.q(q[16]),);
 																					  
 	// F/262144
