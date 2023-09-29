@@ -10,16 +10,17 @@ module modulo_decodificador_bcd_ex_7seg_ac(STAC,AC);
 	
 	//AC1
 	
-	or_gate_2_inputs gate_1(.A(1'b0),.B(1'b0),.S(AC[3]),);
+	and_gate_2_inputs gate_1(.A(1'b0),.B(1'b0),.S(AC[3]),);
 
 	//AC2
 	
-	and_gate_2_inputs gate_2(.A(NSTAC[1]),.B(STAC[0]),.S(AC[2]),);
+	//01   11 1 10  00 0
+	or_gate_2_inputs gate_2(.A(NSTAC[1]),.B(STAC[0]),.S(AC[2]),);
 	
 	
 	//AC3
 	
-	and_gate_2_inputs gate_3(.A(NSTAC[1]),.B(STAC[0]),.S(AC[1]),);
+	or_gate_2_inputs gate_3(.A(NSTAC[1]),.B(STAC[0]),.S(AC[1]),);
 	
 	
 	//AC4
