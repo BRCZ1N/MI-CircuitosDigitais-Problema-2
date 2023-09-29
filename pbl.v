@@ -45,7 +45,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk, m_col, m_li
 	// Circuito dos 7 Segmentos
 	
 	modulo_contador_sync_2_bits count_2_bits_1(.clr(clr_1),.clk(clk_div[19]),.q(count_2_bits_mux_7seg_sel),);
-	and_gate_3_inputs gate_1(.A(count_2_bits_mux_7seg_sel[1]),.B(Nstatus_wire[1]),.C(status_wire[0]),.S(clr_1),);
+	or_gate_3_inputs gate_1(.A(count_2_bits_mux_7seg_sel[1]),.B(Nstatus_wire[1]),.C(status_wire[0]),.S(clr_1),);
 	
 	and_gate_2_inputs gate_3(.A(1'b1),.B(status_wire[3]),.S(status_coord_c_coord_l_1[3]));
 	and_gate_2_inputs gate_4(.A(1'b1),.B(coord_at_coluna[3]),.S(status_coord_c_coord_l_1[2]));
