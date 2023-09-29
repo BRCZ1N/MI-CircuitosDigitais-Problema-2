@@ -3,7 +3,7 @@ $comment
 		vcd file MI-CircuitosDigitais-Problema-2.msim.vcd -direction
 $end
 $date
-	Fri Sep 29 15:15:50 2023
+	Fri Sep 29 15:49:37 2023
 $end
 $version
 	ModelSim Version 10.5b

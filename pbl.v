@@ -78,7 +78,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk, m_col, m_li
 	
 	// ==========================
 	
-	modulo_contador_sync_3_bits count_3_bits_1(.clr(clr_2),.clk(clk_div[19]),.q(count_3_bits_mux_matriz_leds_sel),);
+	modulo_contador_sync_3_bits count_3_bits_1(.clr(clr_2),.clk(clk_div[3]),.q(count_3_bits_mux_matriz_leds_sel),);
 	and_gate_2_inputs gate_2(.A(count_3_bits_mux_matriz_leds_sel[2]),.B(1'b1),.S(clr_2),);
 	
 	modulo_demux1_8 demux_col(.input_e(1'b1),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_col),);
