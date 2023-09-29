@@ -1,7 +1,8 @@
-module modulo_ff_d(d,clk,clr,q);
+module modulo_ff_d(d,clk,clr,q,nq);
 
 	input d,clk,clr;
 	output reg q;
+	output reg nq;
 	
 	
 	initial begin
@@ -25,6 +26,7 @@ module modulo_ff_d(d,clk,clr,q);
 		begin
 		
 			q <= d;
+			nq <= !d;
 		
 		end
 	

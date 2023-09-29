@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Fri Sep 29 15:13:49 2023
+Fri Sep 29 20:32:11 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -87,61 +87,60 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  79. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
  80. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
  81. Port Connectivity Checks: "modulo_demux1_8:demux_col"
- 82. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
- 83. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
- 84. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
- 85. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
- 86. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
- 87. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
- 88. Port Connectivity Checks: "and_gate_2_inputs:gate_18"
- 89. Port Connectivity Checks: "and_gate_2_inputs:gate_17"
- 90. Port Connectivity Checks: "and_gate_2_inputs:gate_16"
- 91. Port Connectivity Checks: "and_gate_2_inputs:gate_15"
- 92. Port Connectivity Checks: "and_gate_2_inputs:gate_14"
- 93. Port Connectivity Checks: "and_gate_2_inputs:gate_13"
- 94. Port Connectivity Checks: "and_gate_2_inputs:gate_12"
- 95. Port Connectivity Checks: "and_gate_2_inputs:gate_11"
- 96. Port Connectivity Checks: "and_gate_2_inputs:gate_10"
- 97. Port Connectivity Checks: "and_gate_2_inputs:gate_9"
- 98. Port Connectivity Checks: "and_gate_2_inputs:gate_8"
- 99. Port Connectivity Checks: "and_gate_2_inputs:gate_7"
-100. Port Connectivity Checks: "and_gate_2_inputs:gate_6"
-101. Port Connectivity Checks: "and_gate_2_inputs:gate_5"
-102. Port Connectivity Checks: "and_gate_2_inputs:gate_4"
-103. Port Connectivity Checks: "and_gate_2_inputs:gate_3"
-104. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
-105. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
-106. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
-107. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
-108. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
-109. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
-110. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
-111. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
-112. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
-113. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
-114. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
-115. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
-116. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
-117. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
-118. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
-119. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
-120. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
-121. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
-122. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
-123. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
-124. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
-125. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
-126. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
-127. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_3"
-128. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_2"
-129. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_1"
-130. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
-131. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
-132. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
-133. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_1"
-134. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
-135. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
-136. Analysis & Synthesis Messages
+ 82. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
+ 83. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
+ 84. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
+ 85. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
+ 86. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
+ 87. Port Connectivity Checks: "and_gate_2_inputs:gate_18"
+ 88. Port Connectivity Checks: "and_gate_2_inputs:gate_17"
+ 89. Port Connectivity Checks: "and_gate_2_inputs:gate_16"
+ 90. Port Connectivity Checks: "and_gate_2_inputs:gate_15"
+ 91. Port Connectivity Checks: "and_gate_2_inputs:gate_14"
+ 92. Port Connectivity Checks: "and_gate_2_inputs:gate_13"
+ 93. Port Connectivity Checks: "and_gate_2_inputs:gate_12"
+ 94. Port Connectivity Checks: "and_gate_2_inputs:gate_11"
+ 95. Port Connectivity Checks: "and_gate_2_inputs:gate_10"
+ 96. Port Connectivity Checks: "and_gate_2_inputs:gate_9"
+ 97. Port Connectivity Checks: "and_gate_2_inputs:gate_8"
+ 98. Port Connectivity Checks: "and_gate_2_inputs:gate_7"
+ 99. Port Connectivity Checks: "and_gate_2_inputs:gate_6"
+100. Port Connectivity Checks: "and_gate_2_inputs:gate_5"
+101. Port Connectivity Checks: "and_gate_2_inputs:gate_4"
+102. Port Connectivity Checks: "and_gate_2_inputs:gate_3"
+103. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
+104. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
+105. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
+106. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
+107. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
+108. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
+109. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
+110. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
+111. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
+112. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
+113. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
+114. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
+115. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
+116. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
+117. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
+118. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
+119. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
+120. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
+121. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
+122. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
+123. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
+124. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
+125. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
+126. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_3"
+127. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_2"
+128. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_1"
+129. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
+130. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
+131. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
+132. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_1"
+133. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
+134. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
+135. Analysis & Synthesis Messages
 
 
 
@@ -167,7 +166,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Sep 29 15:13:49 2023       ;
+; Analysis & Synthesis Status ; Successful - Fri Sep 29 20:32:11 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
@@ -255,8 +254,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -306,38 +305,38 @@ refer to the applicable agreement for further details.
 +---------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                 ;
-+---------------------------------------------+---------------------------------------------------------------+
-; Resource                                    ; Usage                                                         ;
-+---------------------------------------------+---------------------------------------------------------------+
-; Total logic elements                        ; 132                                                           ;
-;     -- Combinational with no register       ; 82                                                            ;
-;     -- Register only                        ; 16                                                            ;
-;     -- Combinational with a register        ; 34                                                            ;
-;                                             ;                                                               ;
-; Logic element usage by number of LUT inputs ;                                                               ;
-;     -- 4 input functions                    ; 61                                                            ;
-;     -- 3 input functions                    ; 22                                                            ;
-;     -- 2 input functions                    ; 13                                                            ;
-;     -- 1 input functions                    ; 20                                                            ;
-;     -- 0 input functions                    ; 0                                                             ;
-;                                             ;                                                               ;
-; Logic elements by mode                      ;                                                               ;
-;     -- normal mode                          ; 132                                                           ;
-;     -- arithmetic mode                      ; 0                                                             ;
-;     -- qfbk mode                            ; 0                                                             ;
-;     -- register cascade mode                ; 0                                                             ;
-;     -- synchronous clear/load mode          ; 2                                                             ;
-;     -- asynchronous clear/load mode         ; 0                                                             ;
-;                                             ;                                                               ;
-; Total registers                             ; 50                                                            ;
-; I/O pins                                    ; 35                                                            ;
-; Maximum fan-out node                        ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ;
-; Maximum fan-out                             ; 26                                                            ;
-; Total fan-out                               ; 444                                                           ;
-; Average fan-out                             ; 2.66                                                          ;
-+---------------------------------------------+---------------------------------------------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Total logic elements                        ; 132        ;
+;     -- Combinational with no register       ; 82         ;
+;     -- Register only                        ; 16         ;
+;     -- Combinational with a register        ; 34         ;
+;                                             ;            ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 61         ;
+;     -- 3 input functions                    ; 22         ;
+;     -- 2 input functions                    ; 12         ;
+;     -- 1 input functions                    ; 21         ;
+;     -- 0 input functions                    ; 0          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 132        ;
+;     -- arithmetic mode                      ; 0          ;
+;     -- qfbk mode                            ; 0          ;
+;     -- register cascade mode                ; 0          ;
+;     -- synchronous clear/load mode          ; 0          ;
+;     -- asynchronous clear/load mode         ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 50         ;
+; I/O pins                                    ; 35         ;
+; Maximum fan-out node                        ; button_clr ;
+; Maximum fan-out                             ; 25         ;
+; Total fan-out                               ; 442        ;
+; Average fan-out                             ; 2.65       ;
++---------------------------------------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -524,7 +523,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 50    ;
-; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -1229,15 +1228,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_2_inputs:gate_2" ;
-+------+-------+----------+----------------------------+
-; Port ; Type  ; Severity ; Details                    ;
-+------+-------+----------+----------------------------+
-; B    ; Input ; Info     ; Stuck at VCC               ;
-+------+-------+----------+----------------------------+
-
-
 +-----------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1" ;
 +------+-------+----------+---------------------------------------------------------------+
@@ -1629,7 +1619,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; clr      ; Input  ; Info     ; Stuck at GND                                                                        ;
-; q[18..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; q[18..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -1732,10 +1722,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Sep 29 15:13:37 2023
+    Info: Processing started: Fri Sep 29 20:32:03 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_matriz_reg_po.v(7): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_matriz_reg_po.v Line: 7
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_matriz_reg_po.v(9): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_matriz_reg_po.v Line: 9
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_matriz_reg_po.v(11): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_matriz_reg_po.v Line: 11
@@ -1933,16 +1923,16 @@ Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(74): ignored 
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(76): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 76
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(77): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 77
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(81): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 81
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(82): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 82
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(84): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 84
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(96): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(83): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 83
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(95): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 95
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(105): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 105
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(106): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 106
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(107): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 107
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(108): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 108
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(109): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 109
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(110): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 110
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(111): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 111
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(112): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 112
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(121): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(122): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(123): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 123
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(124): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
@@ -1951,7 +1941,7 @@ Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(126): ignored
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(127): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(128): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(129): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 129
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(130): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(132): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(133): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 133
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(134): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 134
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(135): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 135
@@ -1960,15 +1950,15 @@ Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(137): ignored
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(138): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 138
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(139): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 139
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(140): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 140
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(141): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 141
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(143): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 143
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(142): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 142
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(152): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 152
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(153): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 153
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(154): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 154
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(155): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 155
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(156): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 156
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(157): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 157
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(158): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 158
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(159): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 159
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(162): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 162
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(163): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 163
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(164): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 164
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(165): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 165
@@ -1977,7 +1967,6 @@ Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(167): ignored
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(168): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 168
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(169): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 169
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(170): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 170
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(171): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 171
 Info (12021): Found 1 design units, including 1 entities, in source file pbl.v
     Info (12023): Found entity 1: pbl File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_ff_t.v
@@ -2183,30 +2172,27 @@ Info (12128): Elaborating entity "and_gate_4_inputs" for hierarchy "modulo_decod
 Info (12128): Elaborating entity "or_gate_5_inputs" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_5_inputs:gate_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_decodificador_bcd_ex_7seg.v Line: 44
 Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg_ac" for hierarchy "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 77
 Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 81
-Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 84
-Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
-Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
-Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 90
-Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 91
-Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 92
-Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 93
-Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 94
-Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
+Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 83
+Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 87
+Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
+Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
+Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 90
+Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 91
+Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 92
+Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 93
+Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 95
 Info (12128): Elaborating entity "modulo_ff_d" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_matriz_reg_po.v Line: 7
-Info (12128): Elaborating entity "modulo_mapeamento_mux8_1" for hierarchy "modulo_mapeamento_mux8_1:map_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 98
-Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 106
-Info (12128): Elaborating entity "modulo_seletor_1_16_at" for hierarchy "modulo_seletor_1_16_at:mod_sel_demux_1_16_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 118
-Info (12128): Elaborating entity "modulo_seletor_1_4_at" for hierarchy "modulo_seletor_1_4_at:mod_sel_demux_1_4_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 119
-Info (12128): Elaborating entity "modulo_demux1_16" for hierarchy "modulo_demux1_16:demux_11" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
+Info (12128): Elaborating entity "modulo_mapeamento_mux8_1" for hierarchy "modulo_mapeamento_mux8_1:map_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 97
+Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 105
+Info (12128): Elaborating entity "modulo_seletor_1_16_at" for hierarchy "modulo_seletor_1_16_at:mod_sel_demux_1_16_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 117
+Info (12128): Elaborating entity "modulo_seletor_1_4_at" for hierarchy "modulo_seletor_1_4_at:mod_sel_demux_1_4_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 118
+Info (12128): Elaborating entity "modulo_demux1_16" for hierarchy "modulo_demux1_16:demux_11" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 120
 Info (12128): Elaborating entity "and_gate_5_inputs" for hierarchy "modulo_demux1_16:demux_11|and_gate_5_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_16.v Line: 13
-Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_12" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
-Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 143
-Info (12128): Elaborating entity "modulo_mux16_1" for hierarchy "modulo_mux16_1:mux_20" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 161
-Info (12128): Elaborating entity "modulo_sel_inputs_matriz" for hierarchy "modulo_sel_inputs_matriz:sel_matriz_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 173
-Info (12128): Elaborating entity "modulo_mux2_1" for hierarchy "modulo_mux2_1:mux_31" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 175
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_dmx_mx_4[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 10
-    Warning (12110): Net "sel_dmx_mx_4[2]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 10
+Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_12" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
+Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 142
+Info (12128): Elaborating entity "modulo_mux16_1" for hierarchy "modulo_mux16_1:mux_20" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 160
+Info (12128): Elaborating entity "modulo_sel_inputs_matriz" for hierarchy "modulo_sel_inputs_matriz:sel_matriz_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 172
+Info (12128): Elaborating entity "modulo_mux2_1" for hierarchy "modulo_mux2_1:mux_31" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 174
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "sel_dmx_mx_4[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 10
     Warning (12110): Net "sel_dmx_mx_4[2]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 10
@@ -2381,10 +2367,10 @@ Info (21057): Implemented 167 device resources after synthesis - the final resou
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 24 output pins
     Info (21061): Implemented 132 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 530 warnings
-    Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Fri Sep 29 15:13:49 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 526 warnings
+    Info: Peak virtual memory: 4698 megabytes
+    Info: Processing ended: Fri Sep 29 20:32:11 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:16
 
 

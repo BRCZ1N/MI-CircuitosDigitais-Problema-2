@@ -965,12 +965,6 @@ clr => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl|and_gate_2_inputs:gate_2
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |pbl|modulo_demux1_8:demux_col
 input_e => input_e.IN8
 input_sel[0] => input_sel[0].IN4
