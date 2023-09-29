@@ -3,6 +3,11 @@ module modulo_ff_d(d,clk,clr,q);
 	input d,clk,clr;
 	output reg q;
 	
+	
+	initial begin
+    q = 1'b1; 
+	end
+	
 	always @(negedge clk) 
 	
 	begin 
@@ -11,7 +16,7 @@ module modulo_ff_d(d,clk,clr,q);
 		
 		begin 
 	
-			q <= 1'b0;
+			q <= 1'b1;
 	
 		end 
 		

@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Fri Sep 29 13:53:07 2023
+Analysis & Synthesis Status : Successful - Fri Sep 29 15:13:49 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_decodificador_bcd_ex_7seg_ac
+Top-level Entity Name : pbl
 Family : MAX II
-Total logic elements : 1
-Total pins : 6
+Total logic elements : 132
+Total pins : 35
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
