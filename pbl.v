@@ -1,13 +1,13 @@
-module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line, Nsel_state);
+module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line);
 
 	input button_confirmation, clk;
 	input [1:0] hh1;
 	input [5:0] hh2;
 	output [7:0] out_7seg;
-	output [3:0] out_7seg_ac, Nsel_state;
+	output [3:0] out_7seg_ac;
 	output [7:0] m_col;
 	output [6:0] m_line;
-	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_dmx_mx_4,sel_state;
+	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_dmx_mx_4,Nsel_state,sel_state;
 	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire,sel_dmx_mx_16, sel_matriz;
 	wire [34:0] m_po_in, m_at_in;
 	wire [34:0] m_po_out, m_at_out;
@@ -21,6 +21,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line,
 	wire [3:0] status_coord_c_coord_l_1, status_coord_c_coord_l_2, status_coord_c_coord_l_3, status_coord_c_coord_l_4;
 	wire [7:0] m_po_out_w1, m_po_out_w2, m_po_out_w3, m_po_out_w4, m_po_out_w5, m_po_out_w6, m_po_out_w7;
 	wire [7:0] m_at_out_w1, m_at_out_w2, m_at_out_w3, m_at_out_w4, m_at_out_w5, m_at_out_w6, m_at_out_w7;
+	wire [3:0] v_status_1, v_status_2, v_status_3, v_status_4, v_status_5, v_status_6, v_status_7;
 	
 	not(Nsel_state[3], sel_state[3]);
 	not(Nsel_state[2], sel_state[2]);
@@ -177,21 +178,50 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line,
 	modulo_mux4_1 mux_29(.input_e(m_at_out[6:3]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[1]),);
 	modulo_mux4_1 mux_30(.input_e(m_at_out[2:0]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[0]),);
 	
-	modulo_mapeamento_mux8_1 map_15(.e(m_at_out[34:30]), .out_mapeado(m_at_out_w1));
-	modulo_mapeamento_mux8_1 map_16(.e(m_at_out[29:25]), .out_mapeado(m_at_out_w2));
-	modulo_mapeamento_mux8_1 map_17(.e(m_at_out[24:20]), .out_mapeado(m_at_out_w3));
-	modulo_mapeamento_mux8_1 map_18(.e(m_at_out[19:15]), .out_mapeado(m_at_out_w4));
-	modulo_mapeamento_mux8_1 map_19(.e(m_at_out[14:10]), .out_mapeado(m_at_out_w5));
-	modulo_mapeamento_mux8_1 map_20(.e(m_at_out[9:5]), .out_mapeado(m_at_out_w6));
-	modulo_mapeamento_mux8_1 map_21(.e(m_at_out[4:0]), .out_mapeado(m_at_out_w7));
 	
-	modulo_mux4_1 mux_1(.input_e(),.input_sel(hh1),.out(m_line[6]),);
-	modulo_mux4_1 mux_2(.input_e(),.input_sel(hh1),.out(m_line[5]),);
-	modulo_mux4_1 mux_3(.input_e(),.input_sel(hh1),.out(m_line[4]),);
-	modulo_mux4_1 mux_4(.input_e(),.input_sel(hh1),.out(m_line[3]),);
-	modulo_mux4_1 mux_1(.input_e(),.input_sel(hh1),.out(m_line[2]),);
-	modulo_mux4_1 mux_2(.input_e(),.input_sel(hh1),.out(m_line[1]),);
-	modulo_mux4_1 mux_3(.input_e(),.input_sel(hh1),.out(m_line[0]),);
+	and_gate_2_inputs gate_19(.A(1'b1),.B(1'b1),.S(v_status_1[3]));
+	and_gate_2_inputs gate_20(.A(1'b1),.B(m_po_line[6]),.S(v_status_1[2]));
+	and_gate_2_inputs gate_21(.A(1'b1),.B(m_at_line[6]),.S(v_status_1[1]));
+	and_gate_2_inputs gate_22(.A(1'b1),.B(m_po_line[6]),.S(v_status_1[0]));
+	
+	and_gate_2_inputs gate_23(.A(1'b1),.B(1'b1),.S(v_status_2[3]));
+	and_gate_2_inputs gate_24(.A(1'b1),.B(m_po_line[5]),.S(v_status_2[2]));
+	and_gate_2_inputs gate_25(.A(1'b1),.B(m_at_line[5]),.S(v_status_2[1]));
+	and_gate_2_inputs gate_26(.A(1'b1),.B(m_po_line[5]),.S(v_status_2[0]));
+	
+	and_gate_2_inputs gate_27(.A(1'b1),.B(1'b1),.S(v_status_3[3]));
+	and_gate_2_inputs gate_28(.A(1'b1),.B(m_po_line[4]),.S(v_status_3[2]));
+	and_gate_2_inputs gate_29(.A(1'b1),.B(m_at_line[4]),.S(v_status_3[1]));
+	and_gate_2_inputs gate_30(.A(1'b1),.B(m_po_line[4]),.S(v_status_3[0]));
+	
+	and_gate_2_inputs gate_31(.A(1'b1),.B(1'b1),.S(v_status_4[3]));
+	and_gate_2_inputs gate_32(.A(1'b1),.B(m_po_line[3]),.S(v_status_4[2]));
+	and_gate_2_inputs gate_33(.A(1'b1),.B(m_at_line[3]),.S(v_status_4[1]));
+	and_gate_2_inputs gate_34(.A(1'b1),.B(m_po_line[3]),.S(v_status_4[0]));
+	
+	and_gate_2_inputs gate_35(.A(1'b1),.B(1'b1),.S(v_status_5[3]));
+	and_gate_2_inputs gate_36(.A(1'b1),.B(m_po_line[2]),.S(v_status_5[2]));
+	and_gate_2_inputs gate_37(.A(1'b1),.B(m_at_line[2]),.S(v_status_5[1]));
+	and_gate_2_inputs gate_38(.A(1'b1),.B(m_po_line[2]),.S(v_status_5[0]));
+	
+	and_gate_2_inputs gate_39(.A(1'b1),.B(1'b1),.S(v_status_6[3]));
+	and_gate_2_inputs gate_40(.A(1'b1),.B(m_po_line[1]),.S(v_status_6[2]));
+	and_gate_2_inputs gate_41(.A(1'b1),.B(m_at_line[1]),.S(v_status_6[1]));
+	and_gate_2_inputs gate_42(.A(1'b1),.B(m_po_line[1]),.S(v_status_6[0]));
+	
+	and_gate_2_inputs gate_43(.A(1'b1),.B(1'b1),.S(v_status_7[3]));
+	and_gate_2_inputs gate_44(.A(1'b1),.B(m_po_line[0]),.S(v_status_7[2]));
+	and_gate_2_inputs gate_45(.A(1'b1),.B(m_at_line[0]),.S(v_status_7[1]));
+	and_gate_2_inputs gate_46(.A(1'b1),.B(m_po_line[0]),.S(v_status_7[0]));
+
+	
+	modulo_mux4_1 mux_31(.input_e(v_status_1),.input_sel(hh1),.out(m_line[6]),);
+	modulo_mux4_1 mux_32(.input_e(v_status_2),.input_sel(hh1),.out(m_line[5]),);
+	modulo_mux4_1 mux_33(.input_e(v_status_3),.input_sel(hh1),.out(m_line[4]),);
+	modulo_mux4_1 mux_34(.input_e(v_status_4),.input_sel(hh1),.out(m_line[3]),);
+	modulo_mux4_1 mux_35(.input_e(v_status_5),.input_sel(hh1),.out(m_line[2]),);
+	modulo_mux4_1 mux_36(.input_e(v_status_6),.input_sel(hh1),.out(m_line[1]),);
+	modulo_mux4_1 mux_37(.input_e(v_status_7),.input_sel(hh1),.out(m_line[0]),);
 	
 
 	
