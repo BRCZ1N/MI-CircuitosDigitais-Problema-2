@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/29/2023 15:49:34"
+// Generated on "09/30/2023 02:18:13"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          pbl
 // 
@@ -29,13 +29,12 @@
 module pbl_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_clk;
-reg button_clr;
+reg button_confirmation;
 reg clk;
 reg [1:0] hh1;
 reg [5:0] hh2;
 // wires                                               
-wire [4:0] m_col;
+wire [7:0] m_col;
 wire [6:0] m_line;
 wire [7:0] out_7seg;
 wire [3:0] out_7seg_ac;
@@ -43,8 +42,7 @@ wire [3:0] out_7seg_ac;
 // assign statements (if any)                          
 pbl i1 (
 // port map - connection between master ports and signals/registers   
-	.button_clk(button_clk),
-	.button_clr(button_clr),
+	.button_confirmation(button_confirmation),
 	.clk(clk),
 	.hh1(hh1),
 	.hh2(hh2),
@@ -58,24 +56,25 @@ begin
 #1000000 $finish;
 end 
 
-// button_clk
+// button_confirmation
 initial
 begin
-	button_clk = 1'b0;
-end 
-
-// button_clr
-initial
-begin
-	button_clr = 1'b0;
+	button_confirmation = 1'b1;
+	button_confirmation = #40000 1'b0;
 end 
 
 // clk
-always
+initial
 begin
+	clk = 1'b1;
+	# 10000;
+	repeat(49)
+	begin
+		clk = 1'b0;
+		clk = #10000 1'b1;
+		# 10000;
+	end
 	clk = 1'b0;
-	clk = #10000 1'b1;
-	#10000;
 end 
 // hh1[ 1 ]
 initial
@@ -85,7 +84,8 @@ end
 // hh1[ 0 ]
 initial
 begin
-	hh1[0] = 1'b0;
+	hh1[0] = 1'b1;
+	hh1[0] = #30000 1'b0;
 end 
 // hh2[ 5 ]
 initial
@@ -95,7 +95,8 @@ end
 // hh2[ 4 ]
 initial
 begin
-	hh2[4] = 1'b0;
+	hh2[4] = 1'b1;
+	hh2[4] = #10000 1'b0;
 end 
 // hh2[ 3 ]
 initial

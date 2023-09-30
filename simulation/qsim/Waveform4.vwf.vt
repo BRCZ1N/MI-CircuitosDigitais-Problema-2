@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/29/2023 20:21:02"
+// Generated on "09/30/2023 02:27:58"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          pbl
 // 
@@ -29,68 +29,64 @@
 module pbl_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_clk;
-reg button_clr;
+reg button_confirmation;
 reg clk;
 reg [1:0] hh1;
 reg [5:0] hh2;
 // wires                                               
-wire [4:0] m_col;
+wire [7:0] m_col;
 wire [6:0] m_line;
 wire [7:0] out_7seg;
 wire [3:0] out_7seg_ac;
+wire [3:0] sel_state;
 
 // assign statements (if any)                          
 pbl i1 (
 // port map - connection between master ports and signals/registers   
-	.button_clk(button_clk),
-	.button_clr(button_clr),
+	.button_confirmation(button_confirmation),
 	.clk(clk),
 	.hh1(hh1),
 	.hh2(hh2),
 	.m_col(m_col),
 	.m_line(m_line),
 	.out_7seg(out_7seg),
-	.out_7seg_ac(out_7seg_ac)
+	.out_7seg_ac(out_7seg_ac),
+	.sel_state(sel_state)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// button_clk
+// button_confirmation
 initial
 begin
-	button_clk = 1'b0;
-end 
-
-// button_clr
-initial
-begin
-	button_clr = 1'b0;
+	button_confirmation = 1'b1;
+	button_confirmation = #10000 1'b0;
 end 
 
 // clk
-always
+initial
 begin
+	clk = 1'b1;
+	# 10000;
+	repeat(49)
+	begin
+		clk = 1'b0;
+		clk = #10000 1'b1;
+		# 10000;
+	end
 	clk = 1'b0;
-	clk = #10000 1'b1;
-	#10000;
 end 
 // hh1[ 1 ]
 initial
 begin
 	hh1[1] = 1'b0;
-	hh1[1] = #20000 1'b1;
-	hh1[1] = #20000 1'b0;
 end 
 // hh1[ 0 ]
 initial
 begin
-	hh1[0] = 1'b0;
-	hh1[0] = #10000 1'b1;
-	hh1[0] = #10000 1'b0;
-	hh1[0] = #10000 1'b1;
+	hh1[0] = 1'b1;
 	hh1[0] = #10000 1'b0;
 end 
 // hh2[ 5 ]
