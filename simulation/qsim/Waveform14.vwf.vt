@@ -18,46 +18,104 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/28/2023 18:33:29"
+// Generated on "09/30/2023 01:12:42"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_status
+// Verilog Test Bench (with test vectors) for design :                          pbl
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_status_vlg_vec_tst();
+module pbl_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [1:0] std0;
+reg button_clk;
+reg button_clr;
+reg clk;
+reg [1:0] hh1;
+reg [5:0] hh2;
 // wires                                               
-wire [3:0] stdig0;
+wire [7:0] m_col;
+wire [6:0] m_line;
+wire [7:0] out_7seg;
+wire [3:0] out_7seg_ac;
 
 // assign statements (if any)                          
-modulo_status i1 (
+pbl i1 (
 // port map - connection between master ports and signals/registers   
-	.std0(std0),
-	.stdig0(stdig0)
+	.button_clk(button_clk),
+	.button_clr(button_clr),
+	.clk(clk),
+	.hh1(hh1),
+	.hh2(hh2),
+	.m_col(m_col),
+	.m_line(m_line),
+	.out_7seg(out_7seg),
+	.out_7seg_ac(out_7seg_ac)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// std0[ 1 ]
+
+// button_clk
 initial
 begin
-	std0[1] = 1'b0;
-	std0[1] = #40000 1'b1;
-	std0[1] = #40000 1'b0;
+	button_clk = 1'b0;
 end 
-// std0[ 0 ]
+
+// button_clr
 initial
 begin
-	std0[0] = 1'b0;
-	std0[0] = #20000 1'b1;
-	std0[0] = #20000 1'b0;
-	std0[0] = #20000 1'b1;
-	std0[0] = #20000 1'b0;
+	button_clr = 1'b0;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
+end 
+// hh1[ 1 ]
+initial
+begin
+	hh1[1] = 1'b0;
+end 
+// hh1[ 0 ]
+initial
+begin
+	hh1[0] = 1'b0;
+end 
+// hh2[ 5 ]
+initial
+begin
+	hh2[5] = 1'b0;
+end 
+// hh2[ 4 ]
+initial
+begin
+	hh2[4] = 1'b0;
+end 
+// hh2[ 3 ]
+initial
+begin
+	hh2[3] = 1'b0;
+end 
+// hh2[ 2 ]
+initial
+begin
+	hh2[2] = 1'b0;
+end 
+// hh2[ 1 ]
+initial
+begin
+	hh2[1] = 1'b0;
+end 
+// hh2[ 0 ]
+initial
+begin
+	hh2[0] = 1'b0;
 end 
 endmodule
 

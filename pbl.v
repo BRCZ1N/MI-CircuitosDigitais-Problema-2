@@ -5,7 +5,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk, m_col, m_li
 	input [5:0] hh2;
 	output [7:0] out_7seg;
 	output [3:0] out_7seg_ac;
-	output [4:0] m_col;
+	output [7:0] m_col;
 	output [6:0] m_line;
 	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_dmx_mx_4;
 	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire,sel_dmx_mx_16, sel_matriz;
@@ -15,7 +15,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk, m_col, m_li
 	wire [2:0] count_3_bits_mux_matriz_leds_sel, Ncount_3_bits_mux_matriz_leds_sel;
 	wire [34:0] m_at_clks;
 	wire [15:0] demux1_16_out_1_e, demux1_16_out_1_c;
-	wire clr_1, clr_2, rgb_in_cod;
+	wire clr_1,clr_2, rgb_in_cod;
 	wire [19:0] clk_div;
 	wire [8:0] m_at_line_rgb_select;
 	wire [3:0] status_coord_c_coord_l_1, status_coord_c_coord_l_2, status_coord_c_coord_l_3, status_coord_c_coord_l_4;
@@ -78,20 +78,20 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_clr, button_clk, clk, m_col, m_li
 	
 	// ==========================
 	
-	modulo_contador_sync_3_bits count_3_bits_1(.clr(clr_2),.clk(clk_div[3]),.q(count_3_bits_mux_matriz_leds_sel),);
-	and_gate_2_inputs gate_2(.A(count_3_bits_mux_matriz_leds_sel[2]),.B(1'b1),.S(clr_2),);
-	
 	modulo_demux1_8 demux_col(.input_e(1'b1),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_col),);
+	
+	modulo_contador_sync_3_bits count_3_bits_1(.clr(clr_2),.clk(clk_div[0]),.q(count_3_bits_mux_matriz_leds_sel),);
+	and_gate_2_inputs gate_2(.A(count_3_bits_mux_matriz_leds_sel[2]),.B(1'b1),.S(clr_2),);
 	
 	//Matriz de armazenamento de posicionamento
 	
-	modulo_preset_linha_1 preset_1(.HH(hh2[1:0]),.cl1(m_po_in[34:30]));
-	modulo_preset_linha_2 preset_2(.HH(hh2[1:0]),.cl2(m_po_in[29:25]));
-	modulo_preset_linha_3 preset_3(.HH(hh2[1:0]),.cl3(m_po_in[24:20]));
-	modulo_preset_linha_4 preset_4(.HH(hh2[1:0]),.cl4(m_po_in[19:15]));
-	modulo_preset_linha_5 preset_5(.HH(hh2[1:0]),.cl5(m_po_in[14:10]));
-	modulo_preset_linha_6 preset_6(.HH(hh2[1:0]),.cl6(m_po_in[9:5]));
-	modulo_preset_linha_7 preset_7(.HH(hh2[1:0]),.cl7(m_po_in[4:0]));
+	modulo_preset_linha_1 preset_1(.HH(hh2[5:4]),.cl1(m_po_in[34:30]));
+	modulo_preset_linha_2 preset_2(.HH(hh2[5:4]),.cl2(m_po_in[29:25]));
+	modulo_preset_linha_3 preset_3(.HH(hh2[5:4]),.cl3(m_po_in[24:20]));
+	modulo_preset_linha_4 preset_4(.HH(hh2[5:4]),.cl4(m_po_in[19:15]));
+	modulo_preset_linha_5 preset_5(.HH(hh2[5:4]),.cl5(m_po_in[14:10]));
+	modulo_preset_linha_6 preset_6(.HH(hh2[5:4]),.cl6(m_po_in[9:5]));
+	modulo_preset_linha_7 preset_7(.HH(hh2[5:4]),.cl7(m_po_in[4:0]));
 	
 	modulo_matriz_reg_po reg_matriz_po_1(.m_in(m_po_in),.clk(button_clk),.clr(button_clr),.m_out(m_po_out),);
 	

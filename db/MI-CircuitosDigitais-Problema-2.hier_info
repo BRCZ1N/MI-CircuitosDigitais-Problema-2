@@ -27,6 +27,9 @@ m_col[1] <= modulo_demux1_8:demux_col.out
 m_col[2] <= modulo_demux1_8:demux_col.out
 m_col[3] <= modulo_demux1_8:demux_col.out
 m_col[4] <= modulo_demux1_8:demux_col.out
+m_col[5] <= modulo_demux1_8:demux_col.out
+m_col[6] <= modulo_demux1_8:demux_col.out
+m_col[7] <= modulo_demux1_8:demux_col.out
 m_line[0] <= modulo_mux2_1:mux_37.out
 m_line[1] <= modulo_mux2_1:mux_36.out
 m_line[2] <= modulo_mux2_1:mux_35.out
@@ -936,35 +939,6 @@ B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl|modulo_contador_sync_3_bits:count_3_bits_1
-clr => clr.IN3
-clk => clk.IN3
-q[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= modulo_ff_t:ff_2.q
-q[2] <= modulo_ff_t:ff_3.q
-
-
-|pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1
-t => q.OUTPUTSELECT
-clk => q~reg0.CLK
-clr => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2
-t => q.OUTPUTSELECT
-clk => q~reg0.CLK
-clr => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3
-t => q.OUTPUTSELECT
-clk => q~reg0.CLK
-clr => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |pbl|modulo_demux1_8:demux_col
 input_e => input_e.IN8
 input_sel[0] => input_sel[0].IN4
@@ -1042,6 +1016,41 @@ B => WideAnd0.IN1
 C => WideAnd0.IN2
 D => WideAnd0.IN3
 S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_contador_sync_3_bits:count_3_bits_1
+clr => clr.IN3
+clk => clk.IN3
+q[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= modulo_ff_t:ff_2.q
+q[2] <= modulo_ff_t:ff_3.q
+
+
+|pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3
+t => q.OUTPUTSELECT
+clk => q~reg0.CLK
+clr => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|and_gate_2_inputs:gate_2
+A => comb.IN0
+B => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_preset_linha_1:preset_1
@@ -1424,248 +1433,388 @@ m_out[34] <= modulo_ff_d:ff_1.q
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_mapeamento_mux8_1:map_1
@@ -4244,248 +4393,388 @@ m_out[34] <= modulo_ff_d:ff_1.q
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35
-d => q.DATAB
+d => q.DATAA
+d => nq~reg0.DATAIN
+clk => nq~reg0.CLK
 clk => q~reg0.CLK
 clr => q.OUTPUTSELECT
+clr => nq~reg0.ENA
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nq <= nq~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl|modulo_mapeamento_mux8_1:map_8
