@@ -1,5 +1,6 @@
-module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line);
+module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line, test);
 
+	output [3:0]test;
 	input button_confirmation, clk;
 	input [1:0] hh1;
 	input [5:0] hh2;
@@ -7,8 +8,8 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line)
 	output [3:0] out_7seg_ac;
 	output [7:0] m_col;
 	output [6:0] m_line;
-	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_dmx_mx_4,Nsel_state,sel_state;
-	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire,sel_dmx_mx_16, sel_matriz;
+	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_dmx_mx_16,Nsel_state,sel_state;
+	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire,sel_dmx_mx_4, sel_matriz;
 	wire [34:0] m_po_in, m_at_in;
 	wire [34:0] m_po_out, m_at_out;
 	wire [6:0] m_po_line, m_at_line, Nm_at_line;
@@ -147,6 +148,8 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line)
 	modulo_demux1_4 demux_8(.input_e(demux1_16_out_1_e[9]),.input_sel(sel_dmx_mx_4),.out(m_at_in[10:7]),);
 	modulo_demux1_4 demux_9(.input_e(demux1_16_out_1_e[8]),.input_sel(sel_dmx_mx_4),.out(m_at_in[6:3]),);
 	modulo_demux1_4 demux_10(.input_e(demux1_16_out_1_e[7]),.input_sel(sel_dmx_mx_4),.out(m_at_in[2:0]),);
+	
+	assign test = sel_dmx_mx_16;
 	
 	modulo_matriz_reg_at reg_matriz_at_1(.m_in(m_at_in),.clk(m_at_clks),.clr(Nsel_state[0]),.m_out(m_at_out),);
 	

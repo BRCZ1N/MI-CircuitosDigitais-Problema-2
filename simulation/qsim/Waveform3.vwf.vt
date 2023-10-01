@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/30/2023 02:25:15"
+// Generated on "09/30/2023 04:36:09"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          pbl
 // 
@@ -60,31 +60,28 @@ end
 initial
 begin
 	button_confirmation = 1'b1;
+	button_confirmation = #40000 1'b0;
+	button_confirmation = #20000 1'b1;
+	button_confirmation = #50000 1'b0;
 end 
 
 // clk
-initial
+always
 begin
-	clk = 1'b1;
-	# 10000;
-	repeat(49)
-	begin
-		clk = 1'b0;
-		clk = #10000 1'b1;
-		# 10000;
-	end
 	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
 end 
 // hh1[ 1 ]
 initial
 begin
-	hh1[1] = 1'b0;
+	hh1[1] = 1'b1;
+	hh1[1] = #110000 1'b0;
 end 
 // hh1[ 0 ]
 initial
 begin
-	hh1[0] = 1'b1;
-	hh1[0] = #20000 1'b0;
+	hh1[0] = 1'b0;
 end 
 // hh2[ 5 ]
 initial
@@ -94,8 +91,7 @@ end
 // hh2[ 4 ]
 initial
 begin
-	hh2[4] = 1'b1;
-	hh2[4] = #10000 1'b0;
+	hh2[4] = 1'b0;
 end 
 // hh2[ 3 ]
 initial

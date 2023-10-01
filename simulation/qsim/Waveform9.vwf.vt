@@ -18,46 +18,102 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/30/2023 02:46:59"
+// Generated on "10/01/2023 03:28:20"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_sel_inputs_matriz
+// Verilog Test Bench (with test vectors) for design :                          pbl
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_sel_inputs_matriz_vlg_vec_tst();
+module pbl_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [1:0] sta;
+reg button_confirmation;
+reg clk;
+reg [1:0] hh1;
+reg [5:0] hh2;
 // wires                                               
-wire [1:0] sel_m;
+wire [7:0] m_col;
+wire [6:0] m_line;
+wire [7:0] out_7seg;
+wire [3:0] out_7seg_ac;
+wire [3:0] test;
 
 // assign statements (if any)                          
-modulo_sel_inputs_matriz i1 (
+pbl i1 (
 // port map - connection between master ports and signals/registers   
-	.sel_m(sel_m),
-	.sta(sta)
+	.button_confirmation(button_confirmation),
+	.clk(clk),
+	.hh1(hh1),
+	.hh2(hh2),
+	.m_col(m_col),
+	.m_line(m_line),
+	.out_7seg(out_7seg),
+	.out_7seg_ac(out_7seg_ac),
+	.test(test)
 );
 initial 
 begin 
-#1000000 $stop;
+#1000000 $finish;
 end 
-// sta[ 1 ]
+
+// button_confirmation
 initial
 begin
-	sta[1] = 1'b0;
-	sta[1] = #20000 1'b1;
-	sta[1] = #20000 1'b0;
+	button_confirmation = 1'b1;
+	button_confirmation = #50000 1'b0;
+	button_confirmation = #20000 1'b1;
+	button_confirmation = #60000 1'b0;
 end 
-// sta[ 0 ]
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
+end 
+// hh1[ 1 ]
 initial
 begin
-	sta[0] = 1'b0;
-	sta[0] = #10000 1'b1;
-	sta[0] = #10000 1'b0;
-	sta[0] = #10000 1'b1;
-	sta[0] = #10000 1'b0;
+	hh1[1] = 1'b1;
+	hh1[1] = #130000 1'b0;
+end 
+// hh1[ 0 ]
+initial
+begin
+	hh1[0] = 1'b0;
+end 
+// hh2[ 5 ]
+initial
+begin
+	hh2[5] = 1'b0;
+end 
+// hh2[ 4 ]
+initial
+begin
+	hh2[4] = 1'b0;
+end 
+// hh2[ 3 ]
+initial
+begin
+	hh2[3] = 1'b0;
+end 
+// hh2[ 2 ]
+initial
+begin
+	hh2[2] = 1'b0;
+end 
+// hh2[ 1 ]
+initial
+begin
+	hh2[1] = 1'b0;
+end 
+// hh2[ 0 ]
+initial
+begin
+	hh2[0] = 1'b0;
 end 
 endmodule
 

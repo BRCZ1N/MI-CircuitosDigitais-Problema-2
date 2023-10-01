@@ -18,99 +18,193 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/30/2023 02:14:02"
+// Generated on "09/30/2023 04:21:52"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          pbl
+// Verilog Test Bench (with test vectors) for design :                          modulo_mux16_1
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module pbl_vlg_vec_tst();
+module modulo_mux16_1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_confirmation;
-reg clk;
-reg [1:0] hh1;
-reg [5:0] hh2;
+reg [15:0] input_e;
+reg [3:0] input_sel;
 // wires                                               
-wire [7:0] m_col;
-wire [6:0] m_line;
-wire [7:0] out_7seg;
-wire [3:0] out_7seg_ac;
+wire out;
 
 // assign statements (if any)                          
-pbl i1 (
+modulo_mux16_1 i1 (
 // port map - connection between master ports and signals/registers   
-	.button_confirmation(button_confirmation),
-	.clk(clk),
-	.hh1(hh1),
-	.hh2(hh2),
-	.m_col(m_col),
-	.m_line(m_line),
-	.out_7seg(out_7seg),
-	.out_7seg_ac(out_7seg_ac)
+	.input_e(input_e),
+	.input_sel(input_sel),
+	.out(out)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-
-// button_confirmation
+// input_e[ 15 ]
 initial
 begin
-	button_confirmation = 1'b1;
-	button_confirmation = #40000 1'b0;
+	input_e[15] = 1'b1;
+	input_e[15] = #10000 1'b0;
 end 
-
-// clk
-always
-begin
-	clk = 1'b0;
-	clk = #10000 1'b1;
-	#10000;
-end 
-// hh1[ 1 ]
+// input_e[ 14 ]
 initial
 begin
-	hh1[1] = 1'b0;
+	input_e[14] = 1'b0;
+	input_e[14] = #10000 1'b1;
+	input_e[14] = #10000 1'b0;
 end 
-// hh1[ 0 ]
+// input_e[ 13 ]
 initial
 begin
-	hh1[0] = 1'b1;
-	hh1[0] = #40000 1'b0;
+	input_e[13] = 1'b0;
+	input_e[13] = #20000 1'b1;
+	input_e[13] = #10000 1'b0;
 end 
-// hh2[ 5 ]
+// input_e[ 12 ]
 initial
 begin
-	hh2[5] = 1'b0;
+	input_e[12] = 1'b0;
+	input_e[12] = #30000 1'b1;
+	input_e[12] = #10000 1'b0;
 end 
-// hh2[ 4 ]
+// input_e[ 11 ]
 initial
 begin
-	hh2[4] = 1'b1;
-	hh2[4] = #10000 1'b0;
+	input_e[11] = 1'b0;
+	input_e[11] = #40000 1'b1;
+	input_e[11] = #10000 1'b0;
 end 
-// hh2[ 3 ]
+// input_e[ 10 ]
 initial
 begin
-	hh2[3] = 1'b0;
+	input_e[10] = 1'b0;
+	input_e[10] = #50000 1'b1;
+	input_e[10] = #10000 1'b0;
 end 
-// hh2[ 2 ]
+// input_e[ 9 ]
 initial
 begin
-	hh2[2] = 1'b0;
+	input_e[9] = 1'b0;
+	input_e[9] = #60000 1'b1;
+	input_e[9] = #10000 1'b0;
 end 
-// hh2[ 1 ]
+// input_e[ 8 ]
 initial
 begin
-	hh2[1] = 1'b0;
+	input_e[8] = 1'b0;
+	input_e[8] = #70000 1'b1;
+	input_e[8] = #10000 1'b0;
 end 
-// hh2[ 0 ]
+// input_e[ 7 ]
 initial
 begin
-	hh2[0] = 1'b0;
+	input_e[7] = 1'b0;
+	input_e[7] = #80000 1'b1;
+	input_e[7] = #10000 1'b0;
+end 
+// input_e[ 6 ]
+initial
+begin
+	input_e[6] = 1'b0;
+	input_e[6] = #90000 1'b1;
+	input_e[6] = #10000 1'b0;
+end 
+// input_e[ 5 ]
+initial
+begin
+	input_e[5] = 1'b0;
+	input_e[5] = #100000 1'b1;
+	input_e[5] = #10000 1'b0;
+end 
+// input_e[ 4 ]
+initial
+begin
+	input_e[4] = 1'b0;
+	input_e[4] = #110000 1'b1;
+	input_e[4] = #10000 1'b0;
+end 
+// input_e[ 3 ]
+initial
+begin
+	input_e[3] = 1'b0;
+	input_e[3] = #120000 1'b1;
+	input_e[3] = #10000 1'b0;
+end 
+// input_e[ 2 ]
+initial
+begin
+	input_e[2] = 1'b0;
+	input_e[2] = #130000 1'b1;
+	input_e[2] = #10000 1'b0;
+end 
+// input_e[ 1 ]
+initial
+begin
+	input_e[1] = 1'b0;
+	input_e[1] = #140000 1'b1;
+	input_e[1] = #10000 1'b0;
+end 
+// input_e[ 0 ]
+initial
+begin
+	input_e[0] = 1'b0;
+	input_e[0] = #150000 1'b1;
+	input_e[0] = #10000 1'b0;
+end 
+// input_sel[ 3 ]
+initial
+begin
+	input_sel[3] = 1'b0;
+	input_sel[3] = #80000 1'b1;
+	input_sel[3] = #80000 1'b0;
+end 
+// input_sel[ 2 ]
+initial
+begin
+	input_sel[2] = 1'b0;
+	input_sel[2] = #40000 1'b1;
+	input_sel[2] = #40000 1'b0;
+	input_sel[2] = #40000 1'b1;
+	input_sel[2] = #40000 1'b0;
+end 
+// input_sel[ 1 ]
+initial
+begin
+	input_sel[1] = 1'b0;
+	input_sel[1] = #20000 1'b1;
+	input_sel[1] = #20000 1'b0;
+	input_sel[1] = #20000 1'b1;
+	input_sel[1] = #20000 1'b0;
+	input_sel[1] = #20000 1'b1;
+	input_sel[1] = #20000 1'b0;
+	input_sel[1] = #20000 1'b1;
+	input_sel[1] = #20000 1'b0;
+end 
+// input_sel[ 0 ]
+initial
+begin
+	input_sel[0] = 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
 end 
 endmodule
 
