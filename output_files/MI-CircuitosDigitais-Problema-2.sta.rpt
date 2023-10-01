@@ -1,5 +1,5 @@
 Timing Analyzer report for MI-CircuitosDigitais-Problema-2
-Sun Oct 01 18:53:03 2023
+Sun Oct 01 20:04:59 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -144,23 +144,38 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 7     ; 7    ;
-; Unconstrained Output Ports      ; 2     ; 2    ;
-; Unconstrained Output Port Paths ; 7     ; 7    ;
+; Unconstrained Input Ports       ; 19    ; 19   ;
+; Unconstrained Input Port Paths  ; 19    ; 19   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 19    ; 19   ;
 +---------------------------------+-------+------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; mdc[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdc[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                           ;
++--------------+--------------------------------------------------------------------------------------+
+; Input Port   ; Comment                                                                              ;
++--------------+--------------------------------------------------------------------------------------+
+; A            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; H            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; I            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; K            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; N            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; O            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++--------------+--------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -168,21 +183,35 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; dmx4_sel[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dmx4_sel[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; mdc[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdc[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                           ;
++--------------+--------------------------------------------------------------------------------------+
+; Input Port   ; Comment                                                                              ;
++--------------+--------------------------------------------------------------------------------------+
+; A            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; H            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; I            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; K            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; N            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; O            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_sel[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++--------------+--------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -190,8 +219,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; dmx4_sel[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dmx4_sel[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -201,7 +229,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 01 18:53:03 2023
+    Info: Processing started: Sun Oct 01 20:04:58 2023
 Info: Command: quartus_sta MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -227,9 +255,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4669 megabytes
-    Info: Processing ended: Sun Oct 01 18:53:03 2023
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4668 megabytes
+    Info: Processing ended: Sun Oct 01 20:04:59 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
