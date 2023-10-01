@@ -1,193 +1,80 @@
-|modulo_seletor_1_16_at
-mdc[0] => mdc[0].IN6
-mdc[1] => mdc[1].IN7
-mdc[2] => mdc[2].IN4
+|modulo_seletor_1_4_at
+mdc[0] => mdc[0].IN3
+mdc[1] => mdc[1].IN3
+mdc[2] => ~NO_FANOUT~
 mdl[0] => mdl[0].IN3
-mdl[1] => mdl[1].IN4
-mdl[2] => mdl[2].IN6
-dmx16_sel[0] << or_gate_2_inputs:gate_26.S
-dmx16_sel[1] << or_gate_2_inputs:gate_15.S
-dmx16_sel[2] << or_gate_4_inputs:gate_6.S
-dmx16_sel[3] << and_gate_2_inputs:gate_1.S
+mdl[1] => mdl[1].IN3
+mdl[2] => ~NO_FANOUT~
+dmx4_sel[0] << or_gate_2_inputs:gate_10.S
+dmx4_sel[1] << or_gate_5_inputs:gate_7.S
 
 
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_1
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|modulo_seletor_1_4_at|and_gate_3_inputs:gate_1
+A => WideAnd0.IN0
+B => WideAnd0.IN1
+C => WideAnd0.IN2
+S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_2
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|modulo_seletor_1_4_at|and_gate_4_inputs:gate_2
+A => WideAnd0.IN0
+B => WideAnd0.IN1
+C => WideAnd0.IN2
+D => WideAnd0.IN3
+S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_3
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|modulo_seletor_1_4_at|and_gate_3_inputs:gate_3
+A => WideAnd0.IN0
+B => WideAnd0.IN1
+C => WideAnd0.IN2
+S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_4
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|modulo_seletor_1_4_at|and_gate_3_inputs:gate_4
+A => WideAnd0.IN0
+B => WideAnd0.IN1
+C => WideAnd0.IN2
+S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_5
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|modulo_seletor_1_4_at|and_gate_3_inputs:gate_5
+A => WideAnd0.IN0
+B => WideAnd0.IN1
+C => WideAnd0.IN2
+S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|or_gate_4_inputs:gate_6
+|modulo_seletor_1_4_at|and_gate_4_inputs:gate_6
+A => WideAnd0.IN0
+B => WideAnd0.IN1
+C => WideAnd0.IN2
+D => WideAnd0.IN3
+S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_seletor_1_4_at|or_gate_5_inputs:gate_7
 A => WideOr0.IN0
 B => WideOr0.IN1
 C => WideOr0.IN2
 D => WideOr0.IN3
+E => WideOr0.IN4
 S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|and_gate_3_inputs:gate_7
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_3_inputs:gate_8
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_9
+|modulo_seletor_1_4_at|and_gate_2_inputs:gate_8
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|and_gate_4_inputs:gate_10
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-D => WideAnd0.IN3
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_3_inputs:gate_11
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_12
+|modulo_seletor_1_4_at|and_gate_2_inputs:gate_9
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_seletor_1_16_at|or_gate_3_inputs:gate_13
-A => WideOr0.IN0
-B => WideOr0.IN1
-C => WideOr0.IN2
-S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|or_gate_3_inputs:gate_14
-A => WideOr0.IN0
-B => WideOr0.IN1
-C => WideOr0.IN2
-S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|or_gate_2_inputs:gate_15
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_4_inputs:gate_16
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-D => WideAnd0.IN3
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_4_inputs:gate_17
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-D => WideAnd0.IN3
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_3_inputs:gate_18
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_4_inputs:gate_19
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-D => WideAnd0.IN3
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_2_inputs:gate_20
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_4_inputs:gate_21
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-D => WideAnd0.IN3
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_4_inputs:gate_22
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-D => WideAnd0.IN3
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|and_gate_4_inputs:gate_23
-A => WideAnd0.IN0
-B => WideAnd0.IN1
-C => WideAnd0.IN2
-D => WideAnd0.IN3
-S <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|or_gate_4_inputs:gate_24
-A => WideOr0.IN0
-B => WideOr0.IN1
-C => WideOr0.IN2
-D => WideOr0.IN3
-S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|or_gate_4_inputs:gate_25
-A => WideOr0.IN0
-B => WideOr0.IN1
-C => WideOr0.IN2
-D => WideOr0.IN3
-S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|modulo_seletor_1_16_at|or_gate_2_inputs:gate_26
+|modulo_seletor_1_4_at|or_gate_2_inputs:gate_10
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE

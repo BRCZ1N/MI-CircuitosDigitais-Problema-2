@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Sun Oct 01 03:40:42 2023
+Analysis & Synthesis Status : Successful - Sun Oct 01 18:53:00 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_seletor_1_16_at
+Top-level Entity Name : modulo_seletor_1_4_at
 Family : MAX II
-Total logic elements : 6
-Total pins : 10
+Total logic elements : 2
+Total pins : 8
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
