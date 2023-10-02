@@ -77,12 +77,12 @@ module modulo_seletor_1_8_at (mdc,mdl,dmx8_sel);
 	
 	// MDL1MDL2 + MDC0'MDC1' + MDC1MDC2' + MDC2MDL0' + MDL0'MDL1 + MDC0MDL0
 	
-	and_gate_3_inputs gate_30(.A(mdl[1]),.B(mdl[0]),.S(mx4e6[5]),);
-	and_gate_3_inputs gate_31(.A(nmdc[2]),.B(nmdc[1]),.S(mx4e6[4]),);
-	and_gate_3_inputs gate_32(.A(mdc[1]),.B(nmdc[0]),.S(mx4e6[3]),);
-	and_gate_3_inputs gate_33(.A(mdc[0]),.B(nmdl[2]),.S(mx4e6[2]),);
-	and_gate_3_inputs gate_34(.A(nmdl[2]),.B(mdl[1]),.S(mx4e6[1]),);
-	and_gate_3_inputs gate_35(.A(mdc[2]),.B(mdl[2]),.S(mx4e6[0]),);
+	and_gate_2_inputs gate_30(.A(mdl[1]),.B(mdl[0]),.S(mx4e6[5]),);
+	and_gate_2_inputs gate_31(.A(nmdc[2]),.B(nmdc[1]),.S(mx4e6[4]),);
+	and_gate_2_inputs gate_32(.A(mdc[1]),.B(nmdc[0]),.S(mx4e6[3]),);
+	and_gate_2_inputs gate_33(.A(mdc[0]),.B(nmdl[2]),.S(mx4e6[2]),);
+	and_gate_2_inputs gate_34(.A(nmdl[2]),.B(mdl[1]),.S(mx4e6[1]),);
+	and_gate_2_inputs gate_35(.A(mdc[2]),.B(mdl[2]),.S(mx4e6[0]),);
 	
 	or_gate_3_inputs gate_36(.A(mx4e6[5]),.B(mx4e6[4]),.C(mx4e6[3]),.S(mx4e6_wire_1[1]),);
 	or_gate_3_inputs gate_37(.A(mx4e6[2]),.B(mx4e6[1]),.C(mx4e6[0]),.S(mx4e6_wire_1[0]),);
@@ -91,9 +91,10 @@ module modulo_seletor_1_8_at (mdc,mdl,dmx8_sel);
 	
 	//MDC0' + MDL0'MDL1' + MDL0MDL1MDL2 + MDC2 + MDC1
 	
-	and_gate_3_inputs gate_39(.A(nmdl[2]),.B(nmdl[1]),.S(mx4e7[1]),);
+	and_gate_2_inputs gate_39(.A(nmdl[2]),.B(nmdl[1]),.S(mx4e7[1]),);
 	and_gate_3_inputs gate_40(.A(mdl[2]),.B(mdl[1]),.C(mdl[0]),.S(mx4e7[0]),);
 	
-	or_gate_2_inputs gate_41(.A(mx4e7[1]),.B(mx4e7[0]),.S(dmx8_sel[0]),);
+	or_gate_5_inputs gate_41(.A(nmdc[2]),.B(mx4e7[1]),.C(mx4e7[0]),.D(mdc[0]),.E(mdc[1]),.S(dmx8_sel[0]),);
+	
 
 endmodule 

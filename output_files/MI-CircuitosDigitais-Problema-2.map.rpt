@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Mon Oct 02 17:48:57 2023
+Mon Oct 02 18:11:04 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,15 +14,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "and_gate_3_inputs:gate_39"
- 10. Port Connectivity Checks: "and_gate_3_inputs:gate_35"
- 11. Port Connectivity Checks: "and_gate_3_inputs:gate_34"
- 12. Port Connectivity Checks: "and_gate_3_inputs:gate_33"
- 13. Port Connectivity Checks: "and_gate_3_inputs:gate_32"
- 14. Port Connectivity Checks: "and_gate_3_inputs:gate_31"
- 15. Port Connectivity Checks: "and_gate_3_inputs:gate_30"
- 16. Port Connectivity Checks: "or_gate_3_inputs:gate_10"
- 17. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "or_gate_3_inputs:gate_10"
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -48,12 +41,12 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct 02 17:48:57 2023       ;
+; Analysis & Synthesis Status ; Successful - Mon Oct 02 18:11:04 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; modulo_seletor_1_8_at                       ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 11                                          ;
+; Total logic elements        ; 14                                          ;
 ; Total pins                  ; 13                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -162,20 +155,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Total logic elements                        ; 11     ;
-;     -- Combinational with no register       ; 11     ;
+; Total logic elements                        ; 14     ;
+;     -- Combinational with no register       ; 14     ;
 ;     -- Register only                        ; 0      ;
 ;     -- Combinational with a register        ; 0      ;
 ;                                             ;        ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 6      ;
+;     -- 4 input functions                    ; 9      ;
 ;     -- 3 input functions                    ; 5      ;
 ;     -- 2 input functions                    ; 0      ;
 ;     -- 1 input functions                    ; 0      ;
 ;     -- 0 input functions                    ; 0      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 11     ;
+;     -- normal mode                          ; 14     ;
 ;     -- arithmetic mode                      ; 0      ;
 ;     -- qfbk mode                            ; 0      ;
 ;     -- register cascade mode                ; 0      ;
@@ -184,26 +177,27 @@ refer to the applicable agreement for further details.
 ;                                             ;        ;
 ; Total registers                             ; 0      ;
 ; I/O pins                                    ; 13     ;
-; Maximum fan-out node                        ; mdl[0] ;
-; Maximum fan-out                             ; 6      ;
-; Total fan-out                               ; 45     ;
-; Average fan-out                             ; 1.88   ;
+; Maximum fan-out node                        ; mdc[1] ;
+; Maximum fan-out                             ; 9      ;
+; Total fan-out                               ; 58     ;
+; Average fan-out                             ; 2.15   ;
 +---------------------------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                           ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                              ; Entity Name           ; Library Name ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------+-----------------------+--------------+
-; |modulo_seletor_1_8_at         ; 11 (0)      ; 0            ; 0          ; 13   ; 0            ; 11 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at                           ; modulo_seletor_1_8_at ; work         ;
-;    |and_gate_3_inputs:gate_40| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|and_gate_3_inputs:gate_40 ; and_gate_3_inputs     ; work         ;
-;    |or_gate_2_inputs:gate_19|  ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_2_inputs:gate_19  ; or_gate_2_inputs      ; work         ;
-;    |or_gate_2_inputs:gate_29|  ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_2_inputs:gate_29  ; or_gate_2_inputs      ; work         ;
-;    |or_gate_3_inputs:gate_10|  ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_3_inputs:gate_10  ; or_gate_3_inputs      ; work         ;
-;    |or_gate_5_inputs:gate_22|  ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_5_inputs:gate_22  ; or_gate_5_inputs      ; work         ;
-;    |or_gate_5_inputs:gate_3|   ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_5_inputs:gate_3   ; or_gate_5_inputs      ; work         ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------+-----------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                             ; Entity Name           ; Library Name ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------+-----------------------+--------------+
+; |modulo_seletor_1_8_at        ; 14 (0)      ; 0            ; 0          ; 13   ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at                          ; modulo_seletor_1_8_at ; work         ;
+;    |or_gate_2_inputs:gate_19| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_2_inputs:gate_19 ; or_gate_2_inputs      ; work         ;
+;    |or_gate_2_inputs:gate_29| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_2_inputs:gate_29 ; or_gate_2_inputs      ; work         ;
+;    |or_gate_2_inputs:gate_38| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_2_inputs:gate_38 ; or_gate_2_inputs      ; work         ;
+;    |or_gate_3_inputs:gate_10| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_3_inputs:gate_10 ; or_gate_3_inputs      ; work         ;
+;    |or_gate_5_inputs:gate_22| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_5_inputs:gate_22 ; or_gate_5_inputs      ; work         ;
+;    |or_gate_5_inputs:gate_3|  ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_5_inputs:gate_3  ; or_gate_5_inputs      ; work         ;
+;    |or_gate_5_inputs:gate_41| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_seletor_1_8_at|or_gate_5_inputs:gate_41 ; or_gate_5_inputs      ; work         ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -223,69 +217,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_3_inputs:gate_39"                                                                                                                  ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_3_inputs:gate_35"                                                                                                                  ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_3_inputs:gate_34"                                                                                                                  ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_3_inputs:gate_33"                                                                                                                  ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_3_inputs:gate_32"                                                                                                                  ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_3_inputs:gate_31"                                                                                                                  ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "and_gate_3_inputs:gate_30"                                                                                                                  ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "or_gate_3_inputs:gate_10"                                                                                                                   ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                      ;
@@ -300,7 +231,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 02 17:48:50 2023
+    Info: Processing started: Mon Oct 02 18:10:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -713,16 +644,14 @@ Info (12128): Elaborating entity "and_gate_3_inputs" for hierarchy "and_gate_3_i
 Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_8" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 40
 Info (12128): Elaborating entity "or_gate_4_inputs" for hierarchy "or_gate_4_inputs:gate_18" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 55
 Info (12128): Elaborating entity "or_gate_2_inputs" for hierarchy "or_gate_2_inputs:gate_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 57
-Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "dmx8_sel[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 4
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 335 warnings
-    Info: Peak virtual memory: 4703 megabytes
-    Info: Processing ended: Mon Oct 02 17:48:57 2023
+    Info (21061): Implemented 14 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 333 warnings
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Mon Oct 02 18:11:04 2023
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:16
 
