@@ -129,3 +129,4 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform14.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform15.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform16.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform17.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform18.vwf

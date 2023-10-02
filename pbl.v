@@ -46,20 +46,19 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation,button_count,clk,m_c
 	
 	modulo_divisor_frequencia div_1(.clr(1'b0),.q(clk_div),.clk(clk));
 	
+	modulo_status mod_sta(.std0(hh1),.stdig0(status_wire),);
+	modulo_coord_coluna mod_coord_col_1(.mdc(at_in[5:3]),.cdc(coord_at_coluna),);
+	modulo_coord_linha mod_coord_linha_1(.mdl(at_in[2:0]),.cdl(coord_at_linha),);
+	
 	modulo_contador_sync_6_bits count_6_bits_1(.clr(clr_0),.clk(button_count),.q(at_in),);
 	and_gate_4_inputs gate_0_reset(.A(Nsel_state[1]),.B(at_in[2]),.C(at_in[1]),.D(at_in[0]),.S(MDL_andor_MDC),);
 	or_gate_2_inputs gate_1_reset(.A(MDL_andor_MDC),.B(at_in[5]),.S(clr_0),);
-	
-	modulo_status mod_sta(.std0(hh1),.stdig0(status_wire),);
-	modulo_coord_linha mod_coord_linha_1(.mdl(at_in[2:0]),.cdl(coord_at_linha),);
-	modulo_coord_coluna mod_coord_col_1(.mdc(at_in[5:3]),.cdc(coord_at_coluna),);
 	
 	// Circuito dos 7 Segmentos - Concluido 
 	
 	modulo_contador_sync_2_bits count_2_bits_1(.clr(clr_1),.clk(clk_div[0]),.q(count_2_bits_mux_7seg_sel),);
 	or_gate_3_inputs gate_1(.A(count_2_bits_mux_7seg_sel[1]),.B(Nstatus_wire[1]),.C(status_wire[0]),.S(clr_1),);
 	
-	//modulo_mux4_1 mux_1(.A(),.B(),.C(),.D(),.input_sel(),.out());
 	modulo_mux4_1 mux_1(.A(status_wire[3]),.B(coord_at_coluna[3]),.C(coord_at_linha[3]),.D(1'b1),.input_sel(count_2_bits_mux_7seg_sel),.out(out_mux_7seg_decod[3]));
 	modulo_mux4_1 mux_2(.A(status_wire[2]),.B(coord_at_coluna[2]),.C(coord_at_linha[2]),.D(1'b1),.input_sel(count_2_bits_mux_7seg_sel),.out(out_mux_7seg_decod[2]));
 	modulo_mux4_1 mux_3(.A(status_wire[1]),.B(coord_at_coluna[1]),.C(coord_at_linha[1]),.D(1'b1),.input_sel(count_2_bits_mux_7seg_sel),.out(out_mux_7seg_decod[1]));
@@ -109,7 +108,6 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation,button_count,clk,m_c
 	
 	modulo_seletor_1_16_at mod_sel_demux_1_16_1(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.dmx16_sel(sel_dmx_mx_16));
 	modulo_seletor_1_4_at mod_sel_demux_1_4_1(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.dmx4_sel(sel_dmx_mx_4));
-	
 	
 	modulo_demux1_16 demux_11(.A(Nsel_state[1]),.input_sel(sel_dmx_mx_16),.out(demux1_16_out_1_c));
 	modulo_demux1_4 demux_12(.A(demux1_16_out_1_c[15]),.input_sel(sel_dmx_mx_4),.out(m_at_clks[34:31]),);

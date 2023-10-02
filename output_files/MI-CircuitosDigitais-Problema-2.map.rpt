@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Mon Oct 02 05:41:13 2023
+Mon Oct 02 05:44:41 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -69,114 +69,115 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  61. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1"
  62. Port Connectivity Checks: "modulo_demux1_4:demux_10"
  63. Port Connectivity Checks: "modulo_demux1_16:demux_1"
- 64. Port Connectivity Checks: "modulo_seletor_1_16_at:mod_sel_demux_1_16_1|and_gate_3_inputs:gate_17"
- 65. Port Connectivity Checks: "modulo_mux8_1:mux_11"
- 66. Port Connectivity Checks: "modulo_mux8_1:mux_10"
- 67. Port Connectivity Checks: "modulo_mux8_1:mux_9"
- 68. Port Connectivity Checks: "modulo_mux8_1:mux_8"
- 69. Port Connectivity Checks: "modulo_mux8_1:mux_7"
- 70. Port Connectivity Checks: "modulo_mux8_1:mux_6"
- 71. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
- 72. Port Connectivity Checks: "modulo_mux8_1:mux_5"
- 73. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35"
- 74. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34"
- 75. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33"
- 76. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32"
- 77. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31"
- 78. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30"
- 79. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29"
- 80. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28"
- 81. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27"
- 82. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26"
- 83. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25"
- 84. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24"
- 85. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23"
- 86. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22"
- 87. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21"
- 88. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20"
- 89. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19"
- 90. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18"
- 91. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17"
- 92. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16"
- 93. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15"
- 94. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14"
- 95. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13"
- 96. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12"
- 97. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11"
- 98. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10"
- 99. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9"
-100. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8"
-101. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7"
-102. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6"
-103. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5"
-104. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4"
-105. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3"
-106. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2"
-107. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1"
-108. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
-109. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
-110. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
-111. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
-112. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
-113. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
-114. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
-115. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
-116. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
-117. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
-118. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
-119. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
-120. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
-121. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
-122. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
-123. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
-124. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
-125. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
-126. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
-127. Port Connectivity Checks: "and_gate_2_inputs:gate_5_col"
-128. Port Connectivity Checks: "and_gate_2_inputs:gate_4_col"
-129. Port Connectivity Checks: "and_gate_2_inputs:gate_3_col"
-130. Port Connectivity Checks: "and_gate_2_inputs:gate_2_col"
-131. Port Connectivity Checks: "and_gate_2_inputs:gate_1_col"
-132. Port Connectivity Checks: "modulo_demux1_8:demux_col"
-133. Port Connectivity Checks: "modulo_demux1_4:demux_button_confirmation"
-134. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
-135. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
-136. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
-137. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
-138. Port Connectivity Checks: "modulo_mux4_1:mux_4"
-139. Port Connectivity Checks: "modulo_mux4_1:mux_3"
-140. Port Connectivity Checks: "modulo_mux4_1:mux_2"
-141. Port Connectivity Checks: "modulo_mux4_1:mux_1"
-142. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
-143. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
-144. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
-145. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
-146. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
-147. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
-148. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
-149. Port Connectivity Checks: "modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1"
-150. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
-151. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
-152. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
-153. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
-154. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
-155. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
-156. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
-157. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
-158. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
-159. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
-160. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
-161. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
-162. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
-163. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
-164. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
-165. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
-166. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
-167. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
-168. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
-169. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
-170. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
-171. Analysis & Synthesis Messages
+ 64. Port Connectivity Checks: "modulo_demux1_4:demux_20"
+ 65. Port Connectivity Checks: "modulo_demux1_16:demux_11"
+ 66. Port Connectivity Checks: "modulo_seletor_1_16_at:mod_sel_demux_1_16_1|and_gate_3_inputs:gate_17"
+ 67. Port Connectivity Checks: "modulo_mux8_1:mux_11"
+ 68. Port Connectivity Checks: "modulo_mux8_1:mux_10"
+ 69. Port Connectivity Checks: "modulo_mux8_1:mux_9"
+ 70. Port Connectivity Checks: "modulo_mux8_1:mux_8"
+ 71. Port Connectivity Checks: "modulo_mux8_1:mux_7"
+ 72. Port Connectivity Checks: "modulo_mux8_1:mux_6"
+ 73. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
+ 74. Port Connectivity Checks: "modulo_mux8_1:mux_5"
+ 75. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35"
+ 76. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34"
+ 77. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33"
+ 78. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32"
+ 79. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31"
+ 80. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30"
+ 81. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29"
+ 82. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28"
+ 83. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27"
+ 84. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26"
+ 85. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25"
+ 86. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24"
+ 87. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23"
+ 88. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22"
+ 89. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21"
+ 90. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20"
+ 91. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19"
+ 92. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18"
+ 93. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17"
+ 94. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16"
+ 95. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15"
+ 96. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14"
+ 97. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13"
+ 98. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12"
+ 99. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11"
+100. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10"
+101. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9"
+102. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8"
+103. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7"
+104. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6"
+105. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5"
+106. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4"
+107. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3"
+108. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2"
+109. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1"
+110. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
+111. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
+112. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
+113. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
+114. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
+115. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
+116. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
+117. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
+118. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
+119. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
+120. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
+121. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
+122. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
+123. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
+124. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
+125. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
+126. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
+127. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
+128. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
+129. Port Connectivity Checks: "and_gate_2_inputs:gate_5_col"
+130. Port Connectivity Checks: "and_gate_2_inputs:gate_4_col"
+131. Port Connectivity Checks: "and_gate_2_inputs:gate_3_col"
+132. Port Connectivity Checks: "and_gate_2_inputs:gate_2_col"
+133. Port Connectivity Checks: "and_gate_2_inputs:gate_1_col"
+134. Port Connectivity Checks: "modulo_demux1_8:demux_col"
+135. Port Connectivity Checks: "modulo_demux1_4:demux_button_confirmation"
+136. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
+137. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
+138. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
+139. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
+140. Port Connectivity Checks: "modulo_mux4_1:mux_4"
+141. Port Connectivity Checks: "modulo_mux4_1:mux_3"
+142. Port Connectivity Checks: "modulo_mux4_1:mux_2"
+143. Port Connectivity Checks: "modulo_mux4_1:mux_1"
+144. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
+145. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
+146. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
+147. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
+148. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
+149. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
+150. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
+151. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
+152. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
+153. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
+154. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
+155. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
+156. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
+157. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
+158. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
+159. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
+160. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
+161. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
+162. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
+163. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
+164. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
+165. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
+166. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
+167. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
+168. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
+169. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
+170. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
+171. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
+172. Analysis & Synthesis Messages
 
 
 
@@ -202,12 +203,12 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct 02 05:41:13 2023       ;
+; Analysis & Synthesis Status ; Successful - Mon Oct 02 05:44:40 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 82                                          ;
+; Total logic elements        ; 67                                          ;
 ; Total pins                  ; 33                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -335,7 +336,6 @@ refer to the applicable agreement for further details.
 ; modulo_demux1_8.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v                     ;         ;
 ; modulo_seletor_1_16_at.v              ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_16_at.v              ;         ;
 ; modulo_seletor_1_4_at.v               ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_4_at.v               ;         ;
-; modulo_contador_sync_6_bits.v         ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_contador_sync_6_bits.v         ;         ;
 +---------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -344,32 +344,32 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Total logic elements                        ; 82     ;
-;     -- Combinational with no register       ; 60     ;
+; Total logic elements                        ; 67     ;
+;     -- Combinational with no register       ; 50     ;
 ;     -- Register only                        ; 2      ;
-;     -- Combinational with a register        ; 20     ;
+;     -- Combinational with a register        ; 15     ;
 ;                                             ;        ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 42     ;
-;     -- 3 input functions                    ; 23     ;
-;     -- 2 input functions                    ; 13     ;
-;     -- 1 input functions                    ; 2      ;
+;     -- 4 input functions                    ; 31     ;
+;     -- 3 input functions                    ; 20     ;
+;     -- 2 input functions                    ; 11     ;
+;     -- 1 input functions                    ; 3      ;
 ;     -- 0 input functions                    ; 0      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 82     ;
+;     -- normal mode                          ; 67     ;
 ;     -- arithmetic mode                      ; 0      ;
 ;     -- qfbk mode                            ; 0      ;
 ;     -- register cascade mode                ; 0      ;
 ;     -- synchronous clear/load mode          ; 2      ;
 ;     -- asynchronous clear/load mode         ; 0      ;
 ;                                             ;        ;
-; Total registers                             ; 22     ;
+; Total registers                             ; 17     ;
 ; I/O pins                                    ; 33     ;
 ; Maximum fan-out node                        ; hh1[0] ;
-; Maximum fan-out                             ; 18     ;
-; Total fan-out                               ; 311    ;
-; Average fan-out                             ; 2.70   ;
+; Maximum fan-out                             ; 27     ;
+; Total fan-out                               ; 250    ;
+; Average fan-out                             ; 2.50   ;
 +---------------------------------------------+--------+
 
 
@@ -378,34 +378,28 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                   ; Entity Name                      ; Library Name ;
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |pbl                                                         ; 82 (0)      ; 22           ; 0          ; 33   ; 0            ; 60 (0)       ; 2 (0)             ; 20 (0)           ; 0 (0)           ; 0 (0)      ; |pbl                                                                                  ; pbl                              ; work         ;
-;    |modulo_contador_sync_2_bits:count_2_bits_1|              ; 3 (0)       ; 2            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1                                       ; modulo_contador_sync_2_bits      ; work         ;
+; |pbl                                                         ; 67 (0)      ; 17           ; 0          ; 33   ; 0            ; 50 (0)       ; 2 (0)             ; 15 (0)           ; 0 (0)           ; 0 (0)      ; |pbl                                                                                  ; pbl                              ; work         ;
+;    |modulo_contador_sync_2_bits:count_2_bits_1|              ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1                                       ; modulo_contador_sync_2_bits      ; work         ;
 ;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
-;       |modulo_ff_t:ff_2|                                     ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
+;       |modulo_ff_t:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
 ;    |modulo_contador_sync_3_bits:count_3_bits_1|              ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1                                       ; modulo_contador_sync_3_bits      ; work         ;
 ;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
 ;       |modulo_ff_t:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
 ;       |modulo_ff_t:ff_3|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3                      ; modulo_ff_t                      ; work         ;
-;    |modulo_contador_sync_6_bits:count_6_bits_1|              ; 7 (0)       ; 6            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1                                       ; modulo_contador_sync_6_bits      ; work         ;
-;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
-;       |modulo_ff_t:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
-;       |modulo_ff_t:ff_3|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3                      ; modulo_ff_t                      ; work         ;
-;       |modulo_ff_t:ff_4|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4                      ; modulo_ff_t                      ; work         ;
-;       |modulo_ff_t:ff_5|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5                      ; modulo_ff_t                      ; work         ;
-;       |modulo_ff_t:ff_6|                                     ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6                      ; modulo_ff_t                      ; work         ;
-;    |modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1| ; 8 (0)       ; 0            ; 0          ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1                          ; modulo_decodificador_bcd_ex_7seg ; work         ;
-;       |or_gate_3_inputs:gate_4|                              ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_3_inputs:gate_4  ; or_gate_3_inputs                 ; work         ;
+;    |modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1| ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1                          ; modulo_decodificador_bcd_ex_7seg ; work         ;
 ;       |or_gate_4_inputs:gate_13|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_13 ; or_gate_4_inputs                 ; work         ;
-;       |or_gate_4_inputs:gate_24|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_24 ; or_gate_4_inputs                 ; work         ;
+;       |or_gate_4_inputs:gate_24|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_24 ; or_gate_4_inputs                 ; work         ;
 ;       |or_gate_4_inputs:gate_29|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_29 ; or_gate_4_inputs                 ; work         ;
 ;       |or_gate_4_inputs:gate_34|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_34 ; or_gate_4_inputs                 ; work         ;
-;       |or_gate_4_inputs:gate_8|                              ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8  ; or_gate_4_inputs                 ; work         ;
 ;       |or_gate_5_inputs:gate_19|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_5_inputs:gate_19 ; or_gate_5_inputs                 ; work         ;
-;    |modulo_demux1_4:demux_button_confirmation|               ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation                                        ; modulo_demux1_4                  ; work         ;
+;    |modulo_demux1_4:demux_button_confirmation|               ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation                                        ; modulo_demux1_4                  ; work         ;
 ;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_2               ; and_gate_3_inputs                ; work         ;
+;       |and_gate_3_inputs:gate_3|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_3               ; and_gate_3_inputs                ; work         ;
 ;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_4               ; and_gate_3_inputs                ; work         ;
 ;    |modulo_divisor_frequencia:div_1|                         ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_divisor_frequencia:div_1                                                  ; modulo_divisor_frequencia        ; work         ;
 ;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1                                 ; modulo_ff_t                      ; work         ;
+;    |modulo_matriz_reg_at:reg_matriz_at_1|                    ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1                                             ; modulo_matriz_reg_at             ; work         ;
+;       |modulo_ff_d:ff_9|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9                            ; modulo_ff_d                      ; work         ;
 ;    |modulo_matriz_reg_po:reg_matriz_po_1|                    ; 12 (0)      ; 10           ; 0          ; 0    ; 0            ; 2 (0)        ; 2 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1                                             ; modulo_matriz_reg_po             ; work         ;
 ;       |modulo_ff_d:ff_10|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10                           ; modulo_ff_d                      ; work         ;
 ;       |modulo_ff_d:ff_11|                                    ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11                           ; modulo_ff_d                      ; work         ;
@@ -417,30 +411,22 @@ refer to the applicable agreement for further details.
 ;       |modulo_ff_d:ff_30|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30                           ; modulo_ff_d                      ; work         ;
 ;       |modulo_ff_d:ff_31|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31                           ; modulo_ff_d                      ; work         ;
 ;       |modulo_ff_d:ff_33|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33                           ; modulo_ff_d                      ; work         ;
-;    |modulo_mux4_1:mux_1|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1                                                              ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_29|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_2|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2                                                              ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_30|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_29|                                    ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_30|                                    ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
 ;    |modulo_mux4_1:mux_31|                                    ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_31                                                             ; modulo_mux4_1                    ; work         ;
 ;       |or_gate_4_inputs:gate_5|                              ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_31|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_32|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_33|                                    ; 6 (0)       ; 0            ; 0          ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_32|                                    ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_33|                                    ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
 ;    |modulo_mux4_1:mux_34|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_34                                                             ; modulo_mux4_1                    ; work         ;
 ;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_34|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
 ;    |modulo_mux4_1:mux_35|                                    ; 6 (0)       ; 0            ; 0          ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_35                                                             ; modulo_mux4_1                    ; work         ;
 ;       |or_gate_4_inputs:gate_5|                              ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_35|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_3|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_3                                                              ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_3|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_4|                                     ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4                                                              ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux8_1:mux_18|                                    ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_18                                                             ; modulo_mux8_1                    ; work         ;
-;       |and_gate_4_inputs:gate_1|                             ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_18|and_gate_4_inputs:gate_1                                    ; and_gate_4_inputs                ; work         ;
+;    |modulo_mux8_1:mux_8|                                     ; 7 (0)       ; 0            ; 0          ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_8                                                              ; modulo_mux8_1                    ; work         ;
+;       |and_gate_4_inputs:gate_1|                             ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_8|and_gate_4_inputs:gate_1                                     ; and_gate_4_inputs                ; work         ;
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -450,41 +436,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------+----------------------------------------------------------------------+
 ; Register name                                            ; Reason for Removal                                                   ;
 +----------------------------------------------------------+----------------------------------------------------------------------+
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; Stuck at VCC due to stuck port clock                                 ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29|q ; Stuck at VCC due to stuck port data_in                               ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27|q ; Stuck at VCC due to stuck port data_in                               ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21|q ; Stuck at VCC due to stuck port data_in                               ;
@@ -492,6 +443,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16|q ; Stuck at VCC due to stuck port data_in                               ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8|q  ; Stuck at VCC due to stuck port data_in                               ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6|q  ; Stuck at VCC due to stuck port data_in                               ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; Merged with modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22|q ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ;
@@ -510,7 +495,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5|q  ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9|q  ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4|q  ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ;
-; Total Number of Removed Registers = 60                   ;                                                                      ;
+; Total Number of Removed Registers = 59                   ;                                                                      ;
 +----------------------------------------------------------+----------------------------------------------------------------------+
 
 
@@ -519,7 +504,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 22    ;
+; Total registers                              ; 17    ;
 ; Number of registers using Synchronous Clear  ; 2     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -537,14 +522,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; 2       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; 5       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; 3       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; 2       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; 4       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; 2       ;
-; Total number of inverted registers = 10                  ;         ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; 2       ;
+; Total number of inverted registers = 11                  ;         ;
 +----------------------------------------------------------+---------+
 
 
@@ -1042,6 +1028,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; A         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out[6..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "modulo_demux1_4:demux_20"                                                                                              ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (3 bits) it drives; bit(s) "out[3..3]" have no fanouts ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "modulo_demux1_16:demux_11"                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; out[6..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -1840,15 +1844,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+--------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1" ;
-+------+-------+----------+---------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                       ;
-+------+-------+----------+---------------------------------------------------------------+
-; t    ; Input ; Info     ; Stuck at VCC                                                  ;
-+------+-------+----------+---------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20" ;
 +------+-------+----------+-----------------------------------------------------+
@@ -2045,7 +2040,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 02 05:41:06 2023
+    Info: Processing started: Mon Oct 02 05:44:33 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -2206,50 +2201,56 @@ Info (12021): Found 1 design units, including 1 entities, in source file modulo_
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(49): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 49
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(50): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(51): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 51
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(53): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 53
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(54): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 54
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(55): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 55
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(59): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 59
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(60): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 60
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(68): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 68
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(56): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 56
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(64): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 64
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(65): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(69): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 69
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(71): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 71
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(72): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 72
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(73): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 73
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(74): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 74
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(75): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 75
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(76): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 76
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(77): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 77
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(78): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 78
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(79): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 79
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(80): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 80
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(83): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 83
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(84): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 84
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(96): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(92): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 92
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(111): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 111
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(112): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 112
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(113): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 113
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(114): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 114
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(115): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 115
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(116): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 116
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(117): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 117
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(118): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 118
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(119): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 119
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(120): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 120
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(121): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(122): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(123): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 123
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(124): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(134): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 134
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(135): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 135
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(136): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 136
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(137): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 137
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(138): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 138
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(139): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 139
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(140): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 140
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(141): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 141
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(125): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 125
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(126): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 126
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(127): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(128): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(129): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 129
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(130): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(132): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(142): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 142
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(143): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 143
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(144): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 144
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(145): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 145
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(146): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 146
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(147): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 147
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(148): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(149): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 149
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(150): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 150
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(151): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 151
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(152): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 152
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(154): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 154
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(155): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 155
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(156): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 156
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(157): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 157
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(158): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 158
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(159): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 159
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(160): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 160
 Info (12021): Found 1 design units, including 1 entities, in source file pbl.v
     Info (12023): Found entity 1: pbl File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_ff_t.v
@@ -2419,55 +2420,81 @@ Info (12127): Elaborating entity "pbl" for the top level hierarchy
 Warning (10034): Output port "rgb_output" at pbl.v(6) has no driver File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
 Info (12128): Elaborating entity "modulo_divisor_frequencia" for hierarchy "modulo_divisor_frequencia:div_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 47
 Info (12128): Elaborating entity "modulo_ff_t" for hierarchy "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 8
-Info (12128): Elaborating entity "modulo_contador_sync_6_bits" for hierarchy "modulo_contador_sync_6_bits:count_6_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 49
-Info (12128): Elaborating entity "and_gate_4_inputs" for hierarchy "and_gate_4_inputs:gate_0_reset" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
-Info (12128): Elaborating entity "or_gate_2_inputs" for hierarchy "or_gate_2_inputs:gate_1_reset" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 51
-Info (12128): Elaborating entity "modulo_status" for hierarchy "modulo_status:mod_sta" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 53
+Info (12128): Elaborating entity "modulo_status" for hierarchy "modulo_status:mod_sta" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 49
 Info (12128): Elaborating entity "and_gate_2_inputs" for hierarchy "modulo_status:mod_sta|and_gate_2_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_status.v Line: 13
-Info (12128): Elaborating entity "modulo_coord_linha" for hierarchy "modulo_coord_linha:mod_coord_linha_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 54
+Info (12128): Elaborating entity "or_gate_2_inputs" for hierarchy "modulo_status:mod_sta|or_gate_2_inputs:gate_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_status.v Line: 20
+Info (12128): Elaborating entity "modulo_coord_linha" for hierarchy "modulo_coord_linha:mod_coord_linha_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
 Info (12128): Elaborating entity "and_gate_3_inputs" for hierarchy "modulo_coord_linha:mod_coord_linha_1|and_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_coord_linha.v Line: 13
-Info (12128): Elaborating entity "modulo_coord_coluna" for hierarchy "modulo_coord_coluna:mod_coord_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 55
-Info (12128): Elaborating entity "modulo_contador_sync_2_bits" for hierarchy "modulo_contador_sync_2_bits:count_2_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 59
-Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 60
-Info (12128): Elaborating entity "modulo_mux4_1" for hierarchy "modulo_mux4_1:mux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 63
+Info (12128): Elaborating entity "modulo_coord_coluna" for hierarchy "modulo_coord_coluna:mod_coord_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 51
+Info (12128): Elaborating entity "modulo_contador_sync_2_bits" for hierarchy "modulo_contador_sync_2_bits:count_2_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 55
+Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 56
+Info (12128): Elaborating entity "modulo_mux4_1" for hierarchy "modulo_mux4_1:mux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 59
 Info (12128): Elaborating entity "or_gate_4_inputs" for hierarchy "modulo_mux4_1:mux_1|or_gate_4_inputs:gate_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux4_1.v Line: 18
-Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 68
+Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 64
+Info (12128): Elaborating entity "and_gate_4_inputs" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_4_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_decodificador_bcd_ex_7seg.v Line: 15
 Info (12128): Elaborating entity "or_gate_5_inputs" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_5_inputs:gate_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_decodificador_bcd_ex_7seg.v Line: 44
-Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg_ac" for hierarchy "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 69
-Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_button_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 73
-Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 75
-Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 83
-Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
-Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
-Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 90
-Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 91
-Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 92
-Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 93
-Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 94
-Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
+Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg_ac" for hierarchy "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
+Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_button_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 69
+Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 71
+Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 79
+Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 84
+Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 85
+Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 86
+Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 87
+Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
+Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
+Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 90
+Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 92
 Info (12128): Elaborating entity "modulo_ff_d" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_matriz_reg_po.v Line: 7
-Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 98
-Info (12128): Elaborating entity "modulo_seletor_1_16_at" for hierarchy "modulo_seletor_1_16_at:mod_sel_demux_1_16_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 110
-Info (12128): Elaborating entity "modulo_seletor_1_4_at" for hierarchy "modulo_seletor_1_4_at:mod_sel_demux_1_4_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 111
-Info (12128): Elaborating entity "modulo_demux1_16" for hierarchy "modulo_demux1_16:demux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 113
-Info (12128): Elaborating entity "and_gate_5_inputs" for hierarchy "modulo_demux1_16:demux_1|and_gate_5_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_16.v Line: 13
-Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
-Info (12128): Elaborating entity "modulo_mux16_1" for hierarchy "modulo_mux16_1:mux_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 144
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 94
+Info (12128): Elaborating entity "modulo_seletor_1_16_at" for hierarchy "modulo_seletor_1_16_at:mod_sel_demux_1_16_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 106
+Info (12128): Elaborating entity "modulo_seletor_1_4_at" for hierarchy "modulo_seletor_1_4_at:mod_sel_demux_1_4_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 107
+Info (12128): Elaborating entity "modulo_demux1_16" for hierarchy "modulo_demux1_16:demux_11" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 110
+Info (12128): Elaborating entity "and_gate_5_inputs" for hierarchy "modulo_demux1_16:demux_11|and_gate_5_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_16.v Line: 13
+Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
+Info (12128): Elaborating entity "modulo_mux16_1" for hierarchy "modulo_mux16_1:mux_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 152
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "at_in[5]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[4]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "at_in[5]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[4]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[2]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[1]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[0]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "at_in[5]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[4]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[2]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[1]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[0]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "at_in[5]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[4]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[2]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[1]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+    Warning (12110): Net "at_in[0]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 22
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "out_7seg[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 7
     Warning (13410): Pin "out_7seg_ac[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 8
     Warning (13410): Pin "out_7seg_ac[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 8
     Warning (13410): Pin "rgb_output[0]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
     Warning (13410): Pin "rgb_output[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
-Info (21057): Implemented 115 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "button_count" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 3
+Info (21057): Implemented 100 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 26 output pins
-    Info (21061): Implemented 82 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 308 warnings
-    Info: Peak virtual memory: 4712 megabytes
-    Info: Processing ended: Mon Oct 02 05:41:13 2023
-    Info: Elapsed time: 00:00:07
+    Info (21061): Implemented 67 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 341 warnings
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Mon Oct 02 05:44:41 2023
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 
 
