@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY modulo_coord_linha
+set_global_assignment -name TOP_LEVEL_ENTITY modulo_coord_coluna
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:02:39  SEPTEMBER 20, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -119,3 +119,5 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf

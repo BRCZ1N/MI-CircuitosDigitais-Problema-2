@@ -14,24 +14,24 @@ module modulo_coord_coluna(mdc,cdc);
 
     and_gate_2_inputs gate_1(.A(mdc[2]),.B(mdc[0]),.S(cdc_1_wire[1]),);
 
-    and_gate_2_inputs gate_1(.A(mdc[2]),.B(mdc[1]),.S(cdc_1_wire[0]),);
+    and_gate_2_inputs gate_2(.A(mdc[2]),.B(mdc[1]),.S(cdc_1_wire[0]),);
 
-    or_gate_2_input gate_3(.A(cdc_1_wire[1]),.B(cdc_1_wire[0]),,.S(cdc[3]),);
+    or_gate_2_inputs gate_3(.A(cdc_1_wire[1]),.B(cdc_1_wire[0]),.S(cdc[3]),);
 
     //STDIG0_1;
 
-    and_gate_2_inputs gate_2(.A(mdc[2]),.B(1'b1),.S(cdc[2]),);
+    and_gate_2_inputs gate_4(.A(mdc[2]),.B(1'b1),.S(cdc[2]),);
 
     //STDIG0_2;
 
-    and_gate_2_inputs gate_1(.A(mdc[2]),.B(mdc[0]),.S(cdc_2_wire),);
+    and_gate_2_inputs gate_5(.A(mdc[2]),.B(mdc[0]),.S(cdc_2_wire),);
 
-    or_gate_2_input gate_3(.A(mdc[1]),.B(cdc_2_wire),,.S(cdc[1]),);
-
+    or_gate_2_inputs gate_6(.A(mdc[1]),.B(cdc_2_wire),.S(cdc[1]),);
+ 
     //STDIG0_3
 
-    and_gate_2_inputs gate_1(.A(mdc[2]),.B(mdc[1]),.S(cdc_3_wire),);
+    and_gate_2_inputs gate_7(.A(mdc[2]),.B(mdc[1]),.S(cdc_3_wire),);
 
-    or_gate_2_input gate_3(.A(mdc[0]),.B(cdc_3_wire),.S(cdc[0]),);
+    or_gate_2_inputs gate_8(.A(mdc[0]),.B(cdc_3_wire),.S(cdc[0]),);
 
-endmodule
+endmodule 

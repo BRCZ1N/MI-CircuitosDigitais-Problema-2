@@ -54,7 +54,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation,button_count,clk,m_c
 	//RESET DO CONTADOR
 	
 	//AQ
-	wire  MDL_andor_MDC
+	wire  MDL_andor_MDC;
 	and_gate_4_inputs gate_0_reset(.A(Nsel_state[1]),.B(at_in[2]),.C(at_in[1]),.D(at_in[0]),.S(MDL_andor_MDC),);
 	or_gate_2_inputs gate_1_reset(.A(MDL_andor_MDC),.B(at_in[5]),.S(clr_0),);
 	

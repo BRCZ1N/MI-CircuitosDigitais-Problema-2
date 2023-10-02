@@ -1,32 +1,56 @@
-|modulo_coord_linha
-mdl[0] => mdl[0].IN1
-mdl[1] => mdl[1].IN1
-mdl[2] => mdl[2].IN1
-cdl[0] << and_gate_2_inputs:gate_4.S
-cdl[1] << and_gate_2_inputs:gate_3.S
-cdl[2] << and_gate_2_inputs:gate_2.S
-cdl[3] << and_gate_2_inputs:gate_1.S
+|modulo_coord_coluna
+mdc[0] => mdc[0].IN3
+mdc[1] => mdc[1].IN3
+mdc[2] => mdc[2].IN5
+cdc[0] << or_gate_2_inputs:gate_8.S
+cdc[1] << or_gate_2_inputs:gate_6.S
+cdc[2] << and_gate_2_inputs:gate_4.S
+cdc[3] << or_gate_2_inputs:gate_3.S
 
 
-|modulo_coord_linha|and_gate_2_inputs:gate_1
+|modulo_coord_coluna|and_gate_2_inputs:gate_1
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_coord_linha|and_gate_2_inputs:gate_2
+|modulo_coord_coluna|and_gate_2_inputs:gate_2
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_coord_linha|and_gate_2_inputs:gate_3
+|modulo_coord_coluna|or_gate_2_inputs:gate_3
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|modulo_coord_linha|and_gate_2_inputs:gate_4
+|modulo_coord_coluna|and_gate_2_inputs:gate_4
+A => comb.IN0
+B => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_coord_coluna|and_gate_2_inputs:gate_5
+A => comb.IN0
+B => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_coord_coluna|or_gate_2_inputs:gate_6
+A => comb.IN0
+B => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_coord_coluna|and_gate_2_inputs:gate_7
+A => comb.IN0
+B => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_coord_coluna|or_gate_2_inputs:gate_8
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE

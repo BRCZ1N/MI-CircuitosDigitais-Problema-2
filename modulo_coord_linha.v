@@ -21,4 +21,4 @@ module modulo_coord_linha(mdl,cdl);
     //STDIG0_3
     and_gate_2_inputs gate_4(.A(mdl[0]),.B(1'b1),.S(cdl[0]),);
 
-endmodule
+endmodule 

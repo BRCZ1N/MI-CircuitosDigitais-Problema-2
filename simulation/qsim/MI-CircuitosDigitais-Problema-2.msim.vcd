@@ -3,7 +3,7 @@ $comment
 		vcd file MI-CircuitosDigitais-Problema-2.msim.vcd -direction
 $end
 $date
-	Sun Oct 01 22:52:05 2023
+	Sun Oct 01 23:45:01 2023
 $end
 $version
 	ModelSim Version 10.5b
@@ -12,12 +12,12 @@ $timescale
 	1ps
 $end
 
-$scope module modulo_coord_linha_vlg_vec_tst $end
-$var reg 3 ! mdl [2:0] $end
-$var wire 1 " cdl [3] $end
-$var wire 1 # cdl [2] $end
-$var wire 1 $ cdl [1] $end
-$var wire 1 % cdl [0] $end
+$scope module modulo_coord_coluna_vlg_vec_tst $end
+$var reg 3 ! mdc [2:0] $end
+$var wire 1 " cdc [3] $end
+$var wire 1 # cdc [2] $end
+$var wire 1 $ cdc [1] $end
+$var wire 1 % cdc [0] $end
 
 $scope module i1 $end
 $var wire 1 & gnd $end
@@ -26,18 +26,21 @@ $var wire 1 ( unknown $end
 $var tri1 1 ) devclrn $end
 $var tri1 1 * devpor $end
 $var tri1 1 + devoe $end
-$var wire 1 , mdl~combout [2] $end
-$var wire 1 - mdl~combout [1] $end
-$var wire 1 . mdl~combout [0] $end
+$var wire 1 , gate_8|S~combout $end
+$var wire 1 - gate_6|S~combout $end
+$var wire 1 . gate_3|S~0_combout $end
+$var wire 1 / mdc~combout [2] $end
+$var wire 1 0 mdc~combout [1] $end
+$var wire 1 1 mdc~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b111 !
-1%
-1$
-1#
+b0 !
+0%
+0$
+0#
 0"
 0&
 1'
@@ -45,18 +48,73 @@ x(
 1)
 1*
 1+
+0,
+0-
+0.
+01
+00
+0/
+$end
+#10000
+b1 !
+11
+1,
+1%
+#20000
+b11 !
+b10 !
+01
+10
+1-
+0,
+1$
+0%
+#30000
+b11 !
+11
+1,
+1%
+#40000
+b111 !
+b101 !
+b100 !
+01
+00
+1/
+0-
+0,
+1#
+0$
+0%
+#50000
+b101 !
+11
 1.
 1-
 1,
-$end
-#10000
+1"
+1$
+1%
+#60000
+b111 !
+b110 !
+01
+10
+#70000
+b111 !
+11
+#80000
 b11 !
 b1 !
 b0 !
+01
+00
+0/
 0.
 0-
 0,
-0%
-0$
 0#
+0"
+0$
+0%
 #1000000

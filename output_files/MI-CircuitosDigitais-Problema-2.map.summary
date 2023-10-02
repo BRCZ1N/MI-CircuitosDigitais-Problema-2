@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Sun Oct 01 22:51:09 2023
+Analysis & Synthesis Status : Successful - Sun Oct 01 23:43:16 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_coord_linha
+Top-level Entity Name : modulo_coord_coluna
 Family : MAX II
-Total logic elements : 0
+Total logic elements : 3
 Total pins : 7
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
