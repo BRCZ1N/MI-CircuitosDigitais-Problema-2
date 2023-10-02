@@ -81,3 +81,4 @@ set_global_assignment -name VERILOG_FILE modulo_deboucing.v
 set_global_assignment -name VERILOG_FILE modulo_rgb_sel_out.v
 set_global_assignment -name VERILOG_FILE modulo_seletor_1_8_at.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_8_n_out.v
+set_global_assignment -name VERILOG_FILE modulo_seletor_1_8.v
