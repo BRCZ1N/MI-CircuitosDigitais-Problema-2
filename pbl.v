@@ -1,8 +1,9 @@
-module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line);
+module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation,button_count,clk,m_col,m_line, rgb_output);
 
-	input button_confirmation, clk;
+	input button_confirmation, button_count, clk;
 	input [1:0] hh1;
-	input [5:0] hh2;
+	input [1:0] hh2;
+	output [1:0] rgb_output;
 	output [7:0] out_7seg;
 	output [3:0] out_7seg_ac;
 	output [4:0] m_col;
@@ -15,9 +16,11 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line)
 	wire [2:0] count_3_bits_mux_matriz_leds_sel, Ncount_3_bits_mux_matriz_leds_sel;
 	wire [34:0] m_at_clks;
 	wire [15:0] demux1_16_out_1_e, demux1_16_out_1_c;
-	wire clr_1,clr_2, rgb_in_cod, out_deboucing;
+	wire clr_1,clr_2, clr_0, rgb_in_cod, out_deboucing;
 	wire [19:0] clk_div;
 	wire [8:0] m_at_line_rgb_select;
+	wire [5:0] at_in;
+	wire [7:0] m_col_wire;
 
 	not(Nsel_state[3], sel_state[3]);
 	not(Nsel_state[2], sel_state[2]);
@@ -40,14 +43,22 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line)
 	not(Ncount_3_bits_mux_matriz_leds_sel[0],count_3_bits_mux_matriz_leds_sel[0]);
 	
 	modulo_status mod_sta(.std0(hh1),.stdig0(status_wire),);
-	modulo_coord_linha mod_coord_linha_1(.mdl(hh2[5:3]),.cdl(coord_at_linha),);
-	modulo_coord_coluna mod_coord_col_1(.mdc(hh2[2:0]),.cdc(coord_at_coluna),);
+	modulo_coord_linha mod_coord_linha_1(.mdl(at_in[5:3]),.cdl(coord_at_linha),);
+	modulo_coord_coluna mod_coord_col_1(.mdc(at_in[2:0]),.cdc(coord_at_coluna),);
 	
 	modulo_divisor_frequencia div_1(.clr(1'b0),.q(clk_div),.clk(clk));
 	
+	modulo_contador_sync_6_bits count_6_bits_1(.clr(clr_0),.clk(button_confirm),.q(at_in),);
+
+	
+	//RESET DO CONTADOR
+	
+	//AQ
+	
+	
 	// Circuito dos 7 Segmentos - Concluido 
 	
-	modulo_contador_sync_2_bits count_2_bits_1(.clr(clr_1),.clk(clk_div[19]),.q(count_2_bits_mux_7seg_sel),);
+	modulo_contador_sync_2_bits count_2_bits_1(.clr(clr_1),.clk(clk_div[0]),.q(count_2_bits_mux_7seg_sel),);
 	or_gate_3_inputs gate_1(.A(count_2_bits_mux_7seg_sel[1]),.B(Nstatus_wire[1]),.C(status_wire[0]),.S(clr_1),);
 	
 	//modulo_mux4_1 mux_1(.A(),.B(),.C(),.D(),.input_sel(),.out());
@@ -63,24 +74,28 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line)
 	
 	modulo_demux1_4 demux_button_confirmation(.A(button_confirmation),.input_sel(hh1),.out(sel_state),);
 	
-	modulo_demux1_8 demux_col(.A(1'b1),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_col),);
+	modulo_demux1_8 demux_col(.A(1'b1),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_col_wire),);
+	and_gate_2_inputs gate_1_col(.A(m_col_wire[7]),.B(1'b1),.S(m_col[4]),);
+	and_gate_2_inputs gate_2_col(.A(m_col_wire[6]),.B(1'b1),.S(m_col[3]),);
+	and_gate_2_inputs gate_3_col(.A(m_col_wire[5]),.B(1'b1),.S(m_col[2]),);
+	and_gate_2_inputs gate_4_col(.A(m_col_wire[4]),.B(1'b1),.S(m_col[1]),);
+	and_gate_2_inputs gate_5_col(.A(m_col_wire[3]),.B(1'b1),.S(m_col[0]),);
+	
 	
 	modulo_contador_sync_3_bits count_3_bits_1(.clr(clr_2),.clk(clk_div[0]),.q(count_3_bits_mux_matriz_leds_sel),);
 	and_gate_2_inputs gate_2(.A(count_3_bits_mux_matriz_leds_sel[2]),.B(1'b1),.S(clr_2),);
 	
 	//Matriz de armazenamento de posicionamento
 	
-	modulo_preset_linha_1 preset_1(.HH(hh2[5:4]),.cl1(m_po_in[34:30]));
-	modulo_preset_linha_2 preset_2(.HH(hh2[5:4]),.cl2(m_po_in[29:25]));
-	modulo_preset_linha_3 preset_3(.HH(hh2[5:4]),.cl3(m_po_in[24:20]));
-	modulo_preset_linha_4 preset_4(.HH(hh2[5:4]),.cl4(m_po_in[19:15]));
-	modulo_preset_linha_5 preset_5(.HH(hh2[5:4]),.cl5(m_po_in[14:10]));
-	modulo_preset_linha_6 preset_6(.HH(hh2[5:4]),.cl6(m_po_in[9:5]));
-	modulo_preset_linha_7 preset_7(.HH(hh2[5:4]),.cl7(m_po_in[4:0]));
+	modulo_preset_linha_1 preset_1(.HH(hh2),.cl1(m_po_in[34:30]));
+	modulo_preset_linha_2 preset_2(.HH(hh2),.cl2(m_po_in[29:25]));
+	modulo_preset_linha_3 preset_3(.HH(hh2),.cl3(m_po_in[24:20]));
+	modulo_preset_linha_4 preset_4(.HH(hh2),.cl4(m_po_in[19:15]));
+	modulo_preset_linha_5 preset_5(.HH(hh2),.cl5(m_po_in[14:10]));
+	modulo_preset_linha_6 preset_6(.HH(hh2),.cl6(m_po_in[9:5]));
+	modulo_preset_linha_7 preset_7(.HH(hh2),.cl7(m_po_in[4:0]));
 	
 	modulo_matriz_reg_po reg_matriz_po_1(.m_in(m_po_in),.clk(Nsel_state[2]),.clr(Nsel_state[0]),.m_out(m_po_out),);
-	
-	//modulo_mux8_1 mux_1(.A(),.B(),.C(),.D(),.E(),.F(),.G(),.H(),.input_sel(),.out());
 	
 	modulo_mux8_1 mux_5(.A(m_po_out[34]),.B(m_po_out[33]),.C(m_po_out[32]),.D(m_po_out[31]),.E(m_po_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[6]));
 	modulo_mux8_1 mux_6(.A(m_po_out[29]),.B(m_po_out[28]),.C(m_po_out[27]),.D(m_po_out[26]),.E(m_po_out[25]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[5]));
@@ -94,8 +109,8 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation, clk, m_col, m_line)
 	
 	//Matriz de armazenamento de Ataque
 	
-	modulo_seletor_1_16_at mod_sel_demux_1_16_1(.mdc(hh2[5:3]),.mdl(hh2[2:0]),.dmx16_sel(sel_dmx_mx_16));
-	modulo_seletor_1_4_at mod_sel_demux_1_4_1(.mdc(hh2[5:3]),.mdl(hh2[2:0]),.dmx4_sel(sel_dmx_mx_4));
+	modulo_seletor_1_16_at mod_sel_demux_1_16_1(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.dmx16_sel(sel_dmx_mx_16));
+	modulo_seletor_1_4_at mod_sel_demux_1_4_1(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.dmx4_sel(sel_dmx_mx_4));
 	
 	modulo_demux1_16 demux_11(.A(Nsel_state[1]),.input_sel(sel_dmx_mx_16),.out(demux1_16_out_1_c));
 	modulo_demux1_4 demux_12(.A(demux1_16_out_1_c[15]),.input_sel(sel_dmx_mx_4),.out(m_at_clks[34:31]),);

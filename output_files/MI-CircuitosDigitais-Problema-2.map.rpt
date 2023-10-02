@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Sun Oct 01 21:48:00 2023
+Sun Oct 01 22:51:09 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,8 +14,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "modulo_ff_t:ff_1"
- 10. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "and_gate_2_inputs:gate_4"
+ 10. Port Connectivity Checks: "and_gate_2_inputs:gate_3"
+ 11. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
+ 12. Port Connectivity Checks: "and_gate_2_inputs:gate_1"
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -41,87 +44,87 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Oct 01 21:48:00 2023       ;
+; Analysis & Synthesis Status ; Successful - Sun Oct 01 22:51:09 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
-; Top-level Entity Name       ; modulo_contador_sync_6_bits                 ;
+; Top-level Entity Name       ; modulo_coord_linha                          ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 8                                           ;
-; Total pins                  ; 8                                           ;
+; Total logic elements        ; 0                                           ;
+; Total pins                  ; 7                                           ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                                    ;
-+------------------------------------------------------------------+-----------------------------+---------------------------------+
-; Option                                                           ; Setting                     ; Default Value                   ;
-+------------------------------------------------------------------+-----------------------------+---------------------------------+
-; Device                                                           ; EPM240T100C5                ;                                 ;
-; Top-level entity name                                            ; modulo_contador_sync_6_bits ; MI-CircuitosDigitais-Problema-2 ;
-; Family name                                                      ; MAX II                      ; Cyclone V                       ;
-; Use smart compilation                                            ; Off                         ; Off                             ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                          ; On                              ;
-; Enable compact report table                                      ; Off                         ; Off                             ;
-; Restructure Multiplexers                                         ; Auto                        ; Auto                            ;
-; Create Debugging Nodes for IP Cores                              ; Off                         ; Off                             ;
-; Preserve fewer node names                                        ; On                          ; On                              ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable                      ; Enable                          ;
-; Verilog Version                                                  ; Verilog_2001                ; Verilog_2001                    ;
-; VHDL Version                                                     ; VHDL_1993                   ; VHDL_1993                       ;
-; State Machine Processing                                         ; Auto                        ; Auto                            ;
-; Safe State Machine                                               ; Off                         ; Off                             ;
-; Extract Verilog State Machines                                   ; On                          ; On                              ;
-; Extract VHDL State Machines                                      ; On                          ; On                              ;
-; Ignore Verilog initial constructs                                ; Off                         ; Off                             ;
-; Iteration limit for constant Verilog loops                       ; 5000                        ; 5000                            ;
-; Iteration limit for non-constant Verilog loops                   ; 250                         ; 250                             ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                          ; On                              ;
-; Infer RAMs from Raw Logic                                        ; On                          ; On                              ;
-; Parallel Synthesis                                               ; On                          ; On                              ;
-; NOT Gate Push-Back                                               ; On                          ; On                              ;
-; Power-Up Don't Care                                              ; On                          ; On                              ;
-; Remove Redundant Logic Cells                                     ; Off                         ; Off                             ;
-; Remove Duplicate Registers                                       ; On                          ; On                              ;
-; Ignore CARRY Buffers                                             ; Off                         ; Off                             ;
-; Ignore CASCADE Buffers                                           ; Off                         ; Off                             ;
-; Ignore GLOBAL Buffers                                            ; Off                         ; Off                             ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                         ; Off                             ;
-; Ignore LCELL Buffers                                             ; Off                         ; Off                             ;
-; Ignore SOFT Buffers                                              ; On                          ; On                              ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                         ; Off                             ;
-; Optimization Technique                                           ; Balanced                    ; Balanced                        ;
-; Carry Chain Length                                               ; 70                          ; 70                              ;
-; Auto Carry Chains                                                ; On                          ; On                              ;
-; Auto Open-Drain Pins                                             ; On                          ; On                              ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                         ; Off                             ;
-; Auto Shift Register Replacement                                  ; Auto                        ; Auto                            ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto                        ; Auto                            ;
-; Auto Clock Enable Replacement                                    ; On                          ; On                              ;
-; Allow Synchronous Control Signals                                ; On                          ; On                              ;
-; Force Use of Synchronous Clear Signals                           ; Off                         ; Off                             ;
-; Auto Resource Sharing                                            ; Off                         ; Off                             ;
-; Use LogicLock Constraints during Resource Balancing              ; On                          ; On                              ;
-; Ignore translate_off and synthesis_off directives                ; Off                         ; Off                             ;
-; Report Parameter Settings                                        ; On                          ; On                              ;
-; Report Source Assignments                                        ; On                          ; On                              ;
-; Report Connectivity Checks                                       ; On                          ; On                              ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                         ; Off                             ;
-; Synchronization Register Chain Length                            ; 2                           ; 2                               ;
-; Power Optimization During Synthesis                              ; Normal compilation          ; Normal compilation              ;
-; HDL message level                                                ; Level2                      ; Level2                          ;
-; Suppress Register Optimization Related Messages                  ; Off                         ; Off                             ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000                        ; 5000                            ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000                        ; 5000                            ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                         ; 100                             ;
-; Clock MUX Protection                                             ; On                          ; On                              ;
-; Block Design Naming                                              ; Auto                        ; Auto                            ;
-; Synthesis Effort                                                 ; Auto                        ; Auto                            ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                          ; On                              ;
-; Analysis & Synthesis Message Level                               ; Medium                      ; Medium                          ;
-; Disable Register Merging Across Hierarchies                      ; Auto                        ; Auto                            ;
-+------------------------------------------------------------------+-----------------------------+---------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                           ;
++------------------------------------------------------------------+--------------------+---------------------------------+
+; Option                                                           ; Setting            ; Default Value                   ;
++------------------------------------------------------------------+--------------------+---------------------------------+
+; Device                                                           ; EPM240T100C5       ;                                 ;
+; Top-level entity name                                            ; modulo_coord_linha ; MI-CircuitosDigitais-Problema-2 ;
+; Family name                                                      ; MAX II             ; Cyclone V                       ;
+; Use smart compilation                                            ; Off                ; Off                             ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                              ;
+; Enable compact report table                                      ; Off                ; Off                             ;
+; Restructure Multiplexers                                         ; Auto               ; Auto                            ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                             ;
+; Preserve fewer node names                                        ; On                 ; On                              ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable                          ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001                    ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993                       ;
+; State Machine Processing                                         ; Auto               ; Auto                            ;
+; Safe State Machine                                               ; Off                ; Off                             ;
+; Extract Verilog State Machines                                   ; On                 ; On                              ;
+; Extract VHDL State Machines                                      ; On                 ; On                              ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                             ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000                            ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                             ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                              ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                              ;
+; Parallel Synthesis                                               ; On                 ; On                              ;
+; NOT Gate Push-Back                                               ; On                 ; On                              ;
+; Power-Up Don't Care                                              ; On                 ; On                              ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                             ;
+; Remove Duplicate Registers                                       ; On                 ; On                              ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                             ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                             ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                             ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                             ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                             ;
+; Ignore SOFT Buffers                                              ; On                 ; On                              ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                             ;
+; Optimization Technique                                           ; Balanced           ; Balanced                        ;
+; Carry Chain Length                                               ; 70                 ; 70                              ;
+; Auto Carry Chains                                                ; On                 ; On                              ;
+; Auto Open-Drain Pins                                             ; On                 ; On                              ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                             ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto                            ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto                            ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                              ;
+; Allow Synchronous Control Signals                                ; On                 ; On                              ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                             ;
+; Auto Resource Sharing                                            ; Off                ; Off                             ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                              ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                             ;
+; Report Parameter Settings                                        ; On                 ; On                              ;
+; Report Source Assignments                                        ; On                 ; On                              ;
+; Report Connectivity Checks                                       ; On                 ; On                              ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                             ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                               ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation              ;
+; HDL message level                                                ; Level2             ; Level2                          ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                             ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000                            ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000                            ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                             ;
+; Clock MUX Protection                                             ; On                 ; On                              ;
+; Block Design Naming                                              ; Auto               ; Auto                            ;
+; Synthesis Effort                                                 ; Auto               ; Auto                            ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                              ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium                          ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto                            ;
++------------------------------------------------------------------+--------------------+---------------------------------+
 
 
 +------------------------------------------+
@@ -140,63 +143,57 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                            ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; modulo_ff_t.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_ff_t.v                 ;         ;
-; modulo_contador_sync_6_bits.v    ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_contador_sync_6_bits.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; modulo_coord_linha.v             ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_coord_linha.v ;         ;
+; module_gates.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v       ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Total logic elements                        ; 8                  ;
-;     -- Combinational with no register       ; 2                  ;
-;     -- Register only                        ; 0                  ;
-;     -- Combinational with a register        ; 6                  ;
-;                                             ;                    ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 4                  ;
-;     -- 3 input functions                    ; 2                  ;
-;     -- 2 input functions                    ; 2                  ;
-;     -- 1 input functions                    ; 0                  ;
-;     -- 0 input functions                    ; 0                  ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 8                  ;
-;     -- arithmetic mode                      ; 0                  ;
-;     -- qfbk mode                            ; 0                  ;
-;     -- register cascade mode                ; 0                  ;
-;     -- synchronous clear/load mode          ; 0                  ;
-;     -- asynchronous clear/load mode         ; 0                  ;
-;                                             ;                    ;
-; Total registers                             ; 6                  ;
-; I/O pins                                    ; 8                  ;
-; Maximum fan-out node                        ; modulo_ff_t:ff_1|q ;
-; Maximum fan-out                             ; 6                  ;
-; Total fan-out                               ; 38                 ;
-; Average fan-out                             ; 2.38               ;
-+---------------------------------------------+--------------------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Total logic elements                        ; 0      ;
+;     -- Combinational with no register       ; 0      ;
+;     -- Register only                        ; 0      ;
+;     -- Combinational with a register        ; 0      ;
+;                                             ;        ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 0      ;
+;     -- 3 input functions                    ; 0      ;
+;     -- 2 input functions                    ; 0      ;
+;     -- 1 input functions                    ; 0      ;
+;     -- 0 input functions                    ; 0      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 0      ;
+;     -- arithmetic mode                      ; 0      ;
+;     -- qfbk mode                            ; 0      ;
+;     -- register cascade mode                ; 0      ;
+;     -- synchronous clear/load mode          ; 0      ;
+;     -- asynchronous clear/load mode         ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+; I/O pins                                    ; 7      ;
+; Maximum fan-out node                        ; mdl[0] ;
+; Maximum fan-out                             ; 1      ;
+; Total fan-out                               ; 3      ;
+; Average fan-out                             ; 0.43   ;
++---------------------------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
-+------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------+-----------------------------+--------------+
-; Compilation Hierarchy Node   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                           ; Entity Name                 ; Library Name ;
-+------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------+-----------------------------+--------------+
-; |modulo_contador_sync_6_bits ; 8 (2)       ; 6            ; 0          ; 8    ; 0            ; 2 (2)        ; 0 (0)             ; 6 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_contador_sync_6_bits                  ; modulo_contador_sync_6_bits ; work         ;
-;    |modulo_ff_t:ff_1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |modulo_contador_sync_6_bits|modulo_ff_t:ff_1 ; modulo_ff_t                 ; work         ;
-;    |modulo_ff_t:ff_2|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |modulo_contador_sync_6_bits|modulo_ff_t:ff_2 ; modulo_ff_t                 ; work         ;
-;    |modulo_ff_t:ff_3|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |modulo_contador_sync_6_bits|modulo_ff_t:ff_3 ; modulo_ff_t                 ; work         ;
-;    |modulo_ff_t:ff_4|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |modulo_contador_sync_6_bits|modulo_ff_t:ff_4 ; modulo_ff_t                 ; work         ;
-;    |modulo_ff_t:ff_5|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |modulo_contador_sync_6_bits|modulo_ff_t:ff_5 ; modulo_ff_t                 ; work         ;
-;    |modulo_ff_t:ff_6|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |modulo_contador_sync_6_bits|modulo_ff_t:ff_6 ; modulo_ff_t                 ; work         ;
-+------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------+-----------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name        ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------------+--------------+
+; |modulo_coord_linha        ; 0 (0)       ; 0            ; 0          ; 7    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_coord_linha ; modulo_coord_linha ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -205,7 +202,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 6     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -215,13 +212,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------+
-; Port Connectivity Checks: "modulo_ff_t:ff_1" ;
-+------+-------+----------+--------------------+
-; Port ; Type  ; Severity ; Details            ;
-+------+-------+----------+--------------------+
-; t    ; Input ; Info     ; Stuck at VCC       ;
-+------+-------+----------+--------------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "and_gate_2_inputs:gate_4" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; B    ; Input ; Info     ; Stuck at VCC               ;
++------+-------+----------+----------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "and_gate_2_inputs:gate_3" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; B    ; Input ; Info     ; Stuck at VCC               ;
++------+-------+----------+----------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "and_gate_2_inputs:gate_2" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; B    ; Input ; Info     ; Stuck at VCC               ;
++------+-------+----------+----------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "and_gate_2_inputs:gate_1" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; A    ; Input ; Info     ; Stuck at GND               ;
+; B    ; Input ; Info     ; Stuck at GND               ;
++------+-------+----------+----------------------------+
 
 
 +-------------------------------+
@@ -230,7 +255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 01 21:47:53 2023
+    Info: Processing started: Sun Oct 01 22:51:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -384,54 +409,60 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_divisor_freq
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_divisor_frequencia.v(84): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_divisor_frequencia.v
     Info (12023): Found entity 1: modulo_divisor_frequencia File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(42): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(43): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 43
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(44): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 44
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(50): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(45): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 45
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(46): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 46
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(47): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 47
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(51): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 51
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(59): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 59
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(60): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 60
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(64): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 64
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(66): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 66
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(68): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 68
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(69): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 69
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(61): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 61
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(62): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 62
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(70): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 70
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(71): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 71
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(75): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 75
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(77): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 77
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(78): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 78
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(79): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 79
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(80): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 80
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(81): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 81
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(101): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 101
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(102): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 102
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(103): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 103
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(104): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 104
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(105): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 105
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(106): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 106
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(107): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 107
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(108): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 108
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(109): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 109
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(112): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 112
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(113): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 113
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(114): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 114
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(115): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 115
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(82): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 82
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(85): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 85
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(86): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 86
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(98): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 98
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(116): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 116
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(117): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 117
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(118): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 118
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(119): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 119
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(120): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 120
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(121): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(122): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(123): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 123
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(124): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(127): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(128): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(129): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 129
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(130): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(131): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 131
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(132): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(133): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 133
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(134): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 134
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(135): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 135
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(136): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 136
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(137): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 137
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(138): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 138
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(139): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 139
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(140): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 140
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(141): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 141
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(142): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 142
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(144): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 144
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(145): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 145
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(146): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 146
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(147): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 147
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(148): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(149): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 149
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(150): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 150
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(151): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 151
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(152): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 152
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(153): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 153
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(154): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 154
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(155): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 155
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(156): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 156
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(157): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 157
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(159): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 159
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(160): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 160
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(161): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 161
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(162): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 162
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(163): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 163
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(164): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 164
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(165): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 165
 Info (12021): Found 1 design units, including 1 entities, in source file pbl.v
     Info (12023): Found entity 1: pbl File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_ff_t.v
@@ -577,16 +608,18 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_contador_syn
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_contador_sync_6_bits.v(25): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_contador_sync_6_bits.v Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_contador_sync_6_bits.v
     Info (12023): Found entity 1: modulo_contador_sync_6_bits File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_contador_sync_6_bits.v Line: 1
-Info (12127): Elaborating entity "modulo_contador_sync_6_bits" for the top level hierarchy
-Info (12128): Elaborating entity "modulo_ff_t" for hierarchy "modulo_ff_t:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_contador_sync_6_bits.v Line: 7
-Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 275 warnings
-    Info: Peak virtual memory: 4704 megabytes
-    Info: Processing ended: Sun Oct 01 21:48:00 2023
+Warning (10236): Verilog HDL Implicit Net warning at pbl.v(51): created implicit net for "button_confirm" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 51
+Info (12127): Elaborating entity "modulo_coord_linha" for the top level hierarchy
+Info (12128): Elaborating entity "and_gate_2_inputs" for hierarchy "and_gate_2_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_coord_linha.v Line: 13
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "cdl[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_coord_linha.v Line: 4
+Info (21057): Implemented 7 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 4 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 284 warnings
+    Info: Peak virtual memory: 4705 megabytes
+    Info: Processing ended: Sun Oct 01 22:51:09 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:16
 
 

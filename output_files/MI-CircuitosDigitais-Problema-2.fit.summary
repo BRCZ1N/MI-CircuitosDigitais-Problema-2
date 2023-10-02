@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Oct 01 21:48:01 2023
+Fitter Status : Successful - Sun Oct 01 22:51:10 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_contador_sync_6_bits
+Top-level Entity Name : modulo_coord_linha
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 8 / 240 ( 3 % )
-Total pins : 8 / 80 ( 10 % )
+Total logic elements : 0 / 240 ( 0 % )
+Total pins : 7 / 80 ( 9 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
