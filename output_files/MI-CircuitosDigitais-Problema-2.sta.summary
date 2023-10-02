@@ -2,4 +2,256 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+Slack : -1.684
+TNS   : -4.906
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20|q'
+Slack : -1.476
+TNS   : -2.950
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12|q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2|q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13|q'
+Slack : 0.808
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15|q'
+Slack : 0.808
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5|q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7|q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9|q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3|q'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11|q'
+Slack : 1.292
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17|q'
+Slack : 1.411
+TNS   : 0.000
+
+Type  : Setup 'clk'
+Slack : 1.924
+TNS   : 0.000
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19|q'
+Slack : 1.931
+TNS   : 0.000
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+Slack : -2.125
+TNS   : -2.125
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19|q'
+Slack : -1.985
+TNS   : -1.985
+
+Type  : Hold 'clk'
+Slack : -1.978
+TNS   : -1.978
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17|q'
+Slack : -1.465
+TNS   : -1.465
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11|q'
+Slack : -1.346
+TNS   : -1.346
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3|q'
+Slack : -0.879
+TNS   : -0.879
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5|q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7|q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9|q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13|q'
+Slack : -0.862
+TNS   : -0.862
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15|q'
+Slack : -0.862
+TNS   : -0.862
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12|q'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2|q'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20|q'
+Slack : 1.661
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9|q'
+Slack : 0.234
+TNS   : 0.000
+
 ------------------------------------------------------------

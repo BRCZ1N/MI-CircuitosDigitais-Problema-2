@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Oct 01 20:04:56 2023
+Fitter Status : Successful - Sun Oct 01 21:02:08 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_mux16_1
+Top-level Entity Name : pbl
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 12 / 240 ( 5 % )
-Total pins : 20 / 80 ( 25 % )
+Total logic elements : 47 / 240 ( 20 % )
+Total pins : 27 / 80 ( 34 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
