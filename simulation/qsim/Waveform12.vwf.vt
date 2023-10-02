@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/02/2023 00:27:53"
+// Generated on "10/02/2023 04:50:04"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          modulo_seletor_1_16_at
 // 
@@ -43,35 +43,48 @@ modulo_seletor_1_16_at i1 (
 );
 initial 
 begin 
-#640000 $finish;
+#1000000 $finish;
 end 
 // mdc[ 2 ]
-always
+initial
 begin
 	mdc[2] = 1'b0;
 	mdc[2] = #320000 1'b1;
-	#320000;
+	mdc[2] = #320000 1'b0;
+	mdc[2] = #320000 1'b1;
 end 
 // mdc[ 1 ]
-always
+initial
 begin
+	repeat(3)
+	begin
+		mdc[1] = 1'b0;
+		mdc[1] = #160000 1'b1;
+		# 160000;
+	end
 	mdc[1] = 1'b0;
-	mdc[1] = #160000 1'b1;
-	#160000;
 end 
 // mdc[ 0 ]
-always
+initial
 begin
+	repeat(6)
+	begin
+		mdc[0] = 1'b0;
+		mdc[0] = #80000 1'b1;
+		# 80000;
+	end
 	mdc[0] = 1'b0;
-	mdc[0] = #80000 1'b1;
-	#80000;
 end 
 // mdl[ 2 ]
-always
+initial
 begin
+	repeat(12)
+	begin
+		mdl[2] = 1'b0;
+		mdl[2] = #40000 1'b1;
+		# 40000;
+	end
 	mdl[2] = 1'b0;
-	mdl[2] = #40000 1'b1;
-	#40000;
 end 
 // mdl[ 1 ]
 always

@@ -18,26 +18,26 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/01/2023 18:51:32"
+// Generated on "10/02/2023 05:11:34"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_seletor_1_16_at
+// Verilog Test Bench (with test vectors) for design :                          modulo_seletor_1_4_at
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_seletor_1_16_at_vlg_vec_tst();
+module modulo_seletor_1_4_at_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg [2:0] mdc;
 reg [2:0] mdl;
 // wires                                               
-wire [3:0] dmx16_sel;
+wire [1:0] dmx4_sel;
 
 // assign statements (if any)                          
-modulo_seletor_1_16_at i1 (
+modulo_seletor_1_4_at i1 (
 // port map - connection between master ports and signals/registers   
-	.dmx16_sel(dmx16_sel),
+	.dmx4_sel(dmx4_sel),
 	.mdc(mdc),
 	.mdl(mdl)
 );
@@ -49,32 +49,56 @@ end
 initial
 begin
 	mdc[2] = 1'b0;
+	mdc[2] = #320000 1'b1;
+	mdc[2] = #320000 1'b0;
+	mdc[2] = #320000 1'b1;
 end 
 // mdc[ 1 ]
 initial
 begin
+	repeat(3)
+	begin
+		mdc[1] = 1'b0;
+		mdc[1] = #160000 1'b1;
+		# 160000;
+	end
 	mdc[1] = 1'b0;
 end 
 // mdc[ 0 ]
 initial
 begin
-	mdc[0] = 1'b1;
-	mdc[0] = #10000 1'b0;
+	repeat(6)
+	begin
+		mdc[0] = 1'b0;
+		mdc[0] = #80000 1'b1;
+		# 80000;
+	end
+	mdc[0] = 1'b0;
 end 
 // mdl[ 2 ]
 initial
 begin
+	repeat(12)
+	begin
+		mdl[2] = 1'b0;
+		mdl[2] = #40000 1'b1;
+		# 40000;
+	end
 	mdl[2] = 1'b0;
 end 
 // mdl[ 1 ]
-initial
+always
 begin
 	mdl[1] = 1'b0;
+	mdl[1] = #20000 1'b1;
+	#20000;
 end 
 // mdl[ 0 ]
-initial
+always
 begin
 	mdl[0] = 1'b0;
+	mdl[0] = #10000 1'b1;
+	#10000;
 end 
 endmodule
 

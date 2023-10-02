@@ -18,63 +18,89 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/01/2023 18:53:30"
+// Generated on "10/02/2023 05:15:55"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_seletor_1_4_at
+// Verilog Test Bench (with test vectors) for design :                          pbl
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_seletor_1_4_at_vlg_vec_tst();
+module pbl_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [2:0] mdc;
-reg [2:0] mdl;
+reg button_confirmation;
+reg button_count;
+reg clk;
+reg [1:0] hh1;
+reg [1:0] hh2;
 // wires                                               
-wire [1:0] dmx4_sel;
+wire [4:0] m_col;
+wire [6:0] m_line;
+wire [7:0] out_7seg;
+wire [3:0] out_7seg_ac;
+wire [1:0] rgb_output;
 
 // assign statements (if any)                          
-modulo_seletor_1_4_at i1 (
+pbl i1 (
 // port map - connection between master ports and signals/registers   
-	.dmx4_sel(dmx4_sel),
-	.mdc(mdc),
-	.mdl(mdl)
+	.button_confirmation(button_confirmation),
+	.button_count(button_count),
+	.clk(clk),
+	.hh1(hh1),
+	.hh2(hh2),
+	.m_col(m_col),
+	.m_line(m_line),
+	.out_7seg(out_7seg),
+	.out_7seg_ac(out_7seg_ac),
+	.rgb_output(rgb_output)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// mdc[ 2 ]
+
+// button_confirmation
 initial
 begin
-	mdc[2] = 1'b0;
+	button_confirmation = 1'b1;
+	button_confirmation = #10000 1'b0;
+	button_confirmation = #20000 1'b1;
 end 
-// mdc[ 1 ]
+
+// button_count
 initial
 begin
-	mdc[1] = 1'b0;
+	button_count = 1'b0;
 end 
-// mdc[ 0 ]
-initial
+
+// clk
+always
 begin
-	mdc[0] = 1'b1;
-	mdc[0] = #10000 1'b0;
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
 end 
-// mdl[ 2 ]
+// hh1[ 1 ]
 initial
 begin
-	mdl[2] = 1'b0;
+	hh1[1] = 1'b1;
+	hh1[1] = #750000 1'b0;
 end 
-// mdl[ 1 ]
+// hh1[ 0 ]
 initial
 begin
-	mdl[1] = 1'b0;
+	hh1[0] = 1'b0;
 end 
-// mdl[ 0 ]
+// hh2[ 1 ]
 initial
 begin
-	mdl[0] = 1'b0;
+	hh2[1] = 1'b0;
+end 
+// hh2[ 0 ]
+initial
+begin
+	hh2[0] = 1'b0;
 end 
 endmodule
 

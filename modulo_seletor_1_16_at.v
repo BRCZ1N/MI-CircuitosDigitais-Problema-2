@@ -9,15 +9,15 @@ module modulo_seletor_1_16_at (mdc,mdl,dmx16_sel);
 	wire [10:0] mx16e4;
 	wire [1:0] mx16e2_aux;
 	wire [1:0] mx16e3_aux;
-	wire [1:0] mx16e4_aux;
+	wire [2:0] mx16e4_aux;
 	
 	not(nmdc[2], mdc[2]);
 	not(nmdc[1], mdc[1]);
-	not(nmdc[0], mdc[1]);
+	not(nmdc[0], mdc[0]);
 	
 	not(nmdl[2], mdl[2]);
 	not(nmdl[1], mdl[1]);
-	not(nmdl[0], mdl[1]);
+	not(nmdl[0], mdl[0]);
 	
 	//MX16E1(MDC1, MDC2, MDC3, MDL1, MDL2, MDL3) = MDL1MDL2MDL3 + MDC1MDC3 + MDC1MDC2
 	
@@ -39,6 +39,9 @@ module modulo_seletor_1_16_at (mdc,mdl,dmx16_sel);
 	or_gate_3_inputs gate_11(.A(mx16e2[5]),.B(mx16e2[4]),.C(mx16e2[3]),.S(mx16e2_aux[1]),);
 	or_gate_3_inputs gate_12(.A(mx16e2[2]),.B(mx16e2[1]),.C(mx16e2[0]),.S(mx16e2_aux[0]),);
 	or_gate_2_inputs gate_13(.A(mx16e2_aux[1]),.B(mx16e2_aux[0]),.S(dmx16_sel[2]),);
+	
+	//MX16E3(MDC1, MDC2, MDC3, MDL1, MDL2, MDL3) = MDL1MDL2MDL3 + MDC2'MDC3MDL3 
+	//+ MDC2'MDC3MDL2 + MDC3MDL1 + MDC2MDC3'MDL1'MDL2' + MDC3MDL2MDL3 + MDC1MDL1' + MDC1MDC2
 	
 	//MX16E3(MDC1, MDC2, MDC3, MDL1, MDL2, MDL3) = MDL1MDL2MDL3 + MDC2'MDC3MDL3 
 	//+ MDC2'MDC3MDL2 + MDC3MDL1 + MDC2MDC3'MDL1'MDL2' + MDC3MDL2MDL3 + MDC1MDL1' + MDC1MDC2
@@ -74,8 +77,9 @@ module modulo_seletor_1_16_at (mdc,mdl,dmx16_sel);
 	and_gate_4_inputs gate_34(.A(nmdc[2]),.B(nmdc[1]),.C(mdl[2]),.D(mdl[1]),.S(mx16e4[1]),);
 	and_gate_4_inputs gate_35(.A(nmdc[2]),.B(nmdc[0]),.C(mdl[2]),.D(mdl[1]),.S(mx16e4[0]),);
 	
-	or_gate_5_inputs gate_36(.A(mx16e4[9]),.B(mx16e4[8]),.C(mx16e4[7]),.D(mx16e4[6]),.E(mx16e4[5]),.S(mx16e4_aux[1]),);
-	or_gate_5_inputs gate_37(.A(mx16e4[4]),.B(mx16e4[3]),.C(mx16e4[2]),.D(mx16e4[1]),.E(mx16e4[0]),.S(mx16e4_aux[0]),);
-	or_gate_3_inputs gate_38(.A(mx16e4_aux[1]),.B(mx16e4_aux[0]),.C(mx16e4[0]),.S(dmx16_sel[0]),);
+	or_gate_4_inputs gate_36(.A(mx16e4[10]),.B(mx16e4[9]),.C(mx16e4[8]),.D(mx16e4[7]),.S(mx16e4_aux[2]),);
+	or_gate_4_inputs gate_37(.A(mx16e4[6]),.B(mx16e4[5]),.C(mx16e4[4]),.D(mx16e4[3]),.S(mx16e4_aux[1]),);
+	or_gate_3_inputs gate_38(.A(mx16e4[2]),.B(mx16e4[1]),.C(mx16e4[0]),.S(mx16e4_aux[0]),);
+	or_gate_3_inputs gate_39(.A(mx16e4_aux[2]),.B(mx16e4_aux[1]),.C(mx16e4_aux[0]),.S(dmx16_sel[0]),);
 
 endmodule 
