@@ -127,18 +127,6 @@ module pbl(hh1,hh2,button_confirmation_input, button_count_input, clk,out_7seg,o
 	modulo_mux8_1 mux_17(.A(m_at_out[9]),.B(m_at_out[8]),.C(m_at_out[7]),.D(m_at_out[6]),.E(m_at_out[5]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[1]));
 	modulo_mux8_1 mux_18(.A(m_at_out[4]),.B(m_at_out[3]),.C(m_at_out[2]),.D(m_at_out[1]),.E(m_at_out[0]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[0]));
 	
-	modulo_mux4_1 mux_20(.A(m_at_out[34]),.B(m_at_out[33]),.C(m_at_out[32]),.D(m_at_out[31]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[8]),);
-	modulo_mux4_1 mux_21(.A(m_at_out[30]),.B(m_at_out[29]),.C(m_at_out[28]),.D(m_at_out[27]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[7]),);
-	modulo_mux4_1 mux_22(.A(m_at_out[26]),.B(m_at_out[25]),.C(m_at_out[24]),.D(m_at_out[23]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[6]),);
-	modulo_mux4_1 mux_23(.A(m_at_out[22]),.B(m_at_out[21]),.C(m_at_out[20]),.D(m_at_out[19]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[5]),);
-	modulo_mux4_1 mux_24(.A(m_at_out[18]),.B(m_at_out[17]),.C(m_at_out[16]),.D(m_at_out[15]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[4]),);
-	modulo_mux4_1 mux_25(.A(m_at_out[14]),.B(m_at_out[13]),.C(m_at_out[12]),.D(m_at_out[11]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[3]),);
-	modulo_mux4_1 mux_26(.A(m_at_out[10]),.B(m_at_out[9]),.C(m_at_out[8]),.D(m_at_out[7]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[2]),);
-	modulo_mux4_1 mux_27(.A(m_at_out[6]),.B(m_at_out[5]),.C(m_at_out[4]),.D(m_at_out[3]),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[1]),);
-	modulo_mux4_1 mux_28(.A(m_at_out[2]),.B(m_at_out[1]),.C(m_at_out[0]),.D(),.input_sel(sel_dmx_mx_4),.out(m_at_line_rgb_select[0]),);
-	
-	modulo_mux16_1 mux_19(.A(m_at_line_rgb_select[8]),.B(m_at_line_rgb_select[7]),.C(m_at_line_rgb_select[6]),.D(m_at_line_rgb_select[5]),.E(m_at_line_rgb_select[4]),.F(m_at_line_rgb_select[3]),.G(m_at_line_rgb_select[2]),.H(m_at_line_rgb_select[1]),.I(m_at_line_rgb_select[0]),.J(),.K(),.L(),.M(),.N(),.O(),.input_sel(sel_dmx_mx_16),.out(rgb_in_cod),);
-	
 	modulo_mux4_1 mux_29(.A(1'b1),.B(m_po_line[6]),.C(m_at_line[6]),.D(m_po_line[6]),.input_sel(hh1),.out(m_line[6]),);
 	modulo_mux4_1 mux_30(.A(1'b1),.B(m_po_line[5]),.C(m_at_line[5]),.D(m_po_line[5]),.input_sel(hh1),.out(m_line[5]),);
 	modulo_mux4_1 mux_31(.A(1'b1),.B(m_po_line[4]),.C(m_at_line[4]),.D(m_po_line[4]),.input_sel(hh1),.out(m_line[4]),);
