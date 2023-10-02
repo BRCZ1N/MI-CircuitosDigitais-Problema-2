@@ -3,35 +3,35 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'button_count'
-Slack : -4.520
-TNS   : -20.852
+Slack : -3.283
+TNS   : -17.018
 
 Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
-Slack : -2.399
-TNS   : -9.612
+Slack : -2.358
+TNS   : -9.323
 
 Type  : Setup 'button_confirmation'
-Slack : -1.472
-TNS   : -15.016
+Slack : -2.079
+TNS   : -14.223
 
 Type  : Setup 'clk'
-Slack : 1.924
+Slack : 1.941
 TNS   : 0.000
 
 Type  : Hold 'clk'
-Slack : -1.978
-TNS   : -1.978
+Slack : -1.995
+TNS   : -1.995
 
 Type  : Hold 'button_confirmation'
-Slack : -1.825
-TNS   : -22.019
+Slack : 1.093
+TNS   : 0.000
 
 Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
-Slack : 1.661
+Slack : 1.660
 TNS   : 0.000
 
 Type  : Hold 'button_count'
-Slack : 1.701
+Slack : 1.974
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'button_confirmation'

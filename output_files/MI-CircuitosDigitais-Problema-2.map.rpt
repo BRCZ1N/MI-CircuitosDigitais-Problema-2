@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Mon Oct 02 05:13:09 2023
+Mon Oct 02 05:41:13 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -23,8 +23,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  15. Port Connectivity Checks: "modulo_mux4_1:mux_31"
  16. Port Connectivity Checks: "modulo_mux4_1:mux_30"
  17. Port Connectivity Checks: "modulo_mux4_1:mux_29"
- 18. Port Connectivity Checks: "modulo_mux4_1:mux_28"
- 19. Port Connectivity Checks: "modulo_mux16_1:mux_19"
+ 18. Port Connectivity Checks: "modulo_mux16_1:mux_19"
+ 19. Port Connectivity Checks: "modulo_mux4_1:mux_28"
  20. Port Connectivity Checks: "modulo_mux8_1:mux_18"
  21. Port Connectivity Checks: "modulo_mux8_1:mux_17"
  22. Port Connectivity Checks: "modulo_mux8_1:mux_16"
@@ -69,116 +69,114 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  61. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1"
  62. Port Connectivity Checks: "modulo_demux1_4:demux_10"
  63. Port Connectivity Checks: "modulo_demux1_16:demux_1"
- 64. Port Connectivity Checks: "modulo_demux1_4:demux_20"
- 65. Port Connectivity Checks: "modulo_demux1_16:demux_11"
- 66. Port Connectivity Checks: "modulo_seletor_1_16_at:mod_sel_demux_1_16_1|and_gate_3_inputs:gate_17"
- 67. Port Connectivity Checks: "modulo_mux8_1:mux_11"
- 68. Port Connectivity Checks: "modulo_mux8_1:mux_10"
- 69. Port Connectivity Checks: "modulo_mux8_1:mux_9"
- 70. Port Connectivity Checks: "modulo_mux8_1:mux_8"
- 71. Port Connectivity Checks: "modulo_mux8_1:mux_7"
- 72. Port Connectivity Checks: "modulo_mux8_1:mux_6"
- 73. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
- 74. Port Connectivity Checks: "modulo_mux8_1:mux_5"
- 75. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35"
- 76. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34"
- 77. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33"
- 78. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32"
- 79. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31"
- 80. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30"
- 81. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29"
- 82. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28"
- 83. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27"
- 84. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26"
- 85. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25"
- 86. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24"
- 87. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23"
- 88. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22"
- 89. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21"
- 90. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20"
- 91. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19"
- 92. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18"
- 93. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17"
- 94. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16"
- 95. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15"
- 96. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14"
- 97. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13"
- 98. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12"
- 99. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11"
-100. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10"
-101. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9"
-102. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8"
-103. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7"
-104. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6"
-105. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5"
-106. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4"
-107. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3"
-108. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2"
-109. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1"
-110. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
-111. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
-112. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
-113. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
-114. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
-115. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
-116. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
-117. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
-118. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
-119. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
-120. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
-121. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
-122. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
-123. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
-124. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
-125. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
-126. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
-127. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
-128. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
-129. Port Connectivity Checks: "and_gate_2_inputs:gate_5_col"
-130. Port Connectivity Checks: "and_gate_2_inputs:gate_4_col"
-131. Port Connectivity Checks: "and_gate_2_inputs:gate_3_col"
-132. Port Connectivity Checks: "and_gate_2_inputs:gate_2_col"
-133. Port Connectivity Checks: "and_gate_2_inputs:gate_1_col"
-134. Port Connectivity Checks: "modulo_demux1_8:demux_col"
-135. Port Connectivity Checks: "modulo_demux1_4:demux_button_confirmation"
-136. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
-137. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
-138. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
-139. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
-140. Port Connectivity Checks: "modulo_mux4_1:mux_4"
-141. Port Connectivity Checks: "modulo_mux4_1:mux_3"
-142. Port Connectivity Checks: "modulo_mux4_1:mux_2"
-143. Port Connectivity Checks: "modulo_mux4_1:mux_1"
-144. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
-145. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
-146. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
-147. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
-148. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
-149. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
-150. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
-151. Port Connectivity Checks: "modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1"
-152. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
-153. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
-154. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
-155. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
-156. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
-157. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
-158. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
-159. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
-160. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
-161. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
-162. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
-163. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
-164. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
-165. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
-166. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
-167. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
-168. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
-169. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
-170. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
-171. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
-172. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
-173. Analysis & Synthesis Messages
+ 64. Port Connectivity Checks: "modulo_seletor_1_16_at:mod_sel_demux_1_16_1|and_gate_3_inputs:gate_17"
+ 65. Port Connectivity Checks: "modulo_mux8_1:mux_11"
+ 66. Port Connectivity Checks: "modulo_mux8_1:mux_10"
+ 67. Port Connectivity Checks: "modulo_mux8_1:mux_9"
+ 68. Port Connectivity Checks: "modulo_mux8_1:mux_8"
+ 69. Port Connectivity Checks: "modulo_mux8_1:mux_7"
+ 70. Port Connectivity Checks: "modulo_mux8_1:mux_6"
+ 71. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
+ 72. Port Connectivity Checks: "modulo_mux8_1:mux_5"
+ 73. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35"
+ 74. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34"
+ 75. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33"
+ 76. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32"
+ 77. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31"
+ 78. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30"
+ 79. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29"
+ 80. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28"
+ 81. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27"
+ 82. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26"
+ 83. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25"
+ 84. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24"
+ 85. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23"
+ 86. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22"
+ 87. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21"
+ 88. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20"
+ 89. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19"
+ 90. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18"
+ 91. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17"
+ 92. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16"
+ 93. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15"
+ 94. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14"
+ 95. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13"
+ 96. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12"
+ 97. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11"
+ 98. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10"
+ 99. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9"
+100. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8"
+101. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7"
+102. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6"
+103. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5"
+104. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4"
+105. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3"
+106. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2"
+107. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1"
+108. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
+109. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
+110. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
+111. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
+112. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
+113. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
+114. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
+115. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
+116. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
+117. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
+118. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
+119. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
+120. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
+121. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
+122. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
+123. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
+124. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
+125. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
+126. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
+127. Port Connectivity Checks: "and_gate_2_inputs:gate_5_col"
+128. Port Connectivity Checks: "and_gate_2_inputs:gate_4_col"
+129. Port Connectivity Checks: "and_gate_2_inputs:gate_3_col"
+130. Port Connectivity Checks: "and_gate_2_inputs:gate_2_col"
+131. Port Connectivity Checks: "and_gate_2_inputs:gate_1_col"
+132. Port Connectivity Checks: "modulo_demux1_8:demux_col"
+133. Port Connectivity Checks: "modulo_demux1_4:demux_button_confirmation"
+134. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
+135. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
+136. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
+137. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
+138. Port Connectivity Checks: "modulo_mux4_1:mux_4"
+139. Port Connectivity Checks: "modulo_mux4_1:mux_3"
+140. Port Connectivity Checks: "modulo_mux4_1:mux_2"
+141. Port Connectivity Checks: "modulo_mux4_1:mux_1"
+142. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
+143. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
+144. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
+145. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
+146. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
+147. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
+148. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
+149. Port Connectivity Checks: "modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1"
+150. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
+151. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
+152. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
+153. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
+154. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
+155. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
+156. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
+157. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
+158. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
+159. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
+160. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
+161. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
+162. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
+163. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
+164. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
+165. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
+166. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
+167. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
+168. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
+169. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
+170. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
+171. Analysis & Synthesis Messages
 
 
 
@@ -204,12 +202,12 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct 02 05:13:09 2023       ;
+; Analysis & Synthesis Status ; Successful - Mon Oct 02 05:41:13 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 190                                         ;
+; Total logic elements        ; 82                                          ;
 ; Total pins                  ; 33                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -341,38 +339,38 @@ refer to the applicable agreement for further details.
 +---------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                               ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                       ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
-; Total logic elements                        ; 190                                                                         ;
-;     -- Combinational with no register       ; 138                                                                         ;
-;     -- Register only                        ; 2                                                                           ;
-;     -- Combinational with a register        ; 50                                                                          ;
-;                                             ;                                                                             ;
-; Logic element usage by number of LUT inputs ;                                                                             ;
-;     -- 4 input functions                    ; 106                                                                         ;
-;     -- 3 input functions                    ; 33                                                                          ;
-;     -- 2 input functions                    ; 17                                                                          ;
-;     -- 1 input functions                    ; 32                                                                          ;
-;     -- 0 input functions                    ; 0                                                                           ;
-;                                             ;                                                                             ;
-; Logic elements by mode                      ;                                                                             ;
-;     -- normal mode                          ; 190                                                                         ;
-;     -- arithmetic mode                      ; 0                                                                           ;
-;     -- qfbk mode                            ; 0                                                                           ;
-;     -- register cascade mode                ; 0                                                                           ;
-;     -- synchronous clear/load mode          ; 2                                                                           ;
-;     -- asynchronous clear/load mode         ; 0                                                                           ;
-;                                             ;                                                                             ;
-; Total registers                             ; 52                                                                          ;
-; I/O pins                                    ; 33                                                                          ;
-; Maximum fan-out node                        ; modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_4|WideAnd0 ;
-; Maximum fan-out                             ; 34                                                                          ;
-; Total fan-out                               ; 665                                                                         ;
-; Average fan-out                             ; 2.98                                                                        ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Total logic elements                        ; 82     ;
+;     -- Combinational with no register       ; 60     ;
+;     -- Register only                        ; 2      ;
+;     -- Combinational with a register        ; 20     ;
+;                                             ;        ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 42     ;
+;     -- 3 input functions                    ; 23     ;
+;     -- 2 input functions                    ; 13     ;
+;     -- 1 input functions                    ; 2      ;
+;     -- 0 input functions                    ; 0      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 82     ;
+;     -- arithmetic mode                      ; 0      ;
+;     -- qfbk mode                            ; 0      ;
+;     -- register cascade mode                ; 0      ;
+;     -- synchronous clear/load mode          ; 2      ;
+;     -- asynchronous clear/load mode         ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 22     ;
+; I/O pins                                    ; 33     ;
+; Maximum fan-out node                        ; hh1[0] ;
+; Maximum fan-out                             ; 18     ;
+; Total fan-out                               ; 311    ;
+; Average fan-out                             ; 2.70   ;
++---------------------------------------------+--------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -380,11 +378,10 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                   ; Entity Name                      ; Library Name ;
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |pbl                                                         ; 190 (0)     ; 52           ; 0          ; 33   ; 0            ; 138 (0)      ; 2 (0)             ; 50 (0)           ; 0 (0)           ; 0 (0)      ; |pbl                                                                                  ; pbl                              ; work         ;
-;    |and_gate_4_inputs:gate_0_reset|                          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|and_gate_4_inputs:gate_0_reset                                                   ; and_gate_4_inputs                ; work         ;
-;    |modulo_contador_sync_2_bits:count_2_bits_1|              ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1                                       ; modulo_contador_sync_2_bits      ; work         ;
+; |pbl                                                         ; 82 (0)      ; 22           ; 0          ; 33   ; 0            ; 60 (0)       ; 2 (0)             ; 20 (0)           ; 0 (0)           ; 0 (0)      ; |pbl                                                                                  ; pbl                              ; work         ;
+;    |modulo_contador_sync_2_bits:count_2_bits_1|              ; 3 (0)       ; 2            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1                                       ; modulo_contador_sync_2_bits      ; work         ;
 ;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
-;       |modulo_ff_t:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
+;       |modulo_ff_t:ff_2|                                     ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
 ;    |modulo_contador_sync_3_bits:count_3_bits_1|              ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1                                       ; modulo_contador_sync_3_bits      ; work         ;
 ;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
 ;       |modulo_ff_t:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
@@ -396,8 +393,6 @@ refer to the applicable agreement for further details.
 ;       |modulo_ff_t:ff_4|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4                      ; modulo_ff_t                      ; work         ;
 ;       |modulo_ff_t:ff_5|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5                      ; modulo_ff_t                      ; work         ;
 ;       |modulo_ff_t:ff_6|                                     ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6                      ; modulo_ff_t                      ; work         ;
-;    |modulo_coord_coluna:mod_coord_col_1|                     ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_coord_coluna:mod_coord_col_1                                              ; modulo_coord_coluna              ; work         ;
-;       |and_gate_2_inputs:gate_7|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_7                     ; and_gate_2_inputs                ; work         ;
 ;    |modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1| ; 8 (0)       ; 0            ; 0          ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1                          ; modulo_decodificador_bcd_ex_7seg ; work         ;
 ;       |or_gate_3_inputs:gate_4|                              ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_3_inputs:gate_4  ; or_gate_3_inputs                 ; work         ;
 ;       |or_gate_4_inputs:gate_13|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_13 ; or_gate_4_inputs                 ; work         ;
@@ -406,85 +401,11 @@ refer to the applicable agreement for further details.
 ;       |or_gate_4_inputs:gate_34|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_34 ; or_gate_4_inputs                 ; work         ;
 ;       |or_gate_4_inputs:gate_8|                              ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8  ; or_gate_4_inputs                 ; work         ;
 ;       |or_gate_5_inputs:gate_19|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_5_inputs:gate_19 ; or_gate_5_inputs                 ; work         ;
-;    |modulo_demux1_16:demux_11|                               ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_16:demux_11                                                        ; modulo_demux1_16                 ; work         ;
-;       |and_gate_5_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_16:demux_11|and_gate_5_inputs:gate_2                               ; and_gate_5_inputs                ; work         ;
-;       |and_gate_5_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_16:demux_11|and_gate_5_inputs:gate_4                               ; and_gate_5_inputs                ; work         ;
-;       |and_gate_5_inputs:gate_5|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_16:demux_11|and_gate_5_inputs:gate_5                               ; and_gate_5_inputs                ; work         ;
-;    |modulo_demux1_4:demux_12|                                ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_12                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_12|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_12|and_gate_3_inputs:gate_2                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_12|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_12|and_gate_3_inputs:gate_4                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_13|                                ; 8 (0)       ; 0            ; 0          ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_13                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_13|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_2|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_13|and_gate_3_inputs:gate_2                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_13|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_4|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_13|and_gate_3_inputs:gate_4                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_14|                                ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_14                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_14|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_14|and_gate_3_inputs:gate_2                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_14|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_14|and_gate_3_inputs:gate_4                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_15|                                ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_15                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_15|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_15|and_gate_3_inputs:gate_2                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_15|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_15|and_gate_3_inputs:gate_4                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_16|                                ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_16                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_16|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_16|and_gate_3_inputs:gate_2                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_16|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_16|and_gate_3_inputs:gate_4                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_17|                                ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_17                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_17|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_17|and_gate_3_inputs:gate_2                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_17|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_17|and_gate_3_inputs:gate_4                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_18|                                ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_18                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_18|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_18|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_19|                                ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_19                                                         ; modulo_demux1_4                  ; work         ;
-;       |and_gate_3_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_19|and_gate_3_inputs:gate_1                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_19|and_gate_3_inputs:gate_2                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_19|and_gate_3_inputs:gate_3                                ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_19|and_gate_3_inputs:gate_4                                ; and_gate_3_inputs                ; work         ;
-;    |modulo_demux1_4:demux_button_confirmation|               ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation                                        ; modulo_demux1_4                  ; work         ;
+;    |modulo_demux1_4:demux_button_confirmation|               ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation                                        ; modulo_demux1_4                  ; work         ;
 ;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_2               ; and_gate_3_inputs                ; work         ;
-;       |and_gate_3_inputs:gate_3|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_3               ; and_gate_3_inputs                ; work         ;
 ;       |and_gate_3_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_4               ; and_gate_3_inputs                ; work         ;
 ;    |modulo_divisor_frequencia:div_1|                         ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_divisor_frequencia:div_1                                                  ; modulo_divisor_frequencia        ; work         ;
 ;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1                                 ; modulo_ff_t                      ; work         ;
-;    |modulo_matriz_reg_at:reg_matriz_at_1|                    ; 30 (0)      ; 30           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 30 (0)           ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1                                             ; modulo_matriz_reg_at             ; work         ;
-;       |modulo_ff_d:ff_10|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_11|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_12|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_13|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_14|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_15|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_16|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_17|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_18|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_19|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_20|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_21|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_22|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_23|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_24|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_25|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_27|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_29|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_30|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_31|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_32|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32                           ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_3|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_4|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_5|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_6|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_7|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_8|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8                            ; modulo_ff_d                      ; work         ;
-;       |modulo_ff_d:ff_9|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9                            ; modulo_ff_d                      ; work         ;
 ;    |modulo_matriz_reg_po:reg_matriz_po_1|                    ; 12 (0)      ; 10           ; 0          ; 0    ; 0            ; 2 (0)        ; 2 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1                                             ; modulo_matriz_reg_po             ; work         ;
 ;       |modulo_ff_d:ff_10|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10                           ; modulo_ff_d                      ; work         ;
 ;       |modulo_ff_d:ff_11|                                    ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11                           ; modulo_ff_d                      ; work         ;
@@ -496,40 +417,30 @@ refer to the applicable agreement for further details.
 ;       |modulo_ff_d:ff_30|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30                           ; modulo_ff_d                      ; work         ;
 ;       |modulo_ff_d:ff_31|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31                           ; modulo_ff_d                      ; work         ;
 ;       |modulo_ff_d:ff_33|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33                           ; modulo_ff_d                      ; work         ;
-;    |modulo_mux4_1:mux_1|                                     ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1                                                              ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_29|                                    ; 7 (0)       ; 0            ; 0          ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_2|                                     ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2                                                              ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_30|                                    ; 7 (0)       ; 0            ; 0          ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_31|                                    ; 9 (0)       ; 0            ; 0          ; 0    ; 0            ; 9 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_31                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 9 (9)       ; 0            ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_31|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_32|                                    ; 7 (0)       ; 0            ; 0          ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_33|                                    ; 7 (0)       ; 0            ; 0          ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_34|                                    ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_34                                                             ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_34|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_1|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1                                                              ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_29|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_29|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_2|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2                                                              ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_30|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_30|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_31|                                    ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_31                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_31|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_32|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_32|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_33|                                    ; 6 (0)       ; 0            ; 0          ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_33|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_34|                                    ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_34                                                             ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_34|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
 ;    |modulo_mux4_1:mux_35|                                    ; 6 (0)       ; 0            ; 0          ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_35                                                             ; modulo_mux4_1                    ; work         ;
 ;       |or_gate_4_inputs:gate_5|                              ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_35|or_gate_4_inputs:gate_5                                     ; or_gate_4_inputs                 ; work         ;
 ;    |modulo_mux4_1:mux_3|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_3                                                              ; modulo_mux4_1                    ; work         ;
 ;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_3|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux4_1:mux_4|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4                                                              ; modulo_mux4_1                    ; work         ;
-;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
-;    |modulo_mux8_1:mux_9|                                     ; 6 (0)       ; 0            ; 0          ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_9                                                              ; modulo_mux8_1                    ; work         ;
-;       |and_gate_4_inputs:gate_1|                             ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_9|and_gate_4_inputs:gate_1                                     ; and_gate_4_inputs                ; work         ;
-;    |modulo_seletor_1_16_at:mod_sel_demux_1_16_1|             ; 12 (0)      ; 0            ; 0          ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_16_at:mod_sel_demux_1_16_1                                      ; modulo_seletor_1_16_at           ; work         ;
-;       |and_gate_2_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_16_at:mod_sel_demux_1_16_1|and_gate_2_inputs:gate_2             ; and_gate_2_inputs                ; work         ;
-;       |and_gate_2_inputs:gate_9|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_16_at:mod_sel_demux_1_16_1|and_gate_2_inputs:gate_9             ; and_gate_2_inputs                ; work         ;
-;       |or_gate_2_inputs:gate_13|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_16_at:mod_sel_demux_1_16_1|or_gate_2_inputs:gate_13             ; or_gate_2_inputs                 ; work         ;
-;       |or_gate_2_inputs:gate_24|                             ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_16_at:mod_sel_demux_1_16_1|or_gate_2_inputs:gate_24             ; or_gate_2_inputs                 ; work         ;
-;       |or_gate_3_inputs:gate_39|                             ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_16_at:mod_sel_demux_1_16_1|or_gate_3_inputs:gate_39             ; or_gate_3_inputs                 ; work         ;
-;    |modulo_seletor_1_4_at:mod_sel_demux_1_4_1|               ; 8 (0)       ; 0            ; 0          ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_4_at:mod_sel_demux_1_4_1                                        ; modulo_seletor_1_4_at            ; work         ;
-;       |and_gate_2_inputs:gate_15|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_4_at:mod_sel_demux_1_4_1|and_gate_2_inputs:gate_15              ; and_gate_2_inputs                ; work         ;
-;       |or_gate_3_inputs:gate_13|                             ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_4_at:mod_sel_demux_1_4_1|or_gate_3_inputs:gate_13               ; or_gate_3_inputs                 ; work         ;
-;       |or_gate_5_inputs:gate_19|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_seletor_1_4_at:mod_sel_demux_1_4_1|or_gate_5_inputs:gate_19               ; or_gate_5_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_4|                                     ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4                                                              ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux8_1:mux_18|                                    ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_18                                                             ; modulo_mux8_1                    ; work         ;
+;       |and_gate_4_inputs:gate_1|                             ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_18|and_gate_4_inputs:gate_1                                    ; and_gate_4_inputs                ; work         ;
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -539,6 +450,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------+----------------------------------------------------------------------+
 ; Register name                                            ; Reason for Removal                                                   ;
 +----------------------------------------------------------+----------------------------------------------------------------------+
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; Stuck at VCC due to stuck port clock                                 ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; Stuck at VCC due to stuck port clock                                 ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29|q ; Stuck at VCC due to stuck port data_in                               ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27|q ; Stuck at VCC due to stuck port data_in                               ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21|q ; Stuck at VCC due to stuck port data_in                               ;
@@ -564,12 +510,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5|q  ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9|q  ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4|q  ; Merged with modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; Stuck at VCC due to stuck port clock                                 ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; Stuck at VCC due to stuck port clock                                 ;
-; Total Number of Removed Registers = 30                   ;                                                                      ;
+; Total Number of Removed Registers = 60                   ;                                                                      ;
 +----------------------------------------------------------+----------------------------------------------------------------------+
 
 
@@ -578,7 +519,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 52    ;
+; Total registers                              ; 22    ;
 ; Number of registers using Synchronous Clear  ; 2     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -593,47 +534,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------+---------+
 ; Inverted Register                                        ; Fan out ;
 +----------------------------------------------------------+---------+
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; 1       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; 4       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; 5       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; 1       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; 1       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; 2       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; 4       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; 1       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; 1       ;
-; Total number of inverted registers = 40                  ;         ;
+; Total number of inverted registers = 10                  ;         ;
 +----------------------------------------------------------+---------+
 
 
@@ -700,15 +611,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+------------------------+
 
 
-+--------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux4_1:mux_28" ;
-+------+-------+----------+------------------------+
-; Port ; Type  ; Severity ; Details                ;
-+------+-------+----------+------------------------+
-; D    ; Input ; Info     ; Explicitly unconnected ;
-+------+-------+----------+------------------------+
-
-
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "modulo_mux16_1:mux_19"                                                              ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -722,6 +624,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; O    ; Input  ; Info     ; Explicitly unconnected                                                              ;
 ; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux4_1:mux_28" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; D    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
 +--------------------------------------------------+
@@ -1131,24 +1042,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; A         ; Input  ; Info     ; Stuck at GND                                                                        ;
-; out[6..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_demux1_4:demux_20"                                                                                              ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (3 bits) it drives; bit(s) "out[3..3]" have no fanouts ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_demux1_16:demux_11"                                                               ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; out[6..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -2152,7 +2045,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 02 05:13:02 2023
+    Info: Processing started: Mon Oct 02 05:41:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -2339,33 +2232,24 @@ Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(119): ignored
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(120): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 120
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(121): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(122): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(125): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 125
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(126): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 126
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(127): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(128): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(129): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 129
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(130): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(131): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 131
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(132): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(133): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 133
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(124): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(134): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 134
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(135): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 135
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(145): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 145
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(136): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 136
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(137): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 137
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(138): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 138
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(139): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 139
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(140): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 140
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(141): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 141
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(142): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 142
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(144): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 144
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(146): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 146
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(147): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 147
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(148): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(149): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 149
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(150): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 150
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(151): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 151
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(152): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 152
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(153): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 153
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(154): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 154
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(155): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 155
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(157): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 157
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(158): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 158
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(159): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 159
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(160): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 160
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(161): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 161
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(162): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 162
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(163): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 163
 Info (12021): Found 1 design units, including 1 entities, in source file pbl.v
     Info (12023): Found entity 1: pbl File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_ff_t.v
@@ -2565,29 +2449,24 @@ Info (12128): Elaborating entity "modulo_ff_d" for hierarchy "modulo_matriz_reg_
 Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 98
 Info (12128): Elaborating entity "modulo_seletor_1_16_at" for hierarchy "modulo_seletor_1_16_at:mod_sel_demux_1_16_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 110
 Info (12128): Elaborating entity "modulo_seletor_1_4_at" for hierarchy "modulo_seletor_1_4_at:mod_sel_demux_1_4_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 111
-Info (12128): Elaborating entity "modulo_demux1_16" for hierarchy "modulo_demux1_16:demux_11" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 113
-Info (12128): Elaborating entity "and_gate_5_inputs" for hierarchy "modulo_demux1_16:demux_11|and_gate_5_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_16.v Line: 13
-Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 135
-Info (12128): Elaborating entity "modulo_mux16_1" for hierarchy "modulo_mux16_1:mux_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 145
-Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer modulo_seletor_1_4_at:mod_sel_demux_1_4_1|or_gate_3_inputs:gate_13|WideOr0~0 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 34
-    Warning (19017): Found clock multiplexer modulo_seletor_1_4_at:mod_sel_demux_1_4_1|or_gate_3_inputs:gate_13|WideOr0~1 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 34
-    Warning (19017): Found clock multiplexer modulo_seletor_1_4_at:mod_sel_demux_1_4_1|or_gate_3_inputs:gate_13|WideOr0~2 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 34
-    Warning (19017): Found clock multiplexer modulo_seletor_1_4_at:mod_sel_demux_1_4_1|or_gate_3_inputs:gate_13|WideOr0~3 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 34
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "modulo_demux1_16" for hierarchy "modulo_demux1_16:demux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 113
+Info (12128): Elaborating entity "and_gate_5_inputs" for hierarchy "modulo_demux1_16:demux_1|and_gate_5_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_16.v Line: 13
+Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
+Info (12128): Elaborating entity "modulo_mux16_1" for hierarchy "modulo_mux16_1:mux_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 144
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "out_7seg[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 7
     Warning (13410): Pin "out_7seg_ac[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 8
     Warning (13410): Pin "out_7seg_ac[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 8
     Warning (13410): Pin "rgb_output[0]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
     Warning (13410): Pin "rgb_output[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 6
-Info (21057): Implemented 223 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 115 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 26 output pins
-    Info (21061): Implemented 190 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 322 warnings
-    Info: Peak virtual memory: 4708 megabytes
-    Info: Processing ended: Mon Oct 02 05:13:09 2023
+    Info (21061): Implemented 82 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 308 warnings
+    Info: Peak virtual memory: 4712 megabytes
+    Info: Processing ended: Mon Oct 02 05:41:13 2023
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:16
 

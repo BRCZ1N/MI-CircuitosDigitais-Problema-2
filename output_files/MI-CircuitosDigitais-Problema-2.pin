@@ -66,8 +66,8 @@ GND*                         : 1         :        :                   :         
 GND*                         : 2         :        :                   :         : 1         :                
 GND*                         : 3         :        :                   :         : 1         :                
 GND*                         : 4         :        :                   :         : 1         :                
-GND*                         : 5         :        :                   :         : 1         :                
-GND*                         : 6         :        :                   :         : 1         :                
+button_confirmation          : 5         : input  : 3.3-V LVTTL       :         : 1         : N              
+rgb_output[0]                : 6         : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 7         :        :                   :         : 1         :                
 GND*                         : 8         :        :                   :         : 1         :                
 VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
@@ -82,7 +82,7 @@ GND*                         : 17        :        :                   :         
 GND*                         : 18        :        :                   :         : 1         :                
 GND*                         : 19        :        :                   :         : 1         :                
 GND*                         : 20        :        :                   :         : 1         :                
-GND*                         : 21        :        :                   :         : 1         :                
+rgb_output[1]                : 21        : output : 3.3-V LVTTL       :         : 1         : N              
 TMS                          : 22        : input  :                   :         : 1         :                
 TDI                          : 23        : input  :                   :         : 1         :                
 TCK                          : 24        : input  :                   :         : 1         :                
@@ -99,7 +99,7 @@ GND*                         : 34        :        :                   :         
 hh1[1]                       : 35        : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 36        :        :                   :         : 1         :                
 out_7seg_ac[0]               : 37        : output : 3.3-V LVTTL       :         : 1         : Y              
-rgb_output[1]                : 38        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 38        :        :                   :         : 1         :                
 out_7seg[1]                  : 39        : output : 3.3-V LVTTL       :         : 1         : Y              
 hh2[1]                       : 40        : input  : 3.3-V LVTTL       :         : 1         : Y              
 out_7seg[5]                  : 41        : output : 3.3-V LVTTL       :         : 1         : Y              
@@ -130,12 +130,12 @@ GNDINT                       : 65        : gnd    :                   :         
 out_7seg_ac[2]               : 66        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 67        :        :                   :         : 2         :                
 out_7seg_ac[1]               : 68        : output : 3.3-V LVTTL       :         : 2         : Y              
-rgb_output[0]                : 69        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 69        :        :                   :         : 2         :                
 out_7seg[6]                  : 70        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 71        :        :                   :         : 2         :                
 GND*                         : 72        :        :                   :         : 2         :                
 GND*                         : 73        :        :                   :         : 2         :                
-button_confirmation          : 74        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 74        :        :                   :         : 2         :                
 GND*                         : 75        :        :                   :         : 2         :                
 GND*                         : 76        :        :                   :         : 2         :                
 GND*                         : 77        :        :                   :         : 2         :                
