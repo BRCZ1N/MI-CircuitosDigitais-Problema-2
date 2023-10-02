@@ -18,52 +18,74 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/01/2023 21:48:37"
+// Generated on "10/02/2023 02:53:31"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_contador_sync_6_bits
+// Verilog Test Bench (with test vectors) for design :                          modulo_seletor_1_16_at
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_contador_sync_6_bits_vlg_vec_tst();
+module modulo_seletor_1_16_at_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg clk;
-reg clr;
+reg [2:0] mdc;
+reg [2:0] mdl;
 // wires                                               
-wire [5:0] q;
+wire [3:0] dmx16_sel;
 
 // assign statements (if any)                          
-modulo_contador_sync_6_bits i1 (
+modulo_seletor_1_16_at i1 (
 // port map - connection between master ports and signals/registers   
-	.clk(clk),
-	.clr(clr),
-	.q(q)
+	.dmx16_sel(dmx16_sel),
+	.mdc(mdc),
+	.mdl(mdl)
 );
 initial 
 begin 
-#1000000 $finish;
+#640000 $finish;
 end 
-
-// clk
-initial
+// mdc[ 2 ]
+always
 begin
-	clk = 1'b1;
-	# 10000;
-	repeat(49)
-	begin
-		clk = 1'b0;
-		clk = #10000 1'b1;
-		# 10000;
-	end
-	clk = 1'b0;
+	mdc[2] = 1'b0;
+	mdc[2] = #320000 1'b1;
+	#320000;
 end 
-
-// clr
-initial
+// mdc[ 1 ]
+always
 begin
-	clr = 1'b0;
+	mdc[1] = 1'b0;
+	mdc[1] = #160000 1'b1;
+	#160000;
+end 
+// mdc[ 0 ]
+always
+begin
+	mdc[0] = 1'b0;
+	mdc[0] = #80000 1'b1;
+	#80000;
+end 
+// mdl[ 2 ]
+always
+begin
+	mdl[2] = 1'b0;
+	mdl[2] = #40000 1'b1;
+	#40000;
+end 
+// mdl[ 1 ]
+always
+begin
+	mdl[1] = 1'b0;
+	mdl[1] = #20000 1'b1;
+	#20000;
+end 
+// mdl[ 0 ]
+always
+begin
+	mdl[0] = 1'b0;
+	mdl[0] = #10000 1'b1;
+	#10000;
 end 
 endmodule
 

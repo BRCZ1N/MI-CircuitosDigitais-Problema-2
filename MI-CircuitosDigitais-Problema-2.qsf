@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY modulo_coord_coluna
+set_global_assignment -name TOP_LEVEL_ENTITY modulo_seletor_1_16_at
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:02:39  SEPTEMBER 20, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -110,14 +110,10 @@ set_location_assignment PIN_88 -to out_7seg_ac[3]
 set_location_assignment PIN_66 -to out_7seg_ac[2]
 set_location_assignment PIN_68 -to out_7seg_ac[1]
 set_location_assignment PIN_37 -to out_7seg_ac[0]
-set_global_assignment -name VERILOG_FILE modulo_mapeamento_mux8_1.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VERILOG_FILE modulo_contador_sync_6_bits.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf

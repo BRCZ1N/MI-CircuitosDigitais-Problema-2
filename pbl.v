@@ -21,6 +21,7 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation,button_count,clk,m_c
 	wire [8:0] m_at_line_rgb_select;
 	wire [5:0] at_in;
 	wire [7:0] m_col_wire;
+	wire  MDL_andor_MDC;
 
 	not(Nsel_state[3], sel_state[3]);
 	not(Nsel_state[2], sel_state[2]);
@@ -42,21 +43,16 @@ module pbl(hh1,hh2,out_7seg,out_7seg_ac,button_confirmation,button_count,clk,m_c
 	not(Ncount_3_bits_mux_matriz_leds_sel[1],count_3_bits_mux_matriz_leds_sel[1]);
 	not(Ncount_3_bits_mux_matriz_leds_sel[0],count_3_bits_mux_matriz_leds_sel[0]);
 	
-	modulo_status mod_sta(.std0(hh1),.stdig0(status_wire),);
-	modulo_coord_linha mod_coord_linha_1(.mdl(at_in[5:3]),.cdl(coord_at_linha),);
-	modulo_coord_coluna mod_coord_col_1(.mdc(at_in[2:0]),.cdc(coord_at_coluna),);
 	
 	modulo_divisor_frequencia div_1(.clr(1'b0),.q(clk_div),.clk(clk));
 	
-	modulo_contador_sync_6_bits count_6_bits_1(.clr(clr_0),.clk(button_confirm),.q(at_in),);
-
-	
-	//RESET DO CONTADOR
-	
-	//AQ
-	wire  MDL_andor_MDC;
+	modulo_contador_sync_6_bits count_6_bits_1(.clr(clr_0),.clk(button_count),.q(at_in),);
 	and_gate_4_inputs gate_0_reset(.A(Nsel_state[1]),.B(at_in[2]),.C(at_in[1]),.D(at_in[0]),.S(MDL_andor_MDC),);
 	or_gate_2_inputs gate_1_reset(.A(MDL_andor_MDC),.B(at_in[5]),.S(clr_0),);
+	
+	modulo_status mod_sta(.std0(hh1),.stdig0(status_wire),);
+	modulo_coord_linha mod_coord_linha_1(.mdl(at_in[2:0]),.cdl(coord_at_linha),);
+	modulo_coord_coluna mod_coord_col_1(.mdc(at_in[5:3]),.cdc(coord_at_coluna),);
 	
 	// Circuito dos 7 Segmentos - Concluido 
 	
