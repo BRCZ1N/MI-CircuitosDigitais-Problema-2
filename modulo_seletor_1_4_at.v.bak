@@ -1,4 +1,0 @@
-module modulo_seletor_1_4_at (m_in,clk,clr,m_out);
-
-
-endmodule 
