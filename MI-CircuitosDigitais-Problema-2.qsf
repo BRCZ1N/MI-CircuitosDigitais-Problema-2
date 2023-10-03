@@ -82,13 +82,6 @@ set_global_assignment -name VERILOG_FILE modulo_rgb_sel_out.v
 set_global_assignment -name VERILOG_FILE modulo_seletor_1_8_at.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_8_n_out.v
 set_global_assignment -name VERILOG_FILE modulo_sel_1_8_demux.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
+set_global_assignment -name VERILOG_FILE modulo_mapeamento_mux8_1.v
+set_global_assignment -name VERILOG_FILE sel_clock.v

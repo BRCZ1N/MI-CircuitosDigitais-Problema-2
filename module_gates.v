@@ -46,6 +46,7 @@ module or_gate_2_inputs(A,B,S);
 
 endmodule
 
+
 module or_gate_5_inputs(A,B,C,D,E,S);
 
 	input A,B,C,D,E;
@@ -65,7 +66,6 @@ module and_gate_2_inputs(A,B,S);
 	
 	
 endmodule 
-
 
 module and_gate_5_inputs(A,B,C,D,E,S);
 

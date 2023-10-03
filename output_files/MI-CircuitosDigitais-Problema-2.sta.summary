@@ -2,49 +2,37 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Setup 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
-Slack : -9.405
-TNS   : -105.418
+Type  : Setup 'button_confirmation'
+Slack : -7.050
+TNS   : -217.271
 
 Type  : Setup 'button_count'
-Slack : -4.049
-TNS   : -21.306
+Slack : -6.243
+TNS   : -31.563
 
 Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
-Slack : -2.372
-TNS   : -9.774
-
-Type  : Setup 'button_confirmation'
-Slack : -2.001
-TNS   : -10.327
+Slack : -2.356
+TNS   : -9.172
 
 Type  : Setup 'clk'
-Slack : 1.635
+Slack : 1.958
 TNS   : 0.000
-
-Type  : Hold 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
-Slack : -6.823
-TNS   : -63.978
 
 Type  : Hold 'clk'
-Slack : -1.689
-TNS   : -1.689
-
-Type  : Hold 'button_count'
-Slack : -1.293
-TNS   : -3.660
+Slack : -2.012
+TNS   : -2.012
 
 Type  : Hold 'button_confirmation'
-Slack : 0.634
-TNS   : 0.000
+Slack : -1.742
+TNS   : -11.907
 
 Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
-Slack : 1.685
+Slack : 1.668
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
-Slack : -5.677
-TNS   : -435.736
+Type  : Hold 'button_count'
+Slack : 2.176
+TNS   : 0.000
 
 Type  : Minimum Pulse Width 'button_confirmation'
 Slack : -2.289

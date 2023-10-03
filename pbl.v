@@ -11,17 +11,20 @@ module pbl(hh1,hh2,button_confirmation, button_count, clk,out_7seg,out_7seg_ac,m
 	output [3:0] out_7seg_ac;
 	output [4:0] m_col;
 	output [6:0] m_line;
+	output [34:0] mt_at_in;
 	
 	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,Nsel_state,sel_state;
 	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire;
-	wire [34:0] m_po_in, m_at_in, m_po_out, m_at_out, m_at_clks;
-	wire [6:0] m_po_line, m_at_line, sel_dmx_8_input;
+	wire [34:0] m_po_in, m_at_in, m_po_out, m_at_out,m_at_clks;
+	wire [6:0] m_po_line, m_at_line, sel_dmx_8_input,wire_gate_clock;
 	wire [2:0] count_3_bits_mux_matriz_leds_sel, Ncount_3_bits_mux_matriz_leds_sel,sel_dmx_8_input_sel;
 	wire clr_1,clr_2, clr_0, rgb_in_cod, button_confirmation, button_count;
 	wire [19:0] clk_div;
 	wire [8:0] m_at_line_rgb_select;
 	wire [5:0] at_in;
 	wire [7:0] m_col_wire;
+	wire [7:0] wire_map_1,wire_map_2,wire_map_3,wire_map_4,wire_map_5,wire_map_6,wire_map_7;
+	wire [7:0] wire_map_8,wire_map_9,wire_map_10,wire_map_11,wire_map_12,wire_map_13,wire_map_14;
 	wire MDL_andor_MDC;
 
 	not(Nsel_state[3], sel_state[3]);
@@ -142,15 +145,47 @@ module pbl(hh1,hh2,button_confirmation, button_count, clk,out_7seg,out_7seg_ac,m
 	modulo_seletor_1_8_at mod_sel_input(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.dmx8_sel(sel_dmx_8_input));
 	modulo_sel_1_8_demux mod_input(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.dmx8_input(sel_dmx_8_input_sel));
 	
-	modulo_demux1_8_n_out demux_1(.A(sel_dmx_8_input),.input_sel(sel_dmx_8_input_sel),.Nout(m_at_in[34:30]),);
-	modulo_demux1_8_n_out demux_2(.A(sel_dmx_8_input),.input_sel(sel_dmx_8_input_sel),.Nout(m_at_in[29:25]),);
-	modulo_demux1_8_n_out demux_3(.A(sel_dmx_8_input),.input_sel(sel_dmx_8_input_sel),.Nout(m_at_in[24:20]),);
-	modulo_demux1_8_n_out demux_4(.A(sel_dmx_8_input),.input_sel(sel_dmx_8_input_sel),.Nout(m_at_in[19:15]),);
-	modulo_demux1_8_n_out demux_5(.A(sel_dmx_8_input),.input_sel(sel_dmx_8_input_sel),.Nout(m_at_in[14:10]),);
-	modulo_demux1_8_n_out demux_6(.A(sel_dmx_8_input),.input_sel(sel_dmx_8_input_sel),.Nout(m_at_in[9:5]),);
-	modulo_demux1_8_n_out demux_7(.A(sel_dmx_8_input),.input_sel(sel_dmx_8_input_sel),.Nout(m_at_in[4:0]),);
+	modulo_demux1_8_n_out demux_1(.A(sel_dmx_8_input[6]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_1),);
+	modulo_demux1_8_n_out demux_2(.A(sel_dmx_8_input[5]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_2),);
+	modulo_demux1_8_n_out demux_3(.A(sel_dmx_8_input[4]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_3),);
+	modulo_demux1_8_n_out demux_4(.A(sel_dmx_8_input[3]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_4),);
+	modulo_demux1_8_n_out demux_5(.A(sel_dmx_8_input[2]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_5),);
+	modulo_demux1_8_n_out demux_6(.A(sel_dmx_8_input[1]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_6),);
+	modulo_demux1_8_n_out demux_7(.A(sel_dmx_8_input[0]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_7),);
 	
-	modulo_matriz_reg_at reg_matriz_at_1(.m_in(m_at_in),.clk(m_at_in),.clr(Nsel_state[0]),.m_out(m_at_out),);
+	modulo_mapeamento_mux8_1 map_1(.e(wire_map_1),.out_mapeado(m_at_in[34:30]));
+	modulo_mapeamento_mux8_1 map_2(.e(wire_map_2),.out_mapeado(m_at_in[29:25]));
+	modulo_mapeamento_mux8_1 map_3(.e(wire_map_3),.out_mapeado(m_at_in[24:20]));
+	modulo_mapeamento_mux8_1 map_4(.e(wire_map_4),.out_mapeado(m_at_in[19:15]));
+	modulo_mapeamento_mux8_1 map_5(.e(wire_map_5),.out_mapeado(m_at_in[14:10]));
+	modulo_mapeamento_mux8_1 map_6(.e(wire_map_6),.out_mapeado(m_at_in[9:5]));
+	modulo_mapeamento_mux8_1 map_7(.e(wire_map_7),.out_mapeado(m_at_in[4:0]));
+	
+	sel_clock(.sel_state(sel_dmx_8_input[6]),.bt(Nsel_state[1]),.clock_sel(wire_gate_clock[6]));
+	sel_clock(.sel_state(sel_dmx_8_input[5]),.bt(Nsel_state[1]),.clock_sel(wire_gate_clock[5]));
+	sel_clock(.sel_state(sel_dmx_8_input[4]),.bt(Nsel_state[1]),.clock_sel(wire_gate_clock[4]));
+	sel_clock(.sel_state(sel_dmx_8_input[3]),.bt(Nsel_state[1]),.clock_sel(wire_gate_clock[3]));
+	sel_clock(.sel_state(sel_dmx_8_input[2]),.bt(Nsel_state[1]),.clock_sel(wire_gate_clock[2]));
+	sel_clock(.sel_state(sel_dmx_8_input[1]),.bt(Nsel_state[1]),.clock_sel(wire_gate_clock[1]));
+	sel_clock(.sel_state(sel_dmx_8_input[0]),.bt(Nsel_state[1]),.clock_sel(wire_gate_clock[0]));
+	
+	modulo_demux1_8_n_out demux_8(.A(wire_gate_clock[6]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_8),);
+	modulo_demux1_8_n_out demux_9(.A(wire_gate_clock[5]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_9),);
+	modulo_demux1_8_n_out demux_10(.A(wire_gate_clock[4]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_10),);
+	modulo_demux1_8_n_out demux_11(.A(wire_gate_clock[3]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_11),);
+	modulo_demux1_8_n_out demux_12(.A(wire_gate_clock[2]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_12),);
+	modulo_demux1_8_n_out demux_13(.A(wire_gate_clock[1]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_13),);
+	modulo_demux1_8_n_out demux_14(.A(wire_gate_clock[0]),.input_sel(sel_dmx_8_input_sel),.Nout(wire_map_14),);
+	
+	modulo_mapeamento_mux8_1 map_8(.e(wire_map_8),.out_mapeado(m_at_clks[34:30]));
+	modulo_mapeamento_mux8_1 map_9(.e(wire_map_9),.out_mapeado(m_at_clks[29:25]));
+	modulo_mapeamento_mux8_1 map_10(.e(wire_map_10),.out_mapeado(m_at_clks[24:20]));
+	modulo_mapeamento_mux8_1 map_11(.e(wire_map_11),.out_mapeado(m_at_clks[19:15]));
+	modulo_mapeamento_mux8_1 map_12(.e(wire_map_12),.out_mapeado(m_at_clks[14:10]));
+	modulo_mapeamento_mux8_1 map_13(.e(wire_map_13),.out_mapeado(m_at_clks[9:5]));
+	modulo_mapeamento_mux8_1 map_14(.e(wire_map_14),.out_mapeado(m_at_clks[4:0]));
+	
+	modulo_matriz_reg_at reg_matriz_at_1(.m_in(m_at_in),.clk(m_at_clks),.clr(Nsel_state[0]),.m_out(m_at_out),);
 	
 	modulo_mux8_1 mux_12(.A(m_at_out[34]),.B(m_at_out[33]),.C(m_at_out[32]),.D(m_at_out[31]),.E(m_at_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[6]));
 	modulo_mux8_1 mux_13(.A(m_at_out[29]),.B(m_at_out[28]),.C(m_at_out[27]),.D(m_at_out[26]),.E(m_at_out[25]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[5]));
