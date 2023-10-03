@@ -16,7 +16,7 @@ module modulo_sel_1_8_demux(mdc,mdl,dmx8_input);
 	
 	
 	wire [10:0] mx4e1;
-	wire [10:0] mx4e2;
+	wire [11:0] mx4e2;
 	wire [12:0] mx4e3;
 
 
@@ -86,50 +86,62 @@ MDC0MDL0MDL2*/
 
 
 // MDC0'MDC1'MDC2'MDL0'MDL1
-and_gate_5_inputs gate_15(.A(nmdc[2]),.B(nmdc[1]),.C(nmdc[0]),.D(nmdl[2]),.E(mdl[1]),.S(mx4e2[10]),);
+and_gate_5_inputs gate_15(.A(nmdc[2]),.B(nmdc[1]),.C(nmdc[0]),.D(nmdl[2]),.E(mdl[1]),.S(mx4e2[11]),);
 
 // MDC1'MDC2MDL0'MDL1'
-and_gate_4_inputs gate_16(.A(nmdc[1]),.B(mdc[0]),.C(nmdl[2]),.D(nmdl[1]),.S(mx4e2[9]),);
+and_gate_4_inputs gate_16(.A(nmdc[1]),.B(mdc[0]),.C(nmdl[2]),.D(nmdl[1]),.S(mx4e2[10]),);
 
 
 //MDC2MDL0MDL1 
-and_gate_3_inputs gate_17(.A(mdc[0]),.B(mdl[2]),.C(mdl[1]),.S(mx4e2[8]),);
+and_gate_3_inputs gate_17(.A(mdc[0]),.B(mdl[2]),.C(mdl[1]),.S(mx4e2[9]),);
 
 //MDC1 MDC2'MDL0MDL1'MDL2'
-and_gate_5_inputs gate_18(.A(mdc[1]),.B(nmdc[0]),.C(mdl[2]),.D(nmdl[1]),.E(nmdl[0]),.S(mx4e2[7]),);
+and_gate_5_inputs gate_18(.A(mdc[1]),.B(nmdc[0]),.C(mdl[2]),.D(nmdl[1]),.E(nmdl[0]),.S(mx4e2[8]),);
+
+
+
 
 //MDC2MDL0'MDL1'MDL2
 
-and_gate_4_inputs gate_19(.A(mdc[0]),.B(nmdc[2]),.C(nmdl[1]),.D(mdl[0]),.S(mx4e2[6]),);
+and_gate_4_inputs gate_19(.A(mdc[0]),.B(nmdl[2]),.C(nmdl[1]),.D(mdl[0]),.S(mx4e2[7]),);
 
 
 //MDC1 MDC2 MDL1 MDL2'
 
-and_gate_4_inputs gate_20(.A(mdc[1]),.B(mdc[0]),.C(mdl[1]),.D(nmdl[0]),.S(mx4e2[5]),);
+and_gate_4_inputs gate_20(.A(mdc[1]),.B(mdc[0]),.C(mdl[1]),.D(nmdl[0]),.S(mx4e2[6]),);
+
+
+//MDC0MDL1'MDL2'
+
+and_gate_3_inputs gate_21(.A(mdc[2]),.B(nmdl[1]),.C(nmdl[0]),.S(mx4e2[5]),);
+
 
 //MDC0MDC2
-and_gate_2_inputs gate_21(.A(mdc[2]),.B(mdc[0]),.S(mx4e2[4]),);
+and_gate_2_inputs gate_22(.A(mdc[2]),.B(mdc[0]),.S(mx4e2[4]),);
+
+
+
 
 //MDC0MDC1
 
-and_gate_2_inputs gate_22(.A(mdc[2]),.B(mdc[1]),.S(mx4e2[3]),);
+and_gate_2_inputs gate_23(.A(mdc[2]),.B(mdc[1]),.S(mx4e2[3]),);
 
 //MDC0'MDC2'MDL1 MDL2 
 
-and_gate_4_inputs gate_23(.A(nmdc[2]),.B(nmdc[0]),.C(mdl[1]),.D(mdl[0]),.S(mx4e2[2]),);
+and_gate_4_inputs gate_24(.A(nmdc[2]),.B(nmdc[0]),.C(mdl[1]),.D(mdl[0]),.S(mx4e2[2]),);
 
 //MDC1'MDC2 MDL1'MDL2 
 
-and_gate_4_inputs gate_24(.A(nmdc[1]),.B(mdc[0]),.C(nmdl[1]),.D(mdl[0]),.S(mx4e2[1]),);
+and_gate_4_inputs gate_25(.A(nmdc[1]),.B(mdc[0]),.C(nmdl[1]),.D(mdl[0]),.S(mx4e2[1]),);
 
 //MDC0 MDL0 MDL2
 
-and_gate_3_inputs gate_25(.A(mdc[2]),.B(mdl[2]),.C(mdl[0]),.S(mx4e2[0]),);
+and_gate_3_inputs gate_26(.A(mdc[2]),.B(mdl[2]),.C(mdl[0]),.S(mx4e2[0]),);
 
 
-or_gate_5_inputs gate_26(.A(mx4e2[10]),.B(mx4e2[9]),.C(mx4e2[8]),.D(mx4e2[7]),.E(mx4e2[6]),.S(mx4e2_wire_2[0]),);
-or_gate_5_inputs gate_27(.A(mx4e2_wire_2[0]),.B(mx4e2[5]),.C(mx4e2[4]),.D(mx4e2[3]),.E(mx4e2[2]),.S(mx4e2_wire_2[1]),);
-or_gate_3_inputs gate_28(.A(mx4e2_wire_2[1]),.B(mx4e2[1]),.C(mx4e2[0]),.S(dmx8_input[1]),);
+or_gate_5_inputs gate_27(.A(mx4e2[10]),.B(mx4e2[9]),.C(mx4e2[8]),.D(mx4e2[7]),.E(mx4e2[6]),.S(mx4e2_wire_2[0]),);
+or_gate_5_inputs gate_28(.A(mx4e2_wire_2[0]),.B(mx4e2[5]),.C(mx4e2[4]),.D(mx4e2[3]),.E(mx4e2[2]),.S(mx4e2_wire_2[1]),);
+or_gate_4_inputs gate_29(.A(mx4e2_wire_2[1]),.B(mx4e2[1]),.C(mx4e2[0]),.D(mx4e2[11]),.S(dmx8_input[1]),);
 
 
 /*
@@ -150,47 +162,47 @@ MDC1'MDC2'MDL1MDL2*/
 
 //MDC0'MDC1'MDL0MDL1
 
-and_gate_4_inputs gate_29(.A(nmdc[2]),.B(nmdc[1]),.C(mdl[2]),.D(mdl[1]),.S(mx4e3[11]),);
+and_gate_4_inputs gate_30(.A(nmdc[2]),.B(nmdc[1]),.C(mdl[2]),.D(mdl[1]),.S(mx4e3[11]),);
 
 //MDC1'MDC2MDL0MDL2'
-and_gate_4_inputs gate_30(.A(nmdc[1]),.B(mdc[0]),.C(mdl[2]),.D(nmdl[0]),.S(mx4e3[10]),);
+and_gate_4_inputs gate_31(.A(nmdc[1]),.B(mdc[0]),.C(mdl[2]),.D(nmdl[0]),.S(mx4e3[10]),);
 
 
 //MDC1MDL0'MDL1MDL2'
-and_gate_4_inputs gate_31(.A(mdc[1]),.B(nmdl[2]),.C(mdl[1]),.D(nmdl[0]),.S(mx4e3[9]),);
+and_gate_4_inputs gate_32(.A(mdc[1]),.B(nmdl[2]),.C(mdl[1]),.D(nmdl[0]),.S(mx4e3[9]),);
 
 //MDC1MDC2'MDL0MDL1'MDL2' 
-and_gate_5_inputs gate_32(.A(mdc[1]),.B(nmdc[0]),.C(mdl[2]),.D(nmdl[1]),.E(nmdl[0]),.S(mx4e3[8]),);
+and_gate_5_inputs gate_33(.A(mdc[1]),.B(nmdc[0]),.C(mdl[2]),.D(nmdl[1]),.E(nmdl[0]),.S(mx4e3[8]),);
 
 ///MDL0 MDL1 MDL2
-and_gate_3_inputs gate_33(.A(mdl[2]),.B(mdl[1]),.C(mdl[0]),.S(mx4e3[7]),);
+and_gate_3_inputs gate_34(.A(mdl[2]),.B(mdl[1]),.C(mdl[0]),.S(mx4e3[7]),);
 
 
 //MDC1 MDC2 MDL0' MDL2'
-and_gate_4_inputs gate_34(.A(mdc[1]),.B(mdc[0]),.C(nmdl[2]),.D(nmdl[0]),.S(mx4e3[6]),);
+and_gate_4_inputs gate_35(.A(mdc[1]),.B(mdc[0]),.C(nmdl[2]),.D(nmdl[0]),.S(mx4e3[6]),);
 
 //MDC1 MDC2 MDL0 MDL2 
-and_gate_4_inputs gate_35(.A(mdc[1]),.B(mdc[0]),.C(mdl[2]),.D(mdl[0]),.S(mx4e3[5]),);
+and_gate_4_inputs gate_36(.A(mdc[1]),.B(mdc[0]),.C(mdl[2]),.D(mdl[0]),.S(mx4e3[5]),);
 
 //MDC0 MDL0 MDL2 
-and_gate_3_inputs gate_36(.A(mdc[2]),.B(mdl[2]),.C(mdl[0]),.S(mx4e3[4]),);
+and_gate_3_inputs gate_37(.A(mdc[2]),.B(mdl[2]),.C(mdl[0]),.S(mx4e3[4]),);
 
 //MDC0 MDC2 
-and_gate_2_inputs gate_37(.A(mdc[2]),.B(mdc[0]),.S(mx4e3[3]),);
+and_gate_2_inputs gate_38(.A(mdc[2]),.B(mdc[0]),.S(mx4e3[3]),);
 
 //MDC0MDC1
-and_gate_2_inputs gate_38(.A(mdc[2]),.B(mdc[1]),.S(mx4e3[2]),);
+and_gate_2_inputs gate_39(.A(mdc[2]),.B(mdc[1]),.S(mx4e3[2]),);
 //MDC0'MDC1'MDL0'MDL1'MDL2
-and_gate_5_inputs gate_39(.A(nmdc[2]),.B(nmdc[1]),.C(nmdl[2]),.D(nmdl[1]),.E(mdl[0]),.S(mx4e3[1]),);
+and_gate_5_inputs gate_40(.A(nmdc[2]),.B(nmdc[1]),.C(nmdl[2]),.D(nmdl[1]),.E(mdl[0]),.S(mx4e3[1]),);
 
 //MDC1'MDC2'MDL1MDL2
-and_gate_4_inputs gate_40(.A(nmdc[1]),.B(nmdc[0]),.C(mdl[1]),.D(mdl[0]),.S(mx4e3[0]),);
+and_gate_4_inputs gate_41(.A(nmdc[1]),.B(nmdc[0]),.C(mdl[1]),.D(mdl[0]),.S(mx4e3[0]),);
 
 //MDC0MDL0'MDL1'MDL2'
-and_gate_4_inputs gate_44(.A(mdc[2]),.B(nmdl[2]),.C(nmdl[1]),.D(nmdl[0]),.S(mx4e3[12]),);
+and_gate_4_inputs gate_42(.A(mdc[2]),.B(nmdl[2]),.C(nmdl[1]),.D(nmdl[0]),.S(mx4e3[12]),);
 
-or_gate_5_inputs gate_41(.A(mx4e3[11]),.B(mx4e3[10]),.C(mx4e3[9]),.D(mx4e3[8]),.E(mx4e3[7]),.S(mx4e3_wire_3[0]),);
-or_gate_5_inputs gate_42(.A(mx4e3[6]),.B(mx4e3[5]),.C(mx4e3[4]),.D(mx4e3[3]),.E(mx4e3[2]),.S(mx4e3_wire_3[1]),);
-or_gate_5_inputs gate_43(.A(mx4e3_wire_3[0]),.B(mx4e3_wire_3[1]),.C(mx4e3[1]),.D(mx4e3[0]),.E(mx4e3[12]),.S(dmx8_input[0]),);
+or_gate_5_inputs gate_43(.A(mx4e3[11]),.B(mx4e3[10]),.C(mx4e3[9]),.D(mx4e3[8]),.E(mx4e3[7]),.S(mx4e3_wire_3[0]),);
+or_gate_5_inputs gate_44(.A(mx4e3[6]),.B(mx4e3[5]),.C(mx4e3[4]),.D(mx4e3[3]),.E(mx4e3[2]),.S(mx4e3_wire_3[1]),);
+or_gate_5_inputs gate_45(.A(mx4e3_wire_3[0]),.B(mx4e3_wire_3[1]),.C(mx4e3[1]),.D(mx4e3[0]),.E(mx4e3[12]),.S(dmx8_input[0]),);
 
 endmodule

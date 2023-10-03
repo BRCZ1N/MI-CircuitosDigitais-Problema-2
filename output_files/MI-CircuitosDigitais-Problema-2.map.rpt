@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Mon Oct 02 21:36:08 2023
+Mon Oct 02 22:22:18 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,12 +40,12 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct 02 21:36:08 2023       ;
+; Analysis & Synthesis Status ; Successful - Mon Oct 02 22:22:18 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; modulo_sel_1_8_demux                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 15                                          ;
+; Total logic elements        ; 19                                          ;
 ; Total pins                  ; 9                                           ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -154,20 +154,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Total logic elements                        ; 15     ;
-;     -- Combinational with no register       ; 15     ;
+; Total logic elements                        ; 19     ;
+;     -- Combinational with no register       ; 19     ;
 ;     -- Register only                        ; 0      ;
 ;     -- Combinational with a register        ; 0      ;
 ;                                             ;        ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 14     ;
+;     -- 4 input functions                    ; 17     ;
 ;     -- 3 input functions                    ; 1      ;
-;     -- 2 input functions                    ; 0      ;
+;     -- 2 input functions                    ; 1      ;
 ;     -- 1 input functions                    ; 0      ;
 ;     -- 0 input functions                    ; 0      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 15     ;
+;     -- normal mode                          ; 19     ;
 ;     -- arithmetic mode                      ; 0      ;
 ;     -- qfbk mode                            ; 0      ;
 ;     -- register cascade mode                ; 0      ;
@@ -176,10 +176,10 @@ refer to the applicable agreement for further details.
 ;                                             ;        ;
 ; Total registers                             ; 0      ;
 ; I/O pins                                    ; 9      ;
-; Maximum fan-out node                        ; mdl[0] ;
-; Maximum fan-out                             ; 9      ;
-; Total fan-out                               ; 62     ;
-; Average fan-out                             ; 2.58   ;
+; Maximum fan-out node                        ; mdl[1] ;
+; Maximum fan-out                             ; 10     ;
+; Total fan-out                               ; 76     ;
+; Average fan-out                             ; 2.71   ;
 +---------------------------------------------+--------+
 
 
@@ -188,10 +188,10 @@ refer to the applicable agreement for further details.
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                            ; Entity Name          ; Library Name ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+----------------------+--------------+
-; |modulo_sel_1_8_demux         ; 15 (0)      ; 0            ; 0          ; 9    ; 0            ; 15 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux                          ; modulo_sel_1_8_demux ; work         ;
-;    |or_gate_3_inputs:gate_14| ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux|or_gate_3_inputs:gate_14 ; or_gate_3_inputs     ; work         ;
-;    |or_gate_3_inputs:gate_28| ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux|or_gate_3_inputs:gate_28 ; or_gate_3_inputs     ; work         ;
-;    |or_gate_5_inputs:gate_43| ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux|or_gate_5_inputs:gate_43 ; or_gate_5_inputs     ; work         ;
+; |modulo_sel_1_8_demux         ; 19 (0)      ; 0            ; 0          ; 9    ; 0            ; 19 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux                          ; modulo_sel_1_8_demux ; work         ;
+;    |or_gate_3_inputs:gate_14| ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux|or_gate_3_inputs:gate_14 ; or_gate_3_inputs     ; work         ;
+;    |or_gate_4_inputs:gate_29| ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux|or_gate_4_inputs:gate_29 ; or_gate_4_inputs     ; work         ;
+;    |or_gate_5_inputs:gate_45| ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |modulo_sel_1_8_demux|or_gate_5_inputs:gate_45 ; or_gate_5_inputs     ; work         ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -217,7 +217,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 02 21:36:01 2023
+    Info: Processing started: Mon Oct 02 22:22:10 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -633,32 +633,33 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demu
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(92): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 92
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(96): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 96
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(99): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 99
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(103): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 103
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(108): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 108
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(106): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 106
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(111): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 111
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(115): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 115
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(119): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 119
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(123): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 123
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(116): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 116
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(120): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 120
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(127): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 127
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(130): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 130
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(131): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 131
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(132): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 132
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(153): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 153
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(156): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 156
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(160): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 160
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(163): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 163
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(166): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 166
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(170): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 170
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(173): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 173
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(176): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 176
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(179): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 179
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(135): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 135
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(139): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 139
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(142): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 142
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(143): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 143
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(144): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 144
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(165): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 165
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(168): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 168
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(172): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 172
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(175): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 175
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(178): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 178
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(182): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 182
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(184): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 184
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(187): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 187
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(190): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 190
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(192): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 192
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(193): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 193
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(185): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 185
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(188): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 188
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(191): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 191
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(194): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 194
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(196): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 196
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(199): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 199
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(202): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 202
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(204): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 204
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(205): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 205
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(206): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 206
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_sel_1_8_demux.v
     Info (12023): Found entity 1: modulo_sel_1_8_demux File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at modulo_rgb_sel_out.v(12): created implicit net for "nbt" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 12
@@ -673,14 +674,14 @@ Info (12128): Elaborating entity "and_gate_2_inputs" for hierarchy "and_gate_2_i
 Info (12128): Elaborating entity "or_gate_4_inputs" for hierarchy "or_gate_4_inputs:gate_12" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 69
 Info (12128): Elaborating entity "or_gate_5_inputs" for hierarchy "or_gate_5_inputs:gate_13" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 70
 Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_14" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 71
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 15 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 370 warnings
-    Info: Peak virtual memory: 4702 megabytes
-    Info: Processing ended: Mon Oct 02 21:36:08 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info (21061): Implemented 19 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 371 warnings
+    Info: Peak virtual memory: 4705 megabytes
+    Info: Processing ended: Mon Oct 02 22:22:18 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 
