@@ -11,7 +11,6 @@ module pbl(hh1,hh2,button_confirmation, button_count, clk,out_7seg,out_7seg_ac,m
 	output [3:0] out_7seg_ac;
 	output [4:0] m_col;
 	output [6:0] m_line;
-	output [34:0] mt_at_in;
 	
 	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,Nsel_state,sel_state;
 	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire;

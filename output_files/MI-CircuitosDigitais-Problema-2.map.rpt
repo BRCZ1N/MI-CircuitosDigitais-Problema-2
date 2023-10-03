@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Tue Oct 03 01:16:11 2023
+Tue Oct 03 01:21:50 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -203,13 +203,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Oct 03 01:16:11 2023       ;
+; Analysis & Synthesis Status ; Successful - Tue Oct 03 01:21:50 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
 ; Family                      ; MAX II                                      ;
 ; Total logic elements        ; 225                                         ;
-; Total pins                  ; 68                                          ;
+; Total pins                  ; 33                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -367,11 +367,11 @@ refer to the applicable agreement for further details.
 ;     -- asynchronous clear/load mode         ; 0                                                                 ;
 ;                                             ;                                                                   ;
 ; Total registers                             ; 57                                                                ;
-; I/O pins                                    ; 68                                                                ;
+; I/O pins                                    ; 33                                                                ;
 ; Maximum fan-out node                        ; modulo_sel_1_8_demux:mod_input|or_gate_5_inputs:gate_45|WideOr0~0 ;
 ; Maximum fan-out                             ; 54                                                                ;
-; Total fan-out                               ; 898                                                               ;
-; Average fan-out                             ; 3.06                                                              ;
+; Total fan-out                               ; 863                                                               ;
+; Average fan-out                             ; 3.34                                                              ;
 +---------------------------------------------+-------------------------------------------------------------------+
 
 
@@ -380,7 +380,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                   ; Entity Name                      ; Library Name ;
 +--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |pbl                                                         ; 225 (0)     ; 57           ; 0          ; 68   ; 0            ; 168 (0)      ; 2 (0)             ; 55 (0)           ; 0 (0)           ; 0 (0)      ; |pbl                                                                                  ; pbl                              ; work         ;
+; |pbl                                                         ; 225 (0)     ; 57           ; 0          ; 33   ; 0            ; 168 (0)      ; 2 (0)             ; 55 (0)           ; 0 (0)           ; 0 (0)      ; |pbl                                                                                  ; pbl                              ; work         ;
 ;    |and_gate_4_inputs:gate_0_reset|                          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|and_gate_4_inputs:gate_0_reset                                                   ; and_gate_4_inputs                ; work         ;
 ;    |modulo_contador_sync_2_bits:count_2_bits_1|              ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1                                       ; modulo_contador_sync_2_bits      ; work         ;
 ;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
@@ -597,48 +597,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; 2       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; 5       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; 2       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; 4       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; 1       ;
 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; 1       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; 1       ;
 ; Total number of inverted registers = 45                  ;         ;
 +----------------------------------------------------------+---------+
 
@@ -2142,7 +2142,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 03 01:16:04 2023
+    Info: Processing started: Tue Oct 03 01:21:43 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -2300,48 +2300,48 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_divisor_freq
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_divisor_frequencia.v(84): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_divisor_frequencia.v
     Info (12023): Found entity 1: modulo_divisor_frequencia File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(64): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 64
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(65): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(66): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 66
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(67): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 67
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(68): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 68
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(76): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 76
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(77): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 77
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(78): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 78
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(79): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 79
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(80): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 80
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(88): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(89): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(96): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(97): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 97
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(103): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 103
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(109): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 109
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(110): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 110
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(86): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 86
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(87): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 87
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(94): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 94
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(95): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 95
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(101): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 101
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(107): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 107
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(108): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 108
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(111): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 111
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(112): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 112
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(113): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 113
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(114): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 114
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(115): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 115
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(116): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 116
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(117): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 117
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(118): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 118
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(132): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(130): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(147): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 147
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(148): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(149): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 149
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(150): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 150
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(151): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 151
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(152): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 152
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(153): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 153
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(154): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 154
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(155): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 155
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(171): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 171
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(172): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 172
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(173): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 173
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(174): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 174
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(175): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 175
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(176): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 176
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(177): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 177
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(178): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 178
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(179): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 179
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(191): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 191
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(187): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 187
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(201): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 201
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(202): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 202
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(203): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 203
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(204): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 204
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(205): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 205
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(206): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 206
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(207): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 207
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(208): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 208
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(209): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 209
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(210): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 210
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(211): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 211
 Info (12021): Found 1 design units, including 1 entities, in source file pbl.v
     Info (12023): Found entity 1: pbl File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_ff_t.v
@@ -2602,52 +2602,52 @@ Warning (10236): Verilog HDL Implicit Net warning at modulo_rgb_sel_out.v(12): c
 Warning (10236): Verilog HDL Implicit Net warning at modulo_rgb_sel_out.v(13): created implicit net for "nat" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at modulo_rgb_sel_out.v(14): created implicit net for "npo" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at modulo_demux1_8_n_out.v(9): created implicit net for "NA" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(163): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 163
+Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(164): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 164
 Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(165): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 165
 Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(166): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 166
 Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(167): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 167
 Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(168): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 168
 Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(169): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 169
-Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(170): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 170
-Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(171): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 171
 Info (12127): Elaborating entity "pbl" for the top level hierarchy
 Warning (10034): Output port "rgb_output" at pbl.v(9) has no driver File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
-Info (12128): Elaborating entity "modulo_divisor_frequencia" for hierarchy "modulo_divisor_frequencia:div_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 46
+Info (12128): Elaborating entity "modulo_divisor_frequencia" for hierarchy "modulo_divisor_frequencia:div_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 44
 Info (12128): Elaborating entity "modulo_ff_t" for hierarchy "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 8
-Info (12128): Elaborating entity "modulo_contador_sync_6_bits" for hierarchy "modulo_contador_sync_6_bits:count_6_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 66
-Info (12128): Elaborating entity "and_gate_4_inputs" for hierarchy "and_gate_4_inputs:gate_0_reset" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 67
-Info (12128): Elaborating entity "or_gate_2_inputs" for hierarchy "or_gate_2_inputs:gate_1_reset" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 68
-Info (12128): Elaborating entity "modulo_status" for hierarchy "modulo_status:mod_sta" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 78
+Info (12128): Elaborating entity "modulo_contador_sync_6_bits" for hierarchy "modulo_contador_sync_6_bits:count_6_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 64
+Info (12128): Elaborating entity "and_gate_4_inputs" for hierarchy "and_gate_4_inputs:gate_0_reset" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 65
+Info (12128): Elaborating entity "or_gate_2_inputs" for hierarchy "or_gate_2_inputs:gate_1_reset" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 66
+Info (12128): Elaborating entity "modulo_status" for hierarchy "modulo_status:mod_sta" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 76
 Info (12128): Elaborating entity "and_gate_2_inputs" for hierarchy "modulo_status:mod_sta|and_gate_2_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_status.v Line: 13
-Info (12128): Elaborating entity "modulo_coord_coluna" for hierarchy "modulo_coord_coluna:mod_coord_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 79
-Info (12128): Elaborating entity "modulo_coord_linha" for hierarchy "modulo_coord_linha:mod_coord_linha_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 80
+Info (12128): Elaborating entity "modulo_coord_coluna" for hierarchy "modulo_coord_coluna:mod_coord_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 77
+Info (12128): Elaborating entity "modulo_coord_linha" for hierarchy "modulo_coord_linha:mod_coord_linha_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 78
 Info (12128): Elaborating entity "and_gate_3_inputs" for hierarchy "modulo_coord_linha:mod_coord_linha_1|and_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_coord_linha.v Line: 13
-Info (12128): Elaborating entity "modulo_contador_sync_2_bits" for hierarchy "modulo_contador_sync_2_bits:count_2_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
-Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
-Info (12128): Elaborating entity "modulo_mux4_1" for hierarchy "modulo_mux4_1:mux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 91
+Info (12128): Elaborating entity "modulo_contador_sync_2_bits" for hierarchy "modulo_contador_sync_2_bits:count_2_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 86
+Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 87
+Info (12128): Elaborating entity "modulo_mux4_1" for hierarchy "modulo_mux4_1:mux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
 Info (12128): Elaborating entity "or_gate_4_inputs" for hierarchy "modulo_mux4_1:mux_1|or_gate_4_inputs:gate_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux4_1.v Line: 18
-Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
+Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 94
 Info (12128): Elaborating entity "or_gate_5_inputs" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_5_inputs:gate_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_decodificador_bcd_ex_7seg.v Line: 44
-Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg_ac" for hierarchy "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 97
-Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_button_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 103
-Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 109
-Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 113
-Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
-Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 125
-Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 126
-Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
-Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
-Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 129
-Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
-Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
+Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg_ac" for hierarchy "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 95
+Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_button_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 101
+Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 107
+Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 111
+Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
+Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 123
+Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
+Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 125
+Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 126
+Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
+Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
+Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
 Info (12128): Elaborating entity "modulo_ff_d" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_matriz_reg_po.v Line: 7
-Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 134
-Info (12128): Elaborating entity "modulo_seletor_1_8_at" for hierarchy "modulo_seletor_1_8_at:mod_sel_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 146
-Info (12128): Elaborating entity "modulo_sel_1_8_demux" for hierarchy "modulo_sel_1_8_demux:mod_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 147
+Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 132
+Info (12128): Elaborating entity "modulo_seletor_1_8_at" for hierarchy "modulo_seletor_1_8_at:mod_sel_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 144
+Info (12128): Elaborating entity "modulo_sel_1_8_demux" for hierarchy "modulo_sel_1_8_demux:mod_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 145
 Info (12128): Elaborating entity "and_gate_5_inputs" for hierarchy "modulo_sel_1_8_demux:mod_input|and_gate_5_inputs:gate_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 31
-Info (12128): Elaborating entity "modulo_demux1_8_n_out" for hierarchy "modulo_demux1_8_n_out:demux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 149
-Info (12128): Elaborating entity "modulo_mapeamento_mux8_1" for hierarchy "modulo_mapeamento_mux8_1:map_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 157
-Info (12128): Elaborating entity "sel_clock" for hierarchy "sel_clock:comb_12" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 165
-Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 191
+Info (12128): Elaborating entity "modulo_demux1_8_n_out" for hierarchy "modulo_demux1_8_n_out:demux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 147
+Info (12128): Elaborating entity "modulo_mapeamento_mux8_1" for hierarchy "modulo_mapeamento_mux8_1:map_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 155
+Info (12128): Elaborating entity "sel_clock" for hierarchy "sel_clock:comb_12" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 163
+Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 187
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer modulo_sel_1_8_demux:mod_input|or_gate_4_inputs:gate_29|WideOr0~0 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 24
     Warning (19017): Found clock multiplexer modulo_sel_1_8_demux:mod_input|or_gate_4_inputs:gate_29|WideOr0~1 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 24
@@ -2667,14 +2667,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "out_7seg_ac[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 11
     Warning (13410): Pin "rgb_output[0]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
     Warning (13410): Pin "rgb_output[1]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
-Info (21057): Implemented 293 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 61 output pins
+    Info (21059): Implemented 26 output pins
     Info (21061): Implemented 225 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 405 warnings
-    Info: Peak virtual memory: 4710 megabytes
-    Info: Processing ended: Tue Oct 03 01:16:11 2023
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Tue Oct 03 01:21:50 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:16
 
 
