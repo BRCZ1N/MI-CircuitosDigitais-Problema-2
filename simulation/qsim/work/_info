@@ -79,8 +79,8 @@ IXUSIiE@4e3zMzMS1EkY7Z0
 R2
 R0
 w1696030175
-8Waveform5.vwf.vt
-FWaveform5.vwf.vt
+Z19 8Waveform5.vwf.vt
+Z20 FWaveform5.vwf.vt
 R14
 R6
 r1
@@ -88,12 +88,12 @@ r1
 31
 R18
 !s107 Waveform5.vwf.vt|
-!s90 -work|work|Waveform5.vwf.vt|
+Z21 !s90 -work|work|Waveform5.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_contador_sync_6_bits
-Z19 !s110 1696207718
+Z22 !s110 1696207718
 !i10b 1
 !s100 N7QAE>5`bP`U?i5Lh1;_Z0
 I]450We9DD9<N`C70TJ^O53
@@ -107,40 +107,40 @@ R6
 r1
 !s85 0
 31
-Z20 !s108 1696207718.000000
+Z23 !s108 1696207718.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_contador_sync_6_bits_vlg_vec_tst
-R19
+R22
 !i10b 1
 !s100 dXizR??i@l@oUNZUgO[h?2
 IX4Wj[8g1gJEc0<5@1R0M[2
 R2
 R0
 w1696207717
-Z21 8Waveform1.vwf.vt
-Z22 FWaveform1.vwf.vt
+Z24 8Waveform1.vwf.vt
+Z25 FWaveform1.vwf.vt
 R14
 R6
 r1
 !s85 0
 31
-R20
-Z23 !s107 Waveform1.vwf.vt|
-Z24 !s90 -work|work|Waveform1.vwf.vt|
+R23
+Z26 !s107 Waveform1.vwf.vt|
+Z27 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_coord_coluna
-Z25 !s110 1696214701
+Z28 !s110 1696214701
 !i10b 1
 !s100 <P[`<FT4INYK^;:5]?6gE3
 IQP`PT3L_ZUl4DcR?XF?0S1
 R2
-Z26 dC:/Users/Alex Jr/Documents/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim
+Z29 dC:/Users/Alex Jr/Documents/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim
 w1696214700
 R3
 R4
@@ -149,40 +149,40 @@ R6
 r1
 !s85 0
 31
-Z27 !s108 1696214701.000000
+Z30 !s108 1696214701.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_coord_coluna_vlg_vec_tst
-R25
+R28
 !i10b 1
 !s100 h1<[b65@`OH@cj>HD@h1k1
 IM??OWRkJUbT@O8gh3n64I0
 R2
-R26
+R29
 w1696214699
-Z28 8Waveform8.vwf.vt
-Z29 FWaveform8.vwf.vt
+Z31 8Waveform8.vwf.vt
+Z32 FWaveform8.vwf.vt
 R14
 R6
 r1
 !s85 0
 31
-R27
-Z30 !s107 Waveform8.vwf.vt|
-Z31 !s90 -work|work|Waveform8.vwf.vt|
+R30
+Z33 !s107 Waveform8.vwf.vt|
+Z34 !s90 -work|work|Waveform8.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_coord_linha
-Z32 !s110 1696214533
+Z35 !s110 1696214533
 !i10b 1
 !s100 0YzUWf`_1^aQSTWTGF6D:0
 I>m1@3SH8himVdV^AXYV]I3
 R2
-R26
+R29
 w1696214532
 R3
 R4
@@ -191,19 +191,19 @@ R6
 r1
 !s85 0
 31
-Z33 !s108 1696214533.000000
+Z36 !s108 1696214533.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_coord_linha_vlg_vec_tst
-R32
+R35
 !i10b 1
 !s100 g0BjL^lAPVK@`bBnhlAef0
 IYV`e2h]F8`<@59JiX17=P2
 R2
-R26
+R29
 w1696214531
 8Waveform7.vwf.vt
 FWaveform7.vwf.vt
@@ -212,20 +212,20 @@ R6
 r1
 !s85 0
 31
-R33
+R36
 !s107 Waveform7.vwf.vt|
 !s90 -work|work|Waveform7.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_deboucing
-Z34 !s110 1696287931
+Z37 !s110 1696287931
 !i10b 1
 !s100 L8F@EYb<CXoPzHgaHTYAQ1
 IRmJl577XA2V[d1gmCHW0I1
 R2
 R0
-Z35 w1696287930
+Z38 w1696287930
 R3
 R4
 R5
@@ -233,20 +233,20 @@ R6
 r1
 !s85 0
 31
-Z36 !s108 1696287931.000000
+Z39 !s108 1696287931.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_deboucing_vlg_vec_tst
-R34
+R37
 !i10b 1
 !s100 9j>YbDhCIXHMn`@=:2Hml3
 I5YHo_0ndYW7H>K80a[1FM2
 R2
 R0
-R35
+R38
 8Waveform4.vwf.vt
 FWaveform4.vwf.vt
 R14
@@ -254,14 +254,14 @@ R6
 r1
 !s85 0
 31
-R36
+R39
 !s107 Waveform4.vwf.vt|
 !s90 -work|work|Waveform4.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_decodificador_bcd_ex_7seg
-Z37 !s110 1695939552
+Z40 !s110 1695939552
 !i10b 1
 !s100 :Zm?z@akEcj9fZiQ0_41H2
 IYOVIOMh64==;H>@8I[0QR0
@@ -275,14 +275,14 @@ R6
 r1
 !s85 0
 31
-Z38 !s108 1695939552.000000
+Z41 !s108 1695939552.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_decodificador_bcd_ex_7seg_ac
-Z39 !s110 1696006429
+Z42 !s110 1696006429
 !i10b 1
 !s100 gOPMkPfIhi0Q>SN;zjjMR2
 Ii_OkDI3o=h[3lg2KEWBLo0
@@ -296,14 +296,14 @@ R6
 r1
 !s85 0
 31
-Z40 !s108 1696006429.000000
+Z43 !s108 1696006429.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_decodificador_bcd_ex_7seg_ac_vlg_vec_tst
-R39
+R42
 !i10b 1
 !s100 MGP?f:lhO7i1h:EJ>oV]M3
 Ib;Y;T7:H3<gJnW]YCnYfS3
@@ -317,14 +317,14 @@ R6
 r1
 !s85 0
 31
-R40
+R43
 !s107 Waveform31.vwf.vt|
 !s90 -work|work|Waveform31.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_decodificador_bcd_ex_7seg_vlg_vec_tst
-R37
+R40
 !i10b 1
 !s100 YSzU;mGOE0T7HzB?zW>KR1
 Ion4=LRU@o95ZSG=?5ZmPQ1
@@ -338,14 +338,14 @@ R6
 r1
 !s85 0
 31
-R38
+R41
 !s107 Waveform22.vwf.vt|
 !s90 -work|work|Waveform22.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_demux1_4
-Z41 !s110 1696058738
+Z44 !s110 1696058738
 !i10b 1
 !s100 iV6o=zWck=E4:9k8o?VSE0
 IfzH]YP58RhD`8Tdi17@SG2
@@ -359,35 +359,35 @@ R6
 r1
 !s85 0
 31
-Z42 !s108 1696058738.000000
+Z45 !s108 1696058738.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_demux1_4_vlg_vec_tst
-R41
+R44
 !i10b 1
 !s100 MD=37c?1WWg2J?IR^67`e0
 Il;?JTQXzLP8FFhnRMO:N]1
 R2
 R0
 w1696058736
-Z43 8Waveform2.vwf.vt
-Z44 FWaveform2.vwf.vt
+Z46 8Waveform2.vwf.vt
+Z47 FWaveform2.vwf.vt
 R14
 R6
 r1
 !s85 0
 31
-R42
-Z45 !s107 Waveform2.vwf.vt|
-Z46 !s90 -work|work|Waveform2.vwf.vt|
+R45
+Z48 !s107 Waveform2.vwf.vt|
+Z49 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_divisor_frequencia
-Z47 !s110 1695930349
+Z50 !s110 1695930349
 !i10b 1
 !s100 283?XaHO6UV9<DE;H4@Z61
 Ijl]dcEIOV@2LCbdAReo0e2
@@ -401,35 +401,35 @@ R6
 r1
 !s85 0
 31
-Z48 !s108 1695930349.000000
+Z51 !s108 1695930349.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_divisor_frequencia_vlg_vec_tst
-R47
+R50
 !i10b 1
 !s100 J@QTHFUX?h4DA31@Z9T>62
 Ij_C^R>1YbLlkao:M1k4>E3
 R2
 R0
 w1695930345
-R28
-R29
+R31
+R32
 R14
 R6
 r1
 !s85 0
 31
-R48
-R30
-R31
+R51
+R33
+R34
 !i113 1
 R10
 R11
 vmodulo_ff_d
-Z49 !s110 1696007795
+Z52 !s110 1696007795
 !i10b 1
 !s100 =0eX47WCLX6LXeI?=iGRm3
 IK4@;072l3?GRCiHDF6:8k0
@@ -443,14 +443,14 @@ R6
 r1
 !s85 0
 31
-Z50 !s108 1696007795.000000
+Z53 !s108 1696007795.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_ff_d_vlg_vec_tst
-R49
+R52
 !i10b 1
 !s100 >mb>bH^Emdd2l5k0[mA>z3
 InhkTVln^jm6kiU^kR7bzc3
@@ -464,20 +464,20 @@ R6
 r1
 !s85 0
 31
-R50
+R53
 !s107 Waveform35.vwf.vt|
 !s90 -work|work|Waveform35.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_ff_t
-Z51 !s110 1695539807
+Z54 !s110 1695539807
 !i10b 1
 !s100 8^hI[[ZiQVMz4:cXF4e6P2
 IJ1MUz_Z<PNL8FnYDR58f02
 R2
 R0
-Z52 w1695539806
+Z55 w1695539806
 R3
 R4
 R5
@@ -485,30 +485,30 @@ R6
 r1
 !s85 0
 31
-Z53 !s108 1695539807.000000
+Z56 !s108 1695539807.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_ff_t_vlg_vec_tst
-R51
+R54
 !i10b 1
 !s100 NG;VFl>D>dJaZ2`7iJ8P<3
 IKahV_R3P3`?O_5ED@h54M1
 R2
 R0
-R52
-Z54 8Waveform3.vwf.vt
-Z55 FWaveform3.vwf.vt
+R55
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
 R14
 R6
 r1
 !s85 0
 31
-R53
+R56
 !s107 Waveform3.vwf.vt|
-Z56 !s90 -work|work|Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
 !i113 1
 R10
 R11
@@ -541,16 +541,16 @@ I^KaGO;zYfMBIo1;l=WSoV1
 R2
 R0
 w1696058512
-R21
-R22
+R24
+R25
 R14
 R6
 r1
 !s85 0
 31
 R58
-R23
-R24
+R26
+R27
 !i113 1
 R10
 R11
@@ -625,27 +625,27 @@ I2L4L;7PO]:dPQk^9^EoOS2
 R2
 R0
 w1695778345
-R43
-R44
+R46
+R47
 R14
 R6
 r1
 !s85 0
 31
 R62
-R45
-R46
+R48
+R49
 !i113 1
 R10
 R11
 vmodulo_sel_1_8_demux
-Z63 !s110 1696291785
+Z63 !s110 1696293406
 !i10b 1
-!s100 HWoY0an5GVe5mK3CY5cWI3
-Io7hAh@3XL9Rbd2PajoXPK1
+!s100 08TFDA6<Oc`=o=^>HAjNi0
+I?WCRVf_ZVbWll@0c36Of02
 R2
 R0
-Z64 w1696291784
+w1696293405
 R3
 R4
 R5
@@ -653,7 +653,7 @@ R6
 r1
 !s85 0
 31
-Z65 !s108 1696291785.000000
+Z64 !s108 1696293406.000000
 R8
 R9
 !i113 1
@@ -663,25 +663,25 @@ vmodulo_sel_1_8_demux_vlg_vec_tst
 R63
 !i10b 1
 !s100 RB@FWZHE[C?iL7YF9d9DW0
-I:5=>JfAd?NE@DP?e@0J8G1
+IaH3WJ3n:_kPnDXcIZ4>NO0
 R2
 R0
-R64
-R54
-R55
+w1696293404
+R19
+R20
 R14
 R6
 r1
 !s85 0
 31
-R65
-!s107 Waveform3.vwf.vt|
-R56
+R64
+!s107 Waveform5.vwf.vt|
+R21
 !i113 1
 R10
 R11
 vmodulo_sel_inputs_matriz
-Z66 !s110 1696052820
+Z65 !s110 1696052820
 !i10b 1
 !s100 <6Rc[<<GWVLLIO:CVzDR_2
 I]NcBS6ZZ]F8]UZSO;U3I>2
@@ -695,14 +695,14 @@ R6
 r1
 !s85 0
 31
-Z67 !s108 1696052820.000000
+Z66 !s108 1696052820.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_sel_inputs_matriz_vlg_vec_tst
-R66
+R65
 !i10b 1
 !s100 M47e`;Y59kkZcT>6W?iZ;3
 Ik0l;i;_?n4kUJO[fIfR3[1
@@ -716,14 +716,14 @@ R6
 r1
 !s85 0
 31
-R67
+R66
 !s107 Waveform9.vwf.vt|
 !s90 -work|work|Waveform9.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_seletor_1_16_at
-Z68 !s110 1696233006
+Z67 !s110 1696233006
 !i10b 1
 !s100 4hJMM>9gceGL4beN^bf^M1
 I2JMBk3;d95f=F?P6NoQPL3
@@ -737,14 +737,14 @@ R6
 r1
 !s85 0
 31
-Z69 !s108 1696233006.000000
+Z68 !s108 1696233006.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_seletor_1_16_at_vlg_vec_tst
-R68
+R67
 !i10b 1
 !s100 N2zEX81=g1_^aI1EgS^X[0
 I1DVXY>ZGfH6`OM:9L[lzj3
@@ -758,20 +758,20 @@ R6
 r1
 !s85 0
 31
-R69
+R68
 !s107 Waveform12.vwf.vt|
 !s90 -work|work|Waveform12.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_seletor_1_4_at
-Z70 !s110 1696234295
+Z69 !s110 1696234295
 !i10b 1
 !s100 b5@IJHSOcoJjMja85:ECB2
 IVGANX?:fNk0mczRKKh>GJ1
 R2
 R0
-Z71 w1696234294
+Z70 w1696234294
 R3
 R4
 R5
@@ -779,20 +779,20 @@ R6
 r1
 !s85 0
 31
-Z72 !s108 1696234295.000000
+Z71 !s108 1696234295.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_seletor_1_4_at_vlg_vec_tst
-R70
+R69
 !i10b 1
 !s100 Q0]lEYeMS4=n_k3=eW0Cz2
 IKQII;]nMh124cLX^16_b30
 R2
 R0
-R71
+R70
 8Waveform13.vwf.vt
 FWaveform13.vwf.vt
 R14
@@ -800,14 +800,14 @@ R6
 r1
 !s85 0
 31
-R72
+R71
 !s107 Waveform13.vwf.vt|
 !s90 -work|work|Waveform13.vwf.vt|
 !i113 1
 R10
 R11
 vmodulo_seletor_1_8_at
-Z73 !s110 1696281108
+Z72 !s110 1696281108
 !i10b 1
 !s100 j[XO7M9H;Z@I[kIZ?SlQ33
 I0j86VIV8MXemAA12mnh>10
@@ -821,35 +821,35 @@ R6
 r1
 !s85 0
 31
-Z74 !s108 1696281108.000000
+Z73 !s108 1696281108.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_seletor_1_8_at_vlg_vec_tst
-R73
+R72
 !i10b 1
 !s100 5Ad76>437Ze<A0h2eKN>c2
 Ib@__4jDe3nSmg4W3M6n730
 R2
 R0
 w1696281106
-R43
-R44
+R46
+R47
 R14
 R6
 r1
 !s85 0
 31
-R74
-R45
-R46
+R73
+R48
+R49
 !i113 1
 R10
 R11
 vmodulo_status
-Z75 !s110 1695938392
+Z74 !s110 1695938392
 !i10b 1
 !s100 UiMk4]ddmE[<jHHTQPK=43
 IjbIO9gGBKCFYMGk8hjg][1
@@ -863,14 +863,14 @@ R6
 r1
 !s85 0
 31
-Z76 !s108 1695938392.000000
+Z75 !s108 1695938392.000000
 R8
 R9
 !i113 1
 R10
 R11
 vmodulo_status_vlg_vec_tst
-R75
+R74
 !i10b 1
 !s100 h@blHlF4;N^ma[NbPAc[K3
 IQ=@6nY`aVQYG?>g5Pf:Qm3
@@ -884,14 +884,14 @@ R6
 r1
 !s85 0
 31
-R76
+R75
 !s107 Waveform16.vwf.vt|
 !s90 -work|work|Waveform16.vwf.vt|
 !i113 1
 R10
 R11
 vpbl
-Z77 !s110 1696288443
+Z76 !s110 1696288443
 !i10b 1
 !s100 iK8;RFVWR1LDfU_eMWRC]1
 IE2Mk4PlJMNJ`;3[1?P6eD2
@@ -905,14 +905,14 @@ R6
 r1
 !s85 0
 31
-Z78 !s108 1696288443.000000
+Z77 !s108 1696288443.000000
 R8
 R9
 !i113 1
 R10
 R11
 vpbl_vlg_vec_tst
-R77
+R76
 !i10b 1
 !s100 cBN@:K_5ZDKbmCEK^g>d31
 Id8]okok]954JZGNcacdSc1
@@ -926,7 +926,7 @@ R6
 r1
 !s85 0
 31
-R78
+R77
 !s107 Waveform6.vwf.vt|
 !s90 -work|work|Waveform6.vwf.vt|
 !i113 1
