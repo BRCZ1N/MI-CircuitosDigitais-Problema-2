@@ -2,4 +2,64 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Setup 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
+Slack : -9.405
+TNS   : -105.418
+
+Type  : Setup 'button_count'
+Slack : -4.049
+TNS   : -21.306
+
+Type  : Setup 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+Slack : -2.372
+TNS   : -9.774
+
+Type  : Setup 'button_confirmation'
+Slack : -2.001
+TNS   : -10.327
+
+Type  : Setup 'clk'
+Slack : 1.635
+TNS   : 0.000
+
+Type  : Hold 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
+Slack : -6.823
+TNS   : -63.978
+
+Type  : Hold 'clk'
+Slack : -1.689
+TNS   : -1.689
+
+Type  : Hold 'button_count'
+Slack : -1.293
+TNS   : -3.660
+
+Type  : Hold 'button_confirmation'
+Slack : 0.634
+TNS   : 0.000
+
+Type  : Hold 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+Slack : 1.685
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
+Slack : -5.677
+TNS   : -435.736
+
+Type  : Minimum Pulse Width 'button_confirmation'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'button_count'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+Slack : 0.234
+TNS   : 0.000
+
 ------------------------------------------------------------

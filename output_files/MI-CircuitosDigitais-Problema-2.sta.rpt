@@ -1,5 +1,5 @@
 Timing Analyzer report for MI-CircuitosDigitais-Problema-2
-Mon Oct 02 22:22:22 2023
+Mon Oct 02 22:30:20 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,15 +16,27 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. Recovery Summary
   9. Removal Summary
  10. Minimum Pulse Width Summary
- 11. Clock Transfers
- 12. Report TCCS
- 13. Report RSKM
- 14. Unconstrained Paths Summary
- 15. Unconstrained Input Ports
- 16. Unconstrained Output Ports
- 17. Unconstrained Input Ports
- 18. Unconstrained Output Ports
- 19. Timing Analyzer Messages
+ 11. Setup: 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
+ 12. Setup: 'button_count'
+ 13. Setup: 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+ 14. Setup: 'button_confirmation'
+ 15. Setup: 'clk'
+ 16. Hold: 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'
+ 17. Hold: 'clk'
+ 18. Hold: 'button_count'
+ 19. Hold: 'button_confirmation'
+ 20. Hold: 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'
+ 21. Setup Transfers
+ 22. Hold Transfers
+ 23. Report TCCS
+ 24. Report RSKM
+ 25. Unconstrained Paths Summary
+ 26. Clock Status Summary
+ 27. Unconstrained Input Ports
+ 28. Unconstrained Output Ports
+ 29. Unconstrained Input Ports
+ 30. Unconstrained Output Ports
+ 31. Timing Analyzer Messages
 
 
 
@@ -77,28 +89,56 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-----------
-; Clocks ;
-----------
-No clocks to report.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                       ;
++---------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------------------+
+; Clock Name                                                    ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                                           ;
++---------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------------------+
+; button_confirmation                                           ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { button_confirmation }                                           ;
+; button_count                                                  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { button_count }                                                  ;
+; clk                                                           ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                                                           ;
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q } ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q }            ;
++---------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------------------+
 
 
-----------------
-; Fmax Summary ;
-----------------
-No paths to report.
++------------------------------------------------------------------------------------------------------------------------+
+; Fmax Summary                                                                                                           ;
++------------+-----------------+---------------------------------------------------------------+-------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                    ; Note                    ;
++------------+-----------------+---------------------------------------------------------------+-------------------------+
+; 90.04 MHz  ; 73.28 MHz       ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; limit due to hold check ;
+; 198.06 MHz ; 198.06 MHz      ; button_count                                                  ;                         ;
+; 199.92 MHz ; 199.92 MHz      ; button_confirmation                                           ;                         ;
+; 296.56 MHz ; 296.56 MHz      ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ;                         ;
++------------+-----------------+---------------------------------------------------------------+-------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
------------------
-; Setup Summary ;
------------------
-No paths to report.
++----------------------------------------------------------------------------------------+
+; Setup Summary                                                                          ;
++---------------------------------------------------------------+--------+---------------+
+; Clock                                                         ; Slack  ; End Point TNS ;
++---------------------------------------------------------------+--------+---------------+
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -9.405 ; -105.418      ;
+; button_count                                                  ; -4.049 ; -21.306       ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; -2.372 ; -9.774        ;
+; button_confirmation                                           ; -2.001 ; -10.327       ;
+; clk                                                           ; 1.635  ; 0.000         ;
++---------------------------------------------------------------+--------+---------------+
 
 
-----------------
-; Hold Summary ;
-----------------
-No paths to report.
++----------------------------------------------------------------------------------------+
+; Hold Summary                                                                           ;
++---------------------------------------------------------------+--------+---------------+
+; Clock                                                         ; Slack  ; End Point TNS ;
++---------------------------------------------------------------+--------+---------------+
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -6.823 ; -63.978       ;
+; clk                                                           ; -1.689 ; -1.689        ;
+; button_count                                                  ; -1.293 ; -3.660        ;
+; button_confirmation                                           ; 0.634  ; 0.000         ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; 1.685  ; 0.000         ;
++---------------------------------------------------------------+--------+---------------+
 
 
 --------------------
@@ -113,16 +153,481 @@ No paths to report.
 No paths to report.
 
 
--------------------------------
-; Minimum Pulse Width Summary ;
--------------------------------
-No paths to report.
++----------------------------------------------------------------------------------------+
+; Minimum Pulse Width Summary                                                            ;
++---------------------------------------------------------------+--------+---------------+
+; Clock                                                         ; Slack  ; End Point TNS ;
++---------------------------------------------------------------+--------+---------------+
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -5.677 ; -435.736      ;
+; button_confirmation                                           ; -2.289 ; -2.289        ;
+; button_count                                                  ; -2.289 ; -2.289        ;
+; clk                                                           ; -2.289 ; -2.289        ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; 0.234  ; 0.000         ;
++---------------------------------------------------------------+--------+---------------+
 
 
--------------------
-; Clock Transfers ;
--------------------
-Nothing to report.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'                                                                                                                                                                                                                                     ;
++--------+---------------------------------------------------------------+----------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                                     ; To Node                                                  ; Launch Clock                                                  ; Latch Clock                                                   ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------------------+----------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+------------+------------+
+; -9.405 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 1.441      ; 11.013     ;
+; -8.851 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.147      ; 12.165     ;
+; -8.763 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 1.441      ; 10.371     ;
+; -8.594 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 1.441      ; 10.202     ;
+; -8.326 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.147      ; 11.640     ;
+; -8.209 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.147      ; 11.523     ;
+; -8.034 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.471      ; 11.672     ;
+; -7.903 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 2.399      ; 10.469     ;
+; -7.871 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 1.441      ; 9.479      ;
+; -7.800 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.764      ; 11.731     ;
+; -7.630 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 2.399      ; 10.196     ;
+; -7.603 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.147      ; 10.917     ;
+; -7.585 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.471      ; 11.223     ;
+; -7.396 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.058      ; 11.621     ;
+; -7.392 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.471      ; 11.030     ;
+; -7.370 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.731      ; 11.268     ;
+; -7.268 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.033      ; 11.468     ;
+; -7.261 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 2.399      ; 9.827      ;
+; -7.227 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.235      ; 10.629     ;
+; -7.158 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.764      ; 11.089     ;
+; -7.025 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.620      ; 10.812     ;
+; -6.973 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.056      ; 11.196     ;
+; -6.913 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.058      ; 11.138     ;
+; -6.910 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.764      ; 10.841     ;
+; -6.907 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 2.399      ; 9.473      ;
+; -6.866 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.147      ; 10.180     ;
+; -6.862 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.471      ; 10.500     ;
+; -6.839 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.587      ; 10.593     ;
+; -6.818 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.615      ; 10.600     ;
+; -6.808 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.620      ; 10.595     ;
+; -6.754 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.058      ; 10.979     ;
+; -6.740 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.033      ; 10.940     ;
+; -6.737 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.587      ; 10.491     ;
+; -6.728 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.731      ; 10.626     ;
+; -6.716 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.235      ; 10.118     ;
+; -6.716 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.615      ; 10.498     ;
+; -6.708 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.235      ; 10.110     ;
+; -6.626 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.033      ; 10.826     ;
+; -6.509 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.180      ; 10.856     ;
+; -6.503 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.056      ; 10.726     ;
+; -6.491 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.731      ; 10.389     ;
+; -6.478 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.180      ; 10.825     ;
+; -6.401 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 1.441      ; 8.009      ;
+; -6.395 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.471      ; 10.033     ;
+; -6.394 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.058      ; 10.619     ;
+; -6.393 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.620      ; 10.180     ;
+; -6.391 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.764      ; 10.322     ;
+; -6.331 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.056      ; 10.554     ;
+; -6.302 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.620      ; 10.089     ;
+; -6.278 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.235      ; 9.680      ;
+; -6.221 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.033      ; 10.421     ;
+; -6.197 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.587      ; 9.951      ;
+; -6.176 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.615      ; 9.958      ;
+; -6.014 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.587      ; 9.768      ;
+; -5.993 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.615      ; 9.775      ;
+; -5.990 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.180      ; 10.337     ;
+; -5.984 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.056      ; 10.207     ;
+; -5.984 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.587      ; 9.738      ;
+; -5.977 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.764      ; 9.908      ;
+; -5.972 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 2.399      ; 8.538      ;
+; -5.972 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.731      ; 9.870      ;
+; -5.964 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.058      ; 10.189     ;
+; -5.952 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.235      ; 9.354      ;
+; -5.950 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.615      ; 9.732      ;
+; -5.836 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.180      ; 10.183     ;
+; -5.791 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.033      ; 9.991      ;
+; -5.666 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.620      ; 9.453      ;
+; -5.560 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.180      ; 9.907      ;
+; -5.554 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.056      ; 9.777      ;
+; -5.544 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 3.731      ; 9.442      ;
+; -5.053 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.789      ; 10.385     ;
+; -4.998 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 4.789      ; 9.954      ;
+; -4.553 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 4.789      ; 10.385     ;
+; -4.499 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 6.495      ; 11.537     ;
+; -4.498 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 4.789      ; 9.954      ;
+; -4.021 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 5.747      ; 9.935      ;
+; -3.999 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 6.495      ; 11.537     ;
+; -3.833 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 6.495      ; 10.495     ;
+; -3.682 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 6.819      ; 11.044     ;
+; -3.551 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 5.747      ; 9.841      ;
+; -3.521 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 5.747      ; 9.935      ;
+; -3.448 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.112      ; 11.103     ;
+; -3.366 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 6.819      ; 10.352     ;
+; -3.336 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 6.935      ; 10.438     ;
+; -3.333 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 6.495      ; 10.495     ;
+; -3.327 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.079      ; 10.573     ;
+; -3.314 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 6.963      ; 10.444     ;
+; -3.302 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.112      ; 10.581     ;
+; -3.182 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 6.819      ; 11.044     ;
+; -3.095 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.381      ; 10.643     ;
+; -3.069 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.406      ; 10.642     ;
+; -3.051 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 5.747      ; 9.841      ;
+; -3.044 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.406      ; 10.993     ;
+; -3.018 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.079      ; 10.640     ;
+; -2.993 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.404      ; 10.564     ;
+; -2.948 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 7.112      ; 11.103     ;
+; -2.944 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 6.583      ; 10.070     ;
+; -2.916 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.381      ; 10.840     ;
+; -2.866 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 1.000        ; 6.819      ; 10.352     ;
+; -2.866 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.500        ; 7.528      ; 10.561     ;
++--------+---------------------------------------------------------------+----------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'button_count'                                                                                                                                                                                                                                          ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+--------------+------------+------------+
+; Slack  ; From Node                                                     ; To Node                                                       ; Launch Clock                                                  ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+--------------+------------+------------+
+; -4.049 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.716      ;
+; -3.981 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.648      ;
+; -3.980 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.647      ;
+; -3.979 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.646      ;
+; -3.901 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.568      ;
+; -3.833 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.500      ;
+; -3.832 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.499      ;
+; -3.831 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.498      ;
+; -3.553 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 4.220      ;
+; -3.266 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 3.933      ;
+; -3.198 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 3.865      ;
+; -3.197 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 3.864      ;
+; -3.196 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 3.863      ;
+; -2.721 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 3.388      ;
+; -2.717 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 3.384      ;
+; -2.700 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_confirmation                                           ; button_count ; 0.500        ; 3.348      ; 6.215      ;
+; -2.632 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_confirmation                                           ; button_count ; 0.500        ; 3.348      ; 6.147      ;
+; -2.631 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_confirmation                                           ; button_count ; 0.500        ; 3.348      ; 6.146      ;
+; -2.630 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_confirmation                                           ; button_count ; 0.500        ; 3.348      ; 6.145      ;
+; -2.200 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_confirmation                                           ; button_count ; 1.000        ; 3.348      ; 6.215      ;
+; -2.132 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_confirmation                                           ; button_count ; 1.000        ; 3.348      ; 6.147      ;
+; -2.131 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_confirmation                                           ; button_count ; 1.000        ; 3.348      ; 6.146      ;
+; -2.130 ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_confirmation                                           ; button_count ; 1.000        ; 3.348      ; 6.145      ;
+; -1.764 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 2.431      ;
+; -1.734 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 2.401      ;
+; -1.733 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 2.400      ;
+; -1.732 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 2.399      ;
+; -1.644 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; button_count                                                  ; button_count ; 1.000        ; 0.000      ; 2.311      ;
+; -0.553 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.500        ; 3.348      ; 4.444      ;
+; -0.485 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.500        ; 3.348      ; 4.376      ;
+; -0.484 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.500        ; 3.348      ; 4.375      ;
+; -0.483 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.500        ; 3.348      ; 4.374      ;
+; -0.200 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.500        ; 3.348      ; 4.091      ;
+; -0.053 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 1.000        ; 3.348      ; 4.444      ;
+; 0.015  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 1.000        ; 3.348      ; 4.376      ;
+; 0.016  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 1.000        ; 3.348      ; 4.375      ;
+; 0.017  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 1.000        ; 3.348      ; 4.374      ;
+; 0.300  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 1.000        ; 3.348      ; 4.091      ;
+; 1.233  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.500        ; 3.348      ; 2.658      ;
+; 1.733  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 1.000        ; 3.348      ; 2.658      ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'                                                                                                                                                                                                                               ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                                     ; To Node                                                       ; Launch Clock                                       ; Latch Clock                                        ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
+; -2.372 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 3.039      ;
+; -2.372 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 3.039      ;
+; -2.078 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.745      ;
+; -1.757 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.424      ;
+; -1.754 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.421      ;
+; -1.481 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.148      ;
+; -1.471 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.138      ;
+; -1.310 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.977      ;
+; -1.309 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.976      ;
+; -1.302 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.969      ;
+; -1.247 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.914      ;
+; -1.239 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.906      ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'button_confirmation'                                                                                                                                                 ;
++--------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
+; Slack  ; From Node           ; To Node                                                  ; Launch Clock        ; Latch Clock         ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
+; -2.001 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 10.166     ;
+; -1.902 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 10.067     ;
+; -1.501 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 10.166     ;
+; -1.402 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 10.067     ;
+; -0.935 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 9.100      ;
+; -0.923 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 9.088      ;
+; -0.815 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 8.980      ;
+; -0.801 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 8.966      ;
+; -0.760 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 8.925      ;
+; -0.759 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 8.924      ;
+; -0.743 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 8.908      ;
+; -0.688 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; button_confirmation ; button_confirmation ; 0.500        ; 7.998      ; 8.853      ;
+; -0.435 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 9.100      ;
+; -0.423 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 9.088      ;
+; -0.315 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 8.980      ;
+; -0.301 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 8.966      ;
+; -0.260 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 8.925      ;
+; -0.259 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 8.924      ;
+; -0.243 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 8.908      ;
+; -0.188 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; button_confirmation ; button_confirmation ; 1.000        ; 7.998      ; 8.853      ;
++--------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                                                                                                                ;
++-------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                          ; To Node                                            ; Launch Clock                                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
+; 1.635 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 0.500        ; 3.211      ; 2.119      ;
+; 2.135 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 1.000        ; 3.211      ; 2.119      ;
++-------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q'                                                                                                                                                                                                                                      ;
++--------+---------------------------------------------------------------+----------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                                     ; To Node                                                  ; Launch Clock                                                  ; Latch Clock                                                   ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------------------+----------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+------------+------------+
+; -6.823 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.700     ; 4.474      ;
+; -6.323 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.700     ; 4.474      ;
+; -5.345 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.168     ; 5.420      ;
+; -4.845 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.168     ; 5.420      ;
+; -4.812 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.967     ; 6.752      ;
+; -4.736 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.396     ; 6.257      ;
+; -4.630 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.948     ; 6.915      ;
+; -4.505 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.970     ; 7.062      ;
+; -4.404 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 11.011     ; 7.204      ;
+; -4.391 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.883     ; 7.089      ;
+; -4.312 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.967     ; 6.752      ;
+; -4.304 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.321     ; 6.614      ;
+; -4.257 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.280     ; 6.620      ;
+; -4.236 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.396     ; 6.257      ;
+; -4.212 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.918     ; 7.303      ;
+; -4.130 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.948     ; 6.915      ;
+; -4.005 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.970     ; 7.062      ;
+; -3.994 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.898     ; 7.501      ;
+; -3.984 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.606     ; 7.219      ;
+; -3.904 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 11.011     ; 7.204      ;
+; -3.891 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.883     ; 7.089      ;
+; -3.804 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.321     ; 6.614      ;
+; -3.757 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.280     ; 6.620      ;
+; -3.712 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.918     ; 7.303      ;
+; -3.581 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.046     ; 7.062      ;
+; -3.494 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.898     ; 7.501      ;
+; -3.484 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.606     ; 7.219      ;
+; -3.081 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.046     ; 7.062      ;
+; -2.780 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.048      ; 3.989      ;
+; -2.622 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.352      ; 4.451      ;
+; -2.285 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.352      ; 4.788      ;
+; -1.793 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.048      ; 4.976      ;
+; -1.462 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.820      ; 5.079      ;
+; -1.396 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.619      ; 5.944      ;
+; -1.255 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.535      ; 6.001      ;
+; -1.223 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.698      ; 5.196      ;
+; -1.212 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.352      ; 5.861      ;
+; -1.144 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.820      ; 5.397      ;
+; -1.124 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.396     ; 9.493      ;
+; -1.053 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.258      ; 5.926      ;
+; -1.041 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.570      ; 6.250      ;
+; -0.993 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.973      ; 5.701      ;
+; -0.974 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.663      ; 6.410      ;
+; -0.971 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.820      ; 5.570      ;
+; -0.971 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.619      ; 6.369      ;
+; -0.967 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.700     ; 9.954      ;
+; -0.959 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.932      ; 5.694      ;
+; -0.959 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.352      ; 6.114      ;
+; -0.959 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.535      ; 6.297      ;
+; -0.949 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.600      ; 6.372      ;
+; -0.900 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.048      ; 5.869      ;
+; -0.833 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.550      ; 6.438      ;
+; -0.822 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.258      ; 6.157      ;
+; -0.817 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.948     ; 10.352     ;
+; -0.767 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.046     ; 9.500      ;
+; -0.722 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.570      ; 6.569      ;
+; -0.696 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.970     ; 10.495     ;
+; -0.667 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.820      ; 5.874      ;
+; -0.651 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 11.011     ; 10.581     ;
+; -0.624 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.396     ; 9.493      ;
+; -0.615 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.967     ; 10.573     ;
+; -0.611 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.619      ; 6.729      ;
+; -0.552 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.663      ; 6.832      ;
+; -0.549 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.550      ; 6.722      ;
+; -0.548 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.600      ; 6.773      ;
+; -0.540 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.883     ; 10.564     ;
+; -0.530 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.619      ; 6.810      ;
+; -0.518 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.619      ; 6.822      ;
+; -0.496 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.918     ; 10.643     ;
+; -0.477 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.898     ; 10.642     ;
+; -0.467 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.700     ; 9.954      ;
+; -0.457 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.048      ; 6.312      ;
+; -0.454 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.168     ; 9.935      ;
+; -0.429 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.600      ; 6.892      ;
+; -0.417 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.973      ; 6.277      ;
+; -0.383 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.932      ; 6.270      ;
+; -0.377 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.535      ; 6.879      ;
+; -0.347 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.352      ; 6.726      ;
+; -0.317 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.948     ; 10.352     ;
+; -0.304 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.622      ; 7.039      ;
+; -0.267 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.046     ; 9.500      ;
+; -0.266 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.606     ; 10.561     ;
+; -0.236 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.698      ; 6.183      ;
+; -0.203 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.663      ; 7.181      ;
+; -0.196 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.970     ; 10.495     ;
+; -0.191 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.535      ; 7.065      ;
+; -0.163 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.570      ; 7.128      ;
+; -0.154 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.600      ; 7.167      ;
+; -0.151 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 11.011     ; 10.581     ;
+; -0.115 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.967     ; 10.573     ;
+; -0.110 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.663      ; 7.274      ;
+; -0.103 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.973      ; 6.591      ;
+; -0.098 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.321     ; 10.444     ;
+; -0.096 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.663      ; 7.288      ;
+; -0.077 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.622      ; 7.266      ;
+; -0.063 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0.000        ; 10.280     ; 10.438     ;
+; -0.056 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 6.932      ; 6.597      ;
+; -0.040 ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.883     ; 10.564     ;
+; -0.011 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 7.570      ; 7.280      ;
+; 0.004  ; button_confirmation                                           ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; -0.500       ; 10.918     ; 10.643     ;
++--------+---------------------------------------------------------------+----------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                                                                                                                  ;
++--------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                          ; To Node                                            ; Launch Clock                                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
+; -1.689 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 0.000        ; 3.211      ; 2.119      ;
+; -1.189 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; -0.500       ; 3.211      ; 2.119      ;
++--------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'button_count'                                                                                                                                                                                                                                           ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+--------------+------------+------------+
+; Slack  ; From Node                                                     ; To Node                                                       ; Launch Clock                                                  ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+--------------+------------+------------+
+; -1.293 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.000        ; 3.348      ; 2.652      ;
+; -1.287 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.000        ; 3.348      ; 2.658      ;
+; -0.793 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; -0.500       ; 3.348      ; 2.652      ;
+; -0.787 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; -0.500       ; 3.348      ; 2.658      ;
+; -0.361 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.000        ; 3.348      ; 3.584      ;
+; -0.360 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.000        ; 3.348      ; 3.585      ;
+; -0.359 ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.000        ; 3.348      ; 3.586      ;
+; 0.139  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; -0.500       ; 3.348      ; 3.584      ;
+; 0.140  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; -0.500       ; 3.348      ; 3.585      ;
+; 0.141  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; -0.500       ; 3.348      ; 3.586      ;
+; 0.146  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; 0.000        ; 3.348      ; 4.091      ;
+; 0.646  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count ; -0.500       ; 3.348      ; 4.091      ;
+; 2.090  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 2.311      ;
+; 2.178  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 2.399      ;
+; 2.179  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 2.400      ;
+; 2.180  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 2.401      ;
+; 2.210  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 2.431      ;
+; 2.528  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 2.749      ;
+; 2.576  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_confirmation                                           ; button_count ; 0.000        ; 3.348      ; 6.145      ;
+; 2.577  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_confirmation                                           ; button_count ; 0.000        ; 3.348      ; 6.146      ;
+; 2.578  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_confirmation                                           ; button_count ; 0.000        ; 3.348      ; 6.147      ;
+; 2.646  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_confirmation                                           ; button_count ; 0.000        ; 3.348      ; 6.215      ;
+; 3.076  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_confirmation                                           ; button_count ; -0.500       ; 3.348      ; 6.145      ;
+; 3.077  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_confirmation                                           ; button_count ; -0.500       ; 3.348      ; 6.146      ;
+; 3.078  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_confirmation                                           ; button_count ; -0.500       ; 3.348      ; 6.147      ;
+; 3.146  ; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_confirmation                                           ; button_count ; -0.500       ; 3.348      ; 6.215      ;
+; 3.163  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.384      ;
+; 3.167  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.388      ;
+; 3.232  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.453      ;
+; 3.487  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.708      ;
+; 3.488  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.709      ;
+; 3.489  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.710      ;
+; 3.635  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.856      ;
+; 3.636  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.857      ;
+; 3.637  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.858      ;
+; 3.642  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.863      ;
+; 3.643  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_4|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.864      ;
+; 3.644  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_5|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.865      ;
+; 3.712  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_3|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 3.933      ;
+; 3.999  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_6|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count                                                  ; button_count ; 0.000        ; 0.000      ; 4.220      ;
++--------+---------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'button_confirmation'                                                                                                                                                 ;
++-------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node                                                  ; Launch Clock        ; Latch Clock         ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
+; 0.634 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 8.853      ;
+; 0.689 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 8.908      ;
+; 0.705 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 8.924      ;
+; 0.706 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 8.925      ;
+; 0.747 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 8.966      ;
+; 0.761 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 8.980      ;
+; 0.869 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 9.088      ;
+; 0.881 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 9.100      ;
+; 1.134 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 8.853      ;
+; 1.189 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 8.908      ;
+; 1.205 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 8.924      ;
+; 1.206 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 8.925      ;
+; 1.247 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 8.966      ;
+; 1.261 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 8.980      ;
+; 1.369 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 9.088      ;
+; 1.381 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 9.100      ;
+; 1.848 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 10.067     ;
+; 1.947 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.998      ; 10.166     ;
+; 2.348 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 10.067     ;
+; 2.447 ; button_confirmation ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; -0.500       ; 7.998      ; 10.166     ;
++-------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q'                                                                                                                                                                                                                               ;
++-------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                                     ; To Node                                                       ; Launch Clock                                       ; Latch Clock                                        ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
+; 1.685 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.906      ;
+; 1.693 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.914      ;
+; 1.748 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.969      ;
+; 1.755 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.976      ;
+; 1.756 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.977      ;
+; 1.917 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.138      ;
+; 1.927 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.148      ;
+; 2.200 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.421      ;
+; 2.203 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.424      ;
+; 2.515 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.736      ;
+; 2.524 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.745      ;
+; 2.818 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 3.039      ;
++-------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                                           ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                                    ; To Clock                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; button_confirmation                                           ; button_confirmation                                           ; 10       ; 10       ; 0        ; 0        ;
+; button_confirmation                                           ; button_count                                                  ; 0        ; 0        ; 4        ; 4        ;
+; button_count                                                  ; button_count                                                  ; 0        ; 0        ; 0        ; 28       ;
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count                                                  ; 0        ; 0        ; 10       ; 10       ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; clk                                                           ; 0        ; 0        ; 1        ; 1        ;
+; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 14       ; 14       ; 0        ; 0        ;
+; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0        ; 798      ; 0        ; 0        ;
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 238      ; 238      ; 0        ; 0        ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; 0        ; 0        ; 0        ; 13       ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                                            ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                                    ; To Clock                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; button_confirmation                                           ; button_confirmation                                           ; 10       ; 10       ; 0        ; 0        ;
+; button_confirmation                                           ; button_count                                                  ; 0        ; 0        ; 4        ; 4        ;
+; button_count                                                  ; button_count                                                  ; 0        ; 0        ; 0        ; 28       ;
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; button_count                                                  ; 0        ; 0        ; 10       ; 10       ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; clk                                                           ; 0        ; 0        ; 1        ; 1        ;
+; button_confirmation                                           ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 14       ; 14       ; 0        ; 0        ;
+; button_count                                                  ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 0        ; 798      ; 0        ; 0        ;
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; 238      ; 238      ; 0        ; 0        ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; 0        ; 0        ; 0        ; 13       ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
 ---------------
@@ -144,36 +649,24 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 18    ; 18   ;
-; Unconstrained Output Ports      ; 3     ; 3    ;
-; Unconstrained Output Port Paths ; 18    ; 18   ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 106   ; 106  ;
+; Unconstrained Output Ports      ; 21    ; 21   ;
+; Unconstrained Output Port Paths ; 159   ; 159  ;
 +---------------------------------+-------+------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; mdc[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdc[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdc[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                            ;
-+---------------+---------------------------------------------------------------------------------------+
-; Output Port   ; Comment                                                                               ;
-+---------------+---------------------------------------------------------------------------------------+
-; dmx8_input[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dmx8_input[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dmx8_input[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------+---------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                                                               ;
++---------------------------------------------------------------+---------------------------------------------------------------+------+-------------+
+; Target                                                        ; Clock                                                         ; Type ; Status      ;
++---------------------------------------------------------------+---------------------------------------------------------------+------+-------------+
+; button_confirmation                                           ; button_confirmation                                           ; Base ; Constrained ;
+; button_count                                                  ; button_count                                                  ; Base ; Constrained ;
+; clk                                                           ; clk                                                           ; Base ; Constrained ;
+; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q ; Base ; Constrained ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q            ; Base ; Constrained ;
++---------------------------------------------------------------+---------------------------------------------------------------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -181,24 +674,81 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; mdc[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdc[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdc[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; mdl[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hh1[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hh1[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hh2[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hh2[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                            ;
-+---------------+---------------------------------------------------------------------------------------+
-; Output Port   ; Comment                                                                               ;
-+---------------+---------------------------------------------------------------------------------------+
-; dmx8_input[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dmx8_input[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dmx8_input[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------+---------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                             ;
++----------------+---------------------------------------------------------------------------------------+
+; Output Port    ; Comment                                                                               ;
++----------------+---------------------------------------------------------------------------------------+
+; m_col[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++----------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; hh1[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hh1[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hh2[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hh2[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                             ;
++----------------+---------------------------------------------------------------------------------------+
+; Output Port    ; Comment                                                                               ;
++----------------+---------------------------------------------------------------------------------------+
+; m_col[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_col[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; m_line[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_7seg_ac[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++----------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -207,7 +757,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 02 22:22:22 2023
+    Info: Processing started: Mon Oct 02 22:30:20 2023
 Info: Command: quartus_sta MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -218,23 +768,47 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'MI-CircuitosDigitais-Problema-2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name button_count button_count
+    Info (332105): create_clock -period 1.000 -name modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q
+    Info (332105): create_clock -period 1.000 -name button_confirmation button_confirmation
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
-Info (332159): No clocks to report
-Info (332140): No fmax paths to report
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -9.405
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -9.405            -105.418 modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q 
+    Info (332119):    -4.049             -21.306 button_count 
+    Info (332119):    -2.372              -9.774 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
+    Info (332119):    -2.001             -10.327 button_confirmation 
+    Info (332119):     1.635               0.000 clk 
+Info (332146): Worst-case hold slack is -6.823
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -6.823             -63.978 modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q 
+    Info (332119):    -1.689              -1.689 clk 
+    Info (332119):    -1.293              -3.660 button_count 
+    Info (332119):     0.634               0.000 button_confirmation 
+    Info (332119):     1.685               0.000 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Info (332146): Worst-case minimum pulse width slack is -5.677
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.677            -435.736 modulo_contador_sync_6_bits:count_6_bits_1|modulo_ff_t:ff_1|q 
+    Info (332119):    -2.289              -2.289 button_confirmation 
+    Info (332119):    -2.289              -2.289 button_count 
+    Info (332119):    -2.289              -2.289 clk 
+    Info (332119):     0.234               0.000 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4668 megabytes
-    Info: Processing ended: Mon Oct 02 22:22:22 2023
+    Info: Peak virtual memory: 4669 megabytes
+    Info: Processing ended: Mon Oct 02 22:30:20 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
