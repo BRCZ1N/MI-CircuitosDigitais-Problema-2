@@ -1,4 +1,4 @@
-module modulo_seletor_1_8(mdc,mdl,dmx8_input);
+module modulo_sel_1_8_demux(mdc,mdl,dmx8_input);
 
 	input [2:0] mdc,mdl;
 	output [2:0] dmx8_input;
@@ -18,9 +18,6 @@ module modulo_seletor_1_8(mdc,mdl,dmx8_input);
 	wire [10:0] mx4e1;
 	wire [10:0] mx4e2;
 	wire [10:0] mx4e3;
-	
-
-
 
 
 //MDC0'MDC1'MDC2'MDL0MDL1'MDL2'
@@ -217,11 +214,6 @@ and_gate_5_inputs gate_36(.A(nmdc[2]),.B(nmdc[1]),.C(nmdl[2]),.D(nmdl[1]),.E(mdl
 
 //MDC1'MDC2'MDL1MDL2
 and_gate_4_inputs gate_37(.A(nmdc[1]),.B(nmdc[0]),.C(mdl[1]),.D(mdl[0]),.S(mx4e3[0]),);
-
-
-
-
-
 
 or_gate_5_inputs gate_38(.A(mx4e3[11]),.B(mx4e3[10]),.C(mx4e3[9]),.D(mx4e3[8]),.E(mx4e3[7]),.S(mx4e3_wire_3[0]),);
 or_gate_5_inputs gate_39(.A(mx4e3[6]),.B(mx4e3[5]),.C(mx4e3[4]),.D(mx4e3[3]),.E(mx4e3[2]),.S(mx4e3_wire_3[1]),)

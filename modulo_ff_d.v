@@ -26,7 +26,7 @@ module modulo_ff_d(d,clk,clr,q,nq);
 		begin
 		
 			q <= d;
-			nq <= !d;
+			nq <= !q;
 		
 		end
 	
