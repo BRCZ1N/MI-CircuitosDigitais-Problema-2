@@ -1,5 +1,5 @@
 Fitter report for MI-CircuitosDigitais-Problema-2
-Tue Oct 03 01:21:53 2023
+Tue Oct 03 01:29:29 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue Oct 03 01:21:53 2023       ;
+; Fitter Status         ; Successful - Tue Oct 03 01:29:29 2023       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name ; pbl                                         ;
@@ -129,7 +129,7 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.15        ;
+; Average used               ; 1.14        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -903,10 +903,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/output_files/MI-CircuitosDigitais-Problema-2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6170 megabytes
-    Info: Processing ended: Tue Oct 03 01:21:53 2023
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 6182 megabytes
+    Info: Processing ended: Tue Oct 03 01:29:29 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+
