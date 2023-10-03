@@ -1,0 +1,13 @@
+module modulo_sel_matriz(sta,out_sel);
+
+	input [1:0] sta;
+	output out_sel;
+	wire [1:0] Nsta;
+	
+	not(Nsta[1],sta[1]);
+	not(Nsta[0],sta[0]);
+	
+	and_gate_2_inputs gate_1(.A(sta[1]),.B(Nsta[0]),.S(out_sel),);
+	
+
+endmodule
