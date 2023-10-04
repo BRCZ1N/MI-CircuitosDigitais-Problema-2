@@ -1,4 +1,4 @@
-module modulo_demux1_8_n_out(A,input_sel,Nout);
+module (A,input_sel,Nout);
 
 	input A;
 	input [2:0] input_sel;
