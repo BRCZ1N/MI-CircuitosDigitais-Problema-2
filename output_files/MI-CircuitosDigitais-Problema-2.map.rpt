@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Wed Oct 04 19:52:24 2023
+Wed Oct 04 20:21:38 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -198,7 +198,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Oct 04 19:52:24 2023       ;
+; Analysis & Synthesis Status ; Successful - Wed Oct 04 20:21:38 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
@@ -587,62 +587,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------+---------+
 ; Inverted Register                                        ; Fan out ;
 +----------------------------------------------------------+---------+
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7|q  ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9|q  ; 2       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; 3       ;
-; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; 3       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4|q  ; 2       ;
-; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7|q  ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4|q  ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5|q  ; 3       ;
 ; Total number of inverted registers = 56                  ;         ;
 +----------------------------------------------------------+---------+
 
@@ -2099,7 +2099,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Oct 04 19:52:09 2023
+    Info: Processing started: Wed Oct 04 20:21:22 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -2640,21 +2640,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "out_7seg[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 8
     Warning (13410): Pin "out_7seg_ac[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
     Warning (13410): Pin "out_7seg_ac[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
-    Warning (13410): Pin "out[2]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
     Warning (13410): Pin "out[6]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
-    Warning (13410): Pin "out[9]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
+    Warning (13410): Pin "out[8]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
+    Warning (13410): Pin "out[14]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
     Warning (13410): Pin "out[17]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
+    Warning (13410): Pin "out[19]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
     Warning (13410): Pin "out[27]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
-    Warning (13410): Pin "out[30]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
-    Warning (13410): Pin "out[33]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
+    Warning (13410): Pin "out[29]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 12
 Info (21057): Implemented 337 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 61 output pins
     Info (21061): Implemented 264 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 432 warnings
     Info: Peak virtual memory: 4697 megabytes
-    Info: Processing ended: Wed Oct 04 19:52:24 2023
-    Info: Elapsed time: 00:00:15
+    Info: Processing ended: Wed Oct 04 20:21:38 2023
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:29
 
 
