@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Wed Oct 04 02:28:58 2023
+Wed Oct 04 16:44:53 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -11,165 +11,168 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Source Files Read
-  6. Port Connectivity Checks: "modulo_sel_matriz_output:sel_output|and_gate_2_inputs:gate_1"
-  7. Port Connectivity Checks: "modulo_mux36_1:mux_20_rgb_out_at"
-  8. Port Connectivity Checks: "modulo_mux8_1:mux_19"
-  9. Port Connectivity Checks: "modulo_mux8_1:mux_18"
- 10. Port Connectivity Checks: "modulo_mux8_1:mux_17"
- 11. Port Connectivity Checks: "modulo_mux8_1:mux_16"
- 12. Port Connectivity Checks: "modulo_mux8_1:mux_15"
- 13. Port Connectivity Checks: "modulo_mux8_1:mux_14"
- 14. Port Connectivity Checks: "modulo_mux8_1:mux_13"
- 15. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35"
- 16. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34"
- 17. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33"
- 18. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32"
- 19. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31"
- 20. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30"
- 21. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29"
- 22. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28"
- 23. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27"
- 24. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26"
- 25. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25"
- 26. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24"
- 27. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23"
- 28. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22"
- 29. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21"
- 30. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20"
- 31. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19"
- 32. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18"
- 33. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17"
- 34. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16"
- 35. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15"
- 36. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14"
- 37. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13"
- 38. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12"
- 39. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11"
- 40. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10"
- 41. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9"
- 42. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8"
- 43. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7"
- 44. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6"
- 45. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5"
- 46. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4"
- 47. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3"
- 48. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2"
- 49. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1"
- 50. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1"
- 51. Port Connectivity Checks: "modulo_mux36_1:mux_12_rgb_out_po|and_gate_7_inputs:gate_37"
- 52. Port Connectivity Checks: "modulo_mux36_1:mux_12_rgb_out_po"
- 53. Port Connectivity Checks: "modulo_mux8_1:mux_11"
- 54. Port Connectivity Checks: "modulo_mux8_1:mux_10"
- 55. Port Connectivity Checks: "modulo_mux8_1:mux_9"
- 56. Port Connectivity Checks: "modulo_mux8_1:mux_8"
- 57. Port Connectivity Checks: "modulo_mux8_1:mux_7"
- 58. Port Connectivity Checks: "modulo_mux8_1:mux_6"
- 59. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
- 60. Port Connectivity Checks: "modulo_mux8_1:mux_5"
- 61. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35"
- 62. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34"
- 63. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33"
- 64. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32"
- 65. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31"
- 66. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30"
- 67. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29"
- 68. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28"
- 69. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27"
- 70. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26"
- 71. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25"
- 72. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24"
- 73. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23"
- 74. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22"
- 75. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21"
- 76. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20"
- 77. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19"
- 78. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18"
- 79. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17"
- 80. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16"
- 81. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15"
- 82. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14"
- 83. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13"
- 84. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12"
- 85. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11"
- 86. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10"
- 87. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9"
- 88. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8"
- 89. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7"
- 90. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6"
- 91. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5"
- 92. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4"
- 93. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3"
- 94. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2"
- 95. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1"
- 96. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1"
- 97. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
- 98. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
- 99. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
-100. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
-101. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
-102. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
-103. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
-104. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
-105. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
-106. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
-107. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
-108. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
-109. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
-110. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
-111. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
-112. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
-113. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
-114. Port Connectivity Checks: "and_gate_2_inputs:gate_5_col"
-115. Port Connectivity Checks: "and_gate_2_inputs:gate_4_col"
-116. Port Connectivity Checks: "and_gate_2_inputs:gate_3_col"
-117. Port Connectivity Checks: "and_gate_2_inputs:gate_2_col"
-118. Port Connectivity Checks: "and_gate_2_inputs:gate_1_col"
-119. Port Connectivity Checks: "modulo_demux1_8:demux_col"
-120. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
-121. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
-122. Port Connectivity Checks: "modulo_demux1_4:demux_button_confirmation"
-123. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
-124. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
-125. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
-126. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
-127. Port Connectivity Checks: "modulo_mux4_1:mux_4"
-128. Port Connectivity Checks: "modulo_mux4_1:mux_3"
-129. Port Connectivity Checks: "modulo_mux4_1:mux_2"
-130. Port Connectivity Checks: "modulo_mux4_1:mux_1"
-131. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
-132. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
-133. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
-134. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
-135. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
-136. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
-137. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
-138. Port Connectivity Checks: "modulo_deboucing:deboucing_1_hh2_2"
-139. Port Connectivity Checks: "modulo_deboucing:deboucing_1_hh2_1"
-140. Port Connectivity Checks: "modulo_deboucing:deboucing_1_confirmation|modulo_ff_d:ff_2"
-141. Port Connectivity Checks: "modulo_deboucing:deboucing_1_confirmation|modulo_ff_d:ff_1"
-142. Port Connectivity Checks: "modulo_deboucing:deboucing_1_confirmation"
-143. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
-144. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
-145. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
-146. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
-147. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
-148. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
-149. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
-150. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
-151. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
-152. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
-153. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
-154. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
-155. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
-156. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
-157. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
-158. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
-159. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
-160. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
-161. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
-162. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
-163. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
-164. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Port Connectivity Checks: "modulo_mux36_1:mux_20_rgb_out_at"
+ 12. Port Connectivity Checks: "modulo_mux8_1:mux_19"
+ 13. Port Connectivity Checks: "modulo_mux8_1:mux_18"
+ 14. Port Connectivity Checks: "modulo_mux8_1:mux_17"
+ 15. Port Connectivity Checks: "modulo_mux8_1:mux_16"
+ 16. Port Connectivity Checks: "modulo_mux8_1:mux_15"
+ 17. Port Connectivity Checks: "modulo_mux8_1:mux_14"
+ 18. Port Connectivity Checks: "modulo_mux8_1:mux_13"
+ 19. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35"
+ 20. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34"
+ 21. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33"
+ 22. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32"
+ 23. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31"
+ 24. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30"
+ 25. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29"
+ 26. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28"
+ 27. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27"
+ 28. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26"
+ 29. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25"
+ 30. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24"
+ 31. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23"
+ 32. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22"
+ 33. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21"
+ 34. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20"
+ 35. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19"
+ 36. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18"
+ 37. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17"
+ 38. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16"
+ 39. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15"
+ 40. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14"
+ 41. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13"
+ 42. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12"
+ 43. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11"
+ 44. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10"
+ 45. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9"
+ 46. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8"
+ 47. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7"
+ 48. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6"
+ 49. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5"
+ 50. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4"
+ 51. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3"
+ 52. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2"
+ 53. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1"
+ 54. Port Connectivity Checks: "modulo_matriz_reg_at:reg_matriz_at_1"
+ 55. Port Connectivity Checks: "modulo_mux36_1:mux_12_rgb_out_po"
+ 56. Port Connectivity Checks: "modulo_mux8_1:mux_11"
+ 57. Port Connectivity Checks: "modulo_mux8_1:mux_10"
+ 58. Port Connectivity Checks: "modulo_mux8_1:mux_9"
+ 59. Port Connectivity Checks: "modulo_mux8_1:mux_8"
+ 60. Port Connectivity Checks: "modulo_mux8_1:mux_7"
+ 61. Port Connectivity Checks: "modulo_mux8_1:mux_6"
+ 62. Port Connectivity Checks: "modulo_mux8_1:mux_5|or_gate_4_inputs:gate_11"
+ 63. Port Connectivity Checks: "modulo_mux8_1:mux_5"
+ 64. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35"
+ 65. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34"
+ 66. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33"
+ 67. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32"
+ 68. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31"
+ 69. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30"
+ 70. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29"
+ 71. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28"
+ 72. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27"
+ 73. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26"
+ 74. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25"
+ 75. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24"
+ 76. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23"
+ 77. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22"
+ 78. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21"
+ 79. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20"
+ 80. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19"
+ 81. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18"
+ 82. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17"
+ 83. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16"
+ 84. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15"
+ 85. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14"
+ 86. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13"
+ 87. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12"
+ 88. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11"
+ 89. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10"
+ 90. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9"
+ 91. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8"
+ 92. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7"
+ 93. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6"
+ 94. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5"
+ 95. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4"
+ 96. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3"
+ 97. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2"
+ 98. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1"
+ 99. Port Connectivity Checks: "modulo_matriz_reg_po:reg_matriz_po_1"
+100. Port Connectivity Checks: "modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_3"
+101. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_6"
+102. Port Connectivity Checks: "modulo_preset_linha_6:preset_6|and_gate_2_inputs:gate_4"
+103. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_5"
+104. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_4"
+105. Port Connectivity Checks: "modulo_preset_linha_5:preset_5|and_gate_2_inputs:gate_1"
+106. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_3"
+107. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_2"
+108. Port Connectivity Checks: "modulo_preset_linha_4:preset_4|and_gate_2_inputs:gate_1"
+109. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_2"
+110. Port Connectivity Checks: "modulo_preset_linha_3:preset_3|and_gate_2_inputs:gate_1"
+111. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_4"
+112. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_3"
+113. Port Connectivity Checks: "modulo_preset_linha_2:preset_2|and_gate_2_inputs:gate_1"
+114. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_5"
+115. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_2"
+116. Port Connectivity Checks: "modulo_preset_linha_1:preset_1|and_gate_2_inputs:gate_1"
+117. Port Connectivity Checks: "and_gate_2_inputs:gate_5_col"
+118. Port Connectivity Checks: "and_gate_2_inputs:gate_4_col"
+119. Port Connectivity Checks: "and_gate_2_inputs:gate_3_col"
+120. Port Connectivity Checks: "and_gate_2_inputs:gate_2_col"
+121. Port Connectivity Checks: "and_gate_2_inputs:gate_1_col"
+122. Port Connectivity Checks: "modulo_demux1_8:demux_col"
+123. Port Connectivity Checks: "and_gate_2_inputs:gate_2"
+124. Port Connectivity Checks: "modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1"
+125. Port Connectivity Checks: "modulo_demux1_4:demux_button_confirmation"
+126. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4"
+127. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1"
+128. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_2_inputs:gate_35"
+129. Port Connectivity Checks: "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8"
+130. Port Connectivity Checks: "modulo_mux4_1:mux_4"
+131. Port Connectivity Checks: "modulo_mux4_1:mux_3"
+132. Port Connectivity Checks: "modulo_mux4_1:mux_2"
+133. Port Connectivity Checks: "modulo_mux4_1:mux_1"
+134. Port Connectivity Checks: "modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1"
+135. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_4"
+136. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_3"
+137. Port Connectivity Checks: "modulo_coord_linha:mod_coord_linha_1|and_gate_2_inputs:gate_2"
+138. Port Connectivity Checks: "modulo_coord_coluna:mod_coord_col_1|and_gate_2_inputs:gate_4"
+139. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_8"
+140. Port Connectivity Checks: "modulo_status:mod_sta|and_gate_2_inputs:gate_1"
+141. Port Connectivity Checks: "modulo_deboucing:deboucing_1_hh2_2"
+142. Port Connectivity Checks: "modulo_deboucing:deboucing_1_hh2_1"
+143. Port Connectivity Checks: "modulo_deboucing:deboucing_1_confirmation|modulo_ff_d:ff_2"
+144. Port Connectivity Checks: "modulo_deboucing:deboucing_1_confirmation|modulo_ff_d:ff_1"
+145. Port Connectivity Checks: "modulo_deboucing:deboucing_1_confirmation"
+146. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_20"
+147. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_19"
+148. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_18"
+149. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_17"
+150. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_16"
+151. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_15"
+152. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_14"
+153. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_13"
+154. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_12"
+155. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_11"
+156. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_10"
+157. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_9"
+158. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_8"
+159. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_7"
+160. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_6"
+161. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_5"
+162. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_4"
+163. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_3"
+164. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_2"
+165. Port Connectivity Checks: "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1"
+166. Port Connectivity Checks: "modulo_divisor_frequencia:div_1"
+167. Analysis & Synthesis Messages
 
 
 
@@ -195,11 +198,15 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Oct 04 02:28:57 2023           ;
+; Analysis & Synthesis Status ; Successful - Wed Oct 04 16:44:53 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
 ; Family                      ; MAX II                                      ;
+; Total logic elements        ; 274                                         ;
+; Total pins                  ; 73                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
 
 
@@ -323,8 +330,6 @@ refer to the applicable agreement for further details.
 ; modulo_demux1_8.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8.v                     ;         ;
 ; modulo_deboucing.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_deboucing.v                    ;         ;
 ; modulo_rgb_sel_out.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v                  ;         ;
-; modulo_sel_matriz.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_matriz.v                   ;         ;
-; modulo_sel_matriz_output.v            ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_matriz_output.v            ;         ;
 ; modulo_demux1_36.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36.v                    ;         ;
 ; modulo_demux1_36_sel.v                ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36_sel.v                ;         ;
 ; modulo_negar_input_m_at.v             ; yes             ; User Verilog HDL File  ; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_negar_input_m_at.v             ;         ;
@@ -332,13 +337,316 @@ refer to the applicable agreement for further details.
 +---------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_sel_matriz_output:sel_output|and_gate_2_inputs:gate_1" ;
-+------+-------+----------+----------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                        ;
-+------+-------+----------+----------------------------------------------------------------+
-; A    ; Input ; Info     ; Stuck at VCC                                                   ;
-+------+-------+----------+----------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                   ;
++---------------------------------------------+-----------------------------------------------------------------+
+; Resource                                    ; Usage                                                           ;
++---------------------------------------------+-----------------------------------------------------------------+
+; Total logic elements                        ; 274                                                             ;
+;     -- Combinational with no register       ; 205                                                             ;
+;     -- Register only                        ; 50                                                              ;
+;     -- Combinational with a register        ; 19                                                              ;
+;                                             ;                                                                 ;
+; Logic element usage by number of LUT inputs ;                                                                 ;
+;     -- 4 input functions                    ; 162                                                             ;
+;     -- 3 input functions                    ; 30                                                              ;
+;     -- 2 input functions                    ; 18                                                              ;
+;     -- 1 input functions                    ; 12                                                              ;
+;     -- 0 input functions                    ; 2                                                               ;
+;                                             ;                                                                 ;
+; Logic elements by mode                      ;                                                                 ;
+;     -- normal mode                          ; 274                                                             ;
+;     -- arithmetic mode                      ; 0                                                               ;
+;     -- qfbk mode                            ; 0                                                               ;
+;     -- register cascade mode                ; 0                                                               ;
+;     -- synchronous clear/load mode          ; 2                                                               ;
+;     -- asynchronous clear/load mode         ; 0                                                               ;
+;                                             ;                                                                 ;
+; Total registers                             ; 69                                                              ;
+; I/O pins                                    ; 73                                                              ;
+; Maximum fan-out node                        ; modulo_demux1_36_sel:comb_44|or_gate_3_inputs:gate_60|WideOr0~3 ;
+; Maximum fan-out                             ; 44                                                              ;
+; Total fan-out                               ; 929                                                             ;
+; Average fan-out                             ; 2.68                                                            ;
++---------------------------------------------+-----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                         ;
++--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
+; Compilation Hierarchy Node                                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                   ; Entity Name                      ; Library Name ;
++--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
+; |pbl                                                         ; 274 (0)     ; 69           ; 0          ; 73   ; 0            ; 205 (0)      ; 50 (0)            ; 19 (0)           ; 0 (0)           ; 0 (0)      ; |pbl                                                                                  ; pbl                              ; work         ;
+;    |modulo_contador_sync_2_bits:count_2_bits_1|              ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1                                       ; modulo_contador_sync_2_bits      ; work         ;
+;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
+;       |modulo_ff_t:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
+;    |modulo_contador_sync_3_bits:count_3_bits_1|              ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1                                       ; modulo_contador_sync_3_bits      ; work         ;
+;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1                      ; modulo_ff_t                      ; work         ;
+;       |modulo_ff_t:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2                      ; modulo_ff_t                      ; work         ;
+;       |modulo_ff_t:ff_3|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3                      ; modulo_ff_t                      ; work         ;
+;    |modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1| ; 8 (0)       ; 0            ; 0          ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1                          ; modulo_decodificador_bcd_ex_7seg ; work         ;
+;       |or_gate_3_inputs:gate_4|                              ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_3_inputs:gate_4  ; or_gate_3_inputs                 ; work         ;
+;       |or_gate_4_inputs:gate_13|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_13 ; or_gate_4_inputs                 ; work         ;
+;       |or_gate_4_inputs:gate_24|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_24 ; or_gate_4_inputs                 ; work         ;
+;       |or_gate_4_inputs:gate_29|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_29 ; or_gate_4_inputs                 ; work         ;
+;       |or_gate_4_inputs:gate_34|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_34 ; or_gate_4_inputs                 ; work         ;
+;       |or_gate_4_inputs:gate_8|                              ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_4_inputs:gate_8  ; or_gate_4_inputs                 ; work         ;
+;       |or_gate_5_inputs:gate_19|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_5_inputs:gate_19 ; or_gate_5_inputs                 ; work         ;
+;    |modulo_demux1_36:comb_45|                                ; 42 (0)      ; 0            ; 0          ; 0    ; 0            ; 42 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45                                                         ; modulo_demux1_36                 ; work         ;
+;       |and_gate_7_inputs:gate_10|                            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_10                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_11|                            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_11                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_12|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_12                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_13|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_13                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_14|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_14                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_15|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_15                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_16|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_16                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_17|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_17                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_18|                            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_18                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_19|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_19                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_1|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_1                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_20|                            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_20                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_21|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_21                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_22|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_22                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_23|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_23                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_24|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_24                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_25|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_25                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_26|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_26                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_27|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_27                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_29|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_29                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_2|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_2                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_30|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_30                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_31|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_31                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_32|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_32                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_33|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_33                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_34|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_34                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_35|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_35                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_36|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_36                               ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_3|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_3                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_4                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_5|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_5                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_6|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_6                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_7|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_7                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_8|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_8                                ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_9|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36:comb_45|and_gate_7_inputs:gate_9                                ; and_gate_7_inputs                ; work         ;
+;    |modulo_demux1_36_sel:comb_44|                            ; 21 (0)      ; 0            ; 0          ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44                                                     ; modulo_demux1_36_sel             ; work         ;
+;       |and_gate_2_inputs:gate_41|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|and_gate_2_inputs:gate_41                           ; and_gate_2_inputs                ; work         ;
+;       |and_gate_2_inputs:gate_5|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|and_gate_2_inputs:gate_5                            ; and_gate_2_inputs                ; work         ;
+;       |and_gate_3_inputs:gate_43|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|and_gate_3_inputs:gate_43                           ; and_gate_3_inputs                ; work         ;
+;       |and_gate_4_inputs:gate_16|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|and_gate_4_inputs:gate_16                           ; and_gate_4_inputs                ; work         ;
+;       |or_gate_2_inputs:gate_53|                             ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|or_gate_2_inputs:gate_53                            ; or_gate_2_inputs                 ; work         ;
+;       |or_gate_2_inputs:gate_56|                             ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|or_gate_2_inputs:gate_56                            ; or_gate_2_inputs                 ; work         ;
+;       |or_gate_3_inputs:gate_60|                             ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|or_gate_3_inputs:gate_60                            ; or_gate_3_inputs                 ; work         ;
+;       |or_gate_3_inputs:gate_63|                             ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|or_gate_3_inputs:gate_63                            ; or_gate_3_inputs                 ; work         ;
+;       |or_gate_4_inputs:gate_50|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|or_gate_4_inputs:gate_50                            ; or_gate_4_inputs                 ; work         ;
+;       |or_gate_5_inputs:gate_64|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_36_sel:comb_44|or_gate_5_inputs:gate_64                            ; or_gate_5_inputs                 ; work         ;
+;    |modulo_demux1_4:demux_button_confirmation|               ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation                                        ; modulo_demux1_4                  ; work         ;
+;       |and_gate_3_inputs:gate_2|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_2               ; and_gate_3_inputs                ; work         ;
+;       |and_gate_3_inputs:gate_3|                             ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_demux1_4:demux_button_confirmation|and_gate_3_inputs:gate_3               ; and_gate_3_inputs                ; work         ;
+;    |modulo_divisor_frequencia:div_1|                         ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_divisor_frequencia:div_1                                                  ; modulo_divisor_frequencia        ; work         ;
+;       |modulo_ff_t:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1                                 ; modulo_ff_t                      ; work         ;
+;    |modulo_matriz_reg_at:reg_matriz_at_1|                    ; 35 (0)      ; 35           ; 0          ; 0    ; 0            ; 0 (0)        ; 35 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1                                             ; modulo_matriz_reg_at             ; work         ;
+;       |modulo_ff_d:ff_10|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_11|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_12|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_13|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_14|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_15|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_16|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_17|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_18|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_19|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_20|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_21|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_22|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_23|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_24|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_25|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_26|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_27|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_28|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_29|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_30|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_31|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_32|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_33|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_34|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_35|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_3|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_4|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_5|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_6|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_7|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_8|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_9|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9                            ; modulo_ff_d                      ; work         ;
+;    |modulo_matriz_reg_po:reg_matriz_po_1|                    ; 28 (0)      ; 28           ; 0          ; 0    ; 0            ; 0 (0)        ; 15 (0)            ; 13 (0)           ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1                                             ; modulo_matriz_reg_po             ; work         ;
+;       |modulo_ff_d:ff_10|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_11|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_12|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_13|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_14|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_15|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_17|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_19|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_1|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_20|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_22|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_23|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_24|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_25|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_26|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_28|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_2|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_30|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_31|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_32|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_33|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_34|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_35|                                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35                           ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_3|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_4|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_5|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_7|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7                            ; modulo_ff_d                      ; work         ;
+;       |modulo_ff_d:ff_9|                                     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9                            ; modulo_ff_d                      ; work         ;
+;    |modulo_mux2_1:mux_21|                                    ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux2_1:mux_21                                                             ; modulo_mux2_1                    ; work         ;
+;    |modulo_mux2_1:mux_22|                                    ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux2_1:mux_22                                                             ; modulo_mux2_1                    ; work         ;
+;    |modulo_mux2_1:mux_23|                                    ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux2_1:mux_23                                                             ; modulo_mux2_1                    ; work         ;
+;    |modulo_mux2_1:mux_24|                                    ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux2_1:mux_24                                                             ; modulo_mux2_1                    ; work         ;
+;    |modulo_mux2_1:mux_25|                                    ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux2_1:mux_25                                                             ; modulo_mux2_1                    ; work         ;
+;    |modulo_mux2_1:mux_26|                                    ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux2_1:mux_26                                                             ; modulo_mux2_1                    ; work         ;
+;    |modulo_mux2_1:mux_27|                                    ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux2_1:mux_27                                                             ; modulo_mux2_1                    ; work         ;
+;    |modulo_mux36_1:mux_12_rgb_out_po|                        ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux36_1:mux_12_rgb_out_po                                                 ; modulo_mux36_1                   ; work         ;
+;       |and_gate_7_inputs:gate_17|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux36_1:mux_12_rgb_out_po|and_gate_7_inputs:gate_17                       ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_29|                            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux36_1:mux_12_rgb_out_po|and_gate_7_inputs:gate_29                       ; and_gate_7_inputs                ; work         ;
+;       |and_gate_7_inputs:gate_9|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux36_1:mux_12_rgb_out_po|and_gate_7_inputs:gate_9                        ; and_gate_7_inputs                ; work         ;
+;    |modulo_mux36_1:mux_20_rgb_out_at|                        ; 31 (0)      ; 0            ; 0          ; 0    ; 0            ; 31 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux36_1:mux_20_rgb_out_at                                                 ; modulo_mux36_1                   ; work         ;
+;       |or_gate_2_inputs:gate_47|                             ; 31 (31)     ; 0            ; 0          ; 0    ; 0            ; 31 (31)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux36_1:mux_20_rgb_out_at|or_gate_2_inputs:gate_47                        ; or_gate_2_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_1|                                     ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1                                                              ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_1|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_2|                                     ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2                                                              ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_2|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_3|                                     ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_3                                                              ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_3|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux4_1:mux_4|                                     ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4                                                              ; modulo_mux4_1                    ; work         ;
+;       |or_gate_4_inputs:gate_5|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux4_1:mux_4|or_gate_4_inputs:gate_5                                      ; or_gate_4_inputs                 ; work         ;
+;    |modulo_mux8_1:mux_9|                                     ; 5 (0)       ; 0            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_9                                                              ; modulo_mux8_1                    ; work         ;
+;       |and_gate_4_inputs:gate_1|                             ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_mux8_1:mux_9|and_gate_4_inputs:gate_1                                     ; and_gate_4_inputs                ; work         ;
+;    |modulo_preset_linha_3:preset_3|                          ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_preset_linha_3:preset_3                                                   ; modulo_preset_linha_3            ; work         ;
+;       |or_gate_2_inputs:gate_4|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_preset_linha_3:preset_3|or_gate_2_inputs:gate_4                           ; or_gate_2_inputs                 ; work         ;
+;    |modulo_preset_linha_6:preset_6|                          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_preset_linha_6:preset_6                                                   ; modulo_preset_linha_6            ; work         ;
+;       |or_gate_2_inputs:gate_3|                              ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_preset_linha_6:preset_6|or_gate_2_inputs:gate_3                           ; or_gate_2_inputs                 ; work         ;
+;    |modulo_preset_linha_7:preset_7|                          ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_preset_linha_7:preset_7                                                   ; modulo_preset_linha_7            ; work         ;
+;       |and_gate_2_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_preset_linha_7:preset_7|and_gate_2_inputs:gate_1                          ; and_gate_2_inputs                ; work         ;
+;    |modulo_rgb_sel_out:rgb_input|                            ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_rgb_sel_out:rgb_input                                                     ; modulo_rgb_sel_out               ; work         ;
+;       |and_gate_4_inputs:gate_1|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_rgb_sel_out:rgb_input|and_gate_4_inputs:gate_1                            ; and_gate_4_inputs                ; work         ;
+;       |and_gate_4_inputs:gate_4|                             ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|modulo_rgb_sel_out:rgb_input|and_gate_4_inputs:gate_4                            ; and_gate_4_inputs                ; work         ;
+;    |or_gate_2_inputs:gate_20|                                ; 28 (28)     ; 0            ; 0          ; 0    ; 0            ; 28 (28)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl|or_gate_2_inputs:gate_20                                                         ; or_gate_2_inputs                 ; work         ;
++--------------------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                ;
++----------------------------------------------------------+----------------------------------------+
+; Register name                                            ; Reason for Removal                     ;
++----------------------------------------------------------+----------------------------------------+
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_29|q ; Stuck at VCC due to stuck port data_in ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_27|q ; Stuck at VCC due to stuck port data_in ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_21|q ; Stuck at VCC due to stuck port data_in ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_18|q ; Stuck at VCC due to stuck port data_in ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_16|q ; Stuck at VCC due to stuck port data_in ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_8|q  ; Stuck at VCC due to stuck port data_in ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_6|q  ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 7                    ;                                        ;
++----------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------+
+; Inverted Register Statistics                                       ;
++----------------------------------------------------------+---------+
+; Inverted Register                                        ; Fan out ;
++----------------------------------------------------------+---------+
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_35|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_34|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_34|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_31|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_33|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_28|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_23|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_17|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_13|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_7|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_10|q ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_10|q ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_5|q  ; 2       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; 3       ;
+; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_4|q  ; 3       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; 2       ;
+; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4|q  ; 2       ;
+; Total number of inverted registers = 63                  ;         ;
++----------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -350,88 +658,81 @@ refer to the applicable agreement for further details.
 +------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_19"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_19" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_18"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_18" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_17"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_17" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_16"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_16" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_15"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_15" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_14"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_14" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_13"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_13" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
 +------------------------------------------------------------------------------------+
@@ -758,16 +1059,6 @@ refer to the applicable agreement for further details.
 +------+-------+----------+----------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux36_1:mux_12_rgb_out_po|and_gate_7_inputs:gate_37"                                                                                                                        ;
-+-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; G     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; G[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "modulo_mux36_1:mux_12_rgb_out_po"                                                                                                            ;
 +------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -777,76 +1068,70 @@ refer to the applicable agreement for further details.
 +------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_11"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_11" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_10"                                                                                                                                                                ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_10" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_9"                                                                                                                                                                 ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_9"  ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_8"                                                                                                                                                                 ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_8"  ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_7"                                                                                                                                                                 ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_7"  ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_6"                                                                                                                                                                 ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_6"  ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -859,16 +1144,15 @@ refer to the applicable agreement for further details.
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "modulo_mux8_1:mux_5"                                                                                                                                                                 ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; F         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; G         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; H         ; Input ; Info     ; Explicitly unconnected                                                                                                                                                           ;
-; input_sel ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "modulo_mux8_1:mux_5"  ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; F    ; Input ; Info     ; Explicitly unconnected ;
+; G    ; Input ; Info     ; Explicitly unconnected ;
+; H    ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
 
 
 +------------------------------------------------------------------------------------+
@@ -1826,7 +2110,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Oct 04 02:28:46 2023
+    Info: Processing started: Wed Oct 04 16:44:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1945,31 +2229,32 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_divisor_freq
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_divisor_frequencia.v(84): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_divisor_frequencia.v
     Info (12023): Found entity 1: modulo_divisor_frequencia File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(70): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 70
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(71): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 71
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(72): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 72
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(73): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 73
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(80): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 80
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(81): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 81
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(82): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 82
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(88): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(89): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(90): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 90
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(96): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(95): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 95
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(101): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 101
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(102): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 102
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(103): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 103
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(105): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 105
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(106): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 106
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(107): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 107
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(108): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 108
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(109): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 109
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(110): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 110
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(111): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 111
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(127): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(148): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(128): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(144): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 144
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(149): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 149
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(167): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 167
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(168): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 168
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(169): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 169
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(170): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 170
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(171): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 171
+Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(172): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 172
 Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(173): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 173
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(174): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 174
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(175): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 175
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(176): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 176
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(177): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 177
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(178): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 178
-Warning (10275): Verilog HDL Module Instantiation warning at pbl.v(179): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 179
 Info (12021): Found 1 design units, including 1 entities, in source file pbl.v
     Info (12023): Found entity 1: pbl File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_ff_t.v
@@ -2076,10 +2361,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file modulo_
     Info (12023): Found entity 1: modulo_contador_sync_6_bits File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_contador_sync_6_bits.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_deboucing.v
     Info (12023): Found entity 1: modulo_deboucing File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_deboucing.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at modulo_rgb_sel_out.v(16): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 16
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_rgb_sel_out.v(18): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 18
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_rgb_sel_out.v(19): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 19
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_rgb_sel_out.v(20): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 20
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_rgb_sel_out.v(23): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_rgb_sel_out.v
     Info (12023): Found entity 1: modulo_rgb_sel_out File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 1
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(28): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 28
@@ -2184,12 +2467,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file modulo_
     Info (12023): Found entity 1: modulo_sel_1_8_demux File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sel_clock.v
     Info (12023): Found entity 1: sel_clock File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/sel_clock.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_matriz.v(10): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_matriz.v Line: 10
-Info (12021): Found 1 design units, including 1 entities, in source file modulo_sel_matriz.v
-    Info (12023): Found entity 1: modulo_sel_matriz File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_matriz.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_matriz_output.v(6): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_matriz_output.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file modulo_sel_matriz_output.v
-    Info (12023): Found entity 1: modulo_sel_matriz_output File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_matriz_output.v Line: 1
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_36.v(15): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36.v Line: 15
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_36.v(16): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36.v Line: 16
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_36.v(17): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36.v Line: 17
@@ -2338,129 +2615,67 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_mux36_1.v(65
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_mux36_1.v(67): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux36_1.v Line: 67
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_mux36_1.v
     Info (12023): Found entity 1: modulo_mux36_1 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux36_1.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at pbl.v(50): created implicit net for "button_confirmation_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
-Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(115): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 115
-Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(143): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 143
+Warning (10236): Verilog HDL Implicit Net warning at pbl.v(49): created implicit net for "button_confirmation_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 49
+Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(116): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 116
 Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(146): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 146
+Critical Warning (10846): Verilog HDL Instantiation warning at pbl.v(148): instance has no name File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
 Info (12127): Elaborating entity "pbl" for the top level hierarchy
-Info (12128): Elaborating entity "modulo_divisor_frequencia" for hierarchy "modulo_divisor_frequencia:div_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 42
+Info (12128): Elaborating entity "modulo_divisor_frequencia" for hierarchy "modulo_divisor_frequencia:div_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 41
 Info (12128): Elaborating entity "modulo_ff_t" for hierarchy "modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_divisor_frequencia.v Line: 8
-Info (12128): Elaborating entity "modulo_deboucing" for hierarchy "modulo_deboucing:deboucing_1_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 50
+Info (12128): Elaborating entity "modulo_deboucing" for hierarchy "modulo_deboucing:deboucing_1_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 49
 Info (12128): Elaborating entity "modulo_ff_d" for hierarchy "modulo_deboucing:deboucing_1_confirmation|modulo_ff_d:ff_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_deboucing.v Line: 7
 Info (12128): Elaborating entity "and_gate_2_inputs" for hierarchy "modulo_deboucing:deboucing_1_confirmation|and_gate_2_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_deboucing.v Line: 11
-Info (12128): Elaborating entity "modulo_status" for hierarchy "modulo_status:mod_sta" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 71
+Info (12128): Elaborating entity "modulo_status" for hierarchy "modulo_status:mod_sta" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 70
 Info (12128): Elaborating entity "or_gate_2_inputs" for hierarchy "modulo_status:mod_sta|or_gate_2_inputs:gate_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_status.v Line: 20
-Info (12128): Elaborating entity "modulo_coord_coluna" for hierarchy "modulo_coord_coluna:mod_coord_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 72
-Info (12128): Elaborating entity "modulo_coord_linha" for hierarchy "modulo_coord_linha:mod_coord_linha_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 73
+Info (12128): Elaborating entity "modulo_coord_coluna" for hierarchy "modulo_coord_coluna:mod_coord_col_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 71
+Info (12128): Elaborating entity "modulo_coord_linha" for hierarchy "modulo_coord_linha:mod_coord_linha_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 72
 Info (12128): Elaborating entity "and_gate_3_inputs" for hierarchy "modulo_coord_linha:mod_coord_linha_1|and_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_coord_linha.v Line: 13
-Info (12128): Elaborating entity "modulo_contador_sync_2_bits" for hierarchy "modulo_contador_sync_2_bits:count_2_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 81
-Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 82
-Info (12128): Elaborating entity "modulo_mux4_1" for hierarchy "modulo_mux4_1:mux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 84
+Info (12128): Elaborating entity "modulo_contador_sync_2_bits" for hierarchy "modulo_contador_sync_2_bits:count_2_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 80
+Info (12128): Elaborating entity "or_gate_3_inputs" for hierarchy "or_gate_3_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 81
+Info (12128): Elaborating entity "modulo_mux4_1" for hierarchy "modulo_mux4_1:mux_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 83
 Info (12128): Elaborating entity "or_gate_4_inputs" for hierarchy "modulo_mux4_1:mux_1|or_gate_4_inputs:gate_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux4_1.v Line: 18
-Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
+Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 88
 Info (12128): Elaborating entity "and_gate_4_inputs" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|and_gate_4_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_decodificador_bcd_ex_7seg.v Line: 15
 Info (12128): Elaborating entity "or_gate_5_inputs" for hierarchy "modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1|or_gate_5_inputs:gate_19" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_decodificador_bcd_ex_7seg.v Line: 44
-Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg_ac" for hierarchy "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 90
-Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_button_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 96
-Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 102
-Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 106
-Info (12128): Elaborating entity "modulo_demux1_36_sel" for hierarchy "modulo_demux1_36_sel:comb_43" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 115
-Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 119
-Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 120
-Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
-Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
-Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 123
-Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
-Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 125
-Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 127
-Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 129
-Info (12128): Elaborating entity "modulo_mux36_1" for hierarchy "modulo_mux36_1:mux_12_rgb_out_po" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 137
+Info (12128): Elaborating entity "modulo_decodificador_bcd_ex_7seg_ac" for hierarchy "modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 89
+Info (12128): Elaborating entity "modulo_demux1_4" for hierarchy "modulo_demux1_4:demux_button_confirmation" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 95
+Info (12128): Elaborating entity "modulo_contador_sync_3_bits" for hierarchy "modulo_contador_sync_3_bits:count_3_bits_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 101
+Info (12128): Elaborating entity "modulo_demux1_8" for hierarchy "modulo_demux1_8:demux_col" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 105
+Info (12128): Elaborating entity "modulo_demux1_36_sel" for hierarchy "modulo_demux1_36_sel:comb_44" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 116
+Info (12128): Elaborating entity "modulo_preset_linha_1" for hierarchy "modulo_preset_linha_1:preset_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 120
+Info (12128): Elaborating entity "modulo_preset_linha_2" for hierarchy "modulo_preset_linha_2:preset_2" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 121
+Info (12128): Elaborating entity "modulo_preset_linha_3" for hierarchy "modulo_preset_linha_3:preset_3" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 122
+Info (12128): Elaborating entity "modulo_preset_linha_4" for hierarchy "modulo_preset_linha_4:preset_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 123
+Info (12128): Elaborating entity "modulo_preset_linha_5" for hierarchy "modulo_preset_linha_5:preset_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 124
+Info (12128): Elaborating entity "modulo_preset_linha_6" for hierarchy "modulo_preset_linha_6:preset_6" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 125
+Info (12128): Elaborating entity "modulo_preset_linha_7" for hierarchy "modulo_preset_linha_7:preset_7" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 126
+Info (12128): Elaborating entity "modulo_matriz_reg_po" for hierarchy "modulo_matriz_reg_po:reg_matriz_po_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 128
+Info (12128): Elaborating entity "modulo_mux8_1" for hierarchy "modulo_mux8_1:mux_5" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 130
+Info (12128): Elaborating entity "modulo_mux36_1" for hierarchy "modulo_mux36_1:mux_12_rgb_out_po" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 138
 Info (12128): Elaborating entity "and_gate_7_inputs" for hierarchy "modulo_mux36_1:mux_12_rgb_out_po|and_gate_7_inputs:gate_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux36_1.v Line: 18
-Info (12128): Elaborating entity "modulo_demux1_36" for hierarchy "modulo_demux1_36:comb_44" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 143
-Info (12128): Elaborating entity "modulo_negar_input_m_at" for hierarchy "modulo_negar_input_m_at:comb_45" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 146
-Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
-Info (12128): Elaborating entity "modulo_rgb_sel_out" for hierarchy "modulo_rgb_sel_out:rgb_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 162
-Info (12128): Elaborating entity "and_gate_5_inputs" for hierarchy "modulo_rgb_sel_out:rgb_input|and_gate_5_inputs:gate_4" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 23
-Info (12128): Elaborating entity "modulo_sel_matriz" for hierarchy "modulo_sel_matriz:sel_mode_matriz_mod" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 164
-Info (12128): Elaborating entity "modulo_mux2_1" for hierarchy "modulo_mux2_1:mux_28" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 165
-Info (12128): Elaborating entity "modulo_sel_matriz_output" for hierarchy "modulo_sel_matriz_output:sel_output" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 171
-Warning (12020): Port "G" on the entity instantiation of "gate_37" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux36_1.v Line: 53
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "sel_matriz[3]" is missing source, defaulting to GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 17
-Error (12014): Net "rgb_po_out", which fans out to "modulo_rgb_sel_out:rgb_input|po", cannot be assigned more than one value File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 28
-    Error (12015): Net is fed by "modulo_mux36_1:mux_12_rgb_out_po|out" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux36_1.v Line: 5
-    Error (12015): Net is fed by "modulo_mux36_1:mux_20_rgb_out_at|out" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_mux36_1.v Line: 5
-Warning (12241): 22 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 497 warnings
-    Error: Peak virtual memory: 4686 megabytes
-    Error: Processing ended: Wed Oct 04 02:28:58 2023
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:24
+Info (12128): Elaborating entity "modulo_demux1_36" for hierarchy "modulo_demux1_36:comb_45" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 146
+Info (12128): Elaborating entity "modulo_negar_input_m_at" for hierarchy "modulo_negar_input_m_at:comb_46" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 148
+Info (12128): Elaborating entity "modulo_matriz_reg_at" for hierarchy "modulo_matriz_reg_at:reg_matriz_at_1" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 149
+Info (12128): Elaborating entity "modulo_rgb_sel_out" for hierarchy "modulo_rgb_sel_out:rgb_input" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 163
+Info (12128): Elaborating entity "modulo_mux2_1" for hierarchy "modulo_mux2_1:mux_21" File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 167
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer modulo_demux1_36_sel:comb_44|or_gate_3_inputs:gate_63|WideOr0~0 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 43
+    Warning (19017): Found clock multiplexer modulo_demux1_36_sel:comb_44|or_gate_3_inputs:gate_63|WideOr0~1 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 43
+    Warning (19017): Found clock multiplexer modulo_demux1_36_sel:comb_44|or_gate_3_inputs:gate_63|WideOr0~2 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 43
+    Warning (19017): Found clock multiplexer modulo_demux1_36_sel:comb_44|or_gate_3_inputs:gate_63|WideOr0~3 File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/module_gates.v Line: 43
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out_7seg[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 8
+    Warning (13410): Pin "out_7seg_ac[0]" is stuck at VCC File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+    Warning (13410): Pin "out_7seg_ac[3]" is stuck at GND File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/pbl.v Line: 9
+Info (21057): Implemented 347 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 61 output pins
+    Info (21061): Implemented 274 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 434 warnings
+    Info: Peak virtual memory: 4696 megabytes
+    Info: Processing ended: Wed Oct 04 16:44:53 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:24
 
 

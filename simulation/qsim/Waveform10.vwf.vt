@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/04/2023 01:45:09"
+// Generated on "10/04/2023 15:52:00"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          pbl
 // 
@@ -64,50 +64,56 @@ end
 // at_in[ 5 ]
 initial
 begin
-	at_in[5] = 1'b0;
+	at_in[5] = 1'bX;
+	at_in[5] = #10000 1'b0;
 end 
 // at_in[ 4 ]
 initial
 begin
-	at_in[4] = 1'b0;
+	at_in[4] = 1'bX;
+	at_in[4] = #10000 1'b0;
 end 
 // at_in[ 3 ]
 initial
 begin
-	at_in[3] = 1'b0;
+	at_in[3] = 1'bX;
+	at_in[3] = #10000 1'b0;
 end 
 // at_in[ 2 ]
 initial
 begin
-	at_in[2] = 1'b0;
+	at_in[2] = 1'bX;
+	at_in[2] = #10000 1'b0;
+	at_in[2] = #40000 1'b1;
 end 
 // at_in[ 1 ]
 initial
 begin
-	at_in[1] = 1'b0;
-	at_in[1] = #40000 1'b1;
-	at_in[1] = #30000 1'b0;
+	at_in[1] = 1'bX;
+	at_in[1] = #10000 1'b0;
+	at_in[1] = #20000 1'b1;
+	at_in[1] = #20000 1'b0;
+	at_in[1] = #20000 1'b1;
 end 
 // at_in[ 0 ]
 initial
 begin
-	at_in[0] = 1'b0;
-	at_in[0] = #20000 1'b1;
-	at_in[0] = #20000 1'b0;
-	at_in[0] = #20000 1'b1;
+	at_in[0] = 1'bX;
+	at_in[0] = #10000 1'b0;
+	at_in[0] = #10000 1'b1;
+	at_in[0] = #10000 1'b0;
+	at_in[0] = #10000 1'b1;
+	at_in[0] = #10000 1'b0;
+	at_in[0] = #10000 1'b1;
 	at_in[0] = #10000 1'b0;
 end 
 
 // clk
-initial
+always
 begin
 	clk = 1'b0;
-	clk = #10000 1'b1;
-	clk = #10000 1'b0;
-	clk = #10000 1'b1;
-	clk = #10000 1'b0;
-	clk = #10000 1'b1;
-	clk = #20000 1'b0;
+	clk = #2500 1'b1;
+	#2500;
 end 
 // hh1[ 1 ]
 initial
@@ -131,11 +137,11 @@ begin
 end 
 
 // button_confirmation
-initial
+always
 begin
-	button_confirmation = 1'b1;
-	button_confirmation = #10000 1'b0;
-	button_confirmation = #10000 1'b1;
+	button_confirmation = 1'b0;
+	button_confirmation = #5000 1'b1;
+	#5000;
 end 
 endmodule
 

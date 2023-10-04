@@ -50,7 +50,7 @@ module modulo_mux36_1(A,input_sel,out);
 	and_gate_7_inputs gate_34(.A(input_sel[5]),.B(Ninput_sel[4]),.C(Ninput_sel[3]),.D(Ninput_sel[2]),.E(Ninput_sel[1]),.F(Ninput_sel[0]),.G(A[3]),.S(wire_mux[3]),);
 	and_gate_7_inputs gate_35(.A(input_sel[5]),.B(Ninput_sel[4]),.C(Ninput_sel[3]),.D(Ninput_sel[2]),.E(Ninput_sel[1]),.F(input_sel[0]),.G(A[2]),.S(wire_mux[2]),);
 	and_gate_7_inputs gate_36(.A(input_sel[5]),.B(Ninput_sel[4]),.C(Ninput_sel[3]),.D(Ninput_sel[2]),.E(input_sel[1]),.F(Ninput_sel[0]),.G(A[1]),.S(wire_mux[1]),);
-	and_gate_7_inputs gate_37(.A(input_sel[5]),.B(input_sel[4]),.C(input_sel[3]),.D(input_sel[2]),.E(input_sel[1]),.F(input_sel[0]),.G(0),.S(wire_mux[0]),);
+	and_gate_7_inputs gate_37(.A(input_sel[5]),.B(input_sel[4]),.C(input_sel[3]),.D(input_sel[2]),.E(input_sel[1]),.F(input_sel[0]),.G(A[0]),.S(wire_mux[0]),);
 	
 	
 	or_gate_5_inputs gate_38(.A(wire_mux[35]),.B(wire_mux[34]),.C(wire_mux[33]),.D(wire_mux[32]),.E(wire_mux[31]),.S(wire_mux_or[6]),);

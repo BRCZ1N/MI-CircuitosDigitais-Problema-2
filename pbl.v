@@ -24,10 +24,9 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	wire [19:0] clk_div;
 	wire [7:0] m_col_wire;
 	wire [5:0] sel_dmx_mx_36;
-	wire MDL_andor_MDC;
-	wire rgb_po_out, rgb_at_out;
-	wire sel_mode_matriz;
-	wire sel_output_matriz;
+	wire MDL_andor_MDC, rgb_po_out, rgb_at_out, sel_output_matriz, Nrgb_po_out,at_confirm;
+	
+	not(Nrgb_po_out,rgb_po_out);
 		
 	not(Nstatus_wire[1],status_wire[1]);
 	not(Nstatus_wire[0],status_wire[0]);
@@ -112,6 +111,8 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	
 	// ===================================================================
 	
+	//Seleção de local de ataque feito por um seletor de demux - Concluido
+	
 	modulo_demux1_36_sel(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.out_sel(sel_dmx_mx_36));
 	
 	//Matriz de armazenamento de posicionamento - Concluido
@@ -126,57 +127,50 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	
 	modulo_matriz_reg_po reg_matriz_po_1(.m_in(m_po_in),.clk(sel_state[2]),.clr(1'b1),.m_out(m_po_out),);
 	
-	modulo_mux8_1 mux_5(.A(m_po_out[34]),.B(m_po_out[33]),.C(m_po_out[32]),.D(m_po_out[31]),.E(m_po_out[30]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_po_line[6]));
-	modulo_mux8_1 mux_6(.A(m_po_out[29]),.B(m_po_out[28]),.C(m_po_out[27]),.D(m_po_out[26]),.E(m_po_out[25]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_po_line[5]));
-	modulo_mux8_1 mux_7(.A(m_po_out[24]),.B(m_po_out[23]),.C(m_po_out[22]),.D(m_po_out[21]),.E(m_po_out[20]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_po_line[4]));
-	modulo_mux8_1 mux_8(.A(m_po_out[19]),.B(m_po_out[18]),.C(m_po_out[17]),.D(m_po_out[16]),.E(m_po_out[15]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_po_line[3]));
-	modulo_mux8_1 mux_9(.A(m_po_out[14]),.B(m_po_out[13]),.C(m_po_out[12]),.D(m_po_out[11]),.E(m_po_out[10]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_po_line[2]));
-	modulo_mux8_1 mux_10(.A(m_po_out[9]),.B(m_po_out[8]),.C(m_po_out[7]),.D(m_po_out[6]),.E(m_po_out[5]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_po_line[1]));
-	modulo_mux8_1 mux_11(.A(m_po_out[4]),.B(m_po_out[3]),.C(m_po_out[2]),.D(m_po_out[1]),.E(m_po_out[0]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_po_line[0]));
+	modulo_mux8_1 mux_5(.A(m_po_out[34]),.B(m_po_out[33]),.C(m_po_out[32]),.D(m_po_out[31]),.E(m_po_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[6]));
+	modulo_mux8_1 mux_6(.A(m_po_out[29]),.B(m_po_out[28]),.C(m_po_out[27]),.D(m_po_out[26]),.E(m_po_out[25]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[5]));
+	modulo_mux8_1 mux_7(.A(m_po_out[24]),.B(m_po_out[23]),.C(m_po_out[22]),.D(m_po_out[21]),.E(m_po_out[20]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[4]));
+	modulo_mux8_1 mux_8(.A(m_po_out[19]),.B(m_po_out[18]),.C(m_po_out[17]),.D(m_po_out[16]),.E(m_po_out[15]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[3]));
+	modulo_mux8_1 mux_9(.A(m_po_out[14]),.B(m_po_out[13]),.C(m_po_out[12]),.D(m_po_out[11]),.E(m_po_out[10]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[2]));
+	modulo_mux8_1 mux_10(.A(m_po_out[9]),.B(m_po_out[8]),.C(m_po_out[7]),.D(m_po_out[6]),.E(m_po_out[5]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[1]));
+	modulo_mux8_1 mux_11(.A(m_po_out[4]),.B(m_po_out[3]),.C(m_po_out[2]),.D(m_po_out[1]),.E(m_po_out[0]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[0]));
 	
 	modulo_mux36_1 mux_12_rgb_out_po(.A(m_po_out),.input_sel(sel_dmx_mx_36),.out(rgb_po_out));
 	
 	// ===================================================================
 	
-	//Matriz de armazenamento de Ataque - Incompleto 02/10/2023
+	//Matriz de armazenamento de Ataque - Concluido
 	
-	modulo_demux1_36(.A(sel_state[1]),.input_sel(sel_dmx_mx_36),.out(m_at_in_aux));
+	or_gate_2_inputs gate_20(.A(rgb_po_out),.B(sel_state[1]),.S(at_confirm),);
 	
-	
-	modulo_negar_input_m_at(.m_at(m_at_in_aux),.N_m_at(N_m_at_in));
+	modulo_demux1_36(.A(at_confirm),.input_sel(sel_dmx_mx_36),.out(m_at_in_aux));
 
+	modulo_negar_input_m_at(.m_at(m_at_in_aux),.N_m_at(N_m_at_in));
 	modulo_matriz_reg_at reg_matriz_at_1(.m_in(N_m_at_in),.clk(N_m_at_in),.clr(1'b1),.m_out(m_at_out),);
 	
-	modulo_mux8_1 mux_13(.A(m_at_out[34]),.B(m_at_out[33]),.C(m_at_out[32]),.D(m_at_out[31]),.E(m_at_out[30]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_at_line[6]));
-	modulo_mux8_1 mux_14(.A(m_at_out[29]),.B(m_at_out[28]),.C(m_at_out[27]),.D(m_at_out[26]),.E(m_at_out[25]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_at_line[5]));
-	modulo_mux8_1 mux_15(.A(m_at_out[24]),.B(m_at_out[23]),.C(m_at_out[22]),.D(m_at_out[21]),.E(m_at_out[20]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_at_line[4]));
-	modulo_mux8_1 mux_16(.A(m_at_out[19]),.B(m_at_out[18]),.C(m_at_out[17]),.D(m_at_out[16]),.E(m_at_out[15]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_at_line[3]));
-	modulo_mux8_1 mux_17(.A(m_at_out[14]),.B(m_at_out[13]),.C(m_at_out[12]),.D(m_at_out[11]),.E(m_at_out[10]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_at_line[2]));
-	modulo_mux8_1 mux_18(.A(m_at_out[9]),.B(m_at_out[8]),.C(m_at_out[7]),.D(m_at_out[6]),.E(m_at_out[5]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_at_line[1]));
-	modulo_mux8_1 mux_19(.A(m_at_out[4]),.B(m_at_out[3]),.C(m_at_out[2]),.D(m_at_out[1]),.E(m_at_out[0]),.F(),.G(),.H(),.input_sel(sel_matriz),.out(m_at_line[0]));
+	modulo_mux8_1 mux_13(.A(m_at_out[34]),.B(m_at_out[33]),.C(m_at_out[32]),.D(m_at_out[31]),.E(m_at_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[6]));
+	modulo_mux8_1 mux_14(.A(m_at_out[29]),.B(m_at_out[28]),.C(m_at_out[27]),.D(m_at_out[26]),.E(m_at_out[25]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[5]));
+	modulo_mux8_1 mux_15(.A(m_at_out[24]),.B(m_at_out[23]),.C(m_at_out[22]),.D(m_at_out[21]),.E(m_at_out[20]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[4]));
+	modulo_mux8_1 mux_16(.A(m_at_out[19]),.B(m_at_out[18]),.C(m_at_out[17]),.D(m_at_out[16]),.E(m_at_out[15]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[3]));
+	modulo_mux8_1 mux_17(.A(m_at_out[14]),.B(m_at_out[13]),.C(m_at_out[12]),.D(m_at_out[11]),.E(m_at_out[10]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[2]));
+	modulo_mux8_1 mux_18(.A(m_at_out[9]),.B(m_at_out[8]),.C(m_at_out[7]),.D(m_at_out[6]),.E(m_at_out[5]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[1]));
+	modulo_mux8_1 mux_19(.A(m_at_out[4]),.B(m_at_out[3]),.C(m_at_out[2]),.D(m_at_out[1]),.E(m_at_out[0]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[0]));
 	
-	modulo_mux36_1 mux_20_rgb_out_at(.A(m_at_out),.input_sel(sel_dmx_mx_36),.out(rgb_po_out));
+	modulo_mux36_1 mux_20_rgb_out_at(.A(m_at_out),.input_sel(sel_dmx_mx_36),.out(rgb_at_out));
 	
 	// ===================================================================
 	
-	modulo_rgb_sel_out rgb_input(.std(hh1),.bt(sel_state[1]),.po(rgb_po_out),.at(rgb_at_out),.out_rgb(rgb_output));
+	modulo_rgb_sel_out rgb_input(.std(hh1),.bt(sel_state[1]),.at(rgb_at_out),.out_rgb_r(rgb_output[1]),.out_rgb_g(rgb_output[0]));
 	
-	modulo_sel_matriz sel_mode_matriz_mod(.std(hh1),.out_sel(sel_mode_matriz));
-	modulo_mux2_1 mux_28(.A(count_3_bits_mux_matriz_leds_sel[2]),.B(sel_dmx_8_input_sel[2]),.SEL(sel_mode_matriz),.OUT(sel_matriz[2]));
-	modulo_mux2_1 mux_29(.A(count_3_bits_mux_matriz_leds_sel[1]),.B(sel_dmx_8_input_sel[1]),.SEL(sel_mode_matriz),.OUT(sel_matriz[1]));
-	modulo_mux2_1 mux_30(.A(count_3_bits_mux_matriz_leds_sel[0]),.B(sel_dmx_8_input_sel[0]),.SEL(sel_mode_matriz),.OUT(sel_matriz[0]));
+	//Multiplexadores da saídas da matriz finais
 	
-	//Multiplexadores da saídas da matriz finais;
-	
-	modulo_sel_matriz_output sel_output(.std(hh1),.sel_output_matriz(sel_output_matriz));
-	
-	modulo_mux2_1 mux_21(.A(m_po_line[6]),.B(m_at_line[6]),.SEL(sel_output_matriz),.OUT(m_line[6]),);
-	modulo_mux2_1 mux_22(.A(m_po_line[5]),.B(m_at_line[5]),.SEL(sel_output_matriz),.OUT(m_line[5]),);
-	modulo_mux2_1 mux_23(.A(m_po_line[4]),.B(m_at_line[4]),.SEL(sel_output_matriz),.OUT(m_line[4]),);
-	modulo_mux2_1 mux_24(.A(m_po_line[3]),.B(m_at_line[3]),.SEL(sel_output_matriz),.OUT(m_line[3]),);
-	modulo_mux2_1 mux_25(.A(m_po_line[2]),.B(m_at_line[2]),.SEL(sel_output_matriz),.OUT(m_line[2]),);
-	modulo_mux2_1 mux_26(.A(m_po_line[1]),.B(m_at_line[1]),.SEL(sel_output_matriz),.OUT(m_line[1]),);
-	modulo_mux2_1 mux_27(.A(m_po_line[0]),.B(m_at_line[0]),.SEL(sel_output_matriz),.OUT(m_line[0]),);
+	modulo_mux2_1 mux_21(.A(m_po_line[6]),.B(m_at_line[6]),.SEL(hh1[1]),.OUT(m_line[6]),);
+	modulo_mux2_1 mux_22(.A(m_po_line[5]),.B(m_at_line[5]),.SEL(hh1[1]),.OUT(m_line[5]),);
+	modulo_mux2_1 mux_23(.A(m_po_line[4]),.B(m_at_line[4]),.SEL(hh1[1]),.OUT(m_line[4]),);
+	modulo_mux2_1 mux_24(.A(m_po_line[3]),.B(m_at_line[3]),.SEL(hh1[1]),.OUT(m_line[3]),);
+	modulo_mux2_1 mux_25(.A(m_po_line[2]),.B(m_at_line[2]),.SEL(hh1[1]),.OUT(m_line[2]),);
+	modulo_mux2_1 mux_26(.A(m_po_line[1]),.B(m_at_line[1]),.SEL(hh1[1]),.OUT(m_line[1]),);
+	modulo_mux2_1 mux_27(.A(m_po_line[0]),.B(m_at_line[0]),.SEL(hh1[1]),.OUT(m_line[0]),);
 	
 	//=================================================================
 

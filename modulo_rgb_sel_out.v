@@ -1,26 +1,21 @@
-module modulo_rgb_sel_out(std,bt,po,at,out_rgb);
+module modulo_rgb_sel_out(std,bt,at,out_rgb_r,out_rgb_g);
 	
 	input [1:0] std;
 	input bt;
-	input po;
 	input at;
-	wire nbt,npo,nat;
-	wire [1:0] rgb_out_1,nstd;
-	output [1:0] out_rgb;
+	wire nbt,nat;
+	wire [1:0] nstd;
+	output out_rgb_r,out_rgb_g;
 	
 	not(nstd[1],std[1]);
 	not(nstd[0],std[0]);
 	not(nbt,bt);
 	not(nat,at);
-	not(npo,po);
 	
 	
-	and_gate_4_inputs gate_1(.A(std[1]),.B(nstd[0]),.C(nbt),.D(at),.S(rgb_out_1[1]),);
-	and_gate_4_inputs gate_2(.A(std[1]),.B(nstd[0]),.C(nbt),.D(po),.S(rgb_out_1[0]),);
-	or_gate_2_inputs gate_3(.A(rgb_out_1[1]),.B(rgb_out_1[0]),.S(out_rgb[1]),);
-	
-	
-	and_gate_5_inputs gate_4(.A(std[1]),.B(nstd[0]),.C(nbt),.D(npo),.E(nat),.S(out_rgb[0]),);
+	and_gate_4_inputs gate_1(.A(std[1]),.B(nstd[0]),.C(nbt),.D(at),.S(out_rgb_r),);
+		
+	and_gate_4_inputs gate_4(.A(std[1]),.B(nstd[0]),.C(nbt),.D(nat),.S(out_rgb_g),);
 
 
 
