@@ -4,6 +4,7 @@ module modulo_rgb_sel_out(std,bt,po,at,out_rgb);
 	input bt;
 	input po;
 	input at;
+	wire nbt,npo,nat;
 	wire [1:0] rgb_out_1,nstd;
 	output [1:0] out_rgb;
 	

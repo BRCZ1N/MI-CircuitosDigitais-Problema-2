@@ -5,6 +5,7 @@ module modulo_demux1_8_n_out(A,input_sel,Nout);
 	output [7:0] Nout;
 	wire [7:0] out;
 	wire [2:0] Ninput_sel;
+	wire NA;
 	
 	not(NA,A);
 	not(Ninput_sel[2],input_sel[2]);

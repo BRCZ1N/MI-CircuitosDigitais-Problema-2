@@ -18,28 +18,28 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/02/2023 20:44:06"
+// Generated on "10/03/2023 23:22:20"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_sel_1_8_demux
+// Verilog Test Bench (with test vectors) for design :                          modulo_demux1_36_sel
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_sel_1_8_demux_vlg_vec_tst();
+module modulo_demux1_36_sel_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg [2:0] mdc;
 reg [2:0] mdl;
 // wires                                               
-wire [2:0] dmx8_input;
+wire [5:0] out_sel;
 
 // assign statements (if any)                          
-modulo_sel_1_8_demux i1 (
+modulo_demux1_36_sel i1 (
 // port map - connection between master ports and signals/registers   
-	.dmx8_input(dmx8_input),
 	.mdc(mdc),
-	.mdl(mdl)
+	.mdl(mdl),
+	.out_sel(out_sel)
 );
 initial 
 begin 

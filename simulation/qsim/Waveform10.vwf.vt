@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/03/2023 10:24:11"
+// Generated on "10/04/2023 01:45:09"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          pbl
 // 
@@ -29,14 +29,15 @@
 module pbl_vlg_vec_tst();
 // constants                                           
 // general purpose registers
+reg [5:0] at_in;
 reg button_confirmation;
-reg button_count;
 reg clk;
 reg [1:0] hh1;
 reg [1:0] hh2;
 // wires                                               
 wire [4:0] m_col;
 wire [6:0] m_line;
+wire [34:0] out;
 wire [7:0] out_7seg;
 wire [3:0] out_7seg_ac;
 wire [1:0] rgb_output;
@@ -44,56 +45,74 @@ wire [1:0] rgb_output;
 // assign statements (if any)                          
 pbl i1 (
 // port map - connection between master ports and signals/registers   
+	.at_in(at_in),
 	.button_confirmation(button_confirmation),
-	.button_count(button_count),
 	.clk(clk),
 	.hh1(hh1),
 	.hh2(hh2),
 	.m_col(m_col),
 	.m_line(m_line),
+	.out(out),
 	.out_7seg(out_7seg),
 	.out_7seg_ac(out_7seg_ac),
 	.rgb_output(rgb_output)
 );
 initial 
 begin 
-#1000000 $finish;
+#80000 $finish;
 end 
-
-// button_confirmation
+// at_in[ 5 ]
 initial
 begin
-	button_confirmation = 1'b1;
-	# 10000;
-	repeat(49)
-	begin
-		button_confirmation = 1'b0;
-		button_confirmation = #10000 1'b1;
-		# 10000;
-	end
-	button_confirmation = 1'b0;
+	at_in[5] = 1'b0;
 end 
-
-// button_count
+// at_in[ 4 ]
 initial
 begin
-	button_count = 1'b0;
-	button_count = #40000 1'b1;
-	button_count = #10000 1'b0;
+	at_in[4] = 1'b0;
+end 
+// at_in[ 3 ]
+initial
+begin
+	at_in[3] = 1'b0;
+end 
+// at_in[ 2 ]
+initial
+begin
+	at_in[2] = 1'b0;
+end 
+// at_in[ 1 ]
+initial
+begin
+	at_in[1] = 1'b0;
+	at_in[1] = #40000 1'b1;
+	at_in[1] = #30000 1'b0;
+end 
+// at_in[ 0 ]
+initial
+begin
+	at_in[0] = 1'b0;
+	at_in[0] = #20000 1'b1;
+	at_in[0] = #20000 1'b0;
+	at_in[0] = #20000 1'b1;
+	at_in[0] = #10000 1'b0;
 end 
 
 // clk
-always
+initial
 begin
 	clk = 1'b0;
 	clk = #10000 1'b1;
-	#10000;
+	clk = #10000 1'b0;
+	clk = #10000 1'b1;
+	clk = #10000 1'b0;
+	clk = #10000 1'b1;
+	clk = #20000 1'b0;
 end 
 // hh1[ 1 ]
 initial
 begin
 	hh1[1] = 1'b1;
-	hh1[1] = #110000 1'b0;
 end 
 // hh1[ 0 ]
 initial
@@ -109,6 +128,14 @@ end
 initial
 begin
 	hh2[0] = 1'b0;
+end 
+
+// button_confirmation
+initial
+begin
+	button_confirmation = 1'b1;
+	button_confirmation = #10000 1'b0;
+	button_confirmation = #10000 1'b1;
 end 
 endmodule
 
