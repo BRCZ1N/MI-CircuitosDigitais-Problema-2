@@ -1,5 +1,5 @@
 Timing Analyzer report for MI-CircuitosDigitais-Problema-2
-Wed Oct 04 16:45:02 2023
+Wed Oct 04 17:22:41 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -104,9 +104,9 @@ refer to the applicable agreement for further details.
 +------------+-----------------+----------------------------------------------------+-------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                         ; Note                    ;
 +------------+-----------------+----------------------------------------------------+-------------------------+
-; 41.36 MHz  ; 34.33 MHz       ; at_in[0]                                           ; limit due to hold check ;
-; 103.1 MHz  ; 103.1 MHz       ; button_confirmation                                ;                         ;
-; 299.76 MHz ; 299.76 MHz      ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ;                         ;
+; 40.54 MHz  ; 33.77 MHz       ; at_in[0]                                           ; limit due to hold check ;
+; 91.41 MHz  ; 91.41 MHz       ; button_confirmation                                ;                         ;
+; 300.84 MHz ; 300.84 MHz      ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ;                         ;
 +------------+-----------------+----------------------------------------------------+-------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -116,10 +116,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------+---------+---------------+
 ; Clock                                              ; Slack   ; End Point TNS ;
 +----------------------------------------------------+---------+---------------+
-; at_in[0]                                           ; -12.500 ; -306.541      ;
-; button_confirmation                                ; -8.699  ; -241.320      ;
-; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; -2.336  ; -9.426        ;
-; clk                                                ; 2.046   ; 0.000         ;
+; at_in[0]                                           ; -12.940 ; -329.696      ;
+; button_confirmation                                ; -9.940  ; -276.841      ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; -2.324  ; -9.755        ;
+; clk                                                ; 1.925   ; 0.000         ;
 +----------------------------------------------------+---------+---------------+
 
 
@@ -128,10 +128,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------+---------+---------------+
 ; Clock                                              ; Slack   ; End Point TNS ;
 +----------------------------------------------------+---------+---------------+
-; at_in[0]                                           ; -14.564 ; -383.489      ;
-; button_confirmation                                ; -5.423  ; -98.400       ;
-; clk                                                ; -2.100  ; -2.100        ;
-; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.668   ; 0.000         ;
+; at_in[0]                                           ; -14.807 ; -401.622      ;
+; button_confirmation                                ; -4.618  ; -85.827       ;
+; clk                                                ; -1.979  ; -1.979        ;
+; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.660   ; 0.000         ;
 +----------------------------------------------------+---------+---------------+
 
 
@@ -152,7 +152,7 @@ No paths to report.
 +----------------------------------------------------+---------+---------------+
 ; Clock                                              ; Slack   ; End Point TNS ;
 +----------------------------------------------------+---------+---------------+
-; at_in[0]                                           ; -12.801 ; -2975.079     ;
+; at_in[0]                                           ; -13.033 ; -3111.565     ;
 ; button_confirmation                                ; -2.289  ; -2.289        ;
 ; clk                                                ; -2.289  ; -2.289        ;
 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.234   ; 0.000         ;
@@ -164,106 +164,106 @@ No paths to report.
 +---------+----------------------------------------------------------+----------------------------------------------------------+---------------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node                                                ; To Node                                                  ; Launch Clock        ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+----------------------------------------------------------+----------------------------------------------------------+---------------------+-------------+--------------+------------+------------+
-; -12.500 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 12.788     ;
-; -12.139 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 12.427     ;
-; -11.792 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 12.080     ;
-; -11.595 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.794      ; 13.056     ;
-; -11.588 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 7.538      ; 19.293     ;
-; -11.482 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 11.770     ;
-; -11.451 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 11.739     ;
-; -11.408 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 11.696     ;
-; -11.354 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.449      ; 13.470     ;
-; -11.339 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 11.627     ;
-; -11.335 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.470      ; 13.472     ;
-; -11.234 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.794      ; 12.695     ;
-; -11.180 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.279      ; 13.126     ;
-; -11.173 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.287      ; 13.127     ;
-; -11.145 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.044      ; 12.856     ;
-; -11.105 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.084      ; 12.856     ;
-; -11.105 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.066      ; 11.838     ;
-; -11.088 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; at_in[0]    ; 1.000        ; 7.538      ; 19.293     ;
-; -10.993 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.449      ; 13.109     ;
-; -10.974 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.470      ; 13.111     ;
-; -10.969 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.662      ; 12.298     ;
-; -10.887 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.794      ; 12.348     ;
-; -10.874 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 11.162     ;
-; -10.825 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 11.113     ;
-; -10.819 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.279      ; 12.765     ;
-; -10.812 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.287      ; 12.766     ;
-; -10.784 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.044      ; 12.495     ;
-; -10.779 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.051      ; 12.497     ;
-; -10.768 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.461      ; 12.896     ;
-; -10.749 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.386      ; 12.802     ;
-; -10.744 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.084      ; 12.495     ;
-; -10.744 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.066      ; 11.477     ;
-; -10.737 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.392      ; 12.796     ;
-; -10.713 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.113      ; 12.493     ;
-; -10.683 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 8.711      ; 19.561     ;
-; -10.671 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.959     ;
-; -10.646 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.449      ; 12.762     ;
-; -10.627 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.470      ; 12.764     ;
-; -10.613 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.023      ; 12.303     ;
-; -10.612 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.025      ; 12.304     ;
-; -10.608 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.662      ; 11.937     ;
-; -10.595 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.883     ;
-; -10.577 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.794      ; 12.038     ;
-; -10.565 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.611      ; 12.843     ;
-; -10.546 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.794      ; 12.007     ;
-; -10.503 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.794      ; 11.964     ;
-; -10.472 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.279      ; 12.418     ;
-; -10.465 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.287      ; 12.419     ;
-; -10.449 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_4|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.737     ;
-; -10.442 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 9.366      ; 19.975     ;
-; -10.437 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.044      ; 12.148     ;
-; -10.434 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.794      ; 11.895     ;
-; -10.424 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.031      ; 12.122     ;
-; -10.423 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 9.387      ; 19.977     ;
-; -10.418 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.051      ; 12.136     ;
-; -10.407 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.461      ; 12.535     ;
-; -10.403 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_11|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.691     ;
-; -10.398 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_32|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.686     ;
-; -10.397 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.084      ; 12.148     ;
-; -10.397 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.066      ; 11.130     ;
-; -10.388 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.386      ; 12.441     ;
-; -10.382 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.670     ;
-; -10.376 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.392      ; 12.435     ;
-; -10.352 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.113      ; 12.132     ;
-; -10.336 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.449      ; 12.452     ;
-; -10.331 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.459      ; 12.457     ;
-; -10.325 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.458      ; 12.450     ;
-; -10.325 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.613     ;
-; -10.317 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.470      ; 12.454     ;
-; -10.307 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_9|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.595     ;
-; -10.305 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.449      ; 12.421     ;
-; -10.286 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.470      ; 12.423     ;
-; -10.268 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 9.196      ; 19.631     ;
-; -10.262 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.449      ; 12.378     ;
-; -10.261 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; at_in[0]    ; 0.500        ; 9.204      ; 19.632     ;
-; -10.261 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.662      ; 11.590     ;
-; -10.252 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.023      ; 11.942     ;
-; -10.251 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.025      ; 11.943     ;
-; -10.243 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.470      ; 12.380     ;
-; -10.235 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_15|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.523     ;
-; -10.233 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 8.961      ; 19.361     ;
-; -10.204 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.611      ; 12.482     ;
-; -10.193 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 9.001      ; 19.361     ;
-; -10.193 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 7.983      ; 18.343     ;
-; -10.193 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.449      ; 12.309     ;
-; -10.183 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; at_in[0]    ; 1.000        ; 8.711      ; 19.561     ;
-; -10.174 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.470      ; 12.311     ;
-; -10.162 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.279      ; 12.108     ;
-; -10.155 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.287      ; 12.109     ;
-; -10.131 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.279      ; 12.077     ;
-; -10.127 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.044      ; 11.838     ;
-; -10.124 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.287      ; 12.078     ;
-; -10.105 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.822      ; 12.594     ;
-; -10.096 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_31|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.044      ; 11.807     ;
-; -10.088 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.279      ; 12.034     ;
-; -10.087 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.084      ; 11.838     ;
-; -10.087 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.066      ; 10.820     ;
-; -10.082 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.840      ; 12.589     ;
-; -10.081 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.287      ; 12.035     ;
-; -10.072 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_14|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.379     ; 10.360     ;
+; -12.940 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 13.349     ;
+; -12.772 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 13.181     ;
+; -12.572 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.981     ;
+; -12.527 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 12.789     ;
+; -12.448 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.857     ;
+; -12.439 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 13.124     ;
+; -12.367 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 13.958     ;
+; -12.359 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 12.621     ;
+; -12.271 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 12.956     ;
+; -12.261 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.670     ;
+; -12.199 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 13.790     ;
+; -12.159 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 12.421     ;
+; -12.144 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.562      ; 13.373     ;
+; -12.072 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.481     ;
+; -12.071 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 12.756     ;
+; -12.063 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.472     ;
+; -12.035 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 12.297     ;
+; -11.999 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 13.590     ;
+; -11.976 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.562      ; 13.205     ;
+; -11.947 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 12.632     ;
+; -11.918 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.569      ; 13.154     ;
+; -11.905 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.288      ; 12.860     ;
+; -11.904 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.285      ; 12.856     ;
+; -11.890 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.299     ;
+; -11.875 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 13.466     ;
+; -11.848 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 12.110     ;
+; -11.833 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 7.832      ; 19.832     ;
+; -11.802 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.303      ; 13.772     ;
+; -11.776 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.562      ; 13.005     ;
+; -11.772 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.181     ;
+; -11.770 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.231      ; 12.668     ;
+; -11.769 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.225      ; 12.661     ;
+; -11.763 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.988      ; 13.418     ;
+; -11.760 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 12.445     ;
+; -11.759 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.001      ; 13.427     ;
+; -11.750 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.569      ; 12.986     ;
+; -11.745 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.154     ;
+; -11.737 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.288      ; 12.692     ;
+; -11.736 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.285      ; 12.688     ;
+; -11.733 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 12.142     ;
+; -11.688 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 13.279     ;
+; -11.659 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 11.921     ;
+; -11.652 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.527      ; 12.846     ;
+; -11.652 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.562      ; 12.881     ;
+; -11.650 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 11.912     ;
+; -11.634 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.303      ; 13.604     ;
+; -11.602 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.231      ; 12.500     ;
+; -11.601 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.225      ; 12.493     ;
+; -11.595 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.988      ; 13.250     ;
+; -11.591 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.001      ; 13.259     ;
+; -11.590 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_1|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 11.999     ;
+; -11.571 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 12.256     ;
+; -11.562 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 12.247     ;
+; -11.550 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.569      ; 12.786     ;
+; -11.537 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.288      ; 12.492     ;
+; -11.536 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.285      ; 12.488     ;
+; -11.522 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.784      ; 13.973     ;
+; -11.518 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.786      ; 13.971     ;
+; -11.499 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 13.090     ;
+; -11.490 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 13.081     ;
+; -11.484 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.527      ; 12.678     ;
+; -11.477 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 11.739     ;
+; -11.465 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.562      ; 12.694     ;
+; -11.457 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 11.866     ;
+; -11.434 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.303      ; 13.404     ;
+; -11.426 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.569      ; 12.662     ;
+; -11.420 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 7.685      ; 19.272     ;
+; -11.413 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.288      ; 12.368     ;
+; -11.412 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.285      ; 12.364     ;
+; -11.402 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.231      ; 12.300     ;
+; -11.401 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.225      ; 12.293     ;
+; -11.399 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_22|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.258     ; 11.808     ;
+; -11.395 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.988      ; 13.050     ;
+; -11.391 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.001      ; 13.059     ;
+; -11.389 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 12.074     ;
+; -11.388 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.024      ; 13.079     ;
+; -11.379 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 1.028      ; 13.074     ;
+; -11.359 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 11.621     ;
+; -11.354 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.784      ; 13.805     ;
+; -11.350 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.786      ; 13.803     ;
+; -11.333 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; at_in[0]    ; 1.000        ; 7.832      ; 19.832     ;
+; -11.332 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 8.108      ; 19.607     ;
+; -11.332 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 11.594     ;
+; -11.320 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 1.000        ; -0.405     ; 11.582     ;
+; -11.317 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_23|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.924      ; 12.908     ;
+; -11.310 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.303      ; 13.280     ;
+; -11.284 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.527      ; 12.478     ;
+; -11.278 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.231      ; 12.176     ;
+; -11.277 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.225      ; 12.169     ;
+; -11.276 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_26|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.562      ; 12.505     ;
+; -11.271 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 11.956     ;
+; -11.271 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.988      ; 12.926     ;
+; -11.267 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 1.000        ; 1.001      ; 12.935     ;
+; -11.267 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_19|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.562      ; 12.496     ;
+; -11.262 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.824      ; 12.753     ;
+; -11.260 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; at_in[0]    ; 0.500        ; 9.014      ; 20.441     ;
+; -11.244 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_30|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 11.929     ;
+; -11.239 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.569      ; 12.475     ;
+; -11.238 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; at_in[0]    ; 1.000        ; 0.837      ; 12.742     ;
+; -11.232 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_7|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 1.000        ; 0.018      ; 11.917     ;
 +---------+----------------------------------------------------------+----------------------------------------------------------+---------------------+-------------+--------------+------------+------------+
 
 
@@ -272,106 +272,106 @@ No paths to report.
 +--------+----------------------------------------------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
 ; Slack  ; From Node                                                ; To Node                                                  ; Launch Clock        ; Latch Clock         ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------------------------------------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
-; -8.699 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.330      ; 11.696     ;
-; -8.695 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.534      ; 12.896     ;
-; -8.690 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.259      ; 9.616      ;
-; -8.690 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.941      ; 12.298     ;
-; -8.689 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.238      ; 12.594     ;
-; -8.686 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.769      ; 12.122     ;
-; -8.686 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.768      ; 12.121     ;
-; -8.679 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.456      ; 12.802     ;
-; -8.677 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.245      ; 12.589     ;
-; -8.675 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.454      ; 12.796     ;
-; -8.606 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.515      ; 12.788     ;
-; -8.601 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.229      ; 12.497     ;
-; -8.592 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.867      ; 13.126     ;
-; -8.589 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.587      ; 12.843     ;
-; -8.589 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.194      ; 12.450     ;
-; -8.588 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.801      ; 13.056     ;
-; -8.588 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.048      ; 12.303     ;
-; -8.587 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.602      ; 12.856     ;
-; -8.587 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.050      ; 12.304     ;
-; -8.582 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.535      ; 10.784     ;
-; -8.582 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.878      ; 13.127     ;
-; -8.582 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.589      ; 11.838     ;
-; -8.580 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.210      ; 12.457     ;
-; -8.580 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.609      ; 12.856     ;
-; -8.577 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 1.000        ; 4.226      ; 13.470     ;
-; -8.556 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 4.249      ; 13.472     ;
-; -8.545 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.893      ; 11.105     ;
-; -8.543 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_20|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.283      ; 12.493     ;
-; -8.338 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.330      ; 11.335     ;
-; -8.334 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.534      ; 12.535     ;
-; -8.329 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.259      ; 9.255      ;
-; -8.329 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.941      ; 11.937     ;
-; -8.328 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.238      ; 12.233     ;
-; -8.325 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.769      ; 11.761     ;
-; -8.325 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.768      ; 11.760     ;
-; -8.318 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.456      ; 12.441     ;
-; -8.316 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.245      ; 12.228     ;
-; -8.314 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.454      ; 12.435     ;
-; -8.245 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.515      ; 12.427     ;
-; -8.240 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.229      ; 12.136     ;
-; -8.231 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.867      ; 12.765     ;
-; -8.228 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.587      ; 12.482     ;
-; -8.228 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.194      ; 12.089     ;
-; -8.227 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.801      ; 12.695     ;
-; -8.227 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.048      ; 11.942     ;
-; -8.226 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.602      ; 12.495     ;
-; -8.226 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.050      ; 11.943     ;
-; -8.221 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.535      ; 10.423     ;
-; -8.221 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.878      ; 12.766     ;
-; -8.221 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.589      ; 11.477     ;
-; -8.219 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.210      ; 12.096     ;
-; -8.219 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.609      ; 12.495     ;
-; -8.216 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 1.000        ; 4.226      ; 13.109     ;
-; -8.195 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 4.249      ; 13.111     ;
-; -8.184 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.893      ; 10.744     ;
-; -8.182 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_12|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.283      ; 12.132     ;
-; -7.991 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.330      ; 10.988     ;
-; -7.987 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.534      ; 12.188     ;
-; -7.982 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.259      ; 8.908      ;
-; -7.982 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.941      ; 11.590     ;
-; -7.981 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.238      ; 11.886     ;
-; -7.978 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.769      ; 11.414     ;
-; -7.978 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.768      ; 11.413     ;
-; -7.971 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.456      ; 12.094     ;
-; -7.969 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.245      ; 11.881     ;
-; -7.967 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.454      ; 12.088     ;
-; -7.898 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.515      ; 12.080     ;
-; -7.893 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.229      ; 11.789     ;
-; -7.884 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.867      ; 12.418     ;
-; -7.881 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.587      ; 12.135     ;
-; -7.881 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.194      ; 11.742     ;
-; -7.880 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.801      ; 12.348     ;
-; -7.880 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.048      ; 11.595     ;
-; -7.879 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.602      ; 12.148     ;
-; -7.879 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.050      ; 11.596     ;
-; -7.874 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.535      ; 10.076     ;
-; -7.874 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.878      ; 12.419     ;
-; -7.874 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.589      ; 11.130     ;
-; -7.872 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 1.000        ; 3.210      ; 11.749     ;
-; -7.872 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.609      ; 12.148     ;
-; -7.869 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 1.000        ; 4.226      ; 12.762     ;
-; -7.848 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 4.249      ; 12.764     ;
-; -7.837 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.893      ; 10.397     ;
-; -7.835 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_3|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.283      ; 11.785     ;
-; -7.787 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; button_confirmation ; 0.500        ; 10.247     ; 18.201     ;
-; -7.783 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; button_confirmation ; 0.500        ; 11.451     ; 19.401     ;
-; -7.778 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; at_in[0]            ; button_confirmation ; 0.500        ; 8.176      ; 16.121     ;
-; -7.778 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; button_confirmation ; 0.500        ; 10.858     ; 18.803     ;
-; -7.777 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; button_confirmation ; 0.500        ; 11.155     ; 19.099     ;
-; -7.774 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; button_confirmation ; 0.500        ; 10.686     ; 18.627     ;
-; -7.774 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; button_confirmation ; 0.500        ; 10.685     ; 18.626     ;
-; -7.767 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; button_confirmation ; 0.500        ; 11.373     ; 19.307     ;
-; -7.765 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; button_confirmation ; 0.500        ; 11.162     ; 19.094     ;
-; -7.763 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; button_confirmation ; 0.500        ; 11.371     ; 19.301     ;
-; -7.694 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; button_confirmation ; 0.500        ; 11.432     ; 19.293     ;
-; -7.689 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; button_confirmation ; 0.500        ; 11.146     ; 19.002     ;
-; -7.681 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.330      ; 10.678     ;
-; -7.680 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; button_confirmation ; 0.500        ; 11.784     ; 19.631     ;
-; -7.677 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; button_confirmation ; 0.500        ; 11.504     ; 19.348     ;
-; -7.677 ; at_in[0]                                                 ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; button_confirmation ; 0.500        ; 11.111     ; 18.955     ;
+; -9.940 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.054      ; 12.661     ;
+; -9.933 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 1.000        ; -0.387     ; 10.213     ;
+; -9.933 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.189      ; 12.789     ;
+; -9.932 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.533      ; 11.132     ;
+; -9.930 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.071      ; 12.668     ;
+; -9.930 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.372      ; 11.969     ;
+; -9.930 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.724      ; 13.321     ;
+; -9.929 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.231      ; 12.827     ;
+; -9.929 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 1.000        ; 1.794      ; 12.390     ;
+; -9.923 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.536      ; 11.126     ;
+; -9.923 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.241      ; 12.831     ;
+; -9.920 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.831      ; 13.418     ;
+; -9.920 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.259      ; 12.846     ;
+; -9.920 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.166      ; 12.753     ;
+; -9.913 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.847      ; 13.427     ;
+; -9.913 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.162      ; 12.742     ;
+; -9.862 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.820      ; 13.349     ;
+; -9.852 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.854      ; 13.373     ;
+; -9.843 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.350      ; 12.860     ;
+; -9.843 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.346      ; 12.856     ;
+; -9.835 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.622      ; 13.124     ;
+; -9.835 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.270      ; 13.772     ;
+; -9.834 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.573      ; 13.074     ;
+; -9.830 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.582      ; 13.079     ;
+; -9.823 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.483      ; 13.973     ;
+; -9.822 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.665      ; 13.154     ;
+; -9.822 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.482      ; 13.971     ;
+; -9.822 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_25|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.469      ; 13.958     ;
+; -9.772 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.054      ; 12.493     ;
+; -9.765 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 1.000        ; -0.387     ; 10.045     ;
+; -9.765 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.189      ; 12.621     ;
+; -9.764 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.533      ; 10.964     ;
+; -9.762 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.071      ; 12.500     ;
+; -9.762 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.372      ; 11.801     ;
+; -9.762 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.724      ; 13.153     ;
+; -9.761 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.231      ; 12.659     ;
+; -9.761 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 1.000        ; 1.794      ; 12.222     ;
+; -9.755 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.536      ; 10.958     ;
+; -9.755 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.241      ; 12.663     ;
+; -9.752 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.831      ; 13.250     ;
+; -9.752 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.259      ; 12.678     ;
+; -9.752 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.166      ; 12.585     ;
+; -9.745 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.847      ; 13.259     ;
+; -9.745 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.162      ; 12.574     ;
+; -9.694 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.820      ; 13.181     ;
+; -9.684 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.854      ; 13.205     ;
+; -9.675 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.350      ; 12.692     ;
+; -9.675 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.346      ; 12.688     ;
+; -9.667 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.622      ; 12.956     ;
+; -9.667 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.270      ; 13.604     ;
+; -9.666 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.573      ; 12.906     ;
+; -9.662 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.582      ; 12.911     ;
+; -9.655 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.483      ; 13.805     ;
+; -9.654 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.665      ; 12.986     ;
+; -9.654 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.482      ; 13.803     ;
+; -9.654 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_24|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.469      ; 13.790     ;
+; -9.572 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.054      ; 12.293     ;
+; -9.565 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 1.000        ; -0.387     ; 9.845      ;
+; -9.565 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.189      ; 12.421     ;
+; -9.564 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.533      ; 10.764     ;
+; -9.562 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.071      ; 12.300     ;
+; -9.562 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.372      ; 11.601     ;
+; -9.562 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.724      ; 12.953     ;
+; -9.561 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.231      ; 12.459     ;
+; -9.561 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 1.000        ; 1.794      ; 12.022     ;
+; -9.555 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.536      ; 10.758     ;
+; -9.555 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.241      ; 12.463     ;
+; -9.552 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.831      ; 13.050     ;
+; -9.552 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.259      ; 12.478     ;
+; -9.552 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.166      ; 12.385     ;
+; -9.545 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.847      ; 13.059     ;
+; -9.545 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.162      ; 12.374     ;
+; -9.494 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.820      ; 12.981     ;
+; -9.484 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.854      ; 13.005     ;
+; -9.475 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.350      ; 12.492     ;
+; -9.475 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.346      ; 12.488     ;
+; -9.467 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.622      ; 12.756     ;
+; -9.467 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.270      ; 13.404     ;
+; -9.466 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.573      ; 12.706     ;
+; -9.462 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.582      ; 12.711     ;
+; -9.455 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.483      ; 13.605     ;
+; -9.454 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.665      ; 12.786     ;
+; -9.454 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.482      ; 13.603     ;
+; -9.454 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_13|q ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 1.000        ; 3.469      ; 13.590     ;
+; -9.448 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.054      ; 12.169     ;
+; -9.441 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 1.000        ; -0.387     ; 9.721      ;
+; -9.441 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.189      ; 12.297     ;
+; -9.440 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.533      ; 10.640     ;
+; -9.438 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.071      ; 12.176     ;
+; -9.438 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 1.000        ; 1.372      ; 11.477     ;
+; -9.438 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.724      ; 12.829     ;
+; -9.437 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.231      ; 12.335     ;
+; -9.437 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 1.000        ; 1.794      ; 11.898     ;
+; -9.431 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 1.000        ; 0.536      ; 10.634     ;
+; -9.431 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.241      ; 12.339     ;
+; -9.428 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.831      ; 12.926     ;
+; -9.428 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.259      ; 12.354     ;
+; -9.428 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.166      ; 12.261     ;
+; -9.421 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 1.000        ; 2.847      ; 12.935     ;
+; -9.421 ; modulo_matriz_reg_po:reg_matriz_po_1|modulo_ff_d:ff_2|q  ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 1.000        ; 2.162      ; 12.250     ;
 +--------+----------------------------------------------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
 
 
@@ -380,18 +380,18 @@ No paths to report.
 +--------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
 ; Slack  ; From Node                                                     ; To Node                                                       ; Launch Clock                                       ; Latch Clock                                        ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
-; -2.336 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 3.003      ;
-; -2.336 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 3.003      ;
-; -1.784 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.451      ;
-; -1.533 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.200      ;
-; -1.524 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.191      ;
-; -1.490 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.157      ;
-; -1.480 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.147      ;
-; -1.291 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.958      ;
-; -1.291 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.958      ;
-; -1.289 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.956      ;
-; -1.229 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.896      ;
-; -1.222 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.889      ;
+; -2.324 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.991      ;
+; -2.324 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.991      ;
+; -2.155 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.822      ;
+; -1.902 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.569      ;
+; -1.797 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.464      ;
+; -1.479 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.146      ;
+; -1.473 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.140      ;
+; -1.386 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.053      ;
+; -1.380 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.047      ;
+; -1.378 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 2.045      ;
+; -1.219 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.886      ;
+; -1.214 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 1.000        ; 0.000      ; 1.881      ;
 +--------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
 
 
@@ -400,8 +400,8 @@ No paths to report.
 +-------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                          ; To Node                                            ; Launch Clock                                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
-; 2.046 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 0.500        ; 3.382      ; 1.879      ;
-; 2.546 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 1.000        ; 3.382      ; 1.879      ;
+; 1.925 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 0.500        ; 3.242      ; 1.860      ;
+; 2.425 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 1.000        ; 3.242      ; 1.860      ;
 +-------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
 
 
@@ -410,106 +410,106 @@ No paths to report.
 +---------+---------------------+----------------------------------------------------------+---------------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node           ; To Node                                                  ; Launch Clock        ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+---------------------+----------------------------------------------------------+---------------------+-------------+--------------+------------+------------+
-; -14.564 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.573     ; 6.230      ;
-; -14.064 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.573     ; 6.230      ;
-; -13.569 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.859     ; 7.511      ;
-; -13.349 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.307     ; 8.179      ;
-; -13.326 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.284     ; 8.179      ;
-; -13.281 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.936     ; 7.876      ;
-; -13.268 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.925     ; 7.878      ;
-; -13.217 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.667     ; 7.671      ;
-; -13.121 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.660     ; 7.760      ;
-; -13.091 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 19.647     ; 6.777      ;
-; -13.069 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.859     ; 7.511      ;
-; -12.935 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 19.999     ; 7.285      ;
-; -12.849 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.307     ; 8.179      ;
-; -12.826 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.284     ; 8.179      ;
-; -12.781 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.936     ; 7.876      ;
-; -12.777 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.341     ; 7.785      ;
-; -12.768 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.925     ; 7.878      ;
-; -12.727 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.287     ; 7.781      ;
-; -12.724 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.592     ; 8.089      ;
-; -12.717 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.667     ; 7.671      ;
-; -12.709 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.514     ; 8.026      ;
-; -12.705 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.512     ; 8.028      ;
-; -12.621 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.660     ; 7.760      ;
-; -12.591 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 19.647     ; 6.777      ;
-; -12.588 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.108     ; 7.741      ;
-; -12.587 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.106     ; 7.740      ;
-; -12.556 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.645     ; 8.310      ;
-; -12.443 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.268     ; 8.046      ;
-; -12.435 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 19.999     ; 7.285      ;
-; -12.419 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.252     ; 8.054      ;
-; -12.398 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 19.827     ; 7.650      ;
-; -12.277 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.341     ; 7.785      ;
-; -12.227 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.287     ; 7.781      ;
-; -12.224 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.592     ; 8.089      ;
-; -12.209 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.514     ; 8.026      ;
-; -12.205 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.512     ; 8.028      ;
-; -12.126 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 18.951     ; 7.046      ;
-; -12.088 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.108     ; 7.741      ;
-; -12.087 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.106     ; 7.740      ;
-; -12.074 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.303     ; 8.450      ;
-; -12.073 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.296     ; 8.444      ;
-; -12.056 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.645     ; 8.310      ;
-; -12.017 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 19.826     ; 8.030      ;
-; -11.943 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.268     ; 8.046      ;
-; -11.919 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.252     ; 8.054      ;
-; -11.898 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 19.827     ; 7.650      ;
-; -11.626 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 18.951     ; 7.046      ;
-; -11.581 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 19.388     ; 8.028      ;
-; -11.574 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.303     ; 8.450      ;
-; -11.573 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.296     ; 8.444      ;
-; -11.565 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 18.593     ; 7.249      ;
-; -11.517 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 19.826     ; 8.030      ;
-; -11.081 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 19.388     ; 8.028      ;
-; -11.065 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 18.593     ; 7.249      ;
-; -10.705 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.341     ; 9.857      ;
-; -10.703 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; at_in[0]    ; 0.000        ; 18.951     ; 8.469      ;
-; -10.692 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.307     ; 10.836     ;
-; -10.671 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.284     ; 10.834     ;
-; -10.668 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.268     ; 9.821      ;
-; -10.668 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.667     ; 10.220     ;
-; -10.666 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; at_in[0]    ; 0.000        ; 18.593     ; 8.148      ;
-; -10.666 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.936     ; 10.491     ;
-; -10.666 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 0.000        ; 19.647     ; 9.202      ;
-; -10.661 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.660     ; 10.220     ;
-; -10.661 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.108     ; 9.668      ;
-; -10.660 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.859     ; 10.420     ;
-; -10.660 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.106     ; 9.667      ;
-; -10.659 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.645     ; 10.207     ;
-; -10.659 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.252     ; 9.814      ;
-; -10.656 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.925     ; 10.490     ;
-; -10.647 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.287     ; 9.861      ;
-; -10.642 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.573     ; 10.152     ;
-; -10.573 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.512     ; 10.160     ;
-; -10.571 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.303     ; 9.953      ;
-; -10.569 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.514     ; 10.166     ;
-; -10.562 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 0.000        ; 19.827     ; 9.486      ;
-; -10.562 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 19.826     ; 9.485      ;
-; -10.559 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.296     ; 9.958      ;
-; -10.558 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; at_in[0]    ; 0.000        ; 17.317     ; 6.980      ;
-; -10.558 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; at_in[0]    ; 0.000        ; 19.999     ; 9.662      ;
-; -10.553 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.592     ; 10.260     ;
-; -10.549 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; at_in[0]    ; 0.000        ; 19.388     ; 9.060      ;
-; -10.205 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.341     ; 9.857      ;
-; -10.203 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; at_in[0]    ; -0.500       ; 18.951     ; 8.469      ;
-; -10.192 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.307     ; 10.836     ;
-; -10.171 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.284     ; 10.834     ;
-; -10.168 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.268     ; 9.821      ;
-; -10.168 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.667     ; 10.220     ;
-; -10.166 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; at_in[0]    ; -0.500       ; 18.593     ; 8.148      ;
-; -10.166 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.936     ; 10.491     ;
-; -10.166 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; -0.500       ; 19.647     ; 9.202      ;
-; -10.161 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.660     ; 10.220     ;
-; -10.161 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.108     ; 9.668      ;
-; -10.160 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.859     ; 10.420     ;
-; -10.160 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.106     ; 9.667      ;
-; -10.159 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.645     ; 10.207     ;
-; -10.159 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.252     ; 9.814      ;
-; -10.156 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.925     ; 10.490     ;
-; -10.147 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.287     ; 9.861      ;
-; -10.142 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.573     ; 10.152     ;
+; -14.807 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.099     ; 6.513      ;
+; -14.332 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.901     ; 6.790      ;
+; -14.307 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.099     ; 6.513      ;
+; -14.270 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.468     ; 6.419      ;
+; -14.164 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.748     ; 7.805      ;
+; -14.031 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.133     ; 7.323      ;
+; -13.837 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.944     ; 7.328      ;
+; -13.832 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.901     ; 6.790      ;
+; -13.770 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.468     ; 6.419      ;
+; -13.695 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.549     ; 8.075      ;
+; -13.664 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.748     ; 7.805      ;
+; -13.660 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.629     ; 7.190      ;
+; -13.659 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.625     ; 7.187      ;
+; -13.594 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.126     ; 7.753      ;
+; -13.584 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.110     ; 7.747      ;
+; -13.547 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.350     ; 7.024      ;
+; -13.531 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.133     ; 7.323      ;
+; -13.526 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.333     ; 7.028      ;
+; -13.473 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.538     ; 7.286      ;
+; -13.387 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.762     ; 8.596      ;
+; -13.385 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.761     ; 8.597      ;
+; -13.337 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.944     ; 7.328      ;
+; -13.239 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.861     ; 7.843      ;
+; -13.222 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.852     ; 7.851      ;
+; -13.195 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.549     ; 8.075      ;
+; -13.160 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.629     ; 7.190      ;
+; -13.159 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.625     ; 7.187      ;
+; -13.094 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.126     ; 7.753      ;
+; -13.084 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.110     ; 7.747      ;
+; -13.047 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.350     ; 7.024      ;
+; -13.031 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.445     ; 7.635      ;
+; -13.026 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.333     ; 7.028      ;
+; -13.021 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.441     ; 7.641      ;
+; -12.973 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.538     ; 7.286      ;
+; -12.942 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 21.003     ; 8.282      ;
+; -12.887 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.762     ; 8.596      ;
+; -12.885 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.761     ; 8.597      ;
+; -12.833 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.520     ; 7.908      ;
+; -12.821 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.510     ; 7.910      ;
+; -12.739 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.861     ; 7.843      ;
+; -12.722 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.852     ; 7.851      ;
+; -12.531 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.445     ; 7.635      ;
+; -12.521 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.441     ; 7.641      ;
+; -12.442 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 21.003     ; 8.282      ;
+; -12.333 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.520     ; 7.908      ;
+; -12.321 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.510     ; 7.910      ;
+; -11.997 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; at_in[0]    ; 0.000        ; 20.073     ; 8.297      ;
+; -11.996 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 19.651     ; 7.876      ;
+; -11.731 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 18.812     ; 7.302      ;
+; -11.729 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; at_in[0]    ; 0.000        ; 18.815     ; 7.307      ;
+; -11.717 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.944     ; 9.448      ;
+; -11.717 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.761     ; 10.265     ;
+; -11.717 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.748     ; 10.252     ;
+; -11.716 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.762     ; 10.267     ;
+; -11.709 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.861     ; 9.373      ;
+; -11.705 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.852     ; 9.368      ;
+; -11.704 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.901     ; 9.418      ;
+; -11.704 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.549     ; 10.066     ;
+; -11.696 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.629     ; 9.154      ;
+; -11.696 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.625     ; 9.150      ;
+; -11.687 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.133     ; 9.667      ;
+; -11.677 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.099     ; 9.643      ;
+; -11.626 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.126     ; 9.721      ;
+; -11.626 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.441     ; 9.036      ;
+; -11.619 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.110     ; 9.712      ;
+; -11.619 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.538     ; 9.140      ;
+; -11.619 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.445     ; 9.047      ;
+; -11.616 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; at_in[0]    ; 0.000        ; 18.815     ; 7.420      ;
+; -11.616 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.520     ; 9.125      ;
+; -11.610 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.510     ; 9.121      ;
+; -11.610 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.073     ; 8.684      ;
+; -11.609 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; at_in[0]    ; 0.000        ; 20.350     ; 8.962      ;
+; -11.609 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; at_in[0]    ; 0.000        ; 19.651     ; 8.263      ;
+; -11.609 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; at_in[0]    ; 0.000        ; 21.003     ; 9.615      ;
+; -11.607 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; at_in[0]    ; 0.000        ; 18.812     ; 7.426      ;
+; -11.606 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; at_in[0]    ; 0.000        ; 17.892     ; 6.507      ;
+; -11.606 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.468     ; 9.083      ;
+; -11.599 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; at_in[0]    ; 0.000        ; 20.333     ; 8.955      ;
+; -11.497 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; at_in[0]    ; -0.500       ; 20.073     ; 8.297      ;
+; -11.496 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 19.651     ; 7.876      ;
+; -11.231 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 18.812     ; 7.302      ;
+; -11.229 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; at_in[0]    ; -0.500       ; 18.815     ; 7.307      ;
+; -11.217 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.944     ; 9.448      ;
+; -11.217 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.761     ; 10.265     ;
+; -11.217 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.748     ; 10.252     ;
+; -11.216 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.762     ; 10.267     ;
+; -11.209 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.861     ; 9.373      ;
+; -11.205 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.852     ; 9.368      ;
+; -11.204 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.901     ; 9.418      ;
+; -11.204 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.549     ; 10.066     ;
+; -11.196 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.629     ; 9.154      ;
+; -11.196 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.625     ; 9.150      ;
+; -11.187 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.133     ; 9.667      ;
+; -11.177 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.099     ; 9.643      ;
+; -11.126 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.126     ; 9.721      ;
+; -11.126 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.441     ; 9.036      ;
+; -11.119 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; at_in[0]    ; -0.500       ; 21.110     ; 9.712      ;
+; -11.119 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; at_in[0]    ; -0.500       ; 20.538     ; 9.140      ;
+; -11.119 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; at_in[0]    ; -0.500       ; 20.445     ; 9.047      ;
+; -11.116 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; at_in[0]    ; -0.500       ; 18.815     ; 7.420      ;
 +---------+---------------------+----------------------------------------------------------+---------------------+-------------+--------------+------------+------------+
 
 
@@ -518,106 +518,106 @@ No paths to report.
 +--------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
 ; Slack  ; From Node           ; To Node                                                  ; Launch Clock        ; Latch Clock         ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
-; -5.423 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.432     ; 6.230      ;
-; -4.923 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.432     ; 6.230      ;
-; -4.428 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.718     ; 7.511      ;
-; -4.208 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; button_confirmation ; 0.000        ; 12.166     ; 8.179      ;
-; -4.185 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; button_confirmation ; 0.000        ; 12.143     ; 8.179      ;
-; -4.140 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 11.795     ; 7.876      ;
-; -4.127 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.784     ; 7.878      ;
-; -4.076 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.526     ; 7.671      ;
-; -3.980 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.519     ; 7.760      ;
-; -3.950 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.506     ; 6.777      ;
-; -3.928 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.718     ; 7.511      ;
-; -3.794 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.858     ; 7.285      ;
-; -3.708 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; button_confirmation ; -0.500       ; 12.166     ; 8.179      ;
-; -3.685 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; button_confirmation ; -0.500       ; 12.143     ; 8.179      ;
-; -3.640 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 11.795     ; 7.876      ;
-; -3.636 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.200     ; 7.785      ;
-; -3.627 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.784     ; 7.878      ;
-; -3.586 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 11.146     ; 7.781      ;
-; -3.583 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.451     ; 8.089      ;
-; -3.576 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.526     ; 7.671      ;
-; -3.568 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.373     ; 8.026      ;
-; -3.564 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 11.371     ; 8.028      ;
-; -3.480 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.519     ; 7.760      ;
-; -3.450 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.506     ; 6.777      ;
-; -3.447 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.967     ; 7.741      ;
-; -3.446 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.965     ; 7.740      ;
-; -3.415 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.504     ; 8.310      ;
-; -3.302 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 11.127     ; 8.046      ;
-; -3.294 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.858     ; 7.285      ;
-; -3.278 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 11.111     ; 8.054      ;
-; -3.257 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.686     ; 7.650      ;
-; -3.136 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.200     ; 7.785      ;
-; -3.086 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 11.146     ; 7.781      ;
-; -3.083 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.451     ; 8.089      ;
-; -3.068 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.373     ; 8.026      ;
-; -3.064 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 11.371     ; 8.028      ;
-; -2.985 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; button_confirmation ; 0.000        ; 9.810      ; 7.046      ;
-; -2.947 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.967     ; 7.741      ;
-; -2.946 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.965     ; 7.740      ;
-; -2.933 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.162     ; 8.450      ;
-; -2.932 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.155     ; 8.444      ;
-; -2.915 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.504     ; 8.310      ;
-; -2.876 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.685     ; 8.030      ;
-; -2.802 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 11.127     ; 8.046      ;
-; -2.778 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 11.111     ; 8.054      ;
-; -2.757 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.686     ; 7.650      ;
-; -2.485 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; button_confirmation ; -0.500       ; 9.810      ; 7.046      ;
-; -2.440 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.247     ; 8.028      ;
-; -2.433 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.162     ; 8.450      ;
-; -2.432 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.155     ; 8.444      ;
-; -2.424 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; button_confirmation ; 0.000        ; 9.452      ; 7.249      ;
-; -2.376 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.685     ; 8.030      ;
-; -1.940 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.247     ; 8.028      ;
-; -1.924 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; button_confirmation ; -0.500       ; 9.452      ; 7.249      ;
-; -1.564 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.200     ; 9.857      ;
-; -1.562 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 0.000        ; 9.810      ; 8.469      ;
-; -1.551 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 0.000        ; 12.166     ; 10.836     ;
-; -1.530 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 0.000        ; 12.143     ; 10.834     ;
-; -1.527 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 0.000        ; 11.127     ; 9.821      ;
-; -1.527 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.526     ; 10.220     ;
-; -1.525 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 0.000        ; 9.452      ; 8.148      ;
-; -1.525 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 0.000        ; 11.795     ; 10.491     ;
-; -1.525 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.506     ; 9.202      ;
-; -1.520 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.519     ; 10.220     ;
-; -1.520 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.967     ; 9.668      ;
-; -1.519 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.718     ; 10.420     ;
-; -1.519 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.965     ; 9.667      ;
-; -1.518 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.504     ; 10.207     ;
-; -1.518 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 0.000        ; 11.111     ; 9.814      ;
-; -1.515 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.784     ; 10.490     ;
-; -1.506 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 0.000        ; 11.146     ; 9.861      ;
-; -1.501 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.432     ; 10.152     ;
-; -1.432 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 0.000        ; 11.371     ; 10.160     ;
-; -1.430 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.162     ; 9.953      ;
-; -1.428 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.373     ; 10.166     ;
-; -1.421 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.686     ; 9.486      ;
-; -1.421 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.685     ; 9.485      ;
-; -1.418 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.155     ; 9.958      ;
-; -1.417 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 0.000        ; 8.176      ; 6.980      ;
-; -1.417 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.858     ; 9.662      ;
-; -1.412 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.451     ; 10.260     ;
-; -1.408 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.247     ; 9.060      ;
-; -1.064 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.200     ; 9.857      ;
-; -1.062 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; -0.500       ; 9.810      ; 8.469      ;
-; -1.051 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; -0.500       ; 12.166     ; 10.836     ;
-; -1.030 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; -0.500       ; 12.143     ; 10.834     ;
-; -1.027 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; -0.500       ; 11.127     ; 9.821      ;
-; -1.027 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.526     ; 10.220     ;
-; -1.025 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; -0.500       ; 9.452      ; 8.148      ;
-; -1.025 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; -0.500       ; 11.795     ; 10.491     ;
-; -1.025 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.506     ; 9.202      ;
-; -1.020 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.519     ; 10.220     ;
-; -1.020 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; -0.500       ; 10.967     ; 9.668      ;
-; -1.019 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.718     ; 10.420     ;
-; -1.019 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.965     ; 9.667      ;
-; -1.018 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.504     ; 10.207     ;
-; -1.018 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; -0.500       ; 11.111     ; 9.814      ;
-; -1.015 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.784     ; 10.490     ;
-; -1.006 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; -0.500       ; 11.146     ; 9.861      ;
-; -1.001 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.432     ; 10.152     ;
+; -4.618 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.910     ; 6.513      ;
+; -4.143 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.712     ; 6.790      ;
+; -4.118 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.910     ; 6.513      ;
+; -4.081 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.279     ; 6.419      ;
+; -3.975 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.559     ; 7.805      ;
+; -3.842 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.944     ; 7.323      ;
+; -3.648 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.755     ; 7.328      ;
+; -3.643 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.712     ; 6.790      ;
+; -3.581 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.279     ; 6.419      ;
+; -3.506 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.360     ; 8.075      ;
+; -3.475 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.559     ; 7.805      ;
+; -3.471 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.440     ; 7.190      ;
+; -3.470 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.436     ; 7.187      ;
+; -3.405 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.937     ; 7.753      ;
+; -3.395 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.921     ; 7.747      ;
+; -3.358 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.161     ; 7.024      ;
+; -3.342 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.944     ; 7.323      ;
+; -3.337 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.144     ; 7.028      ;
+; -3.284 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.349     ; 7.286      ;
+; -3.198 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.573     ; 8.596      ;
+; -3.196 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; button_confirmation ; 0.000        ; 11.572     ; 8.597      ;
+; -3.148 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.755     ; 7.328      ;
+; -3.050 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.672     ; 7.843      ;
+; -3.033 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.663     ; 7.851      ;
+; -3.006 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.360     ; 8.075      ;
+; -2.971 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.440     ; 7.190      ;
+; -2.970 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.436     ; 7.187      ;
+; -2.905 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.937     ; 7.753      ;
+; -2.895 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.921     ; 7.747      ;
+; -2.858 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.161     ; 7.024      ;
+; -2.842 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.256     ; 7.635      ;
+; -2.837 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.144     ; 7.028      ;
+; -2.832 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 10.252     ; 7.641      ;
+; -2.784 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.349     ; 7.286      ;
+; -2.753 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.814     ; 8.282      ;
+; -2.698 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.573     ; 8.596      ;
+; -2.696 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; at_in[0]            ; button_confirmation ; -0.500       ; 11.572     ; 8.597      ;
+; -2.644 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.331     ; 7.908      ;
+; -2.632 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; button_confirmation ; 0.000        ; 10.321     ; 7.910      ;
+; -2.550 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.672     ; 7.843      ;
+; -2.533 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.663     ; 7.851      ;
+; -2.342 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.256     ; 7.635      ;
+; -2.332 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 10.252     ; 7.641      ;
+; -2.253 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.814     ; 8.282      ;
+; -2.144 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.331     ; 7.908      ;
+; -2.132 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; at_in[0]            ; button_confirmation ; -0.500       ; 10.321     ; 7.910      ;
+; -1.808 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; button_confirmation ; 0.000        ; 9.884      ; 8.297      ;
+; -1.807 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; button_confirmation ; 0.000        ; 9.462      ; 7.876      ;
+; -1.542 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; button_confirmation ; 0.000        ; 8.623      ; 7.302      ;
+; -1.540 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; button_confirmation ; 0.000        ; 8.626      ; 7.307      ;
+; -1.528 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.755     ; 9.448      ;
+; -1.528 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.572     ; 10.265     ;
+; -1.528 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.559     ; 10.252     ;
+; -1.527 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.573     ; 10.267     ;
+; -1.520 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.672     ; 9.373      ;
+; -1.516 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.663     ; 9.368      ;
+; -1.515 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.712     ; 9.418      ;
+; -1.515 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; 0.000        ; 11.360     ; 10.066     ;
+; -1.507 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.440     ; 9.154      ;
+; -1.507 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.436     ; 9.150      ;
+; -1.498 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.944     ; 9.667      ;
+; -1.488 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.910     ; 9.643      ;
+; -1.437 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.937     ; 9.721      ;
+; -1.437 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.252     ; 9.036      ;
+; -1.430 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.921     ; 9.712      ;
+; -1.430 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.349     ; 9.140      ;
+; -1.430 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.256     ; 9.047      ;
+; -1.427 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; 0.000        ; 8.626      ; 7.420      ;
+; -1.427 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_27|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.331     ; 9.125      ;
+; -1.421 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_17|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.321     ; 9.121      ;
+; -1.421 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; button_confirmation ; button_confirmation ; 0.000        ; 9.884      ; 8.684      ;
+; -1.420 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_8|q  ; button_confirmation ; button_confirmation ; 0.000        ; 10.161     ; 8.962      ;
+; -1.420 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; button_confirmation ; button_confirmation ; 0.000        ; 9.462      ; 8.263      ;
+; -1.420 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_24|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.814     ; 9.615      ;
+; -1.418 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; button_confirmation ; button_confirmation ; 0.000        ; 8.623      ; 7.426      ;
+; -1.417 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_35|q ; button_confirmation ; button_confirmation ; 0.000        ; 7.703      ; 6.507      ;
+; -1.417 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_33|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.279     ; 9.083      ;
+; -1.410 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_22|q ; button_confirmation ; button_confirmation ; 0.000        ; 10.144     ; 8.955      ;
+; -1.308 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_9|q  ; at_in[0]            ; button_confirmation ; -0.500       ; 9.884      ; 8.297      ;
+; -1.307 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_15|q ; at_in[0]            ; button_confirmation ; -0.500       ; 9.462      ; 7.876      ;
+; -1.042 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_25|q ; at_in[0]            ; button_confirmation ; -0.500       ; 8.623      ; 7.302      ;
+; -1.040 ; at_in[0]            ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; at_in[0]            ; button_confirmation ; -0.500       ; 8.626      ; 7.307      ;
+; -1.028 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_1|q  ; button_confirmation ; button_confirmation ; -0.500       ; 10.755     ; 9.448      ;
+; -1.028 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_28|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.572     ; 10.265     ;
+; -1.028 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_20|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.559     ; 10.252     ;
+; -1.027 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_14|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.573     ; 10.267     ;
+; -1.020 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_11|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.672     ; 9.373      ;
+; -1.016 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_3|q  ; button_confirmation ; button_confirmation ; -0.500       ; 10.663     ; 9.368      ;
+; -1.015 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_12|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.712     ; 9.418      ;
+; -1.015 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_29|q ; button_confirmation ; button_confirmation ; -0.500       ; 11.360     ; 10.066     ;
+; -1.007 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_18|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.440     ; 9.154      ;
+; -1.007 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_5|q  ; button_confirmation ; button_confirmation ; -0.500       ; 10.436     ; 9.150      ;
+; -0.998 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_32|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.944     ; 9.667      ;
+; -0.988 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_19|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.910     ; 9.643      ;
+; -0.937 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_16|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.937     ; 9.721      ;
+; -0.937 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_6|q  ; button_confirmation ; button_confirmation ; -0.500       ; 10.252     ; 9.036      ;
+; -0.930 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_26|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.921     ; 9.712      ;
+; -0.930 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_21|q ; button_confirmation ; button_confirmation ; -0.500       ; 10.349     ; 9.140      ;
+; -0.930 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_2|q  ; button_confirmation ; button_confirmation ; -0.500       ; 10.256     ; 9.047      ;
+; -0.927 ; button_confirmation ; modulo_matriz_reg_at:reg_matriz_at_1|modulo_ff_d:ff_30|q ; button_confirmation ; button_confirmation ; -0.500       ; 8.626      ; 7.420      ;
 +--------+---------------------+----------------------------------------------------------+---------------------+---------------------+--------------+------------+------------+
 
 
@@ -626,8 +626,8 @@ No paths to report.
 +--------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                          ; To Node                                            ; Launch Clock                                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
-; -2.100 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 0.000        ; 3.382      ; 1.879      ;
-; -1.600 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; -0.500       ; 3.382      ; 1.879      ;
+; -1.979 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; 0.000        ; 3.242      ; 1.860      ;
+; -1.479 ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; clk         ; -0.500       ; 3.242      ; 1.860      ;
 +--------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+-------------+--------------+------------+------------+
 
 
@@ -636,18 +636,18 @@ No paths to report.
 +-------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
 ; Slack ; From Node                                                     ; To Node                                                       ; Launch Clock                                       ; Latch Clock                                        ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
-; 1.668 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.889      ;
-; 1.675 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.896      ;
-; 1.735 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.956      ;
-; 1.737 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.958      ;
-; 1.737 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.958      ;
-; 1.926 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.147      ;
-; 1.936 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.157      ;
-; 1.970 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.191      ;
-; 1.979 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.200      ;
-; 2.230 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.451      ;
-; 2.669 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.890      ;
-; 2.782 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 3.003      ;
+; 1.660 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.881      ;
+; 1.665 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 1.886      ;
+; 1.824 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.045      ;
+; 1.826 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.047      ;
+; 1.832 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.053      ;
+; 1.919 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.140      ;
+; 1.925 ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_1|q ; modulo_contador_sync_2_bits:count_2_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.146      ;
+; 2.243 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.464      ;
+; 2.348 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.569      ;
+; 2.599 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.820      ;
+; 2.601 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.822      ;
+; 2.770 ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_3|q ; modulo_contador_sync_3_bits:count_3_bits_1|modulo_ff_t:ff_2|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q ; 0.000        ; 0.000      ; 2.991      ;
 +-------+---------------------------------------------------------------+---------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------+--------------+------------+------------+
 
 
@@ -895,7 +895,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Oct 04 16:45:00 2023
+    Info: Processing started: Wed Oct 04 17:22:39 2023
 Info: Command: quartus_sta MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -914,26 +914,26 @@ Info (332105): Deriving Clocks
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -12.500
+Info (332146): Worst-case setup slack is -12.940
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.500            -306.541 at_in[0] 
-    Info (332119):    -8.699            -241.320 button_confirmation 
-    Info (332119):    -2.336              -9.426 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
-    Info (332119):     2.046               0.000 clk 
-Info (332146): Worst-case hold slack is -14.564
+    Info (332119):   -12.940            -329.696 at_in[0] 
+    Info (332119):    -9.940            -276.841 button_confirmation 
+    Info (332119):    -2.324              -9.755 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
+    Info (332119):     1.925               0.000 clk 
+Info (332146): Worst-case hold slack is -14.807
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -14.564            -383.489 at_in[0] 
-    Info (332119):    -5.423             -98.400 button_confirmation 
-    Info (332119):    -2.100              -2.100 clk 
-    Info (332119):     1.668               0.000 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
+    Info (332119):   -14.807            -401.622 at_in[0] 
+    Info (332119):    -4.618             -85.827 button_confirmation 
+    Info (332119):    -1.979              -1.979 clk 
+    Info (332119):     1.660               0.000 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -12.801
+Info (332146): Worst-case minimum pulse width slack is -13.033
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.801           -2975.079 at_in[0] 
+    Info (332119):   -13.033           -3111.565 at_in[0] 
     Info (332119):    -2.289              -2.289 button_confirmation 
     Info (332119):    -2.289              -2.289 clk 
     Info (332119):     0.234               0.000 modulo_divisor_frequencia:div_1|modulo_ff_t:ff_1|q 
@@ -942,8 +942,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4649 megabytes
-    Info: Processing ended: Wed Oct 04 16:45:02 2023
+    Info: Processing ended: Wed Oct 04 17:22:41 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

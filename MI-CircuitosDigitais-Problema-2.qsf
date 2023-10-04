@@ -77,7 +77,6 @@ set_global_assignment -name VERILOG_FILE modulo_demux1_8.v
 set_global_assignment -name VERILOG_FILE modulo_contador_sync_6_bits.v
 set_global_assignment -name VERILOG_FILE modulo_deboucing.v
 set_global_assignment -name VERILOG_FILE modulo_rgb_sel_out.v
-set_global_assignment -name VERILOG_FILE modulo_demux1_8_n_out.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
 set_location_assignment PIN_35 -to hh1[1]
 set_location_assignment PIN_33 -to hh1[0]
@@ -118,8 +117,6 @@ set_location_assignment PIN_86 -to rgb_output[1]
 set_location_assignment PIN_72 -to rgb_output[0]
 set_global_assignment -name VERILOG_FILE modulo_demux1_36.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_36_sel.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
 set_global_assignment -name VERILOG_FILE modulo_negar_input_m_at.v
 set_global_assignment -name VERILOG_FILE modulo_mux36_1.v
 set_location_assignment PIN_50 -to button_confirmation

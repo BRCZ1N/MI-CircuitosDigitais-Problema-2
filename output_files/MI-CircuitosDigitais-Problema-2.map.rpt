@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MI-CircuitosDigitais-Problema-2
-Wed Oct 04 16:44:53 2023
+Wed Oct 04 17:22:32 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -198,7 +198,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Oct 04 16:44:53 2023       ;
+; Analysis & Synthesis Status ; Successful - Wed Oct 04 17:22:32 2023       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name       ; pbl                                         ;
@@ -2110,7 +2110,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Oct 04 16:44:41 2023
+    Info: Processing started: Wed Oct 04 17:22:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -2365,108 +2365,6 @@ Warning (10275): Verilog HDL Module Instantiation warning at modulo_rgb_sel_out.
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_rgb_sel_out.v(18): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file modulo_rgb_sel_out.v
     Info (12023): Found entity 1: modulo_rgb_sel_out File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_rgb_sel_out.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(28): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 28
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(29): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 29
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(31): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 31
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(35): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 35
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(36): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 36
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(37): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 37
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(38): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 38
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(40): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 40
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(41): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 41
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(43): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 43
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(47): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 47
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(48): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 48
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(49): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 49
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(50): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 50
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(51): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 51
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(52): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 52
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(54): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 54
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(55): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 55
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(57): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 57
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(61): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 61
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(62): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 62
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(64): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 64
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(68): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 68
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(69): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 69
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(70): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 70
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(71): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 71
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(73): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 73
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(74): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 74
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(76): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 76
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(80): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 80
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(81): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 81
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(82): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 82
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(83): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 83
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(84): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 84
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(85): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 85
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(87): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 87
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(88): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 88
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(90): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 90
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(94): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 94
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(95): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 95
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_seletor_1_8_at.v(97): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 97
-Info (12021): Found 1 design units, including 1 entities, in source file modulo_seletor_1_8_at.v
-    Info (12023): Found entity 1: modulo_seletor_1_8_at File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_seletor_1_8_at.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(24): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 24
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(25): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 25
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(26): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 26
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(27): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 27
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(28): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 28
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(29): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 29
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(30): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 30
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_8_n_out.v(31): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 31
-Info (12021): Found 1 design units, including 1 entities, in source file modulo_demux1_8_n_out.v
-    Info (12023): Found entity 1: modulo_demux1_8_n_out File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_8_n_out.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(24): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 24
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(25): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 25
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(28): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 28
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(31): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 31
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(34): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 34
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(37): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 37
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(41): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 41
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(44): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 44
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(47): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 47
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(51): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 51
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(55): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 55
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(69): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 69
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(70): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 70
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(71): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 71
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(89): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 89
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(92): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 92
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(96): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 96
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(99): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 99
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(106): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 106
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(111): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 111
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(116): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 116
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(120): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 120
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(127): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 127
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(131): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 131
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(135): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 135
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(139): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 139
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(142): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 142
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(143): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 143
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(144): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 144
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(165): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 165
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(168): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 168
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(172): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 172
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(175): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 175
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(178): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 178
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(182): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 182
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(185): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 185
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(188): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 188
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(191): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 191
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(194): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 194
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(196): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 196
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(199): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 199
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(202): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 202
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(204): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 204
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(205): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 205
-Warning (10275): Verilog HDL Module Instantiation warning at modulo_sel_1_8_demux.v(206): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 206
-Info (12021): Found 1 design units, including 1 entities, in source file modulo_sel_1_8_demux.v
-    Info (12023): Found entity 1: modulo_sel_1_8_demux File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_sel_1_8_demux.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file sel_clock.v
-    Info (12023): Found entity 1: sel_clock File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/sel_clock.v Line: 1
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_36.v(15): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36.v Line: 15
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_36.v(16): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36.v Line: 16
 Warning (10275): Verilog HDL Module Instantiation warning at modulo_demux1_36.v(17): ignored dangling comma in List of Port Connections File: C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/modulo_demux1_36.v Line: 17
@@ -2672,10 +2570,10 @@ Info (21057): Implemented 347 device resources after synthesis - the final resou
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 61 output pins
     Info (21061): Implemented 274 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 434 warnings
-    Info: Peak virtual memory: 4696 megabytes
-    Info: Processing ended: Wed Oct 04 16:44:53 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 340 warnings
+    Info: Peak virtual memory: 4695 megabytes
+    Info: Processing ended: Wed Oct 04 17:22:32 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 
