@@ -1,4 +1,4 @@
-module modulo_demux1_36_sel(mdc,mdl,out_sel);
+module modulo_dmx_mx_35_sel(mdc,mdl,out_sel);
 
 	input [2:0] mdc;
 	input [2:0] mdl;

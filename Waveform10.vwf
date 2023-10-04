@@ -55,6 +55,14 @@ quit -f
 
 
 
+
+
+
+
+
+
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -73,6 +81,14 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
+
+
+
+
+
+
 
 
 
@@ -1054,7 +1070,8 @@ TRANSITION_LIST("hh1[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 60.0;
 	}
 }
 
@@ -1063,7 +1080,9 @@ TRANSITION_LIST("hh1[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 60.0;
 	}
 }
 
@@ -1330,12 +1349,11 @@ TRANSITION_LIST("button_confirmation")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 8;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
-		}
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -1736,7 +1754,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "hh1";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 0;
@@ -1766,7 +1784,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "hh2";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 0;

@@ -14,7 +14,7 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	assign out = m_at_out;
 	
 	wire [1:0] hh2_boucing;
-	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_state,sel_matriz;
+	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_state,Nsel_state;
 	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire;
 	wire [34:0] m_po_in, N_m_at_in,m_po_out, m_at_out;
 	wire [35:0] m_at_in_aux;
@@ -24,12 +24,23 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	wire [19:0] clk_div;
 	wire [7:0] m_col_wire;
 	wire [5:0] sel_dmx_mx_36;
+	wire Nat_confirm;
+	wire Nbutton_confirmation;
 	wire MDL_andor_MDC, rgb_po_out, rgb_at_out, sel_output_matriz, Nrgb_po_out,at_confirm;
 	
+	not (Nbutton_confirmation, button_confirmation);
+	
 	not(Nrgb_po_out,rgb_po_out);
+	not(Nat_confirm, at_confirm);
 		
 	not(Nstatus_wire[1],status_wire[1]);
 	not(Nstatus_wire[0],status_wire[0]);
+	
+	not(Nsel_state[3],sel_state[3]);
+	not(Nsel_state[2],sel_state[2]);
+	not(Nsel_state[1],sel_state[1]);
+	not(Nsel_state[0],sel_state[0]);
+	
 	
 	not(Ncount_3_bits_mux_matriz_leds_sel[2],count_3_bits_mux_matriz_leds_sel[2]);
 	not(Ncount_3_bits_mux_matriz_leds_sel[1],count_3_bits_mux_matriz_leds_sel[1]);
@@ -92,7 +103,7 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	
 	//Demux do botão de confirmação linkado ao status - Concluido
 	
-	modulo_demux1_4 demux_button_confirmation(.A(button_confirmation),.input_sel(hh1),.out(sel_state),);
+	modulo_demux1_4 demux_button_confirmation(.A(Nbutton_confirmation),.input_sel(hh1),.out(sel_state),);
 	
 	// ===================================================================
 	
@@ -113,7 +124,7 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	
 	//Seleção de local de ataque feito por um seletor de demux - Concluido
 	
-	modulo_demux1_36_sel(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.out_sel(sel_dmx_mx_36));
+	modulo_dmx_mx_35_sel(.mdc(at_in[5:3]),.mdl(at_in[2:0]),.out_sel(sel_dmx_mx_36));
 	
 	//Matriz de armazenamento de posicionamento - Concluido
 	
@@ -125,7 +136,7 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	modulo_preset_linha_6 preset_6(.HH(hh2),.cl6(m_po_in[9:5]));
 	modulo_preset_linha_7 preset_7(.HH(hh2),.cl7(m_po_in[4:0]));
 	
-	modulo_matriz_reg_po reg_matriz_po_1(.m_in(m_po_in),.clk(sel_state[2]),.clr(1'b1),.m_out(m_po_out),);
+	modulo_matriz_reg_po reg_matriz_po_1(.m_in(m_po_in),.clk(Nsel_state[2]),.clr(1'b1),.m_out(m_po_out),);
 	
 	modulo_mux8_1 mux_5(.A(m_po_out[34]),.B(m_po_out[33]),.C(m_po_out[32]),.D(m_po_out[31]),.E(m_po_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[6]));
 	modulo_mux8_1 mux_6(.A(m_po_out[29]),.B(m_po_out[28]),.C(m_po_out[27]),.D(m_po_out[26]),.E(m_po_out[25]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[5]));
@@ -135,17 +146,18 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	modulo_mux8_1 mux_10(.A(m_po_out[9]),.B(m_po_out[8]),.C(m_po_out[7]),.D(m_po_out[6]),.E(m_po_out[5]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[1]));
 	modulo_mux8_1 mux_11(.A(m_po_out[4]),.B(m_po_out[3]),.C(m_po_out[2]),.D(m_po_out[1]),.E(m_po_out[0]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_po_line[0]));
 	
-	modulo_mux36_1 mux_12_rgb_out_po(.A(m_po_out),.input_sel(sel_dmx_mx_36),.out(rgb_po_out));
+	modulo_mux35_1 mux_12_rgb_out_po(.A(m_po_out),.input_sel(sel_dmx_mx_36),.out(rgb_po_out));
 	
 	// ===================================================================
 	
 	//Matriz de armazenamento de Ataque - Concluido
 	
-	or_gate_2_inputs gate_20(.A(rgb_po_out),.B(sel_state[1]),.S(at_confirm),);
+	or_gate_2_inputs gate_20(.A(rgb_po_out),.B(Nsel_state[1]),.S(at_confirm),);
 	
-	modulo_demux1_36(.A(at_confirm),.input_sel(sel_dmx_mx_36),.out(m_at_in_aux));
+	modulo_demux1_35(.A(Nat_confirm),.input_sel(sel_dmx_mx_36),.out(m_at_in_aux));
 
 	modulo_negar_input_m_at(.m_at(m_at_in_aux),.N_m_at(N_m_at_in));
+	
 	modulo_matriz_reg_at reg_matriz_at_1(.m_in(N_m_at_in),.clk(N_m_at_in),.clr(1'b1),.m_out(m_at_out),);
 	
 	modulo_mux8_1 mux_13(.A(m_at_out[34]),.B(m_at_out[33]),.C(m_at_out[32]),.D(m_at_out[31]),.E(m_at_out[30]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[6]));
@@ -156,11 +168,11 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	modulo_mux8_1 mux_18(.A(m_at_out[9]),.B(m_at_out[8]),.C(m_at_out[7]),.D(m_at_out[6]),.E(m_at_out[5]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[1]));
 	modulo_mux8_1 mux_19(.A(m_at_out[4]),.B(m_at_out[3]),.C(m_at_out[2]),.D(m_at_out[1]),.E(m_at_out[0]),.F(),.G(),.H(),.input_sel(count_3_bits_mux_matriz_leds_sel),.out(m_at_line[0]));
 	
-	modulo_mux36_1 mux_20_rgb_out_at(.A(m_at_out),.input_sel(sel_dmx_mx_36),.out(rgb_at_out));
+	modulo_mux35_1 mux_20_rgb_out_at(.A(m_at_out),.input_sel(sel_dmx_mx_36),.out(rgb_at_out));
 	
 	// ===================================================================
 	
-	modulo_rgb_sel_out rgb_input(.std(hh1),.bt(sel_state[1]),.at(rgb_at_out),.out_rgb_r(rgb_output[1]),.out_rgb_g(rgb_output[0]));
+	modulo_rgb_sel_out rgb_input(.std(hh1),.bt(Nsel_state[1]),.at(rgb_at_out),.out_rgb_r(rgb_output[1]),.out_rgb_g(rgb_output[0]));
 	
 	//Multiplexadores da saídas da matriz finais
 	
