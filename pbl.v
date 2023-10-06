@@ -60,18 +60,6 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	modulo_deboucing deboucing_1_hh2_2 (.push_button(hh2[0]),.clr(1'b1),.clk_div(clk_div[0]),.signal_bouncing(hh2_boucing[0]));
 	
 	// ===================================================================
-
-	
-	//Contador de 6 bits para linha e coluna
-	/*
-	modulo_contador_sync_6_bits count_6_bits_1(.clr(clr_0),.clk(button_count),.q(at_in),);
-	and_gate_4_inputs gate_0_reset(.A(sel_state[1]),.B(at_in[2]),.C(at_in[1]),.D(at_in[0]),.S(MDL_andor_MDC),);
-	or_gate_2_inputs gate_1_reset(.A(MDL_andor_MDC),.B(at_in[5]),.S(clr_0),);
-	*/
-	
-	// ===================================================================
-	
-	
 	
 	// Módulos referentes a escolha do status, coluna e linha da matriz
 	

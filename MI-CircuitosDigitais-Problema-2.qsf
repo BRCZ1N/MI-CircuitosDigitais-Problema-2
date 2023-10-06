@@ -74,7 +74,6 @@ set_global_assignment -name VERILOG_FILE modulo_preset_linha_3.v
 set_global_assignment -name VERILOG_FILE modulo_preset_linha_4.v
 set_global_assignment -name VERILOG_FILE modulo_preset_linha_5.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_8.v
-set_global_assignment -name VERILOG_FILE modulo_contador_sync_6_bits.v
 set_global_assignment -name VERILOG_FILE modulo_deboucing.v
 set_global_assignment -name VERILOG_FILE modulo_rgb_sel_out.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
