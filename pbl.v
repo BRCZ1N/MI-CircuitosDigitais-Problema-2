@@ -9,7 +9,6 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	output [3:0] out_7seg_ac;
 	output [4:0] m_col;
 	output [6:0] m_line;
-	output [34:0] out;
 	
 	wire [1:0] hh2_boucing;
 	wire [3:0] coord_at_linha, coord_at_coluna, status_wire, out_mux_7seg_decod,sel_state,Nsel_state;
