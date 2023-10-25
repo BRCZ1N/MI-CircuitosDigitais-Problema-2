@@ -1,5 +1,5 @@
 Fitter report for MI-CircuitosDigitais-Problema-2
-Wed Oct 25 16:56:27 2023
+Wed Oct 25 17:38:44 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Wed Oct 25 16:56:27 2023       ;
+; Fitter Status         ; Successful - Wed Oct 25 17:38:44 2023       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; MI-CircuitosDigitais-Problema-2             ;
 ; Top-level Entity Name ; pbl                                         ;
@@ -126,13 +126,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.10        ;
+; Average used               ; 1.09        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.7%      ;
-;     Processors 3-16        ;   0.7%      ;
+;     Processors 3-16        ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -797,13 +797,13 @@ Info (170195): Router estimated average interconnect usage is 24% of the availab
     Info (170196): Router estimated peak interconnect usage is 24% of the available device resources in the region that extends from location X0_Y0 to location X8_Y5
 Info (170202): The Fitter performed an Auto Fit compilation.  No optimizations were skipped because the design's timing and routability requirements required full optimization.
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/output_files/MI-CircuitosDigitais-Problema-2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 6184 megabytes
-    Info: Processing ended: Wed Oct 25 16:56:27 2023
+    Info: Peak virtual memory: 6181 megabytes
+    Info: Processing ended: Wed Oct 25 17:38:44 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:03
 

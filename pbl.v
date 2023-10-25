@@ -15,9 +15,9 @@ module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_l
 	wire [1:0] count_2_bits_mux_7seg_sel,Nstatus_wire;
 	wire [34:0] m_po_in, N_m_at_in,m_po_out, m_at_out;
 	wire [35:0] m_at_in_aux;
-	wire [6:0] m_po_line, m_at_line, sel_dmx_8_input,wire_gate_clock, m_at_line_alt;
-	wire [2:0] count_3_bits_mux_matriz_leds_sel, Ncount_3_bits_mux_matriz_leds_sel,sel_dmx_8_input_sel;
-	wire clr_1,clr_2, clr_0, rgb_in_cod;
+	wire [6:0] m_po_line, m_at_line;
+	wire [2:0] count_3_bits_mux_matriz_leds_sel, Ncount_3_bits_mux_matriz_leds_sel;
+	wire clr_1,clr_2;
 	wire [19:0] clk_div;
 	wire [7:0] m_col_wire;
 	wire [5:0] sel_dmx_mx_36;
