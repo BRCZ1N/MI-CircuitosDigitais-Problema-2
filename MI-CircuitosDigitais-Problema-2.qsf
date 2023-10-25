@@ -115,8 +115,8 @@ set_location_assignment PIN_86 -to rgb_output[1]
 set_location_assignment PIN_72 -to rgb_output[0]
 set_global_assignment -name VERILOG_FILE modulo_negar_input_m_at.v
 set_location_assignment PIN_50 -to button_confirmation
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VERILOG_FILE modulo_mux35_1.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_35.v
 set_global_assignment -name VERILOG_FILE modulo_dmx_mx_35_sel.v
 set_global_assignment -name VERILOG_FILE modulo_clear_and_reset_AC.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf

@@ -18,87 +18,84 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/03/2023 23:22:20"
+// Generated on "10/25/2023 16:55:00"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_demux1_36_sel
+// Verilog Test Bench (with test vectors) for design :                          modulo_clear_and_reset_AC
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_demux1_36_sel_vlg_vec_tst();
+module modulo_clear_and_reset_AC_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [2:0] mdc;
-reg [2:0] mdl;
+reg [1:0] Q;
+reg [1:0] STA;
 // wires                                               
-wire [5:0] out_sel;
+wire [3:0] AC;
+wire CLR_RESET;
 
 // assign statements (if any)                          
-modulo_demux1_36_sel i1 (
+modulo_clear_and_reset_AC i1 (
 // port map - connection between master ports and signals/registers   
-	.mdc(mdc),
-	.mdl(mdl),
-	.out_sel(out_sel)
+	.AC(AC),
+	.CLR_RESET(CLR_RESET),
+	.Q(Q),
+	.STA(STA)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// mdc[ 2 ]
+// STA[ 1 ]
 initial
 begin
-	mdc[2] = 1'b0;
-	mdc[2] = #320000 1'b1;
-	mdc[2] = #320000 1'b0;
-	mdc[2] = #320000 1'b1;
+	STA[1] = 1'b0;
+	STA[1] = #80000 1'b1;
+	STA[1] = #80000 1'b0;
 end 
-// mdc[ 1 ]
+// STA[ 0 ]
 initial
 begin
-	repeat(3)
-	begin
-		mdc[1] = 1'b0;
-		mdc[1] = #160000 1'b1;
-		# 160000;
-	end
-	mdc[1] = 1'b0;
+	STA[0] = 1'b0;
+	STA[0] = #40000 1'b1;
+	STA[0] = #40000 1'b0;
+	STA[0] = #40000 1'b1;
+	STA[0] = #40000 1'b0;
 end 
-// mdc[ 0 ]
+// Q[ 1 ]
 initial
 begin
-	repeat(6)
-	begin
-		mdc[0] = 1'b0;
-		mdc[0] = #80000 1'b1;
-		# 80000;
-	end
-	mdc[0] = 1'b0;
+	Q[1] = 1'b0;
+	Q[1] = #20000 1'b1;
+	Q[1] = #20000 1'b0;
+	Q[1] = #20000 1'b1;
+	Q[1] = #20000 1'b0;
+	Q[1] = #20000 1'b1;
+	Q[1] = #20000 1'b0;
+	Q[1] = #20000 1'b1;
+	Q[1] = #20000 1'b0;
 end 
-// mdl[ 2 ]
+// Q[ 0 ]
 initial
 begin
-	repeat(12)
-	begin
-		mdl[2] = 1'b0;
-		mdl[2] = #40000 1'b1;
-		# 40000;
-	end
-	mdl[2] = 1'b0;
-end 
-// mdl[ 1 ]
-always
-begin
-	mdl[1] = 1'b0;
-	mdl[1] = #20000 1'b1;
-	#20000;
-end 
-// mdl[ 0 ]
-always
-begin
-	mdl[0] = 1'b0;
-	mdl[0] = #10000 1'b1;
-	#10000;
+	Q[0] = 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
+	Q[0] = #10000 1'b1;
+	Q[0] = #10000 1'b0;
 end 
 endmodule
 
