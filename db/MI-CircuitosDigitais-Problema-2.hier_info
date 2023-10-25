@@ -19,10 +19,10 @@ out_7seg[4] <= modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1.OUT_SEGS
 out_7seg[5] <= modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1.OUT_SEGS
 out_7seg[6] <= modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1.OUT_SEGS
 out_7seg[7] <= modulo_decodificador_bcd_ex_7seg:decodificador_bcd_ex_1.OUT_SEGS
-out_7seg_ac[0] <= modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1.AC
-out_7seg_ac[1] <= modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1.AC
-out_7seg_ac[2] <= modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1.AC
-out_7seg_ac[3] <= modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1.AC
+out_7seg_ac[0] <= modulo_clear_and_reset_AC:decodificador_ac_and_reset_count.AC
+out_7seg_ac[1] <= modulo_clear_and_reset_AC:decodificador_ac_and_reset_count.AC
+out_7seg_ac[2] <= modulo_clear_and_reset_AC:decodificador_ac_and_reset_count.AC
+out_7seg_ac[3] <= modulo_clear_and_reset_AC:decodificador_ac_and_reset_count.AC
 m_col[0] <= and_gate_2_inputs:gate_5_col.S
 m_col[1] <= and_gate_2_inputs:gate_4_col.S
 m_col[2] <= and_gate_2_inputs:gate_3_col.S
@@ -480,13 +480,6 @@ clr => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl|or_gate_3_inputs:gate_1
-A => WideOr0.IN0
-B => WideOr0.IN1
-C => WideOr0.IN2
-S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |pbl|modulo_mux4_1:mux_1
 A => A.IN1
 B => B.IN1
@@ -940,34 +933,55 @@ B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl|modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1
-STAC[0] => STAC[0].IN2
-STAC[1] => NSTAC[1].IN2
-AC[0] <= and_gate_2_inputs:gate_4.S
-AC[1] <= or_gate_2_inputs:gate_3.S
-AC[2] <= or_gate_2_inputs:gate_2.S
-AC[3] <= and_gate_2_inputs:gate_1.S
+|pbl|modulo_clear_and_reset_AC:decodificador_ac_and_reset_count
+STA[0] => STA[0].IN4
+STA[1] => STA[1].IN1
+Q[0] => Q[0].IN2
+Q[1] => Q[1].IN3
+CLR_RESET <= or_gate_3_inputs:gate_1.S
+AC[0] <= and_gate_2_inputs:gate_6.S
+AC[1] <= or_gate_4_inputs:gate_5.S
+AC[2] <= or_gate_4_inputs:gate_4.S
+AC[3] <= or_gate_3_inputs:gate_3.S
 
 
-|pbl|modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_1
+|pbl|modulo_clear_and_reset_AC:decodificador_ac_and_reset_count|or_gate_3_inputs:gate_1
+A => WideOr0.IN0
+B => WideOr0.IN1
+C => WideOr0.IN2
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_clear_and_reset_AC:decodificador_ac_and_reset_count|and_gate_2_inputs:gate_2
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl|modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|or_gate_2_inputs:gate_2
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|pbl|modulo_clear_and_reset_AC:decodificador_ac_and_reset_count|or_gate_3_inputs:gate_3
+A => WideOr0.IN0
+B => WideOr0.IN1
+C => WideOr0.IN2
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl|modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|or_gate_2_inputs:gate_3
-A => comb.IN0
-B => comb.IN1
-S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+|pbl|modulo_clear_and_reset_AC:decodificador_ac_and_reset_count|or_gate_4_inputs:gate_4
+A => WideOr0.IN0
+B => WideOr0.IN1
+C => WideOr0.IN2
+D => WideOr0.IN3
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl|modulo_decodificador_bcd_ex_7seg_ac:decodificador_bcd_ex_ac_1|and_gate_2_inputs:gate_4
+|pbl|modulo_clear_and_reset_AC:decodificador_ac_and_reset_count|or_gate_4_inputs:gate_5
+A => WideOr0.IN0
+B => WideOr0.IN1
+C => WideOr0.IN2
+D => WideOr0.IN3
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl|modulo_clear_and_reset_AC:decodificador_ac_and_reset_count|and_gate_2_inputs:gate_6
 A => comb.IN0
 B => comb.IN1
 S <= comb.DB_MAX_OUTPUT_PORT_TYPE
