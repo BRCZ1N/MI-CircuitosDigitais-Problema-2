@@ -18,93 +18,46 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/04/2023 00:23:09"
+// Generated on "11/19/2023 13:50:28"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_demux1_36
+// Verilog Test Bench (with test vectors) for design :                          modulo_preset_linha_1
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_demux1_36_vlg_vec_tst();
+module modulo_preset_linha_1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg A;
-reg [5:0] input_sel;
+reg [1:0] HH;
 // wires                                               
-wire [35:0] out;
+wire [4:0] cl1;
 
 // assign statements (if any)                          
-modulo_demux1_36 i1 (
+modulo_preset_linha_1 i1 (
 // port map - connection between master ports and signals/registers   
-	.A(A),
-	.input_sel(input_sel),
-	.out(out)
+	.HH(HH),
+	.cl1(cl1)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-
-// A
+// HH[ 1 ]
 initial
 begin
-	A = 1'b1;
+	HH[1] = 1'b0;
+	HH[1] = #20000 1'b1;
+	HH[1] = #20000 1'b0;
 end 
-// input_sel[ 5 ]
+// HH[ 0 ]
 initial
 begin
-	input_sel[5] = 1'b0;
-	input_sel[5] = #320000 1'b1;
-	input_sel[5] = #320000 1'b0;
-	input_sel[5] = #320000 1'b1;
-end 
-// input_sel[ 4 ]
-initial
-begin
-	repeat(3)
-	begin
-		input_sel[4] = 1'b0;
-		input_sel[4] = #160000 1'b1;
-		# 160000;
-	end
-	input_sel[4] = 1'b0;
-end 
-// input_sel[ 3 ]
-initial
-begin
-	repeat(6)
-	begin
-		input_sel[3] = 1'b0;
-		input_sel[3] = #80000 1'b1;
-		# 80000;
-	end
-	input_sel[3] = 1'b0;
-end 
-// input_sel[ 2 ]
-initial
-begin
-	repeat(12)
-	begin
-		input_sel[2] = 1'b0;
-		input_sel[2] = #40000 1'b1;
-		# 40000;
-	end
-	input_sel[2] = 1'b0;
-end 
-// input_sel[ 1 ]
-always
-begin
-	input_sel[1] = 1'b0;
-	input_sel[1] = #20000 1'b1;
-	#20000;
-end 
-// input_sel[ 0 ]
-always
-begin
-	input_sel[0] = 1'b0;
-	input_sel[0] = #10000 1'b1;
-	#10000;
+	HH[0] = 1'b0;
+	HH[0] = #10000 1'b1;
+	HH[0] = #10000 1'b0;
+	HH[0] = #10000 1'b1;
+	HH[0] = #10000 1'b0;
 end 
 endmodule
 

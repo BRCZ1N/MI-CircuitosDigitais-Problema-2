@@ -15,6 +15,6 @@ or_gate_2_inputs gate_3(.A(NHH[0]),.B(HH[1]),.S(cl3[2]),);
 
 or_gate_2_inputs gate_4(.A(NHH[0]),.B(NHH[1]),.S(cl3[1]),);
 
-or_gate_2_inputs gate_5(.A(NHH[1]),.B(HH[0]),.S(cl3[0]),);
+or_gate_2_inputs gate_5(.A(NHH[0]),.B(HH[1]),.S(cl3[0]),);
 
 endmodule 

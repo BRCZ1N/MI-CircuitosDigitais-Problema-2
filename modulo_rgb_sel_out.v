@@ -12,11 +12,8 @@ module modulo_rgb_sel_out(std,bt,at,out_rgb_r,out_rgb_g);
 	not(nbt,bt);
 	not(nat,at);
 	
-	
 	and_gate_4_inputs gate_1(.A(std[1]),.B(nstd[0]),.C(nbt),.D(at),.S(out_rgb_r),);
 		
 	and_gate_4_inputs gate_4(.A(std[1]),.B(nstd[0]),.C(nbt),.D(nat),.S(out_rgb_g),);
-
-
 
 endmodule 

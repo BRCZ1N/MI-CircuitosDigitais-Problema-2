@@ -18,46 +18,55 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/29/2023 13:34:07"
+// Generated on "11/19/2023 16:42:26"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          modulo_decodificador_bcd_ex_7seg_ac
+// Verilog Test Bench (with test vectors) for design :                          modulo_demux1_4
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module modulo_decodificador_bcd_ex_7seg_ac_vlg_vec_tst();
+module modulo_demux1_4_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [1:0] STAC;
+reg A;
+reg [1:0] input_sel;
 // wires                                               
-wire [3:0] AC;
+wire [3:0] out;
 
 // assign statements (if any)                          
-modulo_decodificador_bcd_ex_7seg_ac i1 (
+modulo_demux1_4 i1 (
 // port map - connection between master ports and signals/registers   
-	.AC(AC),
-	.STAC(STAC)
+	.A(A),
+	.input_sel(input_sel),
+	.out(out)
 );
 initial 
 begin 
-#1000000 $finish;
+#1000000 $stop;
 end 
-// STAC[ 1 ]
+
+// A
 initial
 begin
-	STAC[1] = 1'b0;
-	STAC[1] = #20000 1'b1;
-	STAC[1] = #20000 1'b0;
+	A = 1'b1;
+	A = #40000 1'b0;
 end 
-// STAC[ 0 ]
+// input_sel[ 1 ]
 initial
 begin
-	STAC[0] = 1'b0;
-	STAC[0] = #10000 1'b1;
-	STAC[0] = #10000 1'b0;
-	STAC[0] = #10000 1'b1;
-	STAC[0] = #10000 1'b0;
+	input_sel[1] = 1'b0;
+	input_sel[1] = #20000 1'b1;
+	input_sel[1] = #20000 1'b0;
+end 
+// input_sel[ 0 ]
+initial
+begin
+	input_sel[0] = 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
 end 
 endmodule
 

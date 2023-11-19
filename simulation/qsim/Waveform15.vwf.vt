@@ -18,89 +18,46 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/02/2023 05:18:24"
+// Generated on "11/19/2023 14:13:17"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          pbl
+// Verilog Test Bench (with test vectors) for design :                          modulo_preset_linha_5
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module pbl_vlg_vec_tst();
+module modulo_preset_linha_5_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_confirmation;
-reg button_count;
-reg clk;
-reg [1:0] hh1;
-reg [1:0] hh2;
+reg [1:0] HH;
 // wires                                               
-wire [4:0] m_col;
-wire [6:0] m_line;
-wire [7:0] out_7seg;
-wire [3:0] out_7seg_ac;
-wire [1:0] rgb_output;
+wire [4:0] cl5;
 
 // assign statements (if any)                          
-pbl i1 (
+modulo_preset_linha_5 i1 (
 // port map - connection between master ports and signals/registers   
-	.button_confirmation(button_confirmation),
-	.button_count(button_count),
-	.clk(clk),
-	.hh1(hh1),
-	.hh2(hh2),
-	.m_col(m_col),
-	.m_line(m_line),
-	.out_7seg(out_7seg),
-	.out_7seg_ac(out_7seg_ac),
-	.rgb_output(rgb_output)
+	.HH(HH),
+	.cl5(cl5)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-
-// button_confirmation
+// HH[ 1 ]
 initial
 begin
-	button_confirmation = 1'b1;
-	button_confirmation = #10000 1'b0;
-	button_confirmation = #10000 1'b1;
+	HH[1] = 1'b0;
+	HH[1] = #40000 1'b1;
+	HH[1] = #40000 1'b0;
 end 
-
-// button_count
+// HH[ 0 ]
 initial
 begin
-	button_count = 1'b0;
-end 
-
-// clk
-always
-begin
-	clk = 1'b0;
-	clk = #10000 1'b1;
-	#10000;
-end 
-// hh1[ 1 ]
-initial
-begin
-	hh1[1] = 1'b1;
-	hh1[1] = #720000 1'b0;
-end 
-// hh1[ 0 ]
-initial
-begin
-	hh1[0] = 1'b0;
-end 
-// hh2[ 1 ]
-initial
-begin
-	hh2[1] = 1'b0;
-end 
-// hh2[ 0 ]
-initial
-begin
-	hh2[0] = 1'b0;
+	HH[0] = 1'b0;
+	HH[0] = #20000 1'b1;
+	HH[0] = #20000 1'b0;
+	HH[0] = #20000 1'b1;
+	HH[0] = #20000 1'b0;
 end 
 endmodule
 

@@ -18,108 +18,138 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/28/2023 20:06:22"
+// Generated on "11/19/2023 16:40:50"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          pbl
+// Verilog Test Bench (with test vectors) for design :                          modulo_mux8_1
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module pbl_vlg_vec_tst();
+module modulo_mux8_1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_clk;
-reg button_clr;
-reg clk;
-reg [1:0] hh1;
-reg [5:0] hh2;
+reg A;
+reg B;
+reg C;
+reg D;
+reg E;
+reg F;
+reg G;
+reg H;
+reg [2:0] input_sel;
 // wires                                               
-wire [4:0] m_col;
-wire [6:0] m_line;
-wire [7:0] out_7seg;
-wire [3:0] out_7seg_ac;
+wire out;
 
 // assign statements (if any)                          
-pbl i1 (
+modulo_mux8_1 i1 (
 // port map - connection between master ports and signals/registers   
-	.button_clk(button_clk),
-	.button_clr(button_clr),
-	.clk(clk),
-	.hh1(hh1),
-	.hh2(hh2),
-	.m_col(m_col),
-	.m_line(m_line),
-	.out_7seg(out_7seg),
-	.out_7seg_ac(out_7seg_ac)
+	.A(A),
+	.B(B),
+	.C(C),
+	.D(D),
+	.E(E),
+	.F(F),
+	.G(G),
+	.H(H),
+	.input_sel(input_sel),
+	.out(out)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// button_clk
+// A
 initial
 begin
-	button_clk = 1'b0;
+	A = 1'b1;
+	A = #10000 1'b0;
 end 
 
-// button_clr
+// B
 initial
 begin
-	button_clr = 1'b0;
+	B = 1'b0;
+	B = #10000 1'b1;
+	B = #10000 1'b0;
 end 
 
-// clk
+// C
 initial
 begin
-	clk = 1'b0;
+	C = 1'b0;
+	C = #20000 1'b1;
+	C = #10000 1'b0;
 end 
-// hh1[ 1 ]
+
+// D
 initial
 begin
-	hh1[1] = 1'b0;
-	hh1[1] = #20000 1'b1;
-	hh1[1] = #20000 1'b0;
+	D = 1'b0;
+	D = #30000 1'b1;
+	D = #10000 1'b0;
 end 
-// hh1[ 0 ]
+
+// E
 initial
 begin
-	hh1[0] = 1'b0;
-	hh1[0] = #10000 1'b1;
-	hh1[0] = #10000 1'b0;
-	hh1[0] = #10000 1'b1;
-	hh1[0] = #10000 1'b0;
+	E = 1'b0;
+	E = #40000 1'b1;
+	E = #10000 1'b0;
 end 
-// hh2[ 5 ]
+
+// F
 initial
 begin
-	hh2[5] = 1'b0;
+	F = 1'b0;
+	F = #50000 1'b1;
+	F = #10000 1'b0;
 end 
-// hh2[ 4 ]
+
+// G
 initial
 begin
-	hh2[4] = 1'b0;
+	G = 1'b0;
+	G = #60000 1'b1;
+	G = #10000 1'b0;
 end 
-// hh2[ 3 ]
+
+// H
 initial
 begin
-	hh2[3] = 1'b0;
+	H = 1'b0;
+	H = #70000 1'b1;
+	H = #10000 1'b0;
 end 
-// hh2[ 2 ]
+// input_sel[ 2 ]
 initial
 begin
-	hh2[2] = 1'b0;
+	input_sel[2] = 1'b0;
+	input_sel[2] = #40000 1'b1;
+	input_sel[2] = #40000 1'b0;
 end 
-// hh2[ 1 ]
+// input_sel[ 1 ]
 initial
 begin
-	hh2[1] = 1'b0;
+	input_sel[1] = 1'b0;
+	input_sel[1] = #20000 1'b1;
+	input_sel[1] = #20000 1'b0;
+	input_sel[1] = #20000 1'b1;
+	input_sel[1] = #20000 1'b0;
 end 
-// hh2[ 0 ]
+// input_sel[ 0 ]
 initial
 begin
-	hh2[0] = 1'b0;
+	input_sel[0] = 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
+	input_sel[0] = #10000 1'b1;
+	input_sel[0] = #10000 1'b0;
 end 
 endmodule
 

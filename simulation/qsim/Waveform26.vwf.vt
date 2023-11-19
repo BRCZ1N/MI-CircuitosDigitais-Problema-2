@@ -18,120 +18,46 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/28/2023 19:47:15"
+// Generated on "11/19/2023 16:17:58"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          pbl
+// Verilog Test Bench (with test vectors) for design :                          modulo_divisor_frequencia
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module pbl_vlg_vec_tst();
+module modulo_divisor_frequencia_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_clk;
-reg button_clr;
 reg clk;
-reg [1:0] hh1;
-reg [5:0] hh2;
+reg clr;
 // wires                                               
-wire [3:0] coord_at_coluna;
-wire [3:0] coord_at_linha;
-wire [4:0] m_col;
-wire [6:0] m_line;
-wire [7:0] out_7seg;
-wire [3:0] out_7seg_ac;
-wire [3:0] out_mux_7seg_decod;
-wire [3:0] sel_dmx_mx_4;
-wire [2:0] status_coord_c_coord_l_1;
-wire [2:0] status_coord_c_coord_l_2;
-wire [2:0] status_coord_c_coord_l_3;
-wire [2:0] status_coord_c_coord_l_4;
-wire [3:0] status_wire;
+wire [19:0] q;
 
 // assign statements (if any)                          
-pbl i1 (
+modulo_divisor_frequencia i1 (
 // port map - connection between master ports and signals/registers   
-	.button_clk(button_clk),
-	.button_clr(button_clr),
 	.clk(clk),
-	.coord_at_coluna(coord_at_coluna),
-	.coord_at_linha(coord_at_linha),
-	.hh1(hh1),
-	.hh2(hh2),
-	.m_col(m_col),
-	.m_line(m_line),
-	.out_7seg(out_7seg),
-	.out_7seg_ac(out_7seg_ac),
-	.out_mux_7seg_decod(out_mux_7seg_decod),
-	.sel_dmx_mx_4(sel_dmx_mx_4),
-	.status_coord_c_coord_l_1(status_coord_c_coord_l_1),
-	.status_coord_c_coord_l_2(status_coord_c_coord_l_2),
-	.status_coord_c_coord_l_3(status_coord_c_coord_l_3),
-	.status_coord_c_coord_l_4(status_coord_c_coord_l_4),
-	.status_wire(status_wire)
+	.clr(clr),
+	.q(q)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// button_clk
-initial
-begin
-	button_clk = 1'b0;
-end 
-
-// button_clr
-initial
-begin
-	button_clr = 1'b0;
-end 
-
 // clk
-initial
+always
 begin
 	clk = 1'b0;
+	clk = #1000 1'b1;
+	#1000;
 end 
-// hh1[ 1 ]
+
+// clr
 initial
 begin
-	hh1[1] = 1'b0;
-end 
-// hh1[ 0 ]
-initial
-begin
-	hh1[0] = 1'b0;
-end 
-// hh2[ 5 ]
-initial
-begin
-	hh2[5] = 1'b0;
-end 
-// hh2[ 4 ]
-initial
-begin
-	hh2[4] = 1'b0;
-end 
-// hh2[ 3 ]
-initial
-begin
-	hh2[3] = 1'b0;
-end 
-// hh2[ 2 ]
-initial
-begin
-	hh2[2] = 1'b0;
-end 
-// hh2[ 1 ]
-initial
-begin
-	hh2[1] = 1'b0;
-end 
-// hh2[ 0 ]
-initial
-begin
-	hh2[0] = 1'b0;
+	clr = 1'b0;
 end 
 endmodule
 

@@ -18,104 +18,59 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/28/2023 19:10:49"
+// Generated on "11/19/2023 14:43:26"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          pbl
+// Verilog Test Bench (with test vectors) for design :                          modulo_coord_linha
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module pbl_vlg_vec_tst();
+module modulo_coord_linha_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_clk;
-reg button_clr;
-reg clk;
-reg [1:0] hh1;
-reg [5:0] hh2;
+reg [2:0] mdl;
 // wires                                               
-wire [4:0] m_col;
-wire [6:0] m_line;
-wire [7:0] out_7seg;
-wire [3:0] out_7seg_ac;
+wire [3:0] cdl;
 
 // assign statements (if any)                          
-pbl i1 (
+modulo_coord_linha i1 (
 // port map - connection between master ports and signals/registers   
-	.button_clk(button_clk),
-	.button_clr(button_clr),
-	.clk(clk),
-	.hh1(hh1),
-	.hh2(hh2),
-	.m_col(m_col),
-	.m_line(m_line),
-	.out_7seg(out_7seg),
-	.out_7seg_ac(out_7seg_ac)
+	.cdl(cdl),
+	.mdl(mdl)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-
-// button_clk
+// mdl[ 2 ]
 initial
 begin
-	button_clk = 1'b0;
+	mdl[2] = 1'b0;
+	mdl[2] = #80000 1'b1;
+	mdl[2] = #80000 1'b0;
 end 
-
-// button_clr
+// mdl[ 1 ]
 initial
 begin
-	button_clr = 1'b0;
+	mdl[1] = 1'b0;
+	mdl[1] = #40000 1'b1;
+	mdl[1] = #40000 1'b0;
+	mdl[1] = #40000 1'b1;
+	mdl[1] = #40000 1'b0;
 end 
-
-// clk
-always
-begin
-	clk = 1'b0;
-	clk = #10000 1'b1;
-	#10000;
-end 
-// hh1[ 1 ]
+// mdl[ 0 ]
 initial
 begin
-	hh1[1] = 1'b0;
-end 
-// hh1[ 0 ]
-initial
-begin
-	hh1[0] = 1'b0;
-end 
-// hh2[ 5 ]
-initial
-begin
-	hh2[5] = 1'b0;
-end 
-// hh2[ 4 ]
-initial
-begin
-	hh2[4] = 1'b0;
-end 
-// hh2[ 3 ]
-initial
-begin
-	hh2[3] = 1'b0;
-end 
-// hh2[ 2 ]
-initial
-begin
-	hh2[2] = 1'b0;
-end 
-// hh2[ 1 ]
-initial
-begin
-	hh2[1] = 1'b0;
-end 
-// hh2[ 0 ]
-initial
-begin
-	hh2[0] = 1'b0;
+	mdl[0] = 1'b0;
+	mdl[0] = #20000 1'b1;
+	mdl[0] = #20000 1'b0;
+	mdl[0] = #20000 1'b1;
+	mdl[0] = #20000 1'b0;
+	mdl[0] = #20000 1'b1;
+	mdl[0] = #20000 1'b0;
+	mdl[0] = #20000 1'b1;
+	mdl[0] = #20000 1'b0;
 end 
 endmodule
 
