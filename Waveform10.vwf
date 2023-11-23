@@ -68,6 +68,32 @@ quit -f
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -86,6 +112,32 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -636,8 +688,10 @@ TRANSITION_LIST("at_in[5]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 70.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -646,7 +700,10 @@ TRANSITION_LIST("at_in[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -655,7 +712,8 @@ TRANSITION_LIST("at_in[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 60.0;
 	}
 }
 
@@ -664,8 +722,10 @@ TRANSITION_LIST("at_in[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -674,10 +734,9 @@ TRANSITION_LIST("at_in[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -686,13 +745,9 @@ TRANSITION_LIST("at_in[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -994,14 +1049,14 @@ TRANSITION_LIST("button_confirmation")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 2.5;
 		NODE
 		{
-			REPEAT = 3;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 15;
+			LEVEL 0 FOR 2.5;
+			LEVEL 1 FOR 2.5;
 		}
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 2.5;
 	}
 }
 

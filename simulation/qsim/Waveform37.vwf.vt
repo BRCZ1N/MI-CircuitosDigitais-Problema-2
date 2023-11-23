@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/29/2023 14:32:18"
+// Generated on "11/23/2023 09:13:07"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          pbl
 // 
@@ -29,93 +29,37 @@
 module pbl_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg button_clk;
-reg button_clr;
+reg [5:0] at_in;
+reg button_confirmation;
 reg clk;
 reg [1:0] hh1;
-reg [5:0] hh2;
+reg [1:0] hh2;
 // wires                                               
 wire [4:0] m_col;
 wire [6:0] m_line;
-wire [6:0] m_po_line;
 wire [7:0] out_7seg;
 wire [3:0] out_7seg_ac;
+wire [1:0] rgb_output;
+wire [34:0] test_m_at_out;
 
 // assign statements (if any)                          
 pbl i1 (
 // port map - connection between master ports and signals/registers   
-	.button_clk(button_clk),
-	.button_clr(button_clr),
+	.at_in(at_in),
+	.button_confirmation(button_confirmation),
 	.clk(clk),
 	.hh1(hh1),
 	.hh2(hh2),
 	.m_col(m_col),
 	.m_line(m_line),
-	.m_po_line(m_po_line),
 	.out_7seg(out_7seg),
-	.out_7seg_ac(out_7seg_ac)
+	.out_7seg_ac(out_7seg_ac),
+	.rgb_output(rgb_output),
+	.test_m_at_out(test_m_at_out)
 );
 initial 
 begin 
-#1000000 $finish;
-end 
-
-// button_clk
-initial
-begin
-	button_clk = 1'b0;
-end 
-
-// button_clr
-initial
-begin
-	button_clr = 1'b0;
-end 
-
-// clk
-initial
-begin
-	clk = 1'b0;
-end 
-// hh1[ 1 ]
-initial
-begin
-	hh1[1] = 1'b0;
-end 
-// hh1[ 0 ]
-initial
-begin
-	hh1[0] = 1'b0;
-end 
-// hh2[ 5 ]
-initial
-begin
-	hh2[5] = 1'b0;
-end 
-// hh2[ 4 ]
-initial
-begin
-	hh2[4] = 1'b0;
-end 
-// hh2[ 3 ]
-initial
-begin
-	hh2[3] = 1'b0;
-end 
-// hh2[ 2 ]
-initial
-begin
-	hh2[2] = 1'b0;
-end 
-// hh2[ 1 ]
-initial
-begin
-	hh2[1] = 1'b0;
-end 
-// hh2[ 0 ]
-initial
-begin
-	hh2[0] = 1'b0;
+#640000 $finish;
 end 
 endmodule
 

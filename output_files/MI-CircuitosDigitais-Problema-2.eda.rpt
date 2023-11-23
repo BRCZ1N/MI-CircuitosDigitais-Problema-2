@@ -1,5 +1,5 @@
 EDA Netlist Writer report for MI-CircuitosDigitais-Problema-2
-Sun Nov 19 17:10:56 2023
+Thu Nov 23 09:40:05 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,9 +36,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Nov 19 17:10:56 2023 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov 23 09:40:05 2023 ;
 ; Revision Name             ; MI-CircuitosDigitais-Problema-2       ;
-; Top-level Entity Name     ; modulo_demux1_35                      ;
+; Top-level Entity Name     ; modulo_dmx_mx_35_sel                  ;
 ; Family                    ; MAX II                                ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                            ;
-+-----------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                       ;
-+-----------------------------------------------------------------------------------------------------------------------+
-; C:/Users/Alex Jr/Documents/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim//MI-CircuitosDigitais-Problema-2.vo ;
-+-----------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                    ;
++-------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                               ;
++-------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim//MI-CircuitosDigitais-Problema-2.vo ;
++-------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,13 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 19 17:10:55 2023
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Alex Jr/Documents/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim/" MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
+    Info: Processing started: Thu Nov 23 09:40:04 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim/ MI-CircuitosDigitais-Problema-2 -c MI-CircuitosDigitais-Problema-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file MI-CircuitosDigitais-Problema-2.vo in folder "C:/Users/Alex Jr/Documents/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MI-CircuitosDigitais-Problema-2.vo in folder "C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4611 megabytes
-    Info: Processing ended: Sun Nov 19 17:10:56 2023
+    Info: Peak virtual memory: 4612 megabytes
+    Info: Processing ended: Thu Nov 23 09:40:05 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

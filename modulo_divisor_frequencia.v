@@ -1,7 +1,10 @@
-module modulo_divisor_frequencia(clr, q, clk);
+module modulo_divisor_frequencia(clr, clk_div, clk);
 
 	input clk,clr;
-	output [19:0] q;
+	wire [19:0] q;
+	output clk_div;
+	
+	and(clk_div,1'b1,q[15]);
 
 	// F/2
 	
@@ -46,7 +49,7 @@ module modulo_divisor_frequencia(clr, q, clk);
 	// F/2048
 	
 	modulo_ff_t ff_11(.t(1'b1),.clk(q[9]),.clr(clr),.q(q[10]),);
-																					  
+				
 	// F/4096
 	
 	modulo_ff_t ff_12(.t(1'b1),.clk(q[10]),.clr(clr),.q(q[11]),);
