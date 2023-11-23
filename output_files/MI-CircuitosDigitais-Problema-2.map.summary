@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Thu Nov 23 09:38:25 2023
+Analysis & Synthesis Status : Successful - Thu Nov 23 15:45:27 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_dmx_mx_35_sel
+Top-level Entity Name : pbl
 Family : MAX II
-Total logic elements : 24
-Total pins : 12
+Total logic elements : 220
+Total pins : 38
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

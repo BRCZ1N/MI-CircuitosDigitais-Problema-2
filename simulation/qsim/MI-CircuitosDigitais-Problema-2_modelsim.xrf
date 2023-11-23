@@ -60,6 +60,7 @@ source_file = 1, C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-
 source_file = 1, C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/Waveform35.vwf
 source_file = 1, C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/Waveform36.vwf
 source_file = 1, C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/Waveform37.vwf
+source_file = 1, C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/Waveform38.vwf
 source_file = 1, C:/Users/Bruno/OneDrive/Documentos/GitHub/MI-CircuitosDigitais-Problema-2/db/MI-CircuitosDigitais-Problema-2.cbx.xml
 design_name = modulo_dmx_mx_35_sel
 instance = comp, \mdl[0]~I , mdl[0], modulo_dmx_mx_35_sel, 1

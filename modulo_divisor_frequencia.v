@@ -4,7 +4,8 @@ module modulo_divisor_frequencia(clr, clk_div, clk);
 	wire [19:0] q;
 	output clk_div;
 	
-	and(clk_div,1'b1,q[15]);
+	and(clk_div,1'b1,q[13
+	]);
 
 	// F/2
 	
