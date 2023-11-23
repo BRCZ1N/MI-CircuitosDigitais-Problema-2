@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Nov 23 09:38:35 2023
+Fitter Status : Successful - Thu Nov 23 20:50:23 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MI-CircuitosDigitais-Problema-2
-Top-level Entity Name : modulo_dmx_mx_35_sel
+Top-level Entity Name : pbl
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 24 / 240 ( 10 % )
-Total pins : 12 / 80 ( 15 % )
+Total logic elements : 210 / 240 ( 88 % )
+Total pins : 38 / 80 ( 48 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

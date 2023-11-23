@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY modulo_dmx_mx_35_sel
+set_global_assignment -name TOP_LEVEL_ENTITY pbl
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:02:39  SEPTEMBER 20, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -113,10 +113,8 @@ set_global_assignment -name VERILOG_FILE modulo_preset_linha_3.v
 set_global_assignment -name VERILOG_FILE modulo_preset_linha_4.v
 set_global_assignment -name VERILOG_FILE modulo_preset_linha_5.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_8.v
-set_global_assignment -name VERILOG_FILE modulo_deboucing.v
 set_global_assignment -name VERILOG_FILE modulo_rgb_sel_out.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
-set_global_assignment -name VERILOG_FILE modulo_negar_input_m_at.v
 set_global_assignment -name VERILOG_FILE modulo_mux35_1.v
 set_global_assignment -name VERILOG_FILE modulo_demux1_35.v
 set_global_assignment -name VERILOG_FILE modulo_dmx_mx_35_sel.v
