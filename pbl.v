@@ -1,7 +1,7 @@
-module pbl(hh1,hh2,at_in,button_confirmation_input, clk,out_7seg,out_7seg_ac,m_col,m_line, rgb_output);
+module pbl(hh1,hh2,at_in,button_confirmation, clk,out_7seg,out_7seg_ac,m_col,m_line, rgb_output);
 
 	input [1:0] hh1,hh2;
-	input  button_confirmation_input, clk;
+	input button_confirmation, clk;
 	input [5:0] at_in;
 	
 	output [1:0] rgb_output;
@@ -16,12 +16,10 @@ module pbl(hh1,hh2,at_in,button_confirmation_input, clk,out_7seg,out_7seg_ac,m_c
 	wire [34:0] m_at_in_aux;
 	wire [6:0] m_po_line, m_at_line;
 	wire [2:0] count_3_bits_mux_matriz_leds_sel, Ncount_3_bits_mux_matriz_leds_sel;
-	wire clr_1,clr_2,clk_div,Nbutton_confirmation,rgb_po_out,button_confirmation;
+	wire clr_1,clr_2,clk_div,Nbutton_confirmation,rgb_po_out;
 	wire [7:0] m_col_wire;
 	wire [5:0] sel_dmx_mx_35_1;
 
-	modulo_deboucing(.push_button(button_confirmation_input),.clr(1'b1),.clk_div(clk_div),.signal_bouncing(button_confirmation),.q());
-	
 	not (Nbutton_confirmation, button_confirmation);
 	
 	not(Nstatus_wire[1],status_wire[1]);
